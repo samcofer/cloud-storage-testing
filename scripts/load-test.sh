@@ -27,11 +27,11 @@ yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarc
 dnf install -y dnf-plugins-core
 dnf config-manager --set-enabled "codeready-builder-for-rhel-8-*-rpms"
 
-if [ -f "/opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm" ]; then
+if [ ! -f "/opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm" ]; then
 curl -o /opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm https://cdn.rstudio.com/python/centos-8/pkgs/python-${PYTHON_VERSION}-1-1.x86_64.rpm
 fi
 
-if rpm -q "python-${PYTHON_VERSION}-1-1.x86_64" &> /dev/null; then
+if ! rpm -q "python-${PYTHON_VERSION}-1-1.x86_64" &> /dev/null; then
 sudo yum install -y python-${PYTHON_VERSION}-1-1.x86_64.rpm
 fi
 
@@ -43,11 +43,11 @@ ln -sf /opt/python/"${PYTHON_VERSION}"/bin/python /usr/local/bin/python
 
 ## R Installation
 
-if [ -f "/opt/work/R-${R_VERSION}-1-1.x86_64.rpm" ]; then
+if [ ! -f "/opt/work/R-${R_VERSION}-1-1.x86_64.rpm" ]; then
 curl -o /opt/work/R-${R_VERSION}-1-1.x86_64.rpm https://cdn.rstudio.com/r/centos-8/pkgs/R-${R_VERSION}-1-1.x86_64.rpm
 fi
 
-if rpm -q "R-${R_VERSION}-1-1.x86_64" &> /dev/null; then
+if ! rpm -q "R-${R_VERSION}-1-1.x86_64" &> /dev/null; then
 yum install -y R-${R_VERSION}-1-1.x86_64.rpm
 fi
 
