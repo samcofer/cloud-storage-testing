@@ -1,0 +1,22 @@
+#!/bin/bash
+
+TEST_DIRECTORIES=${@: 2:$#}
+PYTHON_VERSION=$1
+
+for DIRECTORY in $TEST_DIRECTORIES
+do
+
+rm -rf /$DIRECTORY/testuser/*
+
+usermod -d /${DIRECTORY}/testuser testuser
+su - testuser
+export PATH=/opt/python/${PYTHON_VERSION}/bin:$PATH
+/opt/scripts/pytorch.sh > /opt/results/python-testing/${DIRECTORY}1
+rm -rf ~/*
+/opt/scripts/pytorch.sh > /opt/results/python-testing/${DIRECTORY}2
+rm -rf ~/*
+/opt/scripts/pytorch.sh > /opt/results/python-testing/${DIRECTORY}3
+rm -rf ~/*
+exit
+
+done

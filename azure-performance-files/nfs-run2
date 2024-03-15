@@ -1,0 +1,6 @@
+BEGIN - Running in /sjc-test-nfs-vol/testuser
+VENV CREATE: Run duration = 00:00:20
+PIP UPDATE: Run duration = 00:00:29
+PYTORCH INSTALL: Run duration = 00:05:05
+CLEANUP: Run duration = 00:02:11
+END
