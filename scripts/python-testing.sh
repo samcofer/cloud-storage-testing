@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 TEST_DIRECTORIES=${*: 2:$#}
 PYTHON_VERSION=$1
 

@@ -1,10 +1,17 @@
 #!/bin/bash
 
+set -x
+
+
 TEST_DIRECTORIES=${*: 1:$#}
 
 for DIRECTORY in $TEST_DIRECTORIES
 do
 
+export DIRECTORY=$DIRECTORY
+mkdir -p /${DIRECTORY}/testuser/
+chmod -R 755 /${DIRECTORY}
+chown -R testuser:testuser /${DIRECTORY}
 rm -rf /${DIRECTORY}/testuser/*
 
 usermod -d /${DIRECTORY}/testuser testuser
