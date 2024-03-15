@@ -8,13 +8,13 @@ do
 rm -rf /${DIRECTORY}/testuser/*
 
 usermod -d /${DIRECTORY}/testuser testuser
-su - testuser
-/opt/scripts/fsbench.sh > /opt/results/r-testing/${DIRECTORY}1
+su - testuser <<EOF
+/opt/scripts/fsbench.sh | tee -a /opt/results/r-testing/${DIRECTORY}1
 rm -rf ~/*
-/opt/scripts/fsbench.sh > /opt/results/r-testing/${DIRECTORY}2
+/opt/scripts/fsbench.sh | tee -a /opt/results/r-testing/${DIRECTORY}2
 rm -rf ~/*
-/opt/scripts/fsbench.sh > /opt/results/r-testing/${DIRECTORY}3
+/opt/scripts/fsbench.sh | tee -a /opt/results/r-testing/${DIRECTORY}3
 rm -rf ~/*
 exit
-
+EOF
 done
