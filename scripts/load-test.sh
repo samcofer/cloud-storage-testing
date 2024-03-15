@@ -31,15 +31,15 @@ curl -O https://cdn.rstudio.com/python/centos-8/pkgs/python-${PYTHON_VERSION}-1-
 sudo yum install -y python-${PYTHON_VERSION}-1-1.x86_64.rpm
 /opt/python/"${PYTHON_VERSION}"/bin/pip install --upgrade pip setuptools wheel
 export PATH=/opt/python/"${PYTHON_VERSION}"/bin:$PATH
-ln -s /opt/python/"${PYTHON_VERSION}"/bin/pip /usr/local/bin/pip
-ln -s /opt/python/"${PYTHON_VERSION}"/bin/python /usr/local/bin/python
+ln -sf /opt/python/"${PYTHON_VERSION}"/bin/pip /usr/local/bin/pip
+ln -sf /opt/python/"${PYTHON_VERSION}"/bin/python /usr/local/bin/python
 
 ## R Installation
 
 curl -O https://cdn.rstudio.com/r/centos-8/pkgs/R-${R_VERSION}-1-1.x86_64.rpm
 yum install -y R-${R_VERSION}-1-1.x86_64.rpm
-ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
-ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
+ln -sf /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
+ln -sf /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
 # Check if the instance metadata service is reachable
 if curl -s --connect-timeout 2 http://169.254.169.254/latest/meta-data/ &> /dev/null; then
