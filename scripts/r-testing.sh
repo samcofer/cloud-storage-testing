@@ -12,8 +12,8 @@ for DIRECTORY in $TEST_DIRECTORIES
 do
 
 export DIRECTORY=$DIRECTORY
-mkdir -p /${DIRECTORY}/testuser/
 rm -rf /${DIRECTORY}/testuser/
+mkdir -p /${DIRECTORY}/testuser/
 chmod -R 755 /${DIRECTORY}
 chown -R testuser:testuser /${DIRECTORY}
 
