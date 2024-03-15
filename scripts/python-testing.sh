@@ -12,7 +12,7 @@ chown -R testuser:testuser /${DIRECTORY}
 rm -rf /${DIRECTORY}/testuser/*
 
 usermod -d /${DIRECTORY}/testuser testuser
-su - testuser
+su - testuser <<EOF
 export PATH=/opt/python/${PYTHON_VERSION}/bin:$PATH
 /opt/scripts/pytorch.sh > /opt/results/python-testing/${DIRECTORY}1
 rm -rf ~/*
@@ -21,5 +21,6 @@ rm -rf ~/*
 /opt/scripts/pytorch.sh > /opt/results/python-testing/${DIRECTORY}3
 rm -rf ~/*
 exit
+EOF
 
 done
