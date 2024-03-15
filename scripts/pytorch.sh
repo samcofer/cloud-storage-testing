@@ -1,4 +1,4 @@
-echo BEGIN - Running in $(pwd)
+echo BEGIN - Running in "$(pwd)"
 
 # =====================================
 # Set up Python virtual env for project. 
@@ -9,14 +9,14 @@ if [ -d $VENV_DIR ]; then
     START=$(date +%s)
     rm -Rf $VENV_DIR 
     END=$(date +%s)
-    echo VENV REMOVE: Run duration = $(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")
+    echo VENV REMOVE: Run duration = "$(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")"
 fi
 
 # Create venv
 START=$(date +%s)
 python -m venv $VENV_DIR
 END=$(date +%s)
-echo VENV CREATE: Run duration = $(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")
+echo VENV CREATE: Run duration = "$(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")"
 
 # =====================================
 # Activate and Update
@@ -26,7 +26,7 @@ START=$(date +%s)
 source "${VENV_DIR}/bin/activate"
 python -m pip install --quiet --upgrade pip wheel setuptools
 END=$(date +%s)
-echo PIP UPDATE: Run duration = $(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")
+echo PIP UPDATE: Run duration = "$(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")"
 
 # =====================================
 # Install Python torch package
@@ -37,7 +37,7 @@ echo PIP UPDATE: Run duration = $(date -u -d "0 $END seconds - $START seconds" +
 START=$(date +%s)
 pip install --quiet torch
 END=$(date +%s)
-echo PYTORCH INSTALL: Run duration = $(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")
+echo PYTORCH INSTALL: Run duration = "$(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")"
 
 # =====================================
 # Clean up
@@ -46,6 +46,6 @@ deactivate
 START=$(date +%s)
 rm -Rf $VENV_DIR   
 END=$(date +%s)
-echo CLEANUP: Run duration = $(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")
+echo CLEANUP: Run duration = "$(date -u -d "0 $END seconds - $START seconds" +"%H:%M:%S")"
 
 echo END

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEST_DIRECTORIES=${@: 1:$#}
+TEST_DIRECTORIES=${*: 1:$#}
 
 for DIRECTORY in $TEST_DIRECTORIES
 do
