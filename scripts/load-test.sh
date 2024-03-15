@@ -23,7 +23,7 @@ chmod -R 755 /opt/results/
 
 #Environment preparation
 
- Python Installation
+# Python Installation
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 dnf install dnf-plugins-core
 dnf config-manager --set-enabled "codeready-builder-for-rhel-8-*-rpms"
