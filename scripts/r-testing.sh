@@ -13,7 +13,7 @@ do
 
 export DIRECTORY=$DIRECTORY
 mkdir -p /${DIRECTORY}/testuser/
-rm -rf /${DIRECTORY}/testuser/*
+rm -rf /${DIRECTORY}/testuser/
 chmod -R 755 /${DIRECTORY}
 chown -R testuser:testuser /${DIRECTORY}
 
