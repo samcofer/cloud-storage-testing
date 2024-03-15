@@ -7,6 +7,8 @@ GCP_DIRECTORIES="gfs-run"
 PYTHON_VERSION=3.11.8
 R_VERSION=4.3.2
 
+yum update
+
 useradd testuser
 
 mkdir -p /opt/results/r-testing/
