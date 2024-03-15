@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 AZURE_DIRECTORIES="netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-run"
 AWS_DIRECTORIES="efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run"
 GCP_DIRECTORIES="gfs-run"
@@ -16,8 +18,6 @@ cp ./* /opt/scripts/
 chmod -R 755 /opt/scripts/ /opt/results/
 chown -R testuser:testuser /opt/results /opt/scripts
 
-cd /opt/work/
-
 #Environment preparation
 
 
@@ -26,9 +26,10 @@ yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarc
 dnf install -y dnf-plugins-core
 dnf config-manager --set-enabled "codeready-builder-for-rhel-8-*-rpms"
 
-if [ -f "./python-${PYTHON_VERSION}-1-1.x86_64.rpm" ]; then
-curl -O https://cdn.rstudio.com/python/centos-8/pkgs/python-${PYTHON_VERSION}-1-1.x86_64.rpm
+if [ -f "/opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm" ]; then
+curl -o /opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm https://cdn.rstudio.com/python/centos-8/pkgs/python-${PYTHON_VERSION}-1-1.x86_64.rpm
 fi
+
 if rpm -q "python-${PYTHON_VERSION}-1-1.x86_64" &> /dev/null; then
 sudo yum install -y python-${PYTHON_VERSION}-1-1.x86_64.rpm
 fi
@@ -40,9 +41,11 @@ ln -sf /opt/python/"${PYTHON_VERSION}"/bin/pip /usr/local/bin/pip
 ln -sf /opt/python/"${PYTHON_VERSION}"/bin/python /usr/local/bin/python
 
 ## R Installation
-if [ -f "./R-${R_VERSION}-1-1.x86_64.rpm" ]; then
-curl -O https://cdn.rstudio.com/r/centos-8/pkgs/R-${R_VERSION}-1-1.x86_64.rpm
+
+if [ -f "/opt/work/R-${R_VERSION}-1-1.x86_64.rpm" ]; then
+curl -o /opt/work/R-${R_VERSION}-1-1.x86_64.rpm https://cdn.rstudio.com/r/centos-8/pkgs/R-${R_VERSION}-1-1.x86_64.rpm
 fi
+
 if rpm -q "R-${R_VERSION}-1-1.x86_64" &> /dev/null; then
 yum install -y R-${R_VERSION}-1-1.x86_64.rpm
 fi
