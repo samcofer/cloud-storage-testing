@@ -14,7 +14,7 @@ yum update
 useradd testuser
 
 mkdir -p /opt/results/r-testing/ /opt/results/python-testing/ /opt/results/io-testing/ /opt/scripts/ /opt/work/
-cp ./* /opt/scripts/
+cp ./*.sh /opt/scripts/
 chmod -R 755 /opt/scripts/ /opt/results/
 chown -R testuser:testuser /opt/results /opt/scripts
 
