@@ -6,7 +6,10 @@ PYTHON_VERSION=$1
 for DIRECTORY in $TEST_DIRECTORIES
 do
 
-rm -rf /$DIRECTORY/testuser/*
+mkdir -p /${DIRECTORY}/testuser/
+chmod -R 755 /${DIRECTORY}
+chown -R testuser:testuser /${DIRECTORY}
+rm -rf /${DIRECTORY}/testuser/*
 
 usermod -d /${DIRECTORY}/testuser testuser
 su - testuser

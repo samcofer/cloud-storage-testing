@@ -9,7 +9,7 @@ GCP_DIRECTORIES="gfs-run"
 PYTHON_VERSION=3.11.8
 R_VERSION=4.3.2
 
-yum update
+yum update -y -q
 
 useradd testuser
 
