@@ -27,6 +27,7 @@ if ! rpm -q "epel-release-*" &> /dev/null; then
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 dnf install -y dnf-plugins-core
 fi
+
 dnf config-manager --set-enabled "codeready-builder-for-rhel-8-*-rpms"
 
 if [ ! -f "/opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm" ]; then
