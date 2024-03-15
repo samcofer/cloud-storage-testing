@@ -74,8 +74,8 @@ else
     return
 fi
 
-./python-testing.sh $PYTHON_VERSION "$DIRECTORIES"
+#./python-testing.sh $PYTHON_VERSION "$DIRECTORIES"
 #
-#./r-testing.sh "$DIRECTORIES"
+./r-testing.sh "$DIRECTORIES"
 #
 #./io-testing.sh "$DIRECTORIES"

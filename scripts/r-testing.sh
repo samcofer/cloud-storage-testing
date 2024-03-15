@@ -5,6 +5,9 @@ set -x
 
 TEST_DIRECTORIES=${*: 1:$#}
 
+# sudoers edit is required for testuser to run sudo make -C tools install
+echo "testuser ALL=(ALL) NOPASSWD: /usr/bin/make *" >> /etc/sudoers
+
 for DIRECTORY in $TEST_DIRECTORIES
 do
 
@@ -25,3 +28,5 @@ rm -rf ~/*
 exit
 EOF
 done
+
+sudo sed -i '$d' /etc/sudoers
