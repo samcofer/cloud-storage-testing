@@ -11,33 +11,42 @@ yum update
 
 useradd testuser
 
-mkdir -p /opt/results/r-testing/
-mkdir -p /opt/results/python-testing/
-mkdir -p /opt/results/io-testing/
-mkdir -p /opt/scripts/
+mkdir -p /opt/results/r-testing/ /opt/results/python-testing/ /opt/results/io-testing/ /opt/scripts/ /opt/work/
 cp ./* /opt/scripts/
-chmod -R 755 /opt/scripts/
-chown -R testuser:testuser /opt/results
-chown -R testuser:testuser /opt/scripts
-chmod -R 755 /opt/results/
+chmod -R 755 /opt/scripts/ /opt/results/
+chown -R testuser:testuser /opt/results /opt/scripts
+
+cd /opt/work/
 
 #Environment preparation
+
 
 # Python Installation
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 dnf install -y dnf-plugins-core
 dnf config-manager --set-enabled "codeready-builder-for-rhel-8-*-rpms"
+
+if [ -f "./python-${PYTHON_VERSION}-1-1.x86_64.rpm" ]; then
 curl -O https://cdn.rstudio.com/python/centos-8/pkgs/python-${PYTHON_VERSION}-1-1.x86_64.rpm
+fi
+if rpm -q "python-${PYTHON_VERSION}-1-1.x86_64" &> /dev/null; then
 sudo yum install -y python-${PYTHON_VERSION}-1-1.x86_64.rpm
+fi
+
 /opt/python/"${PYTHON_VERSION}"/bin/pip install --upgrade pip setuptools wheel
+
 export PATH=/opt/python/"${PYTHON_VERSION}"/bin:$PATH
 ln -sf /opt/python/"${PYTHON_VERSION}"/bin/pip /usr/local/bin/pip
 ln -sf /opt/python/"${PYTHON_VERSION}"/bin/python /usr/local/bin/python
 
 ## R Installation
-
+if [ -f "./R-${R_VERSION}-1-1.x86_64.rpm" ]; then
 curl -O https://cdn.rstudio.com/r/centos-8/pkgs/R-${R_VERSION}-1-1.x86_64.rpm
+fi
+if rpm -q "R-${R_VERSION}-1-1.x86_64" &> /dev/null; then
 yum install -y R-${R_VERSION}-1-1.x86_64.rpm
+fi
+
 ln -sf /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
 ln -sf /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
