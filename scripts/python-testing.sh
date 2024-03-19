@@ -16,11 +16,11 @@ rm -rf /${DIRECTORY}/testuser/*
 usermod -d /${DIRECTORY}/testuser testuser
 su - testuser <<EOF
 export PATH=/opt/python/${PYTHON_VERSION}/bin:$PATH
-/opt/scripts/pytorch.sh | tee -a /opt/results/python-testing/${DIRECTORY}1
+/opt/scripts/pytorch.sh | tee -a /opt/results/python-testing/${DIRECTORY}1-pytorch-install
 rm -rf ~/*
-/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}2
+/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}2-pytorch-install
 rm -rf ~/*
-/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}3
+/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}3-pytorch-install
 rm -rf ~/*
 exit
 EOF

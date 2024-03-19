@@ -20,11 +20,11 @@ chown -R testuser:testuser /${DIRECTORY}
 
 usermod -d /${DIRECTORY}/testuser testuser
 su - testuser <<EOF
-/opt/scripts/fsbench.sh /opt/results/r-testing/${DIRECTORY} | tee -a /opt/results/r-testing/${DIRECTORY}1
+/opt/scripts/fsbench.sh /opt/results/r-testing/${DIRECTORY} | tee -a /opt/results/r-testing/${DIRECTORY}1-fsbench
 rm -rf ~/*
-/opt/scripts/fsbench.sh /opt/results/r-testing/${DIRECTORY} | tee -a /opt/results/r-testing/${DIRECTORY}2
+/opt/scripts/fsbench.sh /opt/results/r-testing/${DIRECTORY} | tee -a /opt/results/r-testing/${DIRECTORY}2-fsbench
 rm -rf ~/*
-/opt/scripts/fsbench.sh /opt/results/r-testing/${DIRECTORY} | tee -a /opt/results/r-testing/${DIRECTORY}3
+/opt/scripts/fsbench.sh /opt/results/r-testing/${DIRECTORY} | tee -a /opt/results/r-testing/${DIRECTORY}3-fsbench
 rm -rf ~/*
 exit
 EOF

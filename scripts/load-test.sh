@@ -12,6 +12,8 @@ R_VERSION=4.3.2
 
 yum update -y -q
 
+yum install -y libpq
+
 useradd testuser
 
 mkdir -p /opt/results/r-testing/ /opt/results/python-testing/ /opt/results/io-testing/ /opt/scripts/ /opt/work/
@@ -82,3 +84,5 @@ fi
 ./r-testing.sh "$DIRECTORIES"
 #
 ./io-testing.sh "$DIRECTORIES"
+
+./app-testing.sh "$DIRECTORIES"
