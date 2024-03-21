@@ -18,9 +18,9 @@ su - testuser <<EOF
 export PATH=/opt/python/${PYTHON_VERSION}/bin:$PATH
 /opt/scripts/pytorch.sh | tee -a /opt/results/python-testing/${DIRECTORY}1-pytorch-install
 rm -rf ~/*
-#/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}2-pytorch-install
+/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}2-pytorch-install
 rm -rf ~/*
-#/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}3-pytorch-install
+/opt/scripts/pytorch.sh | tee -a  /opt/results/python-testing/${DIRECTORY}3-pytorch-install
 rm -rf ~/*
 exit
 EOF
