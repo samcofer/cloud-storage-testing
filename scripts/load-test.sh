@@ -16,7 +16,7 @@ yum install -y libpq
 
 useradd testuser
 
-mkdir -p /opt/results/r-testing/ /opt/results/python-testing/ /opt/results/io-testing/ /opt/scripts/ /opt/work/
+mkdir -p /opt/results/r-testing/ /opt/results/python-testing/ /opt/results/io-testing/ /opt/results/app-testing/ /opt/scripts/ /opt/work/
 cp ./*.sh /opt/scripts/
 chmod -R 755 /opt/scripts/ /opt/results/
 chown -R testuser:testuser /opt/results /opt/scripts
@@ -37,7 +37,7 @@ curl -o /opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm https://cdn.rstudio.co
 fi
 
 if ! rpm -q "python-${PYTHON_VERSION}-1-1.x86_64" &> /dev/null; then
-sudo yum install -y python-${PYTHON_VERSION}-1-1.x86_64.rpm
+yum install -y /opt/work/python-${PYTHON_VERSION}-1-1.x86_64.rpm
 fi
 
 /opt/python/"${PYTHON_VERSION}"/bin/pip install --upgrade pip setuptools wheel
@@ -53,7 +53,7 @@ curl -o /opt/work/R-${R_VERSION}-1-1.x86_64.rpm https://cdn.rstudio.com/r/centos
 fi
 
 if ! rpm -q "R-${R_VERSION}-1-1.x86_64" &> /dev/null; then
-yum install -y R-${R_VERSION}-1-1.x86_64.rpm
+yum install -y /opt/work/R-${R_VERSION}-1-1.x86_64.rpm
 fi
 
 ln -sf /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
@@ -80,9 +80,9 @@ else
 fi
 
 ./python-testing.sh $PYTHON_VERSION "$DIRECTORIES"
-#
+
 ./r-testing.sh "$DIRECTORIES"
-#
+
 ./io-testing.sh "$DIRECTORIES"
 
 ./app-testing.sh "$DIRECTORIES"
