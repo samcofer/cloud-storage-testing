@@ -25,3 +25,5 @@ mount -t efs fs-0520054dd6a022e3d /efs-regional-run/
 df -h
 cd /opt || exit
 git clone https://github.com/samcofer/cloud-storage-testing
+cd cloud-storage-testing/scripts/
+./load-test.sh
