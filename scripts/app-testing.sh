@@ -11,7 +11,7 @@ do
 touch /${DIRECTORY}/testfile
 /opt/cloud-storage-testing/bin/locktester /${DIRECTORY}/testfile &
 spawned_pid=$!
-timeout 10s ../bin/locktester /${DIRECTORY}/testfile | tee -a /opt/results/app-testing/${DIRECTORY}-lock-testing
+timeout 10s /opt/cloud-storage-testing/bin/locktester /${DIRECTORY}/testfile | tee -a /opt/results/app-testing/${DIRECTORY}-lock-testing
 kill -9 $spawned_pid
 
 # Test extended ACLs
