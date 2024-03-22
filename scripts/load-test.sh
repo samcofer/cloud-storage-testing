@@ -3,7 +3,7 @@
 set -x
 
 AZURE_DIRECTORIES="netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-run"
-AWS_DIRECTORIES="efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run"
+AWS_DIRECTORIES="ebs-local-storage-run efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run rhel8-nfs-same-subnet-run"
 #AWS_DIRECTORIES="efs-single-zone-run efs-regional-run same-az-lustre-run"
 GCP_DIRECTORIES="gfs-run"
 
