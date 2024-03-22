@@ -17,9 +17,9 @@ kill -9 $spawned_pid
 # Test extended ACLs
 
 if setfacl -m u:ec2-user:x /${DIRECTORY}/testfile; then
-  echo "File locks are supported" > /opt/results/app-testing/${DIRECTORY}-extended-acl-supported
+  echo "Extended ACLs are supported" > /opt/results/app-testing/${DIRECTORY}-extended-acl-supported
 else
-  echo "File locks are not supported" > /opt/results/app-testing/${DIRECTORY}-no-extended-acl-support
+  echo "Extended ACLs are not supported" > /opt/results/app-testing/${DIRECTORY}-no-extended-acl-support
 fi
 
 done
