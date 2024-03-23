@@ -1,0 +1,43 @@
+{
+    "FileSystems": [
+        {
+            "OwnerId": "637485797898",
+            "CreationTime": "2024-03-20T16:54:34.201000-05:00",
+            "FileSystemId": "fs-0ce5beec032a8d3f5",
+            "FileSystemType": "OPENZFS",
+            "Lifecycle": "AVAILABLE",
+            "StorageCapacity": 1024,
+            "StorageType": "SSD",
+            "VpcId": "vpc-0a451d800cba4446f",
+            "SubnetIds": [
+                "subnet-044776880a993f3fa"
+            ],
+            "NetworkInterfaceIds": [
+                "eni-05fc2759d25ea2b8b"
+            ],
+            "DNSName": "fs-0ce5beec032a8d3f5.fsx.us-east-2.amazonaws.com",
+            "KmsKeyId": "arn:aws:kms:us-east-2:637485797898:key/8b32aa29-657f-4a7f-9558-2d167eb43e67",
+            "ResourceARN": "arn:aws:fsx:us-east-2:637485797898:file-system/fs-0ce5beec032a8d3f5",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "perf-test-zfs-single-az"
+                }
+            ],
+            "OpenZFSConfiguration": {
+                "AutomaticBackupRetentionDays": 30,
+                "CopyTagsToBackups": false,
+                "CopyTagsToVolumes": false,
+                "DailyAutomaticBackupStartTime": "04:00",
+                "DeploymentType": "SINGLE_AZ_2",
+                "ThroughputCapacity": 1280,
+                "WeeklyMaintenanceStartTime": "5:03:30",
+                "DiskIopsConfiguration": {
+                    "Mode": "USER_PROVISIONED",
+                    "Iops": 5000
+                },
+                "RootVolumeId": "fsvol-0ca16ea1347df9fed"
+            }
+        }
+    ]
+}

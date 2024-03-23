@@ -1,0 +1,166 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-092b43193629811af",
+                    "InstanceId": "i-0c92554434794c028",
+                    "InstanceType": "c5.12xlarge",
+                    "KeyName": "samcofer-team",
+                    "LaunchTime": "2024-03-22T17:36:19+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-162-70.us-east-2.compute.internal",
+                    "PrivateIpAddress": "10.0.162.70",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-3-145-64-73.us-east-2.compute.amazonaws.com",
+                    "PublicIpAddress": "3.145.64.73",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-044776880a993f3fa",
+                    "VpcId": "vpc-0a451d800cba4446f",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2024-03-22T17:36:19+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-08da1d8b5c1c464c7"
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20240322173619380800000001",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::637485797898:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "AIPAZI3I5KIFE6G3PLQQE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-3-145-64-73.us-east-2.compute.amazonaws.com",
+                                "PublicIp": "3.145.64.73"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2024-03-22T17:36:19+00:00",
+                                "AttachmentId": "eni-attach-0f1937a298d39919d",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "posit-sg-RHEL8-4fbea97",
+                                    "GroupId": "sg-08da40b859bfbab41"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:78:dd:98:0d:97",
+                            "NetworkInterfaceId": "eni-01da3f375ec660404",
+                            "OwnerId": "637485797898",
+                            "PrivateDnsName": "ip-10-0-162-70.us-east-2.compute.internal",
+                            "PrivateIpAddress": "10.0.162.70",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-3-145-64-73.us-east-2.compute.amazonaws.com",
+                                        "PublicIp": "3.145.64.73"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-162-70.us-east-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.162.70"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-044776880a993f3fa",
+                            "VpcId": "vpc-0a451d800cba4446f",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "posit-sg-RHEL8-4fbea97",
+                            "GroupId": "sg-08da40b859bfbab41"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "rs:environment",
+                            "Value": "infrastructure"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "samcofer-RHEL8-vm-0"
+                        },
+                        {
+                            "Key": "rs:owner",
+                            "Value": "sam.cofer@posit.co"
+                        },
+                        {
+                            "Key": "rs:project",
+                            "Value": "internal"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 24,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Red Hat Enterprise Linux",
+                    "UsageOperation": "RunInstances:0010",
+                    "UsageOperationUpdateTime": "2024-03-22T17:36:19+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "637485797898",
+            "ReservationId": "r-0dd2fac4595bff17a"
+        }
+    ]
+}

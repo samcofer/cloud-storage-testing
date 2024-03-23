@@ -1,0 +1,49 @@
+{
+    "FileSystems": [
+        {
+            "OwnerId": "637485797898",
+            "CreationTime": "2024-03-19T17:03:09.617000-05:00",
+            "FileSystemId": "fs-0e557c8d845402e8a",
+            "FileSystemType": "LUSTRE",
+            "Lifecycle": "AVAILABLE",
+            "StorageCapacity": 1200,
+            "StorageType": "SSD",
+            "VpcId": "vpc-0a451d800cba4446f",
+            "SubnetIds": [
+                "subnet-08320aef736ee9a0f"
+            ],
+            "NetworkInterfaceIds": [
+                "eni-04a002ee5c874b56c",
+                "eni-0a848b1140efb7bac"
+            ],
+            "DNSName": "fs-0e557c8d845402e8a.fsx.us-east-2.amazonaws.com",
+            "KmsKeyId": "arn:aws:kms:us-east-2:637485797898:key/8b32aa29-657f-4a7f-9558-2d167eb43e67",
+            "ResourceARN": "arn:aws:fsx:us-east-2:637485797898:file-system/fs-0e557c8d845402e8a",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "perf-test-cross-az"
+                }
+            ],
+            "LustreConfiguration": {
+                "WeeklyMaintenanceStartTime": "5:08:00",
+                "DeploymentType": "PERSISTENT_2",
+                "PerUnitStorageThroughput": 1000,
+                "MountName": "mfxbdbev",
+                "DailyAutomaticBackupStartTime": "10:00",
+                "AutomaticBackupRetentionDays": 30,
+                "CopyTagsToBackups": false,
+                "DataCompressionType": "NONE",
+                "LogConfiguration": {
+                    "Level": "WARN_ERROR",
+                    "Destination": "arn:aws:logs:us-east-2:637485797898:log-group:/aws/fsx/lustre:log-stream:datarepo_fs-0e557c8d845402e8a"
+                },
+                "RootSquashConfiguration": {
+                    "RootSquash": "0:0",
+                    "NoSquashNids": []
+                }
+            },
+            "FileSystemTypeVersion": "2.15"
+        }
+    ]
+}

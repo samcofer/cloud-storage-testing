@@ -1,0 +1,34 @@
+{
+    "FileSystems": [
+        {
+            "OwnerId": "637485797898",
+            "CreationToken": "quickCreated-a28db5e9-6891-44ae-aa08-8f79cdc77019",
+            "FileSystemId": "fs-0520054dd6a022e3d",
+            "FileSystemArn": "arn:aws:elasticfilesystem:us-east-2:637485797898:file-system/fs-0520054dd6a022e3d",
+            "CreationTime": "2024-03-08T16:28:55-06:00",
+            "LifeCycleState": "available",
+            "Name": "sjc-latency-test",
+            "NumberOfMountTargets": 1,
+            "SizeInBytes": {
+                "Value": 848160768,
+                "Timestamp": "2024-03-22T12:47:07-05:00",
+                "ValueInIA": 0,
+                "ValueInStandard": 848160768
+            },
+            "PerformanceMode": "generalPurpose",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-2:637485797898:key/ced9fcd6-8524-4c28-9bfa-d1ddbf2c0a3a",
+            "ThroughputMode": "elastic",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "sjc-latency-test"
+                },
+                {
+                    "Key": "aws:elasticfilesystem:default-backup",
+                    "Value": "enabled"
+                }
+            ]
+        }
+    ]
+}
