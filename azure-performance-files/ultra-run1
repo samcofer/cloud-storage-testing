@@ -1,7 +1,0 @@
-BEGIN - Running in /sjc-test-ultra-vol/testuser
-VENV REMOVE: Run duration = 00:00:13
-VENV CREATE: Run duration = 00:00:09
-PIP UPDATE: Run duration = 00:00:11
-PYTORCH INSTALL: Run duration = 00:02:03
-CLEANUP: Run duration = 00:00:15
-END

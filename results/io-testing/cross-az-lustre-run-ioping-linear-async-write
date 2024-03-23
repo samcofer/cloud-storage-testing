@@ -1,5 +1,0 @@
-
---- /cross-az-lustre-run (lustre 10.0.235.141@tcp:/mfxbdbev) ioping statistics ---
-2.27 k requests completed in 29.5 s, 568 MiB written, 76 iops, 19.2 MiB/s
-generated 2.27 k requests in 30.0 s, 568.2 MiB, 75 iops, 18.9 MiB/s
-min/avg/max/mdev = 7.67 ms / 13.0 ms / 26.8 ms / 1.59 ms

@@ -1,5 +1,0 @@
-
---- /same-az-zfs-run (nfs4 fs-0ce5beec032a8d3f5.fsx.us-east-2.amazonaws.com:/fsx) ioping statistics ---
-77.6 k requests completed in 28.4 s, 18.9 GiB read, 2.73 k iops, 682.1 MiB/s
-generated 77.6 k requests in 30.0 s, 18.9 GiB, 2.58 k iops, 646.4 MiB/s
-min/avg/max/mdev = 301.4 us / 366.5 us / 965.2 us / 52.0 us

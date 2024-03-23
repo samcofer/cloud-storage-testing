@@ -1,6 +1,0 @@
-BEGIN - Running in /same-az-lustre-run/testuser
-VENV CREATE: Run duration = 7741 milliseconds
-PIP UPDATE: Run duration = 4423 milliseconds
-PYTORCH INSTALL: Run duration = 205103 milliseconds
-CLEANUP: Run duration = 8976 milliseconds
-END

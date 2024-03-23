@@ -1,5 +1,0 @@
-
---- /same-az-lustre-run (lustre 10.0.170.255@tcp:/vrkbdbev) ioping statistics ---
-12.9 k requests completed in 29.1 s, 3.14 GiB read, 442 iops, 110.7 MiB/s
-generated 12.9 k requests in 30.0 s, 3.14 GiB, 429 iops, 107.3 MiB/s
-min/avg/max/mdev = 625.0 us / 2.26 ms / 5.71 ms / 826.7 us

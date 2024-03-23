@@ -1,5 +1,0 @@
-
---- /ebs-local-storage-run (xfs /dev/nvme0n1p2) ioping statistics ---
-22.6 k requests completed in 29.1 s, 5.52 GiB read, 778 iops, 194.6 MiB/s
-generated 22.6 k requests in 30.0 s, 5.52 GiB, 754 iops, 188.5 MiB/s
-min/avg/max/mdev = 397.7 us / 1.28 ms / 4.54 ms / 184.2 us

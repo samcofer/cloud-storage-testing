@@ -1,6 +1,0 @@
-BEGIN - Running in /ebs-local-storage-run/testuser
-VENV CREATE: Run duration = 3059 milliseconds
-PIP UPDATE: Run duration = 1431 milliseconds
-PYTORCH INSTALL: Run duration = 217549 milliseconds
-CLEANUP: Run duration = 1466 milliseconds
-END

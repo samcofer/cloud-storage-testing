@@ -1,6 +1,0 @@
-BEGIN - Running in /rhel8-nfs-same-subnet-run/testuser
-VENV CREATE: Run duration = 11737 milliseconds
-PIP UPDATE: Run duration = 5927 milliseconds
-PYTORCH INSTALL: Run duration = 162704 milliseconds
-CLEANUP: Run duration = 32631 milliseconds
-END
