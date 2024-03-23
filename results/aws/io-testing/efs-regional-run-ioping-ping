@@ -1,0 +1,55 @@
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=1 time=2.95 ms (warmup)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=2 time=4.20 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=3 time=3.40 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=4 time=3.38 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=5 time=3.02 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=6 time=2.99 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=7 time=3.04 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=8 time=3.15 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=9 time=3.11 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=10 time=3.79 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=11 time=2.94 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=12 time=3.35 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=13 time=2.75 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=14 time=2.96 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=15 time=3.04 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=16 time=3.06 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=17 time=1.11 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=18 time=3.40 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=19 time=3.00 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=20 time=2.89 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=21 time=2.98 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=22 time=2.67 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=23 time=2.83 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=24 time=3.24 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=25 time=2.80 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=26 time=2.93 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=27 time=940.8 us (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=28 time=3.20 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=29 time=2.93 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=30 time=3.17 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=31 time=2.81 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=32 time=3.20 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=33 time=2.98 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=34 time=2.87 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=35 time=2.92 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=36 time=1.03 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=37 time=1.14 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=38 time=2.82 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=39 time=3.01 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=40 time=2.99 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=41 time=2.83 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=42 time=2.97 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=43 time=2.95 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=44 time=1.06 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=45 time=1.07 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=46 time=3.45 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=47 time=3.08 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=48 time=1.02 ms (fast)
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=49 time=1.11 ms
+4 KiB <<< /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/): request=50 time=1.12 ms
+
+--- /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/) ioping statistics ---
+49 requests completed in 132.7 ms, 196 KiB read, 369 iops, 1.44 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 940.8 us / 2.71 ms / 4.20 ms / 820.1 us

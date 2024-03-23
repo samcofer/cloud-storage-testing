@@ -1,0 +1,6 @@
+BEGIN - Running in /cross-az-lustre-run/testuser
+VENV CREATE: Run duration = 17936 milliseconds
+PIP UPDATE: Run duration = 9798 milliseconds
+PYTORCH INSTALL: Run duration = 201878 milliseconds
+CLEANUP: Run duration = 29426 milliseconds
+END

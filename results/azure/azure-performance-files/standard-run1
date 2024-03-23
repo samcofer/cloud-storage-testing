@@ -1,0 +1,6 @@
+BEGIN - Running in /sjc-test-standard-vol/testuser
+VENV CREATE: Run duration = 00:00:09
+PIP UPDATE: Run duration = 00:00:12
+PYTORCH INSTALL: Run duration = 00:05:02
+CLEANUP: Run duration = 00:00:15
+END

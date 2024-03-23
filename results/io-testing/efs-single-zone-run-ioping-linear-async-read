@@ -1,0 +1,5 @@
+
+--- /efs-single-zone-run (nfs4 fs-0464a88d835ac9b33.efs.us-east-2.amazonaws.com:/) ioping statistics ---
+20.0 k requests completed in 29.5 s, 4.89 GiB read, 678 iops, 169.7 MiB/s
+generated 20.0 k requests in 30.0 s, 4.89 GiB, 667 iops, 166.9 MiB/s
+min/avg/max/mdev = 1.05 ms / 1.47 ms / 23.3 ms / 929.5 us

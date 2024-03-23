@@ -1,0 +1,5 @@
+
+--- /rhel8-nfs-same-subnet-run (nfs4 10.0.162.70:/nfs-dir) ioping statistics ---
+69.4 k requests completed in 28.7 s, 16.9 GiB read, 2.42 k iops, 604.6 MiB/s
+generated 69.4 k requests in 30.0 s, 16.9 GiB, 2.31 k iops, 578.2 MiB/s
+min/avg/max/mdev = 299.1 us / 413.5 us / 1.02 ms / 53.5 us

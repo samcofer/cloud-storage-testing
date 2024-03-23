@@ -1,0 +1,6 @@
+BEGIN - Running in /efs-single-zone-run/testuser
+VENV CREATE: Run duration = 22507 milliseconds
+PIP UPDATE: Run duration = 11729 milliseconds
+PYTORCH INSTALL: Run duration = 265267 milliseconds
+CLEANUP: Run duration = 64452 milliseconds
+END

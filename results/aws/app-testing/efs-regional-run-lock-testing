@@ -1,0 +1,12 @@
+Posit Workbench Lock Test
+---------------------------
+Host: ip-10-0-191-172.us-east-2.compute.internal
+Lock type: Link-based
+User: root
+File: /efs-regional-run/testfile
+
+* Acquired advisory lock
+* Unable to acquire link-based lock 
+
+
+Your filesystem appears to support link-based locks.
