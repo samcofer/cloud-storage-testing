@@ -4,7 +4,7 @@ uname -a
 cd /opt || exit
 git clone https://github.com/aws/efs-utils
 cd efs-utils/ || exit
-yum install -y make rpm-build wget nfs-utils
+yum install -y make rpm-build wget nfs-utils ioping
 make rpm
 yum -y install ./build/amazon-efs-utils*rpm
 if [[ "$(python3 -V 2>&1)" =~ ^(Python 3.6.*) ]]; then sudo wget https://bootstrap.pypa.io/pip/3.6/get-pip.py -O /tmp/get-pip.py; elif [[ "$(python3 -V 2>&1)" =~ ^(Python 3.5.*) ]]; then sudo wget https://bootstrap.pypa.io/pip/3.5/get-pip.py -O /tmp/get-pip.py; elif [[ "$(python3 -V 2>&1)" =~ ^(Python 3.4.*) ]]; then sudo wget https://bootstrap.pypa.io/pip/3.4/get-pip.py -O /tmp/get-pip.py; else sudo wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; fi
@@ -14,8 +14,6 @@ mkdir /efs-single-zone-run /efs-regional-run /same-az-lustre-run /cross-az-lustr
 curl https://fsx-lustre-client-repo-public-keys.s3.amazonaws.com/fsx-rpm-public-key.asc -o /tmp/fsx-rpm-public-key.asc
 sudo rpm --import /tmp/fsx-rpm-public-key.asc
 sudo curl https://fsx-lustre-client-repo.s3.amazonaws.com/el/8/fsx-lustre-client.repo -o /etc/yum.repos.d/aws-fsx.repo
-wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.rpm
-yum install -y ./mount-s3.rpm
 reboot
 #Reconnect here to make sure you're on the latest rhel 8 kernel
 yum install -y kmod-lustre-client lustre-client
@@ -25,7 +23,6 @@ mount -t nfs -o noatime,nfsvers=4.2,sync,nconnect=16,rsize=1048576,wsize=1048576
 mount -t efs fs-0464a88d835ac9b33 /efs-single-zone-run/
 mount -t efs fs-0520054dd6a022e3d /efs-regional-run/
 mount -t nfs 10.0.162.70:/nfs-dir /rhel8-nfs-same-subnet-run
-mount-s3 sjctestbucket /s3-bucket-mountpoint-run/
 df -h
 cd /opt || exit
 git clone https://github.com/samcofer/cloud-storage-testing
