@@ -21,7 +21,7 @@ vgcreate azureSANvg /dev/mapper/mpathb
 lvcreate -n azureSANvol -L4500G /dev/azureSANvg
 mkfs.ext4 /dev/azureSANvg/azureSANvol
 mount /dev/azureSANvg/azureSANvol /elastic-san-same-zone-run/
-mkdir /netapp-standard-run /netapp-premium-run /netapp-ultra-run /storage-acct-azure-files-run /elastic-san-same-zone-run /local-storage-premium-ssd-lrs-run
+mkdir /netapp-standard-run /netapp-premium-run /netapp-ultra-run /storage-acct-azure-files-run /elastic-san-same-zone-run /managed-disk-local-storage-premium-ssd-lrs-run
 mount -t nfs -o rw,hard,rsize=262144,wsize=262144,sec=sys,vers=4.1,tcp 10.11.11.4:/sjc-netapp-standard-vol /netapp-standard-run
 mount -t nfs -o rw,hard,rsize=262144,wsize=262144,sec=sys,vers=4.1,tcp 10.11.11.5:/sjc-netapp-premium-vol /netapp-premium-run
 mount -t nfs -o rw,hard,rsize=262144,wsize=262144,sec=sys,vers=4.1,tcp 10.11.11.5:/sjc-netapp-ultra-vol /netapp-ultra-run
