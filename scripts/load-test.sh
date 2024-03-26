@@ -2,7 +2,7 @@
 
 set -x
 
-AZURE_DIRECTORIES="netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-run"
+AZURE_DIRECTORIES="managed-disk-local-storage-premium-ssd-lrs-run netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-azure-files-run elastic-san-same-zone-run"
 AWS_DIRECTORIES="ebs-local-storage-run efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run rhel8-nfs-same-subnet-run"
 #AWS_DIRECTORIES="efs-single-zone-run efs-regional-run same-az-lustre-run"
 GCP_DIRECTORIES="gfs-run"
@@ -60,11 +60,12 @@ ln -sf /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
 ln -sf /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
 # Check if the instance metadata service is reachable
-if curl -s --connect-timeout 2 http://169.254.169.254/latest/meta-data/ &> /dev/null; then
+if curl -s -o /dev/null -w "%{http_code}" 'http://169.254.169.254/latest/meta-data/' > /dev/null == 200; then
     # Instance metadata service is reachable, assume running in AWS
     echo "Running in AWS environment."
     DIRECTORIES=$AWS_DIRECTORIES
-elif curl -s --connect-timeout 2 -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2021-02-01" &> /dev/null; then
+
+elif curl -s -o /dev/null -H Metadata:true -w "%{http_code}" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" == 200; then
     # Azure Metadata Service is reachable, assume running in Azure
     echo "Running in Azure environment."
     DIRECTORIES=$AZURE_DIRECTORIES
