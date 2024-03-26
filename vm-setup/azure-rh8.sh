@@ -3,7 +3,7 @@ yum update -y
 uname -a
 cd /opt || exit
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-yum install -y make rpm-build wget nfs-utils ioping iscsi-initiator-utils device-mapper-multipath python3.11
+yum install -y make rpm-build wget nfs-utils ioping iscsi-initiator-utils device-mapper-multipath python3.11 git
 mpathconf --enable
 
 vi multipath.conf

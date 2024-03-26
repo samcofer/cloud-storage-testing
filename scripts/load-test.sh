@@ -59,25 +59,26 @@ fi
 ln -sf /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
 ln -sf /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
+azure-code =
+
 # Check if the instance metadata service is reachable
-if curl -s -o /dev/null -w "%{http_code}" 'http://169.254.169.254/latest/meta-data/' > /dev/null == 200; then
+if [ "$(curl -s --connect-timeout 2 -o /dev/null -w "%{http_code}" http://169.254.169.254/latest/meta-data/)" == "200" ]; then
     # Instance metadata service is reachable, assume running in AWS
     echo "Running in AWS environment."
     DIRECTORIES=$AWS_DIRECTORIES
 
-elif curl -s -o /dev/null -H Metadata:true -w "%{http_code}" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" == 200; then
+elif [ "$(curl -s --connect-timeout 2 -o /dev/null -H Metadata:true -w "%{http_code}" http://169.254.169.254/metadata/instance?api-version=2021-02-01)" == "200" ]; then
     # Azure Metadata Service is reachable, assume running in Azure
     echo "Running in Azure environment."
     DIRECTORIES=$AZURE_DIRECTORIES
 
-elif curl -s --connect-timeout 2 "http://metadata.google.internal/computeMetadata/v1/instance/" -H "Metadata-Flavor: Google" &> /dev/null; then
+elif [ "$(curl -s --connect-timeout 2 http://metadata.google.internal/computeMetadata/v1/instance/ -H "Metadata-Flavor: Google")" == "200" ]; then
     # GCP metadata service is reachable, assume running in GCP
     echo "Running in GCP environment."
     DIRECTORIES=$GCP_DIRECTORIES
 else
     # No metadata service reachable, assume not running in any known cloud environment
     echo "Not running in AWS, Azure, or GCP environment."
-    return
 fi
 
 #./python-testing.sh $PYTHON_VERSION "$DIRECTORIES"
