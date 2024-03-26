@@ -1,0 +1,5 @@
+
+--- /efs-regional-run (nfs4 fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/) ioping statistics ---
+17.0 k requests completed in 29.5 s, 4.15 GiB read, 577 iops, 144.3 MiB/s
+generated 17.0 k requests in 30.0 s, 4.15 GiB, 566 iops, 141.7 MiB/s
+min/avg/max/mdev = 1.18 ms / 1.73 ms / 25.5 ms / 785.0 us
