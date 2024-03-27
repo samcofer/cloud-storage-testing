@@ -18,7 +18,7 @@ kill -9 $spawned_pid
 
 # Test extended ACLs
 
-if setfacl -m u:ec2-user:x /${DIRECTORY}/testfile; then
+if setfacl -m u:testuser:x /${DIRECTORY}/testfile; then
   echo "Extended ACLs are supported" > /opt/results/app-testing/${DIRECTORY}-extended-acl-support
 else
   echo "Extended ACLs are not supported" > /opt/results/app-testing/${DIRECTORY}-extended-acl-support
