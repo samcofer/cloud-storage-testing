@@ -1,0 +1,6 @@
+BEGIN - Running in /managed-disk-local-storage-premium-ssd-lrs-run/testuser
+VENV CREATE: Run duration = 3194 milliseconds
+PIP UPDATE: Run duration = 1200 milliseconds
+PYTORCH INSTALL: Run duration = 88237 milliseconds
+CLEANUP: Run duration = 863 milliseconds
+END

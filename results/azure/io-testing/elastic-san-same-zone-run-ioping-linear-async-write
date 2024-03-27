@@ -1,0 +1,5 @@
+
+--- /elastic-san-same-zone-run (ext4 /dev/dm-6) ioping statistics ---
+5.98 k requests completed in 29.4 s, 1.46 GiB written, 203 iops, 50.8 MiB/s
+generated 5.98 k requests in 30.0 s, 1.46 GiB, 199 iops, 49.8 MiB/s
+min/avg/max/mdev = 3.90 ms / 4.92 ms / 52.7 ms / 1.08 ms

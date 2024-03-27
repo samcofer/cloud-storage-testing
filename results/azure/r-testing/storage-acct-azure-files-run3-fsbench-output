@@ -1,0 +1,363 @@
+make -C tools
+make[1]: Entering directory '/storage-acct-azure-files-run/testuser/fsbench/tools'
+gcc purge-disk-cache.c -o purge-disk-cache
+make[1]: Leaving directory '/storage-acct-azure-files-run/testuser/fsbench/tools'
+sudo make -C tools install
+make: Entering directory '/storage-acct-azure-files-run/testuser/fsbench/tools'
+mkdir -p /usr/local/sbin/
+cp purge-disk-cache /usr/local/sbin/
+chown root /usr/local/sbin/purge-disk-cache
+chmod 6711 /usr/local/sbin/purge-disk-cache
+make: Leaving directory '/storage-acct-azure-files-run/testuser/fsbench/tools'
+Rscript setup.R
+# Bootstrapping renv 1.0.5 ---------------------------------------------------
+- Downloading renv ... OK
+- Installing renv  ... OK
+
+- One or more packages recorded in the lockfile are not installed.
+- Use `renv::status()` for more details.
+- The library is already synchronized with the lockfile.
+- One or more packages recorded in the lockfile are not installed.
+- Use `renv::status()` for more details.
+The following package(s) will be updated:
+
+# RSPM -----------------------------------------------------------------------
+- MASS           [repo: CRAN -> RSPM; ver: 7.3-60 -> 7.3-60.0.1]
+- mgcv           [repo: CRAN -> RSPM; ver: 1.9-0 -> 1.9-1]
+- bit            [* -> 4.0.5]
+- bit64          [* -> 4.0.5]
+- cli            [* -> 3.6.2]
+- colorspace     [* -> 2.1-0]
+- cpp11          [* -> 0.4.7]
+- crayon         [* -> 1.5.2]
+- data.table     [* -> 1.15.0]
+- fansi          [* -> 1.0.6]
+- farver         [* -> 2.1.1]
+- fst            [* -> 0.9.8]
+- fstcore        [* -> 0.9.18]
+- ggplot2        [* -> 3.4.4]
+- glue           [* -> 1.7.0]
+- gtable         [* -> 0.3.4]
+- hms            [* -> 1.1.3]
+- isoband        [* -> 0.2.7]
+- labeling       [* -> 0.4.3]
+- lifecycle      [* -> 1.0.4]
+- magrittr       [* -> 2.0.3]
+- munsell        [* -> 0.5.0]
+- pillar         [* -> 1.9.0]
+- pkgconfig      [* -> 2.0.3]
+- prettyunits    [* -> 1.2.0]
+- progress       [* -> 1.2.3]
+- R.methodsS3    [* -> 1.8.2]
+- R.oo           [* -> 1.26.0]
+- R.utils        [* -> 2.12.3]
+- R6             [* -> 2.5.1]
+- RColorBrewer   [* -> 1.1-3]
+- Rcpp           [* -> 1.0.12]
+- rlang          [* -> 1.1.3]
+- scales         [* -> 1.3.0]
+- tibble         [* -> 3.2.1]
+- tidyselect     [* -> 1.2.0]
+- tzdb           [* -> 0.4.0]
+- utf8           [* -> 1.2.4]
+- vctrs          [* -> 0.6.5]
+- viridisLite    [* -> 0.4.2]
+- vroom          [* -> 1.6.5]
+- withr          [* -> 3.0.0]
+
+# Installing packages --------------------------------------------------------
+- Installing MASS ...                           OK [linked from cache]
+- Installing mgcv ...                           OK [linked from cache]
+- Installing R.methodsS3 ...                    OK [linked from cache]
+- Installing R.oo ...                           OK [linked from cache]
+- Installing R.utils ...                        OK [linked from cache]
+- Installing R6 ...                             OK [linked from cache]
+- Installing RColorBrewer ...                   OK [linked from cache]
+- Installing Rcpp ...                           OK [linked from cache]
+- Installing bit ...                            OK [linked from cache]
+- Installing bit64 ...                          OK [linked from cache]
+- Installing cli ...                            OK [linked from cache]
+- Installing colorspace ...                     OK [linked from cache]
+- Installing cpp11 ...                          OK [linked from cache]
+- Installing crayon ...                         OK [linked from cache]
+- Installing data.table ...                     OK [linked from cache]
+- Installing fansi ...                          OK [linked from cache]
+- Installing farver ...                         OK [linked from cache]
+- Installing fstcore ...                        OK [linked from cache]
+- Installing fst ...                            OK [linked from cache]
+- Installing glue ...                           OK [linked from cache]
+- Installing rlang ...                          OK [linked from cache]
+- Installing lifecycle ...                      OK [linked from cache]
+- Installing gtable ...                         OK [linked from cache]
+- Installing isoband ...                        OK [linked from cache]
+- Installing labeling ...                       OK [linked from cache]
+- Installing munsell ...                        OK [linked from cache]
+- Installing viridisLite ...                    OK [linked from cache]
+- Installing scales ...                         OK [linked from cache]
+- Installing magrittr ...                       OK [linked from cache]
+- Installing utf8 ...                           OK [linked from cache]
+- Installing vctrs ...                          OK [linked from cache]
+- Installing pillar ...                         OK [linked from cache]
+- Installing pkgconfig ...                      OK [linked from cache]
+- Installing tibble ...                         OK [linked from cache]
+- Installing withr ...                          OK [linked from cache]
+- Installing ggplot2 ...                        OK [linked from cache]
+- Installing hms ...                            OK [linked from cache]
+- Installing prettyunits ...                    OK [linked from cache]
+- Installing progress ...                       OK [linked from cache]
+- Installing tidyselect ...                     OK [linked from cache]
+- Installing tzdb ...                           OK [linked from cache]
+- Installing vroom ...                          OK [linked from cache]
+2020-01-01..2020-01-07
+2020-01-08..2020-01-14
+Rscript main.R
+make[1]: Entering directory '/tmp/RtmpcxmJzB/R.INSTALL276fec628ab673/MASS/src'
+gcc -I"/opt/R/4.3.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c MASS.c -o MASS.o
+gcc -I"/opt/R/4.3.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c lqs.c -o lqs.o
+gcc -shared -L/opt/R/4.3.2/lib/R/lib -L/usr/local/lib -o MASS.so MASS.o lqs.o -L/opt/R/4.3.2/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/RtmpcxmJzB/R.INSTALL276fec628ab673/MASS/src'
+  converting help for package ‘MASS’
+    Aids2                                   html  
+    Animals                                 html  
+    Boston                                  html  
+    Cars93                                  html  
+    Cushings                                html  
+    DDT                                     html  
+    GAGurine                                html  
+    Insurance                               html  
+    MASS-internal                           html  
+    Melanoma                                html  
+    Null                                    html  
+    OME                                     html  
+    Pima.tr                                 html  
+    Rabbit                                  html  
+    Rubber                                  html  
+    SP500                                   html  
+    Sitka                                   html  
+    Sitka89                                 html  
+    Skye                                    html  
+    Traffic                                 html  
+    UScereal                                html  
+    UScrime                                 html  
+    VA                                      html  
+    abbey                                   html  
+    accdeaths                               html  
+    addterm                                 html  
+    anorexia                                html  
+    anova.negbin                            html  
+    area                                    html  
+    bacteria                                html  
+    bandwidth.nrd                           html  
+    bcv                                     html  
+    beav1                                   html  
+    beav2                                   html  
+    biopsy                                  html  
+    birthwt                                 html  
+    boxcox                                  html  
+    cabbages                                html  
+    caith                                   html  
+    cats                                    html  
+    cement                                  html  
+    chem                                    html  
+    con2tr                                  html  
+    confint                                 html  
+    contr.sdif                              html  
+    coop                                    html  
+    corresp                                 html  
+    cov.rob                                 html  
+    cov.trob                                html  
+    cpus                                    html  
+    crabs                                   html  
+    deaths                                  html  
+    denumerate                              html  
+    dose.p                                  html  
+    drivers                                 html  
+    dropterm                                html  
+    eagles                                  html  
+    epil                                    html  
+    eqscplot                                html  
+    farms                                   html  
+    fgl                                     html  
+    fitdistr                                html  
+    forbes                                  html  
+    fractions                               html  
+    galaxies                                html  
+    gamma.dispersion                        html  
+    gamma.shape.glm                         html  
+    gehan                                   html  
+    genotype                                html  
+    geyser                                  html  
+    gilgais                                 html  
+    ginv                                    html  
+    glm.convert                             html  
+    glm.nb                                  html  
+    glmmPQL                                 html  
+    hills                                   html  
+    hist.scott                              html  
+    housing                                 html  
+    huber                                   html  
+    hubers                                  html  
+    immer                                   html  
+    isoMDS                                  html  
+    kde2d                                   html  
+    lda                                     html  
+    ldahist                                 html  
+    leuk                                    html  
+    lm.gls                                  html  
+    lm.ridge                                html  
+    loglm                                   html  
+    loglm1                                  html  
+    logtrans                                html  
+    lqs                                     html  
+    mammals                                 html  
+    mca                                     html  
+    mcycle                                  html  
+    menarche                                html  
+    michelson                               html  
+    minn38                                  html  
+    motors                                  html  
+    muscle                                  html  
+    mvrnorm                                 html  
+    negative.binomial                       html  
+    newcomb                                 html  
+    nlschools                               html  
+    npk                                     html  
+    npr1                                    html  
+    oats                                    html  
+    painters                                html  
+    pairs.lda                               html  
+    parcoord                                html  
+    petrol                                  html  
+    phones                                  html  
+    plot.lda                                html  
+    plot.mca                                html  
+    plot.profile                            html  
+    polr                                    html  
+    predict.glmmPQL                         html  
+    predict.lda                             html  
+    predict.lqs                             html  
+    predict.mca                             html  
+    predict.qda                             html  
+    profile.glm                             html  
+    qda                                     html  
+    quine                                   html  
+    rational                                html  
+    renumerate                              html  
+    rlm                                     html  
+    rms.curv                                html  
+    rnegbin                                 html  
+    road                                    html  
+    rotifer                                 html  
+    sammon                                  html  
+    ships                                   html  
+    shoes                                   html  
+    shrimp                                  html  
+    shuttle                                 html  
+    snails                                  html  
+    stdres                                  html  
+    steam                                   html  
+    stepAIC                                 html  
+    stormer                                 html  
+    studres                                 html  
+    summary.loglm                           html  
+    summary.negbin                          html  
+    summary.rlm                             html  
+    survey                                  html  
+    synth.tr                                html  
+    theta.md                                html  
+    topo                                    html  
+    truehist                                html  
+    ucv                                     html  
+    waders                                  html  
+    whiteside                               html  
+    width.SJ                                html  
+    write.matrix                            html  
+    wtloss                                  html  
+make[1]: Entering directory '/tmp/Rtmph1ax9P/R.INSTALL27708752236050/lattice/src'
+gcc -I"/opt/R/4.3.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
+gcc -I"/opt/R/4.3.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c threeDplot.c -o threeDplot.o
+gcc -shared -L/opt/R/4.3.2/lib/R/lib -L/usr/local/lib -o lattice.so init.o threeDplot.o -L/opt/R/4.3.2/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/Rtmph1ax9P/R.INSTALL27708752236050/lattice/src'
+  converting help for package ‘lattice’
+    Lattice                                 html  
+    Rows                                    html  
+    USMortality                             html  
+    axis.default                            html  
+    banking                                 html  
+    barchart.table                          html  
+    barley                                  html  
+    cloud                                   html  
+    draw.colorkey                           html  
+    draw.key                                html  
+    environmental                           html  
+    ethanol                                 html  
+    histogram                               html  
+    interaction                             html  
+    lattice.options                         html  
+    latticeParseFormula                     html  
+    level.colors                            html  
+    levelplot                               html  
+    llines                                  html  
+    lset                                    html  
+    make.groups                             html  
+    melanoma                                html  
+    oneway                                  html  
+    packet.panel.default                    html  
+    panel.axis                              html  
+    panel.barchart                          html  
+    panel.bwplot                            html  
+    panel.cloud                             html  
+    panel.densityplot                       html  
+    panel.dotplot                           html  
+    panel.functions                         html  
+    panel.histogram                         html  
+    panel.levelplot                         html  
+    panel.loess                             html  
+    panel.number                            html  
+    panel.pairs                             html  
+    panel.parallel                          html  
+    panel.qqmath                            html  
+    panel.qqmathline                        html  
+    panel.smoothScatter                     html  
+    panel.spline                            html  
+    panel.stripplot                         html  
+    panel.superpose                         html  
+    panel.violin                            html  
+    panel.xyplot                            html  
+    prepanel.default                        html  
+    prepanel.functions                      html  
+    print.trellis                           html  
+    qq                                      html  
+    qqmath                                  html  
+    rfs                                     html  
+    shingles                                html  
+    simpleKey                               html  
+    simpleTheme                             html  
+    singer                                  html  
+    splom                                   html  
+    standard.theme                          html  
+    strip.default                           html  
+    tmd                                     html  
+    trellis.device                          html  
+    trellis.object                          html  
+    trellis.par.get                         html  
+    update.trellis                          html  
+    utilities.3d                            html  
+    xyplot                                  html  
+    xyplot.ts                               html  
+  converting help for package ‘BH’
+    BH-package                              html  
+[38;5;246m# A tibble: 41 × 5[39m
+   task                user   system  elapsed parallelism
+   [3m[38;5;246m<chr>[39m[23m              [3m[38;5;246m<dbl>[39m[23m    [3m[38;5;246m<dbl>[39m[23m    [3m[38;5;246m<dbl>[39m[23m       [3m[38;5;246m<int>[39m[23m
+[38;5;250m 1[39m Install MASS     7.54     3.36     36.3             [31mNA[39m
+[38;5;250m 2[39m Install lattice  8.81     3.25     24.7             [31mNA[39m
+[38;5;250m 3[39m Install BH       9.70    10.1     506.              [31mNA[39m
+[38;5;250m 4[39m Write CSV, 10KB  0.001[4m0[24m[4m0[24m  0.001[4m0[24m[4m0[24m   0.033[4m0[24m          [31mNA[39m
+[38;5;250m 5[39m Write CSV, 1MB   0.006[4m0[24m[4m0[24m  0.001[4m0[24m[4m0[24m   0.050[4m0[24m          [31mNA[39m
+[38;5;250m 6[39m Write CSV, 100MB 0.568    0.058[4m0[24m    0.340           [31mNA[39m
+[38;5;250m 7[39m Write CSV, 1GB   5.31     0.471     2.57            [31mNA[39m
+[38;5;250m 8[39m Read CSV, 10KB   0.002[4m0[24m[4m0[24m  0         0.035[4m0[24m          [31mNA[39m
+[38;5;250m 9[39m Read CSV, 1MB    0.002[4m0[24m[4m0[24m  0.002[4m0[24m[4m0[24m   0.062[4m0[24m          [31mNA[39m
+[38;5;250m10[39m Read CSV, 100MB  0.194    0.045[4m0[24m    1.00            [31mNA[39m
+[38;5;246m# ℹ 31 more rows[39m

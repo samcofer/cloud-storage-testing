@@ -1,0 +1,55 @@
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=1 time=7.59 ms (warmup)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=2 time=7.03 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=3 time=8.02 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=4 time=8.06 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=5 time=6.75 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=6 time=7.35 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=7 time=8.72 ms (slow)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=8 time=7.17 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=9 time=7.55 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=10 time=12.2 ms (slow)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=11 time=7.14 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=12 time=8.06 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=13 time=7.74 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=14 time=8.01 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=15 time=6.63 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=16 time=7.61 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=17 time=7.54 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=18 time=9.36 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=19 time=8.05 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=20 time=8.47 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=21 time=7.65 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=22 time=7.18 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=23 time=7.39 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=24 time=6.65 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=25 time=7.83 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=26 time=18.6 ms (slow)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=27 time=9.08 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=28 time=7.37 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=29 time=8.38 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=30 time=24.7 ms (slow)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=31 time=5.83 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=32 time=5.30 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=33 time=5.34 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=34 time=6.20 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=35 time=5.72 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=36 time=5.57 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=37 time=5.80 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=38 time=5.34 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=39 time=6.16 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=40 time=7.60 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=41 time=6.12 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=42 time=5.39 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=43 time=5.66 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=44 time=5.72 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=45 time=5.37 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=46 time=4.97 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=47 time=5.18 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=48 time=5.01 ms (fast)
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=49 time=6.74 ms
+1 MiB <<< /elastic-san-same-zone-run (ext4 /dev/dm-6): request=50 time=6.90 ms
+
+--- /elastic-san-same-zone-run (ext4 /dev/dm-6) ioping statistics ---
+49 requests completed in 372.3 ms, 49 MiB read, 131 iops, 131.6 MiB/s
+generated 50 requests in 49.0 s, 50 MiB, 1 iops, 1.02 MiB/s
+min/avg/max/mdev = 4.97 ms / 7.60 ms / 24.7 ms / 3.26 ms

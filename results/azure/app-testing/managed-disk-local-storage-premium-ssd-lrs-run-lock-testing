@@ -1,0 +1,12 @@
+Posit Workbench Lock Test
+---------------------------
+Host: RHEL8-0-hostname
+Lock type: Link-based
+User: root
+File: /managed-disk-local-storage-premium-ssd-lrs-run/testfile
+
+* Acquired advisory lock
+* Unable to acquire link-based lock 
+
+
+Your filesystem appears to support link-based locks.

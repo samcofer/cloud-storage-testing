@@ -1,0 +1,5 @@
+
+--- /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol) ioping statistics ---
+31.0 k requests completed in 29.5 s, 7.58 GiB read, 1.05 k iops, 263.2 MiB/s
+generated 31.0 k requests in 30.0 s, 7.58 GiB, 1.03 k iops, 258.6 MiB/s
+min/avg/max/mdev = 428.5 us / 949.9 us / 13.4 ms / 1.68 ms

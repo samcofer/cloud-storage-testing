@@ -1,0 +1,55 @@
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=1 time=380.7 us (warmup)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=2 time=581.2 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=3 time=435.2 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=4 time=799.9 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=5 time=433.6 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=6 time=542.2 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=7 time=588.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=8 time=809.4 us (slow)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=9 time=453.6 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=10 time=780.1 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=11 time=437.1 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=12 time=435.7 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=13 time=445.1 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=14 time=438.5 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=15 time=465.8 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=16 time=534.5 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=17 time=578.4 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=18 time=714.3 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=19 time=509.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=20 time=439.1 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=21 time=471.7 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=22 time=841.5 us (slow)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=23 time=580.9 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=24 time=590.6 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=25 time=426.9 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=26 time=537.7 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=27 time=548.7 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=28 time=565.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=29 time=599.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=30 time=426.7 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=31 time=1.30 ms (slow)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=32 time=456.9 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=33 time=430.5 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=34 time=569.4 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=35 time=494.6 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=36 time=654.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=37 time=554.2 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=38 time=533.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=39 time=442.9 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=40 time=429.4 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=41 time=494.0 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=42 time=450.4 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=43 time=546.3 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=44 time=669.3 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=45 time=443.4 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=46 time=770.9 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=47 time=435.6 us (fast)
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=48 time=572.4 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=49 time=589.8 us
+4 KiB <<< /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol): request=50 time=440.7 us (fast)
+
+--- /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol) ioping statistics ---
+49 requests completed in 27.3 ms, 196 KiB read, 1.79 k iops, 7.01 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 426.7 us / 556.9 us / 1.30 ms / 155.5 us

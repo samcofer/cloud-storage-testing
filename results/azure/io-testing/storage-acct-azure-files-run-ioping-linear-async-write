@@ -1,0 +1,5 @@
+
+--- /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa) ioping statistics ---
+3.96 k requests completed in 29.7 s, 988.8 MiB written, 133 iops, 33.3 MiB/s
+generated 3.96 k requests in 30.0 s, 989 MiB, 131 iops, 33.0 MiB/s
+min/avg/max/mdev = 5.88 ms / 7.50 ms / 39.3 ms / 1.14 ms

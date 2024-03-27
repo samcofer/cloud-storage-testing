@@ -1,0 +1,6 @@
+BEGIN - Running in /netapp-premium-run/testuser
+VENV CREATE: Run duration = 8119 milliseconds
+PIP UPDATE: Run duration = 5178 milliseconds
+PYTORCH INSTALL: Run duration = 125611 milliseconds
+CLEANUP: Run duration = 11613 milliseconds
+END

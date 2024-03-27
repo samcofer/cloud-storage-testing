@@ -1,0 +1,5 @@
+
+--- /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol) ioping statistics ---
+15.4 k requests completed in 29.0 s, 3.75 GiB written, 529 iops, 132.3 MiB/s
+generated 15.4 k requests in 30.0 s, 3.75 GiB, 512 iops, 128.1 MiB/s
+min/avg/max/mdev = 1.09 ms / 1.89 ms / 14.5 ms / 2.26 ms

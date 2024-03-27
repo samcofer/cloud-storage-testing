@@ -1,0 +1,6 @@
+BEGIN - Running in /storage-acct-azure-files-run/testuser
+VENV CREATE: Run duration = 44379 milliseconds
+PIP UPDATE: Run duration = 24696 milliseconds
+PYTORCH INSTALL: Run duration = 461804 milliseconds
+CLEANUP: Run duration = 85550 milliseconds
+END

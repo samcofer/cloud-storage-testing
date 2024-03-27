@@ -1,0 +1,40 @@
+
+10.11.11.4:/sjc-netapp-standard-vol mounted on /netapp-standard-run:
+
+           ops/s       rpc bklog
+         130.526           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  25.694        4589.691         178.627        0 (0.0%)         102.729         102.789           0.033       31 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  29.808        5140.219         172.447        0 (0.0%)         264.490       71220.405       70955.903      208 (0.0%)
+
+10.11.11.5:/sjc-netapp-premium-vol mounted on /netapp-premium-run:
+
+           ops/s       rpc bklog
+         261.106           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  25.683        4591.606         178.782        0 (0.0%)          25.923          25.979           0.025        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  29.806        5138.328         172.393        0 (0.0%)          75.276       16172.285       16097.001        0 (0.0%)
+
+10.11.11.5:/sjc-netapp-ultra-vol mounted on /netapp-ultra-run:
+
+           ops/s       rpc bklog
+         261.106           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  25.689        4589.976         178.675        0 (0.0%)          12.297          12.365           0.036        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  29.796        5138.105         172.446        0 (0.0%)          36.123        7627.314        7591.182        0 (0.0%)
+
+sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa mounted on /storage-acct-azure-files-run:
+
+           ops/s       rpc bklog
+          27.112           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  15.365        4589.042         298.661        0 (0.0%)          14.657          14.796           0.114       17 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  15.093        5136.608         340.341        0 (0.0%)          35.608        2528.399        2492.783       86 (0.0%)

@@ -1,0 +1,6 @@
+BEGIN - Running in /elastic-san-same-zone-run/testuser
+VENV CREATE: Run duration = 2883 milliseconds
+PIP UPDATE: Run duration = 1164 milliseconds
+PYTORCH INSTALL: Run duration = 47604 milliseconds
+CLEANUP: Run duration = 678 milliseconds
+END

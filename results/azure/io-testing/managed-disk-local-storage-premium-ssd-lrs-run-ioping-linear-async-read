@@ -1,0 +1,5 @@
+
+--- /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4) ioping statistics ---
+94.8 k requests completed in 28.6 s, 23.1 GiB read, 3.32 k iops, 829.7 MiB/s
+generated 94.8 k requests in 30.0 s, 23.1 GiB, 3.16 k iops, 790.0 MiB/s
+min/avg/max/mdev = 119.6 us / 301.3 us / 46.7 ms / 1.85 ms

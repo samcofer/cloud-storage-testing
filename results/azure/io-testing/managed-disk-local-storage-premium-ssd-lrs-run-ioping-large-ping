@@ -1,0 +1,55 @@
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=1 time=523.3 us (warmup)
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=2 time=715.9 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=3 time=823.9 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=4 time=919.1 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=5 time=740.2 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=6 time=765.8 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=7 time=812.5 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=8 time=676.4 us (fast)
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=9 time=769.9 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=10 time=734.6 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=11 time=785.7 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=12 time=675.3 us (fast)
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=13 time=743.1 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=14 time=765.6 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=15 time=830.9 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=16 time=782.9 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=17 time=743.4 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=18 time=809.8 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=19 time=800.0 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=20 time=765.1 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=21 time=847.6 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=22 time=661.5 us (fast)
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=23 time=693.7 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=24 time=954.9 us (slow)
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=25 time=742.7 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=26 time=848.5 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=27 time=712.3 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=28 time=739.4 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=29 time=688.0 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=30 time=812.2 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=31 time=857.3 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=32 time=889.3 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=33 time=685.4 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=34 time=795.2 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=35 time=792.5 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=36 time=794.1 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=37 time=742.1 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=38 time=710.3 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=39 time=986.9 us (slow)
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=40 time=872.8 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=41 time=702.8 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=42 time=803.3 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=43 time=712.6 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=44 time=731.0 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=45 time=789.8 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=46 time=767.5 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=47 time=821.0 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=48 time=916.0 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=49 time=720.8 us
+1 MiB <<< /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4): request=50 time=666.9 us (fast)
+
+--- /managed-disk-local-storage-premium-ssd-lrs-run (xfs /dev/dm-4) ioping statistics ---
+49 requests completed in 38.1 ms, 49 MiB read, 1.28 k iops, 1.26 GiB/s
+generated 50 requests in 49.0 s, 50 MiB, 1 iops, 1.02 MiB/s
+min/avg/max/mdev = 661.5 us / 777.9 us / 986.9 us / 74.6 us

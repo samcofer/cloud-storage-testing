@@ -1,0 +1,55 @@
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=1 time=11.6 ms (warmup)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=2 time=12.6 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=3 time=7.24 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=4 time=12.5 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=5 time=12.5 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=6 time=6.62 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=7 time=10.4 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=8 time=10.7 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=9 time=11.6 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=10 time=12.5 ms (slow)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=11 time=10.8 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=12 time=14.6 ms (slow)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=13 time=6.78 ms (fast)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=14 time=10.7 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=15 time=9.43 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=16 time=7.99 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=17 time=10.2 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=18 time=10.2 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=19 time=11.9 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=20 time=6.61 ms (fast)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=21 time=10.5 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=22 time=9.97 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=23 time=12.1 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=24 time=6.03 ms (fast)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=25 time=9.97 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=26 time=10.5 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=27 time=12.9 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=28 time=13.0 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=29 time=10.4 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=30 time=12.5 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=31 time=6.33 ms (fast)
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=32 time=11.2 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=33 time=10.3 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=34 time=11.7 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=35 time=7.96 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=36 time=10.2 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=37 time=10.6 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=38 time=12.3 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=39 time=6.73 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=40 time=10.8 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=41 time=10.1 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=42 time=12.2 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=43 time=9.13 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=44 time=9.87 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=45 time=9.82 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=46 time=12.8 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=47 time=6.73 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=48 time=10.4 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=49 time=10.7 ms
+1 MiB <<< /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa): request=50 time=12.0 ms
+
+--- /storage-acct-azure-files-run (nfs4 sjcperftestaz.file.core.windows.net:/sjcperftestaz/sjc-perf-test-nfs-sa) ioping statistics ---
+49 requests completed in 505.6 ms, 49 MiB read, 96 iops, 96.9 MiB/s
+generated 50 requests in 49.0 s, 50 MiB, 1 iops, 1.02 MiB/s
+min/avg/max/mdev = 6.03 ms / 10.3 ms / 14.6 ms / 2.06 ms

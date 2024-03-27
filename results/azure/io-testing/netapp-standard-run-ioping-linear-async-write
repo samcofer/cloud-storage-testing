@@ -1,0 +1,5 @@
+
+--- /netapp-standard-run (nfs4 10.11.11.4:/sjc-netapp-standard-vol) ioping statistics ---
+3.84 k requests completed in 29.7 s, 960 MiB written, 129 iops, 32.3 MiB/s
+generated 3.84 k requests in 30.0 s, 960.2 MiB, 127 iops, 32.0 MiB/s
+min/avg/max/mdev = 907.9 us / 7.74 ms / 12.8 ms / 4.56 ms

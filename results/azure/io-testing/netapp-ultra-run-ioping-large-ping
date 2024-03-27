@@ -1,0 +1,55 @@
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=1 time=6.25 ms (warmup)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=2 time=6.28 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=3 time=6.31 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=4 time=6.22 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=5 time=6.22 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=6 time=6.65 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=7 time=6.31 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=8 time=5.68 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=9 time=5.67 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=10 time=7.60 ms (slow)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=11 time=6.37 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=12 time=6.30 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=13 time=6.29 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=14 time=6.24 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=15 time=6.70 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=16 time=10.3 ms (slow)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=17 time=6.06 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=18 time=6.56 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=19 time=6.53 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=20 time=5.96 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=21 time=6.08 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=22 time=5.66 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=23 time=7.24 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=24 time=6.71 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=25 time=6.31 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=26 time=6.25 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=27 time=5.78 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=28 time=5.83 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=29 time=7.04 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=30 time=6.98 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=31 time=6.38 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=32 time=6.56 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=33 time=5.60 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=34 time=7.32 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=35 time=7.41 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=36 time=6.70 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=37 time=5.42 ms (fast)
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=38 time=6.43 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=39 time=6.67 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=40 time=6.68 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=41 time=6.34 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=42 time=6.36 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=43 time=6.08 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=44 time=6.16 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=45 time=7.44 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=46 time=6.83 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=47 time=6.59 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=48 time=5.76 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=49 time=5.98 ms
+1 MiB <<< /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol): request=50 time=6.94 ms
+
+--- /netapp-ultra-run (nfs4 10.11.11.5:/sjc-netapp-ultra-vol) ioping statistics ---
+49 requests completed in 317.8 ms, 49 MiB read, 154 iops, 154.2 MiB/s
+generated 50 requests in 49.0 s, 50 MiB, 1 iops, 1.02 MiB/s
+min/avg/max/mdev = 5.42 ms / 6.48 ms / 10.3 ms / 738.4 us
