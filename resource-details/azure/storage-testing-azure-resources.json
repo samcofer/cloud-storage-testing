@@ -1,0 +1,1575 @@
+Resource: RHEL8-0-OSDisk (Microsoft.Compute/disks)
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Compute/disks/RHEL8-0-OSDisk",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Compute/virtualMachines/RHEL8-0-server-vmc3d411d9",
+  "name": "RHEL8-0-OSDisk",
+  "plan": null,
+  "properties": {
+    "LastOwnershipUpdateTime": "2024-03-26T15:58:40.3611863+00:00",
+    "creationData": {
+      "createOption": "FromImage",
+      "imageReference": {
+        "id": "/Subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/Providers/Microsoft.Compute/Locations/eastus2/Publishers/RedHat/ArtifactTypes/VMImage/Offers/RHEL/Skus/8-lvm-gen2/Versions/8.9.2024022012"
+      }
+    },
+    "diskIOPSReadWrite": 2300,
+    "diskMBpsReadWrite": 150,
+    "diskSizeBytes": 536870912000,
+    "diskSizeGB": 500,
+    "diskState": "Reserved",
+    "encryption": {
+      "type": "EncryptionAtRestWithPlatformKey"
+    },
+    "hyperVGeneration": "V2",
+    "networkAccessPolicy": "AllowAll",
+    "osType": "Linux",
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "supportedCapabilities": {
+      "acceleratedNetwork": true,
+      "architecture": "x64",
+      "diskControllerTypes": "SCSI, NVMe"
+    },
+    "supportsHibernation": true,
+    "tier": "P20",
+    "timeCreated": "2024-03-25T20:43:53.850637+00:00",
+    "uniqueId": "3bb6ff7d-d05a-4283-97b7-60e02b74eae9"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": {
+    "capacity": null,
+    "family": null,
+    "model": null,
+    "name": "Premium_LRS",
+    "size": null,
+    "tier": "Premium"
+  },
+  "tags": {
+    "rs:environment": "infrastructure",
+    "rs:owner": "sam.cofer@posit.co",
+    "rs:project": "internal"
+  },
+  "type": "Microsoft.Compute/disks"
+}
+Resource: RHEL8-0-server-vmc3d411d9 (Microsoft.Compute/virtualMachines)
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Compute/virtualMachines/RHEL8-0-server-vmc3d411d9",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "RHEL8-0-server-vmc3d411d9",
+  "plan": null,
+  "properties": {
+    "hardwareProfile": {
+      "vmSize": "Standard_D4s_v5"
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/RHEL8-0-server-nic2a667773",
+          "resourceGroup": "sjc_rgf7fc489b"
+        }
+      ]
+    },
+    "osProfile": {
+      "adminUsername": "azure-user",
+      "allowExtensionOperations": true,
+      "computerName": "RHEL8-0-hostname",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "enableVMAgentPlatformUpdates": false,
+        "patchSettings": {
+          "assessmentMode": "ImageDefault",
+          "patchMode": "ImageDefault"
+        },
+        "provisionVMAgent": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0VGzZJZvjXQu1WfFJ9bW3UuIrgmXq+VEtKBnSuEc//96jARMYGGCiPvyzLgERHmSWVsyboDVJc426GiTB42mTQl5RtclWpfcfZa0AllpR9AwOQx1DYToo+hhFWsUCPBsgEG9SyVmwUxAA8AAeTM2Rgr12ERgAAPrXTE2vRDUlPZiCYOI9mgpb34El36Hn6BqGFN/Xt8/zaYxCo7xCI+oYmYJ0pfyvuCiOWVGCwhy1HmRGC7wHPMtl+ix2V+b3uQY2xjyY7MRkpV0wOe/+UViXar4xqUIKh1BoHYzTm12kZYYT1X7RWphN7P1G0npv8nLDKvp5Eld+is+JM73tMgHHr1xniyWoyc97KaCW5FO3cfUnGvHnRI3EqO1X0GcXXQ1D09pNFPjGlBINqc+0qNzF7ayiGpo7SPoxFdZTLQ0C6BzWPxIQG7xxy0lXK0gbBCY6Lv2kcpoCadDbXLhY+ZgBISyvCN/OaGnPi/YUJFZDtT71clVYhnW74ojv3m0GTYM= samcofer@DESKTOP-MTUNQ2J",
+              "path": "/home/azure-user/.ssh/authorized_keys"
+            }
+          ]
+        }
+      },
+      "requireGuestProvisionSignal": true,
+      "secrets": []
+    },
+    "provisioningState": "Succeeded",
+    "storageProfile": {
+      "dataDisks": [],
+      "diskControllerType": "SCSI",
+      "imageReference": {
+        "exactVersion": "8.9.2024022012",
+        "offer": "RHEL",
+        "publisher": "RedHat",
+        "sku": "8-lvm-gen2",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "deleteOption": "Detach",
+        "managedDisk": {
+          "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Compute/disks/RHEL8-0-OSDisk",
+          "resourceGroup": "sjc_rgf7fc489b"
+        },
+        "name": "RHEL8-0-OSDisk",
+        "osType": "Linux"
+      }
+    },
+    "timeCreated": "2024-03-25T20:43:49.5658179+00:00",
+    "vmId": "ffc19d0e-232d-4b9f-b8cd-26004e553bcb"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": {
+    "rs:environment": "infrastructure",
+    "rs:owner": "sam.cofer@posit.co",
+    "rs:project": "internal"
+  },
+  "type": "Microsoft.Compute/virtualMachines"
+}
+Resource: sjc-perf-test-san (Microsoft.ElasticSan/elasticSans)
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.ElasticSan/elasticSans/sjc-perf-test-san",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "sjc-perf-test-san",
+  "plan": null,
+  "properties": {
+    "availabilityZones": [
+      "1"
+    ],
+    "baseSizeTiB": 5,
+    "extendedCapacitySizeTiB": 0,
+    "privateEndpointConnections": [
+      {
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.ElasticSan/elasticSans/sjc-perf-test-san/privateEndpointConnections/sjc-perf-test-san-vg.9e4a4e07-d043-4a2a-97b6-0da931d03ff5",
+        "name": "sjc-perf-test-san-vg.9e4a4e07-d043-4a2a-97b6-0da931d03ff5",
+        "properties": {
+          "groupIds": [
+            "sjc-perf-test-san-vg"
+          ],
+          "privateEndpoint": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-elastic-san-private-endpoint",
+            "resourceGroup": "sjc_rgf7fc489b"
+          },
+          "privateLinkServiceConnectionState": {
+            "actionsRequired": "None",
+            "description": "Auto-Approved",
+            "status": "Approved"
+          },
+          "provisioningState": "Succeeded"
+        },
+        "resourceGroup": "sjc_rgf7fc489b"
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "sku": {
+      "name": "Premium_LRS",
+      "tier": "Premium"
+    },
+    "totalIops": 25000,
+    "totalMBps": 1000,
+    "totalSizeTiB": 5,
+    "totalVolumeSizeGiB": 5000,
+    "volumeGroupCount": 1
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "systemData": {
+    "createdAt": "2024-03-25T21:37:06.1915448Z",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T21:37:06.1915448Z",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "type": "Microsoft.ElasticSan/ElasticSans"
+}
+Resource: sjc-perf-test-us-east-2 (Microsoft.NetApp/netAppAccounts)
+{
+  "etag": "W/\"datetime'2024-03-25T21%3A30%3A40.7220482Z'\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "sjc-perf-test-us-east-2",
+  "plan": null,
+  "properties": {
+    "encryption": {
+      "keySource": "Microsoft.NetApp"
+    },
+    "provisioningState": "Succeeded"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "systemData": {
+    "createdAt": "2024-03-25T21:30:40.5463003Z",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T21:30:40.5463003Z",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "type": "Microsoft.NetApp/netAppAccounts"
+}
+Resource: sjc-perf-test-us-east-2/sjc-netapp-premium-pool (Microsoft.NetApp/netAppAccounts/capacityPools)
+{
+  "coolAccess": false,
+  "encryptionType": "Single",
+  "etag": "W/\"datetime'2024-03-25T22%3A04%3A50.5830739Z'\"",
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-premium-pool",
+  "location": "eastus2",
+  "name": "sjc-perf-test-us-east-2/sjc-netapp-premium-pool",
+  "poolId": "3774c0b6-7baa-788e-7e12-11e774c7c680",
+  "provisioningState": "Succeeded",
+  "qosType": "Auto",
+  "resourceGroup": "sjc_rgf7fc489b",
+  "serviceLevel": "Premium",
+  "size": 2199023255552,
+  "systemData": {
+    "createdAt": "2024-03-25T21:38:18.568696+00:00",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T21:38:18.568696+00:00",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "totalThroughputMibps": 128.0,
+  "type": "Microsoft.NetApp/netAppAccounts/capacityPools",
+  "utilizedThroughputMibps": 128.0
+}
+
+Resource: sjc-perf-test-us-east-2/sjc-netapp-premium-pool/sjc-netapp-premium-vol (Microsoft.NetApp/netAppAccounts/capacityPools/volumes)
+{
+  "actualThroughputMibps": 128.0,
+  "avsDataStore": "Disabled",
+  "backupId": null,
+  "baremetalTenantId": "baremetalTenant_svm_5e08749d4f9047fc9caa1285bc868b77_dbe7a886",
+  "capacityPoolResourceId": null,
+  "cloneProgress": null,
+  "coolAccess": false,
+  "coolnessPeriod": null,
+  "creationToken": "sjc-netapp-premium-vol",
+  "dataProtection": null,
+  "dataStoreResourceId": null,
+  "defaultGroupQuotaInKiBs": 0,
+  "defaultUserQuotaInKiBs": 0,
+  "deleteBaseSnapshot": false,
+  "enableSubvolumes": "Disabled",
+  "encrypted": null,
+  "encryptionKeySource": "Microsoft.NetApp",
+  "etag": "W/\"datetime'2024-03-25T22%3A10%3A12.1789618Z'\"",
+  "exportPolicy": {
+    "rules": [
+      {
+        "allowedClients": "0.0.0.0/0",
+        "chownMode": "Unrestricted",
+        "cifs": false,
+        "hasRootAccess": true,
+        "kerberos5IReadOnly": false,
+        "kerberos5IReadWrite": false,
+        "kerberos5PReadOnly": false,
+        "kerberos5PReadWrite": false,
+        "kerberos5ReadOnly": false,
+        "kerberos5ReadWrite": false,
+        "nfsv3": false,
+        "nfsv41": true,
+        "ruleIndex": 1,
+        "unixReadOnly": false,
+        "unixReadWrite": true
+      }
+    ]
+  },
+  "fileAccessLogs": null,
+  "fileSystemId": "e35a3d90-f7bc-fef8-2b47-8c2e3380f367",
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-premium-pool/volumes/sjc-netapp-premium-vol",
+  "isDefaultQuotaEnabled": false,
+  "isLargeVolume": false,
+  "isRestoring": null,
+  "kerberosEnabled": false,
+  "keyVaultPrivateEndpointResourceId": null,
+  "ldapEnabled": false,
+  "location": "eastus2",
+  "maximumNumberOfFiles": 42502252,
+  "mountTargets": [
+    {
+      "fileSystemId": "e35a3d90-f7bc-fef8-2b47-8c2e3380f367",
+      "ipAddress": "10.11.11.5",
+      "mountTargetId": "e35a3d90-f7bc-fef8-2b47-8c2e3380f367",
+      "smbServerFqdn": null
+    }
+  ],
+  "name": "sjc-perf-test-us-east-2/sjc-netapp-premium-pool/sjc-netapp-premium-vol",
+  "networkFeatures": "Standard",
+  "networkSiblingSetId": "537d4f3f-fc7d-0885-dc07-6b9cd54eb2f1",
+  "originatingResourceId": null,
+  "placementRules": null,
+  "protocolTypes": [
+    "NFSv4.1"
+  ],
+  "provisionedAvailabilityZone": "1",
+  "provisioningState": "Succeeded",
+  "proximityPlacementGroup": null,
+  "resourceGroup": "sjc_rgf7fc489b",
+  "securityStyle": "Unix",
+  "serviceLevel": "Premium",
+  "smbAccessBasedEnumeration": "Disabled",
+  "smbContinuouslyAvailable": false,
+  "smbEncryption": false,
+  "smbNonBrowsable": "Disabled",
+  "snapshotDirectoryVisible": true,
+  "snapshotId": null,
+  "storageToNetworkProximity": "T1",
+  "subnetId": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet",
+  "systemData": {
+    "createdAt": "2024-03-25T22:00:53.362741+00:00",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T22:00:53.362741+00:00",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "t2Network": null,
+  "tags": {},
+  "throughputMibps": null,
+  "type": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes",
+  "unixPermissions": "0770",
+  "usageThreshold": 2199023255552,
+  "volumeGroupName": null,
+  "volumeSpecName": null,
+  "volumeType": "",
+  "zones": [
+    "1"
+  ]
+}
+
+Resource: sjc-perf-test-us-east-2/sjc-netapp-standard-pool (Microsoft.NetApp/netAppAccounts/capacityPools)
+{
+  "coolAccess": false,
+  "encryptionType": "Single",
+  "etag": "W/\"datetime'2024-03-26T19%3A50%3A47.5854313Z'\"",
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-standard-pool",
+  "location": "eastus2",
+  "name": "sjc-perf-test-us-east-2/sjc-netapp-standard-pool",
+  "poolId": "31c19c48-fd54-920d-9b9e-43a1f0d262ad",
+  "provisioningState": "Succeeded",
+  "qosType": "Auto",
+  "resourceGroup": "sjc_rgf7fc489b",
+  "serviceLevel": "Standard",
+  "size": 2199023255552,
+  "systemData": {
+    "createdAt": "2024-03-25T21:38:02.212527+00:00",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T21:38:02.212527+00:00",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "totalThroughputMibps": 32.0,
+  "type": "Microsoft.NetApp/netAppAccounts/capacityPools",
+  "utilizedThroughputMibps": 32.0
+}
+
+Resource: sjc-perf-test-us-east-2/sjc-netapp-standard-pool/sjc-netapp-standard-vol (Microsoft.NetApp/netAppAccounts/capacityPools/volumes)
+{
+  "actualThroughputMibps": 32.0,
+  "avsDataStore": "Disabled",
+  "backupId": null,
+  "baremetalTenantId": "baremetalTenant_svm_5e08749d4f9047fc9caa1285bc868b77_ebd983c4",
+  "capacityPoolResourceId": null,
+  "cloneProgress": null,
+  "coolAccess": false,
+  "coolnessPeriod": null,
+  "creationToken": "sjc-netapp-standard-vol",
+  "dataProtection": null,
+  "dataStoreResourceId": null,
+  "defaultGroupQuotaInKiBs": 0,
+  "defaultUserQuotaInKiBs": 0,
+  "deleteBaseSnapshot": false,
+  "enableSubvolumes": "Disabled",
+  "encrypted": null,
+  "encryptionKeySource": "Microsoft.NetApp",
+  "etag": "W/\"datetime'2024-03-26T19%3A54%3A24.4021875Z'\"",
+  "exportPolicy": {
+    "rules": [
+      {
+        "allowedClients": "0.0.0.0/0",
+        "chownMode": "Restricted",
+        "cifs": false,
+        "hasRootAccess": true,
+        "kerberos5IReadOnly": false,
+        "kerberos5IReadWrite": false,
+        "kerberos5PReadOnly": false,
+        "kerberos5PReadWrite": false,
+        "kerberos5ReadOnly": false,
+        "kerberos5ReadWrite": false,
+        "nfsv3": false,
+        "nfsv41": true,
+        "ruleIndex": 1,
+        "unixReadOnly": false,
+        "unixReadWrite": true
+      }
+    ]
+  },
+  "fileAccessLogs": null,
+  "fileSystemId": "14ff90f2-42b4-9883-810b-4893c9405c72",
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-standard-pool/volumes/sjc-netapp-standard-vol",
+  "isDefaultQuotaEnabled": false,
+  "isLargeVolume": false,
+  "isRestoring": null,
+  "kerberosEnabled": false,
+  "keyVaultPrivateEndpointResourceId": null,
+  "ldapEnabled": false,
+  "location": "eastus2",
+  "maximumNumberOfFiles": 42502252,
+  "mountTargets": [
+    {
+      "fileSystemId": "14ff90f2-42b4-9883-810b-4893c9405c72",
+      "ipAddress": "10.11.11.4",
+      "mountTargetId": "14ff90f2-42b4-9883-810b-4893c9405c72",
+      "smbServerFqdn": null
+    }
+  ],
+  "name": "sjc-perf-test-us-east-2/sjc-netapp-standard-pool/sjc-netapp-standard-vol",
+  "networkFeatures": "Standard",
+  "networkSiblingSetId": "df8ad91b-7ec1-4bd8-13f4-9e7460ff5da3",
+  "originatingResourceId": null,
+  "placementRules": null,
+  "protocolTypes": [
+    "NFSv4.1"
+  ],
+  "provisionedAvailabilityZone": "1",
+  "provisioningState": "Succeeded",
+  "proximityPlacementGroup": null,
+  "resourceGroup": "sjc_rgf7fc489b",
+  "securityStyle": "Unix",
+  "serviceLevel": "Standard",
+  "smbAccessBasedEnumeration": "Disabled",
+  "smbContinuouslyAvailable": false,
+  "smbEncryption": false,
+  "smbNonBrowsable": "Disabled",
+  "snapshotDirectoryVisible": true,
+  "snapshotId": null,
+  "storageToNetworkProximity": "T2",
+  "subnetId": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet",
+  "systemData": {
+    "createdAt": "2024-03-26T19:45:38.286847+00:00",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-26T19:45:38.286847+00:00",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "t2Network": null,
+  "tags": {},
+  "throughputMibps": null,
+  "type": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes",
+  "unixPermissions": "0770",
+  "usageThreshold": 2199023255552,
+  "volumeGroupName": null,
+  "volumeSpecName": null,
+  "volumeType": "",
+  "zones": [
+    "1"
+  ]
+}
+
+Resource: sjc-perf-test-us-east-2/sjc-netapp-ultra-pool (Microsoft.NetApp/netAppAccounts/capacityPools)
+{
+  "coolAccess": false,
+  "encryptionType": "Single",
+  "etag": "W/\"datetime'2024-03-25T22%3A04%3A39.1044788Z'\"",
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-ultra-pool",
+  "location": "eastus2",
+  "name": "sjc-perf-test-us-east-2/sjc-netapp-ultra-pool",
+  "poolId": "3257bbc3-a36b-6a75-31f1-b8504e0189f5",
+  "provisioningState": "Succeeded",
+  "qosType": "Auto",
+  "resourceGroup": "sjc_rgf7fc489b",
+  "serviceLevel": "Ultra",
+  "size": 2199023255552,
+  "systemData": {
+    "createdAt": "2024-03-25T21:38:31.907234+00:00",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T21:38:31.907234+00:00",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "totalThroughputMibps": 256.0,
+  "type": "Microsoft.NetApp/netAppAccounts/capacityPools",
+  "utilizedThroughputMibps": 256.0
+}
+
+Resource: sjc-perf-test-us-east-2/sjc-netapp-ultra-pool/sjc-netapp-ultra-vol (Microsoft.NetApp/netAppAccounts/capacityPools/volumes)
+{
+  "actualThroughputMibps": 256.0,
+  "avsDataStore": "Disabled",
+  "backupId": null,
+  "baremetalTenantId": "baremetalTenant_svm_5e08749d4f9047fc9caa1285bc868b77_dbe7a886",
+  "capacityPoolResourceId": null,
+  "cloneProgress": null,
+  "coolAccess": false,
+  "coolnessPeriod": null,
+  "creationToken": "sjc-netapp-ultra-vol",
+  "dataProtection": null,
+  "dataStoreResourceId": null,
+  "defaultGroupQuotaInKiBs": 0,
+  "defaultUserQuotaInKiBs": 0,
+  "deleteBaseSnapshot": false,
+  "enableSubvolumes": "Disabled",
+  "encrypted": null,
+  "encryptionKeySource": "Microsoft.NetApp",
+  "etag": "W/\"datetime'2024-03-25T22%3A10%3A12.3123759Z'\"",
+  "exportPolicy": {
+    "rules": [
+      {
+        "allowedClients": "0.0.0.0/0",
+        "chownMode": "Unrestricted",
+        "cifs": false,
+        "hasRootAccess": true,
+        "kerberos5IReadOnly": false,
+        "kerberos5IReadWrite": false,
+        "kerberos5PReadOnly": false,
+        "kerberos5PReadWrite": false,
+        "kerberos5ReadOnly": false,
+        "kerberos5ReadWrite": false,
+        "nfsv3": false,
+        "nfsv41": true,
+        "ruleIndex": 1,
+        "unixReadOnly": false,
+        "unixReadWrite": true
+      }
+    ]
+  },
+  "fileAccessLogs": null,
+  "fileSystemId": "5906c9a5-632a-6cf2-abb1-d7e9228f73db",
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-ultra-pool/volumes/sjc-netapp-ultra-vol",
+  "isDefaultQuotaEnabled": false,
+  "isLargeVolume": false,
+  "isRestoring": null,
+  "kerberosEnabled": false,
+  "keyVaultPrivateEndpointResourceId": null,
+  "ldapEnabled": false,
+  "location": "eastus2",
+  "maximumNumberOfFiles": 42502252,
+  "mountTargets": [
+    {
+      "fileSystemId": "5906c9a5-632a-6cf2-abb1-d7e9228f73db",
+      "ipAddress": "10.11.11.5",
+      "mountTargetId": "5906c9a5-632a-6cf2-abb1-d7e9228f73db",
+      "smbServerFqdn": null
+    }
+  ],
+  "name": "sjc-perf-test-us-east-2/sjc-netapp-ultra-pool/sjc-netapp-ultra-vol",
+  "networkFeatures": "Standard",
+  "networkSiblingSetId": "537d4f3f-fc7d-0885-dc07-6b9cd54eb2f1",
+  "originatingResourceId": null,
+  "placementRules": null,
+  "protocolTypes": [
+    "NFSv4.1"
+  ],
+  "provisionedAvailabilityZone": "1",
+  "provisioningState": "Succeeded",
+  "proximityPlacementGroup": null,
+  "resourceGroup": "sjc_rgf7fc489b",
+  "securityStyle": "Unix",
+  "serviceLevel": "Ultra",
+  "smbAccessBasedEnumeration": "Disabled",
+  "smbContinuouslyAvailable": false,
+  "smbEncryption": false,
+  "smbNonBrowsable": "Disabled",
+  "snapshotDirectoryVisible": true,
+  "snapshotId": null,
+  "storageToNetworkProximity": "T1",
+  "subnetId": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet",
+  "systemData": {
+    "createdAt": "2024-03-25T21:59:25.939519+00:00",
+    "createdBy": "sam.cofer@posit.co",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-03-25T21:59:25.939519+00:00",
+    "lastModifiedBy": "sam.cofer@posit.co",
+    "lastModifiedByType": "User"
+  },
+  "t2Network": null,
+  "tags": {},
+  "throughputMibps": null,
+  "type": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes",
+  "unixPermissions": "0770",
+  "usageThreshold": 2199023255552,
+  "volumeGroupName": null,
+  "volumeSpecName": null,
+  "volumeType": "",
+  "zones": [
+    "1"
+  ]
+}
+
+Resource: anf-sjc-server-network526a1295-nic-DMVETK (Microsoft.Network/networkInterfaces)
+{
+  "etag": "W/\"4da6b1fc-c435-4036-a7f3-d6db85bccc15\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/anf-sjc-server-network526a1295-nic-DMVETK",
+  "identity": null,
+  "kind": "Regular",
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "anf-sjc-server-network526a1295-nic-DMVETK",
+  "plan": null,
+  "properties": {
+    "allowPort25Out": true,
+    "auxiliaryMode": "None",
+    "auxiliarySku": "None",
+    "bareMetalServer": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/bareMetalServers/baremetalTenant_svm_5e08749d4f9047fc9caa1285bc868b77_dbe7a886",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "disableTcpStateTracking": false,
+    "dnsSettings": {
+      "appliedDnsServers": [],
+      "dnsServers": [],
+      "internalDomainNameSuffix": "rlvxqst4zsiuzfsilgswb4yfyh.cx.internal.cloudapp.net"
+    },
+    "enableAcceleratedNetworking": false,
+    "enableIPForwarding": false,
+    "hostedWorkloads": [
+      "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-ultra-pool/volumes/sjc-netapp-ultra-vol",
+      "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-premium-pool/volumes/sjc-netapp-premium-vol"
+    ],
+    "ipConfigurations": [
+      {
+        "etag": "W/\"4da6b1fc-c435-4036-a7f3-d6db85bccc15\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/anf-sjc-server-network526a1295-nic-DMVETK/ipConfigurations/ipconfig1",
+        "name": "ipconfig1",
+        "properties": {
+          "primary": true,
+          "privateIPAddress": "10.11.11.5",
+          "privateIPAddressVersion": "IPv4",
+          "privateIPAllocationMethod": "Dynamic",
+          "provisioningState": "Succeeded",
+          "subnet": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet",
+            "resourceGroup": "sjc_rgf7fc489b"
+          }
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+      }
+    ],
+    "linkedResourceType": "Microsoft.Netapp/volumes",
+    "macAddress": "00-22-48-4D-59-AC",
+    "nicType": "Standard",
+    "primary": true,
+    "provisioningState": "Succeeded",
+    "resourceGuid": "473da027-bbe7-48a4-aebe-3472bdf76942",
+    "tapConfigurations": [],
+    "vnetEncryptionSupported": false,
+    "workloadType": "standard"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/networkInterfaces"
+}
+Resource: anf-sjc-server-network526a1295-nic-NL4FSK (Microsoft.Network/networkInterfaces)
+{
+  "etag": "W/\"5d1b4e0b-2193-4ff4-b920-2039088b0fcb\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/anf-sjc-server-network526a1295-nic-NL4FSK",
+  "identity": null,
+  "kind": "Regular",
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "anf-sjc-server-network526a1295-nic-NL4FSK",
+  "plan": null,
+  "properties": {
+    "allowPort25Out": true,
+    "auxiliaryMode": "None",
+    "auxiliarySku": "None",
+    "bareMetalServer": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/bareMetalServers/baremetalTenant_svm_5e08749d4f9047fc9caa1285bc868b77_ebd983c4",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "disableTcpStateTracking": false,
+    "dnsSettings": {
+      "appliedDnsServers": [],
+      "dnsServers": [],
+      "internalDomainNameSuffix": "rlvxqst4zsiuzfsilgswb4yfyh.cx.internal.cloudapp.net"
+    },
+    "enableAcceleratedNetworking": false,
+    "enableIPForwarding": false,
+    "hostedWorkloads": [
+      "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.NetApp/netAppAccounts/sjc-perf-test-us-east-2/capacityPools/sjc-netapp-standard-pool/volumes/sjc-netapp-standard-vol"
+    ],
+    "ipConfigurations": [
+      {
+        "etag": "W/\"5d1b4e0b-2193-4ff4-b920-2039088b0fcb\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/anf-sjc-server-network526a1295-nic-NL4FSK/ipConfigurations/ipconfig1",
+        "name": "ipconfig1",
+        "properties": {
+          "primary": true,
+          "privateIPAddress": "10.11.11.4",
+          "privateIPAddressVersion": "IPv4",
+          "privateIPAllocationMethod": "Dynamic",
+          "provisioningState": "Succeeded",
+          "subnet": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet",
+            "resourceGroup": "sjc_rgf7fc489b"
+          }
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+      }
+    ],
+    "linkedResourceType": "Microsoft.Netapp/volumes",
+    "macAddress": "00-22-48-4C-99-63",
+    "nicType": "Standard",
+    "primary": true,
+    "provisioningState": "Succeeded",
+    "resourceGuid": "309b2ff9-3eb1-418c-a057-d70db917ca09",
+    "tapConfigurations": [],
+    "vnetEncryptionSupported": false,
+    "workloadType": "standard"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/networkInterfaces"
+}
+Resource: RHEL8-0-server-nic2a667773 (Microsoft.Network/networkInterfaces)
+{
+  "etag": "W/\"44a45ede-94ff-4f05-b3c8-8726cc2a87b8\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/RHEL8-0-server-nic2a667773",
+  "identity": null,
+  "kind": "Regular",
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "RHEL8-0-server-nic2a667773",
+  "plan": null,
+  "properties": {
+    "allowPort25Out": true,
+    "auxiliaryMode": "None",
+    "auxiliarySku": "None",
+    "disableTcpStateTracking": false,
+    "dnsSettings": {
+      "appliedDnsServers": [],
+      "dnsServers": []
+    },
+    "enableAcceleratedNetworking": false,
+    "enableIPForwarding": false,
+    "hostedWorkloads": [],
+    "ipConfigurations": [
+      {
+        "etag": "W/\"44a45ede-94ff-4f05-b3c8-8726cc2a87b8\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/RHEL8-0-server-nic2a667773/ipConfigurations/RHEL8-0-webserver-ip-cfg",
+        "name": "RHEL8-0-webserver-ip-cfg",
+        "properties": {
+          "primary": true,
+          "privateIPAddress": "10.11.10.4",
+          "privateIPAddressVersion": "IPv4",
+          "privateIPAllocationMethod": "Dynamic",
+          "provisioningState": "Succeeded",
+          "publicIPAddress": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/publicIPAddresses/RHEL8-0-server-ip9f65d6b0",
+            "resourceGroup": "sjc_rgf7fc489b"
+          },
+          "subnet": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+            "resourceGroup": "sjc_rgf7fc489b"
+          }
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+      }
+    ],
+    "macAddress": "00-0D-3A-DA-CC-BD",
+    "networkSecurityGroup": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "nicType": "Standard",
+    "primary": true,
+    "provisioningState": "Succeeded",
+    "resourceGuid": "f58290a8-2bfd-49b9-9fa3-ae4f53e09a63",
+    "tapConfigurations": [],
+    "virtualMachine": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Compute/virtualMachines/RHEL8-0-server-vmc3d411d9",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "vnetEncryptionSupported": false
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/networkInterfaces"
+}
+Resource: sjc-elastic-san-private-endpoint.nic.fc557d6f-fbfc-4995-a74f-7e9ef4d6dc93 (Microsoft.Network/networkInterfaces)
+{
+  "etag": "W/\"0223b45e-703f-4dde-aa20-7a7d4b814fb3\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/sjc-elastic-san-private-endpoint.nic.fc557d6f-fbfc-4995-a74f-7e9ef4d6dc93",
+  "identity": null,
+  "kind": "Regular",
+  "location": "eastus2",
+  "managedBy": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-elastic-san-private-endpoint",
+  "name": "sjc-elastic-san-private-endpoint.nic.fc557d6f-fbfc-4995-a74f-7e9ef4d6dc93",
+  "plan": null,
+  "properties": {
+    "allowPort25Out": true,
+    "auxiliaryMode": "None",
+    "auxiliarySku": "None",
+    "disableTcpStateTracking": false,
+    "dnsSettings": {
+      "appliedDnsServers": [],
+      "dnsServers": [],
+      "internalDomainNameSuffix": "rlvxqst4zsiuzfsilgswb4yfyh.cx.internal.cloudapp.net"
+    },
+    "enableAcceleratedNetworking": false,
+    "enableIPForwarding": false,
+    "hostedWorkloads": [],
+    "ipConfigurations": [
+      {
+        "etag": "W/\"0223b45e-703f-4dde-aa20-7a7d4b814fb3\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/sjc-elastic-san-private-endpoint.nic.fc557d6f-fbfc-4995-a74f-7e9ef4d6dc93/ipConfigurations/privateEndpointIpConfig.094ece4f-0cbf-40b8-bb3e-c0543e36261d",
+        "name": "privateEndpointIpConfig.094ece4f-0cbf-40b8-bb3e-c0543e36261d",
+        "properties": {
+          "primary": true,
+          "privateIPAddress": "10.11.10.6",
+          "privateIPAddressVersion": "IPv4",
+          "privateIPAllocationMethod": "Dynamic",
+          "privateLinkConnectionProperties": {
+            "fqdns": [
+              "es-24l1nkjrojj1.z48.blob.storage.azure.net"
+            ],
+            "groupId": "sjc-perf-test-san-vg",
+            "requiredMemberName": "lvl08prdstp01a"
+          },
+          "provisioningState": "Succeeded",
+          "subnet": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+            "resourceGroup": "sjc_rgf7fc489b"
+          }
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+      }
+    ],
+    "macAddress": "",
+    "nicType": "Standard",
+    "privateEndpoint": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-elastic-san-private-endpoint",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "provisioningState": "Succeeded",
+    "resourceGuid": "d86344b7-8244-4a36-9a05-6f7a547b89a4",
+    "tapConfigurations": [],
+    "vnetEncryptionSupported": false
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/networkInterfaces"
+}
+Resource: sjc-storage-account-private-nic (Microsoft.Network/networkInterfaces)
+{
+  "etag": "W/\"57220f00-ad61-4696-b97a-dba7703872f3\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/sjc-storage-account-private-nic",
+  "identity": null,
+  "kind": "Regular",
+  "location": "eastus2",
+  "managedBy": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-storage-account-private",
+  "name": "sjc-storage-account-private-nic",
+  "plan": null,
+  "properties": {
+    "allowPort25Out": true,
+    "auxiliaryMode": "None",
+    "auxiliarySku": "None",
+    "disableTcpStateTracking": false,
+    "dnsSettings": {
+      "appliedDnsServers": [],
+      "dnsServers": [],
+      "internalDomainNameSuffix": "rlvxqst4zsiuzfsilgswb4yfyh.cx.internal.cloudapp.net"
+    },
+    "enableAcceleratedNetworking": false,
+    "enableIPForwarding": false,
+    "hostedWorkloads": [],
+    "ipConfigurations": [
+      {
+        "etag": "W/\"57220f00-ad61-4696-b97a-dba7703872f3\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/sjc-storage-account-private-nic/ipConfigurations/privateEndpointIpConfig.d9f988f4-be92-4b1b-8437-c04b4fbcc4a1",
+        "name": "privateEndpointIpConfig.d9f988f4-be92-4b1b-8437-c04b4fbcc4a1",
+        "properties": {
+          "primary": true,
+          "privateIPAddress": "10.11.10.8",
+          "privateIPAddressVersion": "IPv4",
+          "privateIPAllocationMethod": "Dynamic",
+          "privateLinkConnectionProperties": {
+            "fqdns": [
+              "sjcperftestaz.file.core.windows.net"
+            ],
+            "groupId": "file",
+            "requiredMemberName": "file"
+          },
+          "provisioningState": "Succeeded",
+          "subnet": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+            "resourceGroup": "sjc_rgf7fc489b"
+          }
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+      }
+    ],
+    "macAddress": "",
+    "nicType": "Standard",
+    "privateEndpoint": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-storage-account-private",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "provisioningState": "Succeeded",
+    "resourceGuid": "9185902d-e054-4ecb-a840-b3c05ad517d4",
+    "tapConfigurations": [],
+    "vnetEncryptionSupported": false
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": {},
+  "type": "Microsoft.Network/networkInterfaces"
+}
+Resource: RHEL8-sjc-nsg (Microsoft.Network/networkSecurityGroups)
+{
+  "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "RHEL8-sjc-nsg",
+  "plan": null,
+  "properties": {
+    "defaultSecurityRules": [
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/defaultSecurityRules/AllowVnetInBound",
+        "name": "AllowVnetInBound",
+        "properties": {
+          "access": "Allow",
+          "description": "Allow inbound traffic from all VMs in VNET",
+          "destinationAddressPrefix": "VirtualNetwork",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Inbound",
+          "priority": 65000,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "VirtualNetwork",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+      },
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+        "name": "AllowAzureLoadBalancerInBound",
+        "properties": {
+          "access": "Allow",
+          "description": "Allow inbound traffic from azure load balancer",
+          "destinationAddressPrefix": "*",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Inbound",
+          "priority": 65001,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "AzureLoadBalancer",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+      },
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/defaultSecurityRules/DenyAllInBound",
+        "name": "DenyAllInBound",
+        "properties": {
+          "access": "Deny",
+          "description": "Deny all inbound traffic",
+          "destinationAddressPrefix": "*",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Inbound",
+          "priority": 65500,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "*",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+      },
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/defaultSecurityRules/AllowVnetOutBound",
+        "name": "AllowVnetOutBound",
+        "properties": {
+          "access": "Allow",
+          "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+          "destinationAddressPrefix": "VirtualNetwork",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Outbound",
+          "priority": 65000,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "VirtualNetwork",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+      },
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/defaultSecurityRules/AllowInternetOutBound",
+        "name": "AllowInternetOutBound",
+        "properties": {
+          "access": "Allow",
+          "description": "Allow outbound traffic from all VMs to Internet",
+          "destinationAddressPrefix": "Internet",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Outbound",
+          "priority": 65001,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "*",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+      },
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/defaultSecurityRules/DenyAllOutBound",
+        "name": "DenyAllOutBound",
+        "properties": {
+          "access": "Deny",
+          "description": "Deny all outbound traffic",
+          "destinationAddressPrefix": "*",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Outbound",
+          "priority": 65500,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "*",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/RHEL8-0-server-nic2a667773",
+        "resourceGroup": "sjc_rgf7fc489b"
+      },
+      {
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b-eastus2/providers/Microsoft.Network/networkInterfaces/RHEL8-0-server-nic2a667773",
+        "resourceGroup": "sjc_rgf7fc489b-eastus2"
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "resourceGuid": "64d2a65f-e8f8-4dd8-8935-00f0afdf705b",
+    "securityRules": [
+      {
+        "etag": "W/\"e17bc9b5-9ce3-40e3-9ab6-356b9100855e\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkSecurityGroups/RHEL8-sjc-nsg/securityRules/sjc_wide_open",
+        "name": "sjc_wide_open",
+        "properties": {
+          "access": "Allow",
+          "destinationAddressPrefix": "*",
+          "destinationAddressPrefixes": [],
+          "destinationPortRange": "*",
+          "destinationPortRanges": [],
+          "direction": "Inbound",
+          "priority": 130,
+          "protocol": "*",
+          "provisioningState": "Succeeded",
+          "sourceAddressPrefix": "*",
+          "sourceAddressPrefixes": [],
+          "sourcePortRange": "*",
+          "sourcePortRanges": []
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/networkSecurityGroups/securityRules"
+      }
+    ]
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/networkSecurityGroups"
+}
+Resource: privatelink.blob.core.windows.net (Microsoft.Network/privateDnsZones)
+{
+  "etag": "8c3067ea-6e6b-4721-aa38-5d1505cb7850",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net",
+  "identity": null,
+  "kind": null,
+  "location": "global",
+  "managedBy": null,
+  "name": "privatelink.blob.core.windows.net",
+  "plan": null,
+  "properties": {
+    "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5O2E0MzYzMTdjLTYwMWItNDEyYS1iMmM2LTAzMzJhMmM0MzRhOTsw",
+    "maxNumberOfRecordSets": 25000,
+    "maxNumberOfVirtualNetworkLinks": 1000,
+    "maxNumberOfVirtualNetworkLinksWithRegistration": 100,
+    "numberOfRecordSets": 2,
+    "numberOfVirtualNetworkLinks": 0,
+    "numberOfVirtualNetworkLinksWithRegistration": 0,
+    "provisioningState": "Succeeded"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/privateDnsZones"
+}
+Resource: privatelink.file.core.windows.net (Microsoft.Network/privateDnsZones)
+{
+  "etag": "c3a7485a-2331-4002-ba53-d637c9466450",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateDnsZones/privatelink.file.core.windows.net",
+  "identity": null,
+  "kind": null,
+  "location": "global",
+  "managedBy": null,
+  "name": "privatelink.file.core.windows.net",
+  "plan": null,
+  "properties": {
+    "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5OzJhMDM4MDBhLWY4N2MtNGY2NC04ZGFhLTYxYTM5OTk5ZGY1OTsw",
+    "maxNumberOfRecordSets": 25000,
+    "maxNumberOfVirtualNetworkLinks": 1000,
+    "maxNumberOfVirtualNetworkLinksWithRegistration": 100,
+    "numberOfRecordSets": 2,
+    "numberOfVirtualNetworkLinks": 1,
+    "numberOfVirtualNetworkLinksWithRegistration": 0,
+    "provisioningState": "Succeeded"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": {},
+  "type": "Microsoft.Network/privateDnsZones"
+}
+Resource: privatelink.file.core.windows.net/mnoim6t7avrb6 (Microsoft.Network/privateDnsZones/virtualNetworkLinks)
+Resource: sjc-elastic-san-private-endpoint (Microsoft.Network/privateEndpoints)
+{
+  "etag": "W/\"07b8e315-7255-41fa-be73-16074bd279a3\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-elastic-san-private-endpoint",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "sjc-elastic-san-private-endpoint",
+  "plan": null,
+  "properties": {
+    "customDnsConfigs": [],
+    "customNetworkInterfaceName": "",
+    "ipConfigurations": [],
+    "isIPv6EnabledPrivateEndpoint": false,
+    "manualPrivateLinkServiceConnections": [],
+    "networkInterfaces": [
+      {
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/sjc-elastic-san-private-endpoint.nic.fc557d6f-fbfc-4995-a74f-7e9ef4d6dc93",
+        "resourceGroup": "sjc_rgf7fc489b"
+      }
+    ],
+    "privateLinkServiceConnections": [
+      {
+        "etag": "W/\"07b8e315-7255-41fa-be73-16074bd279a3\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-elastic-san-private-endpoint/privateLinkServiceConnections/",
+        "name": "",
+        "properties": {
+          "groupIds": [
+            "sjc-perf-test-san-vg"
+          ],
+          "privateLinkServiceConnectionState": {
+            "actionsRequired": "None",
+            "description": "Auto-Approved",
+            "status": "Approved"
+          },
+          "privateLinkServiceId": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.ElasticSan/elasticsans/sjc-perf-test-san",
+          "provisioningState": "Succeeded"
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections"
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "resourceGuid": "64897ccb-9cde-4ddc-8c49-85920f45b94e",
+    "subnet": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+      "resourceGroup": "sjc_rgf7fc489b"
+    }
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/privateEndpoints"
+}
+Resource: sjc-storage-account-private (Microsoft.Network/privateEndpoints)
+{
+  "etag": "W/\"ccbdacac-d00e-4c79-95af-76c44393e295\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-storage-account-private",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "sjc-storage-account-private",
+  "plan": null,
+  "properties": {
+    "customDnsConfigs": [],
+    "customNetworkInterfaceName": "sjc-storage-account-private-nic",
+    "ipConfigurations": [],
+    "isIPv6EnabledPrivateEndpoint": false,
+    "manualPrivateLinkServiceConnections": [],
+    "networkInterfaces": [
+      {
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/sjc-storage-account-private-nic",
+        "resourceGroup": "sjc_rgf7fc489b"
+      }
+    ],
+    "privateLinkServiceConnections": [
+      {
+        "etag": "W/\"ccbdacac-d00e-4c79-95af-76c44393e295\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-storage-account-private/privateLinkServiceConnections/sjc-storage-account-private",
+        "name": "sjc-storage-account-private",
+        "properties": {
+          "groupIds": [
+            "file"
+          ],
+          "privateLinkServiceConnectionState": {
+            "actionsRequired": "None",
+            "description": "Auto-Approved",
+            "status": "Approved"
+          },
+          "privateLinkServiceId": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Storage/storageAccounts/sjcperftestaz",
+          "provisioningState": "Succeeded"
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections"
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "resourceGuid": "8203b53c-03c1-4e96-a326-89e1210e01a1",
+    "subnet": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+      "resourceGroup": "sjc_rgf7fc489b"
+    }
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": {},
+  "type": "Microsoft.Network/privateEndpoints"
+}
+Resource: RHEL8-0-server-ip9f65d6b0 (Microsoft.Network/publicIPAddresses)
+{
+  "etag": "W/\"f689b3df-966d-48f9-a954-faba91ff9d21\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/publicIPAddresses/RHEL8-0-server-ip9f65d6b0",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "RHEL8-0-server-ip9f65d6b0",
+  "plan": null,
+  "properties": {
+    "idleTimeoutInMinutes": 4,
+    "ipConfiguration": {
+      "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/networkInterfaces/RHEL8-0-server-nic2a667773/ipConfigurations/RHEL8-0-webserver-ip-cfg",
+      "resourceGroup": "sjc_rgf7fc489b"
+    },
+    "ipTags": [],
+    "provisioningState": "Succeeded",
+    "publicIPAddressVersion": "IPv4",
+    "publicIPAllocationMethod": "Dynamic",
+    "resourceGuid": "5074358f-ce2d-4d2d-aeba-5213ea7618dc"
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": {
+    "capacity": null,
+    "family": null,
+    "model": null,
+    "name": "Basic",
+    "size": null,
+    "tier": "Regional"
+  },
+  "tags": null,
+  "type": "Microsoft.Network/publicIPAddresses"
+}
+Resource: sjc-server-network526a1295 (Microsoft.Network/virtualNetworks)
+{
+  "etag": "W/\"1e04f649-a06c-46b5-9893-f98943cec165\"",
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "sjc-server-network526a1295",
+  "plan": null,
+  "properties": {
+    "addressSpace": {
+      "addressPrefixes": [
+        "10.11.10.0/23"
+      ]
+    },
+    "enableDdosProtection": false,
+    "provisioningState": "Succeeded",
+    "resourceGuid": "4a78eb8a-cc7e-4c91-9648-59a560fb05c7",
+    "subnets": [
+      {
+        "etag": "W/\"1e04f649-a06c-46b5-9893-f98943cec165\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+        "name": "Testing-subnet",
+        "properties": {
+          "addressPrefix": "10.11.10.0/26",
+          "delegations": [],
+          "ipConfigurations": [
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B-EASTUS2/providers/Microsoft.Network/networkInterfaces/RHEL8-0-SERVER-NIC2A667773/ipConfigurations/RHEL8-0-WEBSERVER-IP-CFG",
+              "resourceGroup": "SJC_RGF7FC489B-EASTUS2"
+            },
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/networkInterfaces/RHEL8-0-SERVER-NIC2A667773/ipConfigurations/RHEL8-0-WEBSERVER-IP-CFG",
+              "resourceGroup": "SJC_RGF7FC489B"
+            },
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/networkInterfaces/SJC-ELASTIC-SAN-PRIVATE-ENDPOINT.NIC.FC557D6F-FBFC-4995-A74F-7E9EF4D6DC93/ipConfigurations/PRIVATEENDPOINTIPCONFIG.094ECE4F-0CBF-40B8-BB3E-C0543E36261D",
+              "resourceGroup": "SJC_RGF7FC489B"
+            },
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/networkInterfaces/SJC-STORAGE-ACCOUNT-PRIVATE-NIC/ipConfigurations/PRIVATEENDPOINTIPCONFIG.D9F988F4-BE92-4B1B-8437-C04B4FBCC4A1",
+              "resourceGroup": "SJC_RGF7FC489B"
+            },
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/networkInterfaces/UBUNTU22-0-SERVER-NIC7D916F85/ipConfigurations/UBUNTU22-0-WEBSERVER-IP-CFG",
+              "resourceGroup": "SJC_RGF7FC489B"
+            }
+          ],
+          "privateEndpointNetworkPolicies": "Enabled",
+          "privateEndpoints": [
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/privateEndpoints/SJC-ELASTIC-SAN-PRIVATE-ENDPOINT",
+              "resourceGroup": "SJC_RGF7FC489B"
+            },
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/privateEndpoints/SJC-STORAGE-ACCOUNT-PRIVATE",
+              "resourceGroup": "SJC_RGF7FC489B"
+            }
+          ],
+          "privateLinkServiceNetworkPolicies": "Enabled",
+          "provisioningState": "Succeeded",
+          "purpose": "PrivateEndpoints",
+          "serviceEndpoints": [
+            {
+              "locations": [
+                "eastus2",
+                "centralus"
+              ],
+              "provisioningState": "Succeeded",
+              "service": "Microsoft.Storage"
+            }
+          ]
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/virtualNetworks/subnets"
+      },
+      {
+        "etag": "W/\"1e04f649-a06c-46b5-9893-f98943cec165\"",
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet",
+        "name": "netapp-delegate-subnet",
+        "properties": {
+          "addressPrefix": "10.11.11.0/24",
+          "delegations": [
+            {
+              "etag": "W/\"1e04f649-a06c-46b5-9893-f98943cec165\"",
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/netapp-delegate-subnet/delegations/NetAppDelegation",
+              "name": "NetAppDelegation",
+              "properties": {
+                "actions": [
+                  "Microsoft.Network/networkinterfaces/*",
+                  "Microsoft.Network/virtualNetworks/subnets/join/action"
+                ],
+                "provisioningState": "Succeeded",
+                "serviceName": "Microsoft.NetApp/volumes"
+              },
+              "resourceGroup": "sjc_rgf7fc489b",
+              "type": "Microsoft.Network/virtualNetworks/subnets/delegations"
+            }
+          ],
+          "ipConfigurations": [
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/networkInterfaces/ANF-SJC-SERVER-NETWORK526A1295-NIC-DMVETK/ipConfigurations/IPCONFIG1",
+              "resourceGroup": "SJC_RGF7FC489B"
+            },
+            {
+              "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/SJC_RGF7FC489B/providers/Microsoft.Network/networkInterfaces/ANF-SJC-SERVER-NETWORK526A1295-NIC-NL4FSK/ipConfigurations/IPCONFIG1",
+              "resourceGroup": "SJC_RGF7FC489B"
+            }
+          ],
+          "privateEndpointNetworkPolicies": "Disabled",
+          "privateLinkServiceNetworkPolicies": "Enabled",
+          "provisioningState": "Succeeded",
+          "purpose": "HostedWorkloads"
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Network/virtualNetworks/subnets"
+      }
+    ],
+    "virtualNetworkPeerings": []
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": null,
+  "tags": {},
+  "type": "Microsoft.Network/virtualNetworks"
+}
+Resource: sjcperftestaz (Microsoft.Storage/storageAccounts)
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Storage/storageAccounts/sjcperftestaz",
+  "identity": null,
+  "kind": "FileStorage",
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "sjcperftestaz",
+  "plan": null,
+  "properties": {
+    "allowBlobPublicAccess": true,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": true,
+    "creationTime": "2024-03-25T21:30:34.6819175Z",
+    "defaultToOAuthAuthentication": false,
+    "dnsEndpointType": "Standard",
+    "encryption": {
+      "keySource": "Microsoft.Storage",
+      "requireInfrastructureEncryption": false,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2024-03-25T21:30:35.1037919Z"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2024-03-25T21:30:35.1037919Z"
+        }
+      }
+    },
+    "keyCreationTime": {
+      "key1": "2024-03-25T21:30:34.8850752Z",
+      "key2": "2024-03-25T21:30:34.8850752Z"
+    },
+    "largeFileSharesState": "Enabled",
+    "minimumTlsVersion": "TLS1_2",
+    "networkAcls": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [],
+      "ipv6Rules": [],
+      "virtualNetworkRules": [
+        {
+          "action": "Allow",
+          "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/virtualNetworks/sjc-server-network526a1295/subnets/Testing-subnet",
+          "resourceGroup": "sjc_rgf7fc489b",
+          "state": "Succeeded"
+        }
+      ]
+    },
+    "primaryEndpoints": {
+      "file": "https://sjcperftestaz.file.core.windows.net/"
+    },
+    "primaryLocation": "eastus2",
+    "privateEndpointConnections": [
+      {
+        "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Storage/storageAccounts/sjcperftestaz/privateEndpointConnections/sjcperftestaz.bc160f39-d3b4-455c-800f-96624dcd5880",
+        "name": "sjcperftestaz.bc160f39-d3b4-455c-800f-96624dcd5880",
+        "properties": {
+          "privateEndpoint": {
+            "id": "/subscriptions/cdc5ba7c-38d0-43f9-9670-7b37680ad295/resourceGroups/sjc_rgf7fc489b/providers/Microsoft.Network/privateEndpoints/sjc-storage-account-private",
+            "resourceGroup": "sjc_rgf7fc489b"
+          },
+          "privateLinkServiceConnectionState": {
+            "actionRequired": "None",
+            "description": "Auto-Approved",
+            "status": "Approved"
+          },
+          "provisioningState": "Succeeded"
+        },
+        "resourceGroup": "sjc_rgf7fc489b",
+        "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections"
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "statusOfPrimary": "available",
+    "supportsHttpsTrafficOnly": false
+  },
+  "resourceGroup": "sjc_rgf7fc489b",
+  "sku": {
+    "capacity": null,
+    "family": null,
+    "model": null,
+    "name": "Premium_LRS",
+    "size": null,
+    "tier": "Premium"
+  },
+  "tags": {},
+  "type": "Microsoft.Storage/storageAccounts"
+}

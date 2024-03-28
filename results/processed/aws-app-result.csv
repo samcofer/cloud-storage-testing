@@ -1,0 +1,9 @@
+filesystem,extended-acl-support,linkbased-file-locks
+cross-az-lustre,1,1
+ebs-local-storage,1,1
+efs-regional,0,1
+efs-single-zone,0,1
+rhel8-nfs-same-subnet,0,1
+s3-bucket-mountpoint,0,1
+same-az-lustre,1,1
+same-az-zfs,0,1

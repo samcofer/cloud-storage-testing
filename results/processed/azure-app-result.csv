@@ -1,0 +1,7 @@
+filesystem,extended-acl-support,linkbased-file-locks
+elastic-san-same-zone,1,1
+managed-disk-local-storage-premium-ssd-lrs,1,1
+netapp-premium,1,1
+netapp-standard,1,1
+netapp-ultra,1,1
+storage-acct-azure-files,0,1

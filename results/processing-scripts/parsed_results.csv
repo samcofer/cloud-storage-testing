@@ -1,0 +1,25 @@
+filesystem,min,avg,max,mdev
+elastic-san-same-zone,4.97 ms,7.60 ms,24.7 ms,3.26 ms
+elastic-san-same-zone,2.59 ms,4.20 ms,25.6 ms,1.01 ms
+elastic-san-same-zone,3.90 ms,4.92 ms,52.7 ms,1.08 ms
+elastic-san-same-zone,2.42 ms,3.48 ms,23.9 ms,2.97 ms
+managed-disk-local-storage-premium-ssd-lrs,661.5 us,777.9 us,986.9 us,74.6 us
+managed-disk-local-storage-premium-ssd-lrs,119.6 us,301.3 us,46.7 ms,1.85 ms
+managed-disk-local-storage-premium-ssd-lrs,2.17 ms,3.17 ms,192.8 ms,2.60 ms
+managed-disk-local-storage-premium-ssd-lrs,148.0 us,257.3 us,493.4 us,80.7 us
+netapp-premium,7.03 ms,8.91 ms,17.7 ms,1.68 ms
+netapp-premium,714.9 us,1.93 ms,12.6 ms,2.85 ms
+netapp-premium,1.09 ms,1.89 ms,14.5 ms,2.26 ms
+netapp-premium,454.3 us,938.4 us,9.29 ms,1.26 ms
+netapp-standard,5.50 ms,6.35 ms,7.42 ms,444.4 us
+netapp-standard,517.5 us,7.79 ms,11.1 ms,4.07 ms
+netapp-standard,907.9 us,7.74 ms,12.8 ms,4.56 ms
+netapp-standard,426.7 us,556.9 us,1.30 ms,155.5 us
+netapp-ultra,5.42 ms,6.48 ms,10.3 ms,738.4 us
+netapp-ultra,428.5 us,949.9 us,13.4 ms,1.68 ms
+netapp-ultra,791.2 us,939.1 us,5.13 ms,105.2 us
+netapp-ultra,400.2 us,557.3 us,1.05 ms,133.4 us
+storage-acct-azure-files,6.03 ms,10.3 ms,14.6 ms,2.06 ms
+storage-acct-azure-files,3.09 ms,4.36 ms,57.3 ms,897.2 us
+storage-acct-azure-files,5.88 ms,7.50 ms,39.3 ms,1.14 ms
+storage-acct-azure-files,2.28 ms,3.34 ms,6.68 ms,936.2 us
