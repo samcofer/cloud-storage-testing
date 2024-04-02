@@ -1,0 +1,756 @@
+elastic-san-same-zone,1,task,user,system,elapsed,parallelism
+elastic-san-same-zone,1,Install MASS,6.745,3.183,6.72,NA
+elastic-san-same-zone,1,Install lattice,8.403,3.136,8.345,NA
+elastic-san-same-zone,1,Install BH,9.404,4.167,11.364,NA
+elastic-san-same-zone,1,"Write CSV, 10KB",0,0,0.0200000000000031,NA
+elastic-san-same-zone,1,"Write CSV, 1MB",0.00499999999999989,0.001,0.00999999999999801,NA
+elastic-san-same-zone,1,"Write CSV, 100MB",0.555,0.053,0.156000000000006,NA
+elastic-san-same-zone,1,"Write CSV, 1GB",5.278,0.515,1.453,NA
+elastic-san-same-zone,1,"Read CSV, 10KB",0.000999999999999446,0.00099999999999989,0.00499999999999545,NA
+elastic-san-same-zone,1,"Read CSV, 1MB",0.00300000000000011,0,0.0240000000000009,NA
+elastic-san-same-zone,1,"Read CSV, 100MB",0.146000000000001,0.028,0.716000000000001,NA
+elastic-san-same-zone,1,"Read CSV, 1GB",2.444,0.393,3.872,NA
+elastic-san-same-zone,1,"DD write, 1GB",0.00500000000000078,0.852999999999999,7.235,2
+elastic-san-same-zone,1,"DD write, 1GB",0.00899999999999856,2.573,13.673,4
+elastic-san-same-zone,1,"DD write, 1GB",0.0240000000000027,6.444,30.017,8
+elastic-san-same-zone,1,"DD write, 1GB",0.0680000000000032,15.993,59.908,16
+elastic-san-same-zone,1,"DD read, 1GB",0.00400000000000134,0.335000000000003,2.619,2
+elastic-san-same-zone,1,"DD read, 1GB",0.0120000000000022,1.29600000000001,5.09999999999999,4
+elastic-san-same-zone,1,"DD read, 1GB",0.0189999999999984,2.612,23.692,8
+elastic-san-same-zone,1,"DD read, 1GB",0.0409999999999986,6.812,31.766,16
+elastic-san-same-zone,1,"Write CSV, 100MB over 10 files",0.869,0.0869999999999997,0.278999999999996,NA
+elastic-san-same-zone,1,"Read CSV, 100MB over 10 files",0.265000000000001,0.0329999999999999,0.483000000000004,NA
+elastic-san-same-zone,1,"Write CSV, 100MB over 100 files",0.667,0.0430000000000001,0.711999999999989,NA
+elastic-san-same-zone,1,"Read CSV, 100MB over 100 files",0.239999999999998,0.0310000000000001,1.697,NA
+elastic-san-same-zone,1,"Write CSV, 100MB over 1000 files",0.677,0.0869999999999997,0.77000000000001,NA
+elastic-san-same-zone,1,"Read CSV, 100MB over 1000 files",0.619,0.112,7.19099999999997,NA
+elastic-san-same-zone,1,"Write CSV, 100MB over 10000 files",1.593,0.263,1.874,NA
+elastic-san-same-zone,1,"Read CSV, 100MB over 10000 files",4.01,0.72,33.237,NA
+elastic-san-same-zone,1,"DD write, 10MB over 1000 files",0.00199999999999889,0.00499999999999989,2.15599999999995,2
+elastic-san-same-zone,1,"DD write, 10MB over 1000 files",1.744,2.526,2.93200000000002,4
+elastic-san-same-zone,1,"DD write, 10MB over 1000 files",6.38,8.866,5.41199999999998,8
+elastic-san-same-zone,1,"DD write, 10MB over 1000 files",13.666,19.673,13.621,16
+elastic-san-same-zone,1,"DD read, 10MB over 1000 files",0.924999999999997,1.141,5.18899999999996,2
+elastic-san-same-zone,1,"DD read, 10MB over 1000 files",2.70699999999999,3.357,4.72399999999999,4
+elastic-san-same-zone,1,"DD read, 10MB over 1000 files",6.445,9.253,10.057,8
+elastic-san-same-zone,1,"DD read, 10MB over 1000 files",14.713,23.179,6.76099999999997,16
+elastic-san-same-zone,1,"FST random reads, 100MB over 10*10MB reads",1.171,0.108000000000001,0.34499999999997,NA
+elastic-san-same-zone,1,"FST random reads, 100MB over 100*1MB reads",5.589,0.149,1.11400000000003,NA
+elastic-san-same-zone,1,"FST random reads, 100MB over 1000*100KB reads",1.886,0.114,1.75600000000003,NA
+elastic-san-same-zone,1,"FST random reads, 100MB over 10000*10KB reads",0.389000000000003,0.211,5.68200000000002,NA
+elastic-san-same-zone,1,Read 14 days of CRAN logs with fread,60.549,2.468,33.237,NA
+elastic-san-same-zone,1,Sample 5000 rows from each of 14 CRAN logs with vroom,23.533,4.37300000000002,16.108,NA
+elastic-san-same-zone,2,task,user,system,elapsed,parallelism
+elastic-san-same-zone,2,Install MASS,6.721,3.202,6.696,NA
+elastic-san-same-zone,2,Install lattice,8.399,3.128,8.307,NA
+elastic-san-same-zone,2,Install BH,9.398,4.139,11.263,NA
+elastic-san-same-zone,2,"Write CSV, 10KB",0.00099999999999989,0,0.00899999999999324,NA
+elastic-san-same-zone,2,"Write CSV, 1MB",0.00600000000000023,0,0.0110000000000028,NA
+elastic-san-same-zone,2,"Write CSV, 100MB",0.536,0.051,0.149999999999999,NA
+elastic-san-same-zone,2,"Write CSV, 1GB",5.285,0.511,1.454,NA
+elastic-san-same-zone,2,"Read CSV, 10KB",0.00200000000000067,0,0.00999999999999801,NA
+elastic-san-same-zone,2,"Read CSV, 1MB",0.00300000000000011,0,0.0150000000000006,NA
+elastic-san-same-zone,2,"Read CSV, 100MB",0.212999999999999,0.0259999999999998,0.822000000000003,NA
+elastic-san-same-zone,2,"Read CSV, 1GB",2.541,0.367,3.703,NA
+elastic-san-same-zone,2,"DD write, 1GB",0.00799999999999734,0.84,7.399,2
+elastic-san-same-zone,2,"DD write, 1GB",0.0220000000000002,2.565,14.021,4
+elastic-san-same-zone,2,"DD write, 1GB",0.0239999999999991,5.553,29.421,8
+elastic-san-same-zone,2,"DD write, 1GB",0.0589999999999993,15.982,61.881,16
+elastic-san-same-zone,2,"DD read, 1GB",0.00199999999999889,0.334999999999996,2.31700000000001,2
+elastic-san-same-zone,2,"DD read, 1GB",0.00899999999999856,1.246,5.16400000000002,4
+elastic-san-same-zone,2,"DD read, 1GB",0.0169999999999977,3.047,26.552,8
+elastic-san-same-zone,2,"DD read, 1GB",0.0400000000000009,6.334,26.251,16
+elastic-san-same-zone,2,"Write CSV, 100MB over 10 files",0.898,0.0939999999999999,0.290999999999997,NA
+elastic-san-same-zone,2,"Read CSV, 100MB over 10 files",0.270999999999999,0.0279999999999996,0.59899999999999,NA
+elastic-san-same-zone,2,"Write CSV, 100MB over 100 files",0.65,0.0590000000000002,0.712000000000018,NA
+elastic-san-same-zone,2,"Read CSV, 100MB over 100 files",0.228000000000002,0.0359999999999996,1.50299999999999,NA
+elastic-san-same-zone,2,"Write CSV, 100MB over 1000 files",0.683999999999999,0.0760000000000001,0.768000000000001,NA
+elastic-san-same-zone,2,"Read CSV, 100MB over 1000 files",0.604999999999999,0.115,7.06899999999999,NA
+elastic-san-same-zone,2,"Write CSV, 100MB over 10000 files",1.614,0.255,1.892,NA
+elastic-san-same-zone,2,"Read CSV, 100MB over 10000 files",4.1,0.712,32.521,NA
+elastic-san-same-zone,2,"DD write, 10MB over 1000 files",0.00100000000000122,0.00600000000000023,2.23500000000001,2
+elastic-san-same-zone,2,"DD write, 10MB over 1000 files",1.755,2.521,2.94200000000001,4
+elastic-san-same-zone,2,"DD write, 10MB over 1000 files",4.513,6.39700000000001,5.38200000000001,8
+elastic-san-same-zone,2,"DD write, 10MB over 1000 files",13.602,19.657,10.996,16
+elastic-san-same-zone,2,"DD read, 10MB over 1000 files",0.000999999999997669,0.00600000000000023,4.77700000000004,2
+elastic-san-same-zone,2,"DD read, 10MB over 1000 files",2.652,3.375,4.58800000000002,4
+elastic-san-same-zone,2,"DD read, 10MB over 1000 files",6.22700000000001,9.479,4.89800000000002,8
+elastic-san-same-zone,2,"DD read, 10MB over 1000 files",13.739,21.538,6.71199999999999,16
+elastic-san-same-zone,2,"FST random reads, 100MB over 10*10MB reads",1.275,0.113,0.369999999999948,NA
+elastic-san-same-zone,2,"FST random reads, 100MB over 100*1MB reads",5.334,0.131,1.09699999999998,NA
+elastic-san-same-zone,2,"FST random reads, 100MB over 1000*100KB reads",2.169,0.109,1.928,NA
+elastic-san-same-zone,2,"FST random reads, 100MB over 10000*10KB reads",0.373000000000005,0.228,5.65800000000002,NA
+elastic-san-same-zone,2,Read 14 days of CRAN logs with fread,60.616,2.477,33.234,NA
+elastic-san-same-zone,2,Sample 5000 rows from each of 14 CRAN logs with vroom,23.576,4.44899999999998,16.092,NA
+elastic-san-same-zone,3,task,user,system,elapsed,parallelism
+elastic-san-same-zone,3,Install MASS,6.629,3.23,6.628,NA
+elastic-san-same-zone,3,Install lattice,8.385,3.18,8.344,NA
+elastic-san-same-zone,3,Install BH,9.286,4.157,11.623,NA
+elastic-san-same-zone,3,"Write CSV, 10KB",0.00099999999999989,0,0.0110000000000028,NA
+elastic-san-same-zone,3,"Write CSV, 1MB",0.00600000000000023,0.001,0.00900000000000034,NA
+elastic-san-same-zone,3,"Write CSV, 100MB",0.537,0.051,0.149999999999999,NA
+elastic-san-same-zone,3,"Write CSV, 1GB",5.277,0.512,1.452,NA
+elastic-san-same-zone,3,"Read CSV, 10KB",0.00199999999999889,0,0.00500000000000256,NA
+elastic-san-same-zone,3,"Read CSV, 1MB",0.000999999999999446,0.00099999999999989,0.0159999999999982,NA
+elastic-san-same-zone,3,"Read CSV, 100MB",0.275,0.0329999999999999,0.643999999999998,NA
+elastic-san-same-zone,3,"Read CSV, 1GB",2.516,0.389,4.255,NA
+elastic-san-same-zone,3,"DD write, 1GB",0.00300000000000011,0.847000000000001,7.865,2
+elastic-san-same-zone,3,"DD write, 1GB",0.00700000000000145,1.707,14.495,4
+elastic-san-same-zone,3,"DD write, 1GB",0.0200000000000031,5.479,29.334,8
+elastic-san-same-zone,3,"DD write, 1GB",0.0739999999999998,15.151,60.191,16
+elastic-san-same-zone,3,"DD read, 1GB",0.006000000000002,0.335000000000001,2.286,2
+elastic-san-same-zone,3,"DD read, 1GB",0.00300000000000011,1.3,7.089,4
+elastic-san-same-zone,3,"DD read, 1GB",0.0119999999999987,3.16600000000001,25.284,8
+elastic-san-same-zone,3,"DD read, 1GB",0.0409999999999968,7.021,32.112,16
+elastic-san-same-zone,3,"Write CSV, 100MB over 10 files",0.845999999999998,0.107,0.27600000000001,NA
+elastic-san-same-zone,3,"Read CSV, 100MB over 10 files",0.417999999999999,0.0259999999999998,0.527999999999992,NA
+elastic-san-same-zone,3,"Write CSV, 100MB over 100 files",0.648,0.0600000000000001,0.70999999999998,NA
+elastic-san-same-zone,3,"Read CSV, 100MB over 100 files",0.245999999999999,0.0260000000000002,1.476,NA
+elastic-san-same-zone,3,"Write CSV, 100MB over 1000 files",0.688000000000001,0.0710000000000002,0.766999999999996,NA
+elastic-san-same-zone,3,"Read CSV, 100MB over 1000 files",0.595999999999998,0.122,12.093,NA
+elastic-san-same-zone,3,"Write CSV, 100MB over 10000 files",1.62,0.25,1.893,NA
+elastic-san-same-zone,3,"Read CSV, 100MB over 10000 files",3.954,0.776,33.309,NA
+elastic-san-same-zone,3,"DD write, 10MB over 1000 files",0.812000000000001,1.188,2.25999999999999,2
+elastic-san-same-zone,3,"DD write, 10MB over 1000 files",2.655,3.759,2.96999999999997,4
+elastic-san-same-zone,3,"DD write, 10MB over 1000 files",4.499,6.395,5.41299999999995,8
+elastic-san-same-zone,3,"DD write, 10MB over 1000 files",13.661,19.741,11.122,16
+elastic-san-same-zone,3,"DD read, 10MB over 1000 files",0.919000000000004,1.15100000000001,5.19100000000003,2
+elastic-san-same-zone,3,"DD read, 10MB over 1000 files",1.778,2.259,4.77199999999999,4
+elastic-san-same-zone,3,"DD read, 10MB over 1000 files",6.363,9.36899999999999,5.024,8
+elastic-san-same-zone,3,"DD read, 10MB over 1000 files",14.773,23.137,6.87,16
+elastic-san-same-zone,3,"FST random reads, 100MB over 10*10MB reads",1.214,0.108,0.337000000000046,NA
+elastic-san-same-zone,3,"FST random reads, 100MB over 100*1MB reads",5.336,0.135,1.08600000000001,NA
+elastic-san-same-zone,3,"FST random reads, 100MB over 1000*100KB reads",2.166,0.111,1.97800000000001,NA
+elastic-san-same-zone,3,"FST random reads, 100MB over 10000*10KB reads",0.372,0.233,5.786,NA
+elastic-san-same-zone,3,Read 14 days of CRAN logs with fread,60.49,2.53,32.836,NA
+elastic-san-same-zone,3,Sample 5000 rows from each of 14 CRAN logs with vroom,23.471,5.16700000000001,16.644,NA
+managed-disk-local-storage-premium-ssd-lrs,1,task,user,system,elapsed,parallelism
+managed-disk-local-storage-premium-ssd-lrs,1,Install MASS,6.996,3.207,7.104,NA
+managed-disk-local-storage-premium-ssd-lrs,1,Install lattice,8.685,3.162,8.633,NA
+managed-disk-local-storage-premium-ssd-lrs,1,Install BH,9.534,4.245,12.749,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 10KB",0.00099999999999989,0,0.0769999999999982,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 1MB",0.00600000000000023,0,0.00600000000000023,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 100MB",0.563,0.035,0.151999999999994,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 1GB",5.291,0.311,1.407,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 10KB",0.00200000000000067,0,0.00300000000000011,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 1MB",0.00200000000000067,0.00099999999999989,0.00300000000000011,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 100MB",0.151999999999999,0.0250000000000001,0.0839999999999961,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 1GB",1.562,0.244,1.123,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 1GB",0.00600000000000023,0.534999999999999,12.124,2
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 1GB",0.0129999999999981,1.692,26.389,4
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 1GB",0.0230000000000015,4.166,53.004,8
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 1GB",0.083000000000002,9.935,102.089,16
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 1GB",0.00200000000000244,0.340999999999999,2.33399999999995,2
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 1GB",0.00600000000000023,1.23,5.16300000000001,4
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 1GB",0.0240000000000009,4.035,10.356,8
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 1GB",0.0350000000000001,8.777,20.817,16
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 100MB over 10 files",0.868,0.0660000000000001,0.274000000000001,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 100MB over 10 files",0.264000000000001,0.0190000000000001,0.0929999999999609,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 100MB over 100 files",0.651,0.042,0.697000000000003,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 100MB over 100 files",0.215,0.024,0.283000000000015,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 100MB over 1000 files",0.690999999999999,0.0600000000000001,0.757000000000005,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 100MB over 1000 files",0.479000000000001,0.0859999999999999,0.716999999999985,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Write CSV, 100MB over 10000 files",1.678,0.304,1.99700000000001,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"Read CSV, 100MB over 10000 files",3.241,0.573,4.53300000000002,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 10MB over 1000 files",0.00100000000000122,0.00499999999999989,2.221,2
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 10MB over 1000 files",2.614,3.854,2.911,4
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 10MB over 1000 files",4.511,6.502,5.39500000000004,8
+managed-disk-local-storage-premium-ssd-lrs,1,"DD write, 10MB over 1000 files",13.946,19.806,10.991,16
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 10MB over 1000 files",0.893999999999998,1.035,2.04599999999999,2
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 10MB over 1000 files",1.72800000000001,2.49600000000001,2.29399999999998,4
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 10MB over 1000 files",5.765,9.22999999999999,3.31900000000002,8
+managed-disk-local-storage-premium-ssd-lrs,1,"DD read, 10MB over 1000 files",14.498,21.657,6.11500000000001,16
+managed-disk-local-storage-premium-ssd-lrs,1,"FST random reads, 100MB over 10*10MB reads",0.347999999999999,0.056,0.0570000000000164,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"FST random reads, 100MB over 100*1MB reads",0.437999999999999,0.0529999999999999,0.0680000000000405,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"FST random reads, 100MB over 1000*100KB reads",0.238,0.0619999999999998,0.159999999999968,NA
+managed-disk-local-storage-premium-ssd-lrs,1,"FST random reads, 100MB over 10000*10KB reads",0.344999999999999,0.186999999999999,0.637,NA
+managed-disk-local-storage-premium-ssd-lrs,1,Read 14 days of CRAN logs with fread,61.17,2.512,33.054,NA
+managed-disk-local-storage-premium-ssd-lrs,1,Sample 5000 rows from each of 14 CRAN logs with vroom,23.654,4.31200000000001,15.522,NA
+managed-disk-local-storage-premium-ssd-lrs,2,task,user,system,elapsed,parallelism
+managed-disk-local-storage-premium-ssd-lrs,2,Install MASS,6.965,3.168,6.953,NA
+managed-disk-local-storage-premium-ssd-lrs,2,Install lattice,8.704,3.163,8.662,NA
+managed-disk-local-storage-premium-ssd-lrs,2,Install BH,9.579,4.187,12.7,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 10KB",0,0.001,0.0690000000000026,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 1MB",0.00500000000000034,0.001,0.00600000000000023,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 100MB",0.554,0.032,0.151000000000003,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 1GB",5.335,0.306,1.419,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 10KB",0.00199999999999889,0,0.00300000000000011,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 1MB",0.000999999999999446,0.00100000000000011,0.00400000000000489,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 100MB",0.138,0.032,0.0799999999999983,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 1GB",1.562,0.234,1.103,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 1GB",0.00300000000000189,0.549,11.987,2
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 1GB",0.016,1.633,26.899,4
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 1GB",0.0209999999999972,4.262,52.984,8
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 1GB",0.072000000000001,9.736,103.325,16
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 1GB",0.000999999999999446,0.316000000000001,2.34100000000001,2
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 1GB",0.00999999999999979,1.187,5.16399999999999,4
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 1GB",0.016,4.017,10.354,8
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 1GB",0.0410000000000004,6.42,20.822,16
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 100MB over 10 files",0.862,0.081,0.276999999999987,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 100MB over 10 files",0.260999999999999,0.02,0.089999999999975,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 100MB over 100 files",0.647,0.0470000000000002,0.697999999999979,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 100MB over 100 files",0.222000000000001,0.0149999999999999,0.277999999999963,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 100MB over 1000 files",0.693000000000001,0.0610000000000002,0.759999999999991,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 100MB over 1000 files",0.501999999999999,0.0699999999999998,0.718999999999994,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Write CSV, 100MB over 10000 files",1.661,0.303,1.97699999999998,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"Read CSV, 100MB over 10000 files",3.252,0.525,4.49799999999999,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 10MB over 1000 files",0.00100000000000122,0.00599999999999978,2.274,2
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 10MB over 1000 files",1.728,2.533,2.85899999999998,4
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 10MB over 1000 files",5.501,7.562,5.298,8
+managed-disk-local-storage-premium-ssd-lrs,2,"DD write, 10MB over 1000 files",12.894,18.672,11.008,16
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 10MB over 1000 files",0.00100000000000122,0.00499999999999989,2.03899999999999,2
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 10MB over 1000 files",2.57500000000001,3.72199999999999,2.29899999999998,4
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 10MB over 1000 files",6.76499999999999,10.691,3.30599999999998,8
+managed-disk-local-storage-premium-ssd-lrs,2,"DD read, 10MB over 1000 files",15.508,23.097,6.11500000000001,16
+managed-disk-local-storage-premium-ssd-lrs,2,"FST random reads, 100MB over 10*10MB reads",0.305999999999997,0.0700000000000003,0.0519999999999641,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"FST random reads, 100MB over 100*1MB reads",0.445,0.0419999999999998,0.0680000000000405,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"FST random reads, 100MB over 1000*100KB reads",0.250999999999998,0.0630000000000002,0.16700000000003,NA
+managed-disk-local-storage-premium-ssd-lrs,2,"FST random reads, 100MB over 10000*10KB reads",0.334,0.188,0.613999999999976,NA
+managed-disk-local-storage-premium-ssd-lrs,2,Read 14 days of CRAN logs with fread,60.821,2.389,32.803,NA
+managed-disk-local-storage-premium-ssd-lrs,2,Sample 5000 rows from each of 14 CRAN logs with vroom,23.456,4.341,15.38,NA
+managed-disk-local-storage-premium-ssd-lrs,3,task,user,system,elapsed,parallelism
+managed-disk-local-storage-premium-ssd-lrs,3,Install MASS,6.983,3.224,7.004,NA
+managed-disk-local-storage-premium-ssd-lrs,3,Install lattice,8.661,3.142,8.59,NA
+managed-disk-local-storage-premium-ssd-lrs,3,Install BH,9.481,4.235,12.588,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 10KB",0.00100000000000033,0,0.0869999999999962,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 1MB",0.004,0.001,0.00600000000000023,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 100MB",0.553,0.032,0.149999999999999,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 1GB",5.316,0.282,1.406,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 10KB",0.00200000000000067,0,0.00300000000000011,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 1MB",0.00200000000000067,0.00100000000000011,0.00400000000000489,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 100MB",0.144,0.0259999999999998,0.0790000000000006,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 1GB",1.549,0.236,1.095,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 1GB",0.000999999999999446,0.545000000000001,12.075,2
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 1GB",0.00899999999999856,1.625,28.463,4
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 1GB",0.0279999999999987,4.22,53.013,8
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 1GB",0.0700000000000003,9.812,104.907,16
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 1GB",0,0.004,2.32800000000003,2
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 1GB",0.00799999999999912,0.818999999999999,5.16999999999996,4
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 1GB",0.0310000000000006,4.026,10.374,8
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 1GB",0.0470000000000006,8.147,20.869,16
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 100MB over 10 files",0.856,0.0740000000000001,0.274000000000001,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 100MB over 10 files",0.258000000000001,0.0230000000000001,0.0900000000000318,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 100MB over 100 files",0.657,0.0350000000000001,0.694999999999993,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 100MB over 100 files",0.211,0.0250000000000001,0.27600000000001,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 100MB over 1000 files",0.693,0.0580000000000001,0.755999999999972,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 100MB over 1000 files",0.489000000000001,0.0859999999999999,0.716000000000008,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Write CSV, 100MB over 10000 files",1.69,0.285,1.99199999999996,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"Read CSV, 100MB over 10000 files",3.248,0.571,4.56200000000001,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 10MB over 1000 files",0.00199999999999889,0.00499999999999989,2.37600000000003,2
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 10MB over 1000 files",1.813,2.506,2.90499999999997,4
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 10MB over 1000 files",6.348,9.046,5.392,8
+managed-disk-local-storage-premium-ssd-lrs,3,"DD write, 10MB over 1000 files",12.766,18.727,10.981,16
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 10MB over 1000 files",0.911999999999999,1.00800000000001,2.03199999999998,2
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 10MB over 1000 files",2.549,3.78,2.29500000000002,4
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 10MB over 1000 files",6.764,10.654,3.298,8
+managed-disk-local-storage-premium-ssd-lrs,3,"DD read, 10MB over 1000 files",15.459,23.291,6.15899999999999,16
+managed-disk-local-storage-premium-ssd-lrs,3,"FST random reads, 100MB over 10*10MB reads",0.385000000000002,0.0529999999999999,0.0600000000000023,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"FST random reads, 100MB over 100*1MB reads",0.431999999999999,0.0390000000000001,0.0649999999999977,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"FST random reads, 100MB over 1000*100KB reads",0.233000000000001,0.0580000000000003,0.158999999999992,NA
+managed-disk-local-storage-premium-ssd-lrs,3,"FST random reads, 100MB over 10000*10KB reads",0.341000000000001,0.192,0.638000000000034,NA
+managed-disk-local-storage-premium-ssd-lrs,3,Read 14 days of CRAN logs with fread,60.838,2.433,33.489,NA
+managed-disk-local-storage-premium-ssd-lrs,3,Sample 5000 rows from each of 14 CRAN logs with vroom,23.581,4.45100000000001,15.572,NA
+netapp-premium,1,task,user,system,elapsed,parallelism
+netapp-premium,1,Install MASS,6.881,3.225,10.517,NA
+netapp-premium,1,Install lattice,8.44,3.194,10.252,NA
+netapp-premium,1,Install BH,9.381,5.336,59.791,NA
+netapp-premium,1,"Write CSV, 10KB",0.00099999999999989,0,0.00699999999999079,NA
+netapp-premium,1,"Write CSV, 1MB",0.00600000000000023,0.00099999999999989,0.0120000000000005,NA
+netapp-premium,1,"Write CSV, 100MB",0.566,0.054,0.483999999999995,NA
+netapp-premium,1,"Write CSV, 1GB",5.328,0.485,9.32000000000001,NA
+netapp-premium,1,"Read CSV, 10KB",0.00200000000000067,0,0.00799999999999557,NA
+netapp-premium,1,"Read CSV, 1MB",0.00100000000000122,0.002,0.012999999999991,NA
+netapp-premium,1,"Read CSV, 100MB",0.216000000000001,0.0469999999999999,0.554000000000002,NA
+netapp-premium,1,"Read CSV, 1GB",2.173,0.476,8.31,NA
+netapp-premium,1,"DD write, 1GB",0.00200000000000067,0.004,15.848,2
+netapp-premium,1,"DD write, 1GB",0.00900000000000034,1.282,31.799,4
+netapp-premium,1,"DD write, 1GB",0.0189999999999984,4.005,63.686,8
+netapp-premium,1,"DD write, 1GB",0.0820000000000025,9.23,127.496,16
+netapp-premium,1,"DD read, 1GB",0.00400000000000134,0.424000000000006,15.519,2
+netapp-premium,1,"DD read, 1GB",0.0140000000000011,1.37,31.911,4
+netapp-premium,1,"DD read, 1GB",0.0559999999999974,3.609,63.878,8
+netapp-premium,1,"DD read, 1GB",0.0620000000000012,7.779,127.889,16
+netapp-premium,1,"Write CSV, 100MB over 10 files",0.964,0.0999999999999996,0.694000000000074,NA
+netapp-premium,1,"Read CSV, 100MB over 10 files",0.319000000000001,0.04,0.900999999999954,NA
+netapp-premium,1,"Write CSV, 100MB over 100 files",0.66,0.0590000000000002,1.29000000000008,NA
+netapp-premium,1,"Read CSV, 100MB over 100 files",0.235999999999999,0.0389999999999997,1.06700000000001,NA
+netapp-premium,1,"Write CSV, 100MB over 1000 files",0.728,0.0989999999999998,2.76599999999996,NA
+netapp-premium,1,"Read CSV, 100MB over 1000 files",0.547000000000001,0.157,4.399,NA
+netapp-premium,1,"Write CSV, 100MB over 10000 files",2.08,0.456,19.373,NA
+netapp-premium,1,"Read CSV, 100MB over 10000 files",3.692,1.036,30.1559999999999,NA
+netapp-premium,1,"DD write, 10MB over 1000 files",0.00199999999999889,0.00499999999999989,3.61699999999996,2
+netapp-premium,1,"DD write, 10MB over 1000 files",2.688,3.499,4.06699999999989,4
+netapp-premium,1,"DD write, 10MB over 1000 files",5.64399999999999,7.691,5.58799999999997,8
+netapp-premium,1,"DD write, 10MB over 1000 files",13.965,19.615,12.139,16
+netapp-premium,1,"DD read, 10MB over 1000 files",0.906999999999996,1.02,3.38900000000001,2
+netapp-premium,1,"DD read, 10MB over 1000 files",1.861,2.27399999999999,3.71400000000006,4
+netapp-premium,1,"DD read, 10MB over 1000 files",6.60999999999999,9.53400000000001,4.70399999999995,8
+netapp-premium,1,"DD read, 10MB over 1000 files",13.95,20.452,7.53300000000002,16
+netapp-premium,1,"FST random reads, 100MB over 10*10MB reads",2.018,0.0519999999999996,0.472999999999956,NA
+netapp-premium,1,"FST random reads, 100MB over 100*1MB reads",6.693,0.0279999999999996,0.995999999999981,NA
+netapp-premium,1,"FST random reads, 100MB over 1000*100KB reads",2.212,0.105,1.91499999999996,NA
+netapp-premium,1,"FST random reads, 100MB over 10000*10KB reads",0.542000000000002,0.43,12.104,NA
+netapp-premium,1,Read 14 days of CRAN logs with fread,59.935,2.392,32.399,NA
+netapp-premium,1,Sample 5000 rows from each of 14 CRAN logs with vroom,23.829,4.947,16.3349999999999,NA
+netapp-premium,2,task,user,system,elapsed,parallelism
+netapp-premium,2,Install MASS,6.841,3.282,10.669,NA
+netapp-premium,2,Install lattice,8.521,3.194,11.469,NA
+netapp-premium,2,Install BH,9.38,5.387,60.513,NA
+netapp-premium,2,"Write CSV, 10KB",0.00099999999999989,0,0.00600000000000023,NA
+netapp-premium,2,"Write CSV, 1MB",0.00600000000000023,0.00100000000000011,0.0120000000000005,NA
+netapp-premium,2,"Write CSV, 100MB",0.569,0.0569999999999999,0.483000000000004,NA
+netapp-premium,2,"Write CSV, 1GB",5.312,0.496,9.31700000000001,NA
+netapp-premium,2,"Read CSV, 10KB",0.00199999999999889,0,0.00799999999999557,NA
+netapp-premium,2,"Read CSV, 1MB",0.00200000000000067,0.00099999999999989,0.0280000000000058,NA
+netapp-premium,2,"Read CSV, 100MB",0.217000000000001,0.044,0.683999999999997,NA
+netapp-premium,2,"Read CSV, 1GB",2.448,0.339,8.176,NA
+netapp-premium,2,"DD write, 1GB",0.00300000000000011,0.643999999999999,15.841,2
+netapp-premium,2,"DD write, 1GB",0.00199999999999889,0.00699999999999967,31.796,4
+netapp-premium,2,"DD write, 1GB",0.0229999999999997,4.285,63.69,8
+netapp-premium,2,"DD write, 1GB",0.0660000000000007,9.947,127.49,16
+netapp-premium,2,"DD read, 1GB",0.00300000000000189,0.424999999999997,15.51,2
+netapp-premium,2,"DD read, 1GB",0.0130000000000017,1.429,31.911,4
+netapp-premium,2,"DD read, 1GB",0.036999999999999,3.667,63.906,8
+netapp-premium,2,"DD read, 1GB",0.072000000000001,7.918,127.891,16
+netapp-premium,2,"Write CSV, 100MB over 10 files",0.923999999999999,0.0939999999999999,0.711000000000013,NA
+netapp-premium,2,"Read CSV, 100MB over 10 files",0.44,0.036,0.899000000000001,NA
+netapp-premium,2,"Write CSV, 100MB over 100 files",0.657,0.0590000000000002,1.08400000000006,NA
+netapp-premium,2,"Read CSV, 100MB over 100 files",0.234000000000002,0.0369999999999999,1.05199999999991,NA
+netapp-premium,2,"Write CSV, 100MB over 1000 files",0.728999999999999,0.0980000000000003,2.71500000000003,NA
+netapp-premium,2,"Read CSV, 100MB over 1000 files",0.582000000000003,0.142,4.38299999999992,NA
+netapp-premium,2,"Write CSV, 100MB over 10000 files",2.056,0.477,18.542,NA
+netapp-premium,2,"Read CSV, 100MB over 10000 files",3.669,1.117,30.1750000000001,NA
+netapp-premium,2,"DD write, 10MB over 1000 files",0.00100000000000122,0.00499999999999989,3.68899999999996,2
+netapp-premium,2,"DD write, 10MB over 1000 files",1.791,2.349,4.12099999999998,4
+netapp-premium,2,"DD write, 10MB over 1000 files",6.644,8.91300000000001,5.76900000000001,8
+netapp-premium,2,"DD write, 10MB over 1000 files",14.119,19.88,12.328,16
+netapp-premium,2,"DD read, 10MB over 1000 files",0,0.00500000000000078,3.41699999999992,2
+netapp-premium,2,"DD read, 10MB over 1000 files",1.854,2.25699999999999,3.721,4
+netapp-premium,2,"DD read, 10MB over 1000 files",6.54199999999999,9.561,4.72500000000002,8
+netapp-premium,2,"DD read, 10MB over 1000 files",13.894,20.472,7.53100000000006,16
+netapp-premium,2,"FST random reads, 100MB over 10*10MB reads",1.852,0.0699999999999994,0.444000000000074,NA
+netapp-premium,2,"FST random reads, 100MB over 100*1MB reads",6.775,0.0649999999999995,1.01700000000005,NA
+netapp-premium,2,"FST random reads, 100MB over 1000*100KB reads",2.164,0.111,1.88599999999997,NA
+netapp-premium,2,"FST random reads, 100MB over 10000*10KB reads",0.546999999999997,0.446999999999999,10.5799999999999,NA
+netapp-premium,2,Read 14 days of CRAN logs with fread,59.867,2.458,32.614,NA
+netapp-premium,2,Sample 5000 rows from each of 14 CRAN logs with vroom,23.726,4.91299999999999,16.239,NA
+netapp-premium,3,task,user,system,elapsed,parallelism
+netapp-premium,3,Install MASS,6.807,3.246,10.127,NA
+netapp-premium,3,Install lattice,8.438,3.198,10.259,NA
+netapp-premium,3,Install BH,9.548,5.37,61.548,NA
+netapp-premium,3,"Write CSV, 10KB",0.00099999999999989,0,0.007000000000005,NA
+netapp-premium,3,"Write CSV, 1MB",0.00499999999999989,0,0.0120000000000005,NA
+netapp-premium,3,"Write CSV, 100MB",0.566,0.052,0.480000000000004,NA
+netapp-premium,3,"Write CSV, 1GB",5.306,0.497,9.318,NA
+netapp-premium,3,"Read CSV, 10KB",0.00200000000000067,0,0.00800000000000978,NA
+netapp-premium,3,"Read CSV, 1MB",0.00300000000000011,0.00100000000000011,0.0150000000000006,NA
+netapp-premium,3,"Read CSV, 100MB",0.209999999999999,0.0339999999999998,0.522000000000006,NA
+netapp-premium,3,"Read CSV, 1GB",2.266,0.383,8.32299999999999,NA
+netapp-premium,3,"DD write, 1GB",0.00100000000000122,0.646999999999999,15.837,2
+netapp-premium,3,"DD write, 1GB",0.00199999999999889,0.653,31.803,4
+netapp-premium,3,"DD write, 1GB",0.0169999999999995,4.047,63.667,8
+netapp-premium,3,"DD write, 1GB",0.0700000000000021,9.959,127.5,16
+netapp-premium,3,"DD read, 1GB",0.00499999999999901,0.432999999999995,15.51,2
+netapp-premium,3,"DD read, 1GB",0.0210000000000026,1.465,31.912,4
+netapp-premium,3,"DD read, 1GB",0.0330000000000013,3.114,63.898,8
+netapp-premium,3,"DD read, 1GB",0.0730000000000022,7.84,127.88,16
+netapp-premium,3,"Write CSV, 100MB over 10 files",0.904,0.109,0.703000000000088,NA
+netapp-premium,3,"Read CSV, 100MB over 10 files",0.281000000000001,0.0409999999999999,0.855000000000018,NA
+netapp-premium,3,"Write CSV, 100MB over 100 files",0.664,0.0579999999999998,1.08699999999999,NA
+netapp-premium,3,"Read CSV, 100MB over 100 files",0.241000000000001,0.0349999999999997,1.02099999999996,NA
+netapp-premium,3,"Write CSV, 100MB over 1000 files",0.75,0.077,2.70899999999995,NA
+netapp-premium,3,"Read CSV, 100MB over 1000 files",0.555,0.166,4.53999999999996,NA
+netapp-premium,3,"Write CSV, 100MB over 10000 files",2.103,0.482,19.5079999999999,NA
+netapp-premium,3,"Read CSV, 100MB over 10000 files",3.612,1.091,29.54,NA
+netapp-premium,3,"DD write, 10MB over 1000 files",0.00300000000000011,0.00499999999999989,3.65999999999997,2
+netapp-premium,3,"DD write, 10MB over 1000 files",1.806,2.34,4.0379999999999,4
+netapp-premium,3,"DD write, 10MB over 1000 files",6.658,8.893,5.58199999999999,8
+netapp-premium,3,"DD write, 10MB over 1000 files",14.226,19.674,12.0830000000001,16
+netapp-premium,3,"DD read, 10MB over 1000 files",0.000999999999997669,0.00499999999999989,3.76900000000001,2
+netapp-premium,3,"DD read, 10MB over 1000 files",0.000999999999997669,0.00999999999999979,3.74599999999998,4
+netapp-premium,3,"DD read, 10MB over 1000 files",6.66399999999999,9.678,4.68500000000006,8
+netapp-premium,3,"DD read, 10MB over 1000 files",14.993,21.841,7.96699999999998,16
+netapp-premium,3,"FST random reads, 100MB over 10*10MB reads",2.167,0.0600000000000005,0.452999999999975,NA
+netapp-premium,3,"FST random reads, 100MB over 100*1MB reads",6.871,0.069,1.02800000000002,NA
+netapp-premium,3,"FST random reads, 100MB over 1000*100KB reads",2.221,0.0970000000000004,1.90600000000006,NA
+netapp-premium,3,"FST random reads, 100MB over 10000*10KB reads",0.555999999999997,0.398,11.1460000000001,NA
+netapp-premium,3,Read 14 days of CRAN logs with fread,59.95,2.447,32.74,NA
+netapp-premium,3,Sample 5000 rows from each of 14 CRAN logs with vroom,23.648,4.59599999999999,15.837,NA
+netapp-standard,1,task,user,system,elapsed,parallelism
+netapp-standard,1,Install MASS,6.993,3.308,9.573,NA
+netapp-standard,1,Install lattice,8.727,3.208,10.168,NA
+netapp-standard,1,Install BH,9.532,5.301,49.127,NA
+netapp-standard,1,"Write CSV, 10KB",0.00099999999999989,0,0.00600000000000023,NA
+netapp-standard,1,"Write CSV, 1MB",0.00599999999999978,0,0.0100000000000051,NA
+netapp-standard,1,"Write CSV, 100MB",0.564,0.0580000000000001,2.94,NA
+netapp-standard,1,"Write CSV, 1GB",5.296,0.468,34.475,NA
+netapp-standard,1,"Read CSV, 10KB",0.00199999999999889,0.00099999999999989,0.00600000000000023,NA
+netapp-standard,1,"Read CSV, 1MB",0.00199999999999889,0.00099999999999989,0.0100000000000051,NA
+netapp-standard,1,"Read CSV, 100MB",0.277999999999999,0.0490000000000002,3.00200000000001,NA
+netapp-standard,1,"Read CSV, 1GB",3.18,0.46,33.464,NA
+netapp-standard,1,"DD write, 1GB",0.00600000000000023,0.00300000000000011,63.825,2
+netapp-standard,1,"DD write, 1GB",0.00499999999999901,1.32,127.776,4
+netapp-standard,1,"DD write, 1GB",0.0250000000000039,4.284,255.683,8
+netapp-standard,1,"DD write, 1GB",0.0830000000000002,7.262,511.472,16
+netapp-standard,1,"DD read, 1GB",0.0109999999999975,0.503,63.5070000000001,2
+netapp-standard,1,"DD read, 1GB",0.020999999999999,1.553,127.893,4
+netapp-standard,1,"DD read, 1GB",0.0420000000000016,3.616,255.873,8
+netapp-standard,1,"DD read, 1GB",0.0850000000000009,6.861,511.876,16
+netapp-standard,1,"Write CSV, 100MB over 10 files",0.916,0.118,3.14800000000014,NA
+netapp-standard,1,"Read CSV, 100MB over 10 files",0.353000000000002,0.0440000000000005,3.20600000000013,NA
+netapp-standard,1,"Write CSV, 100MB over 100 files",0.687000000000001,0.0729999999999995,3.18299999999999,NA
+netapp-standard,1,"Read CSV, 100MB over 100 files",0.269,0.0440000000000005,3.1899999999996,NA
+netapp-standard,1,"Write CSV, 100MB over 1000 files",0.734999999999999,0.0989999999999998,3.12699999999995,NA
+netapp-standard,1,"Read CSV, 100MB over 1000 files",0.530999999999999,0.14,3.29399999999987,NA
+netapp-standard,1,"Write CSV, 100MB over 10000 files",1.928,0.44,14.4549999999999,NA
+netapp-standard,1,"Read CSV, 100MB over 10000 files",3.691,1.045,23.6309999999999,NA
+netapp-standard,1,"DD write, 10MB over 1000 files",0,0.00599999999999934,3.28400000000011,2
+netapp-standard,1,"DD write, 10MB over 1000 files",2.831,3.525,3.69100000000026,4
+netapp-standard,1,"DD write, 10MB over 1000 files",6.535,9.30100000000001,5.69200000000001,8
+netapp-standard,1,"DD write, 10MB over 1000 files",14.483,20.314,11.3230000000003,16
+netapp-standard,1,"DD read, 10MB over 1000 files",0,0.00500000000000078,3.02999999999975,2
+netapp-standard,1,"DD read, 10MB over 1000 files",2.607,3.667,3.41899999999987,4
+netapp-standard,1,"DD read, 10MB over 1000 files",6.83599999999999,9.752,4.32300000000032,8
+netapp-standard,1,"DD read, 10MB over 1000 files",15.407,22.166,7.08800000000019,16
+netapp-standard,1,"FST random reads, 100MB over 10*10MB reads",2.502,0.102,2.4340000000002,NA
+netapp-standard,1,"FST random reads, 100MB over 100*1MB reads",10.23,0.151999999999999,2.29399999999987,NA
+netapp-standard,1,"FST random reads, 100MB over 1000*100KB reads",2.377,0.159000000000001,3.07300000000032,NA
+netapp-standard,1,"FST random reads, 100MB over 10000*10KB reads",0.491,0.435,8.36799999999994,NA
+netapp-standard,1,Read 14 days of CRAN logs with fread,60.246,2.381,32.3269999999998,NA
+netapp-standard,1,Sample 5000 rows from each of 14 CRAN logs with vroom,24.126,4.39799999999998,18.1059999999998,NA
+netapp-standard,2,task,user,system,elapsed,parallelism
+netapp-standard,2,Install MASS,6.825,3.273,9.412,NA
+netapp-standard,2,Install lattice,8.45,3.203,9.905,NA
+netapp-standard,2,Install BH,9.453,5.249,48.862,NA
+netapp-standard,2,"Write CSV, 10KB",0.00099999999999989,0,0.00499999999999545,NA
+netapp-standard,2,"Write CSV, 1MB",0.00599999999999978,0.00100000000000011,0.0109999999999957,NA
+netapp-standard,2,"Write CSV, 100MB",0.571,0.0539999999999998,2.93900000000001,NA
+netapp-standard,2,"Write CSV, 1GB",5.322,0.49,34.474,NA
+netapp-standard,2,"Read CSV, 10KB",0.00200000000000067,0,0.00600000000000023,NA
+netapp-standard,2,"Read CSV, 1MB",0.00399999999999956,0,0.0120000000000005,NA
+netapp-standard,2,"Read CSV, 100MB",0.333,0.0680000000000001,3.032,NA
+netapp-standard,2,"Read CSV, 1GB",3.367,0.401,33.481,NA
+netapp-standard,2,"DD write, 1GB",0.00399999999999956,0.00400000000000045,63.842,2
+netapp-standard,2,"DD write, 1GB",0.0119999999999987,1.31,127.791,4
+netapp-standard,2,"DD write, 1GB",0.0209999999999955,3.14,255.681,8
+netapp-standard,2,"DD write, 1GB",0.192000000000002,9.058,511.465,16
+netapp-standard,2,"DD read, 1GB",0.00199999999999889,0.00499999999999989,63.5160000000001,2
+netapp-standard,2,"DD read, 1GB",0.016,1.514,127.903,4
+netapp-standard,2,"DD read, 1GB",0.0549999999999979,3.661,255.865,8
+netapp-standard,2,"DD read, 1GB",0.118999999999998,8.05499999999999,511.873,16
+netapp-standard,2,"Write CSV, 100MB over 10 files",0.898,0.112,3.1579999999999,NA
+netapp-standard,2,"Read CSV, 100MB over 10 files",0.473000000000001,0.0530000000000004,3.20600000000013,NA
+netapp-standard,2,"Write CSV, 100MB over 100 files",0.687000000000001,0.0749999999999997,3.18499999999995,NA
+netapp-standard,2,"Read CSV, 100MB over 100 files",0.275,0.036,3.20400000000018,NA
+netapp-standard,2,"Write CSV, 100MB over 1000 files",0.724,0.089,3.12800000000016,NA
+netapp-standard,2,"Read CSV, 100MB over 1000 files",0.535,0.147,3.27300000000014,NA
+netapp-standard,2,"Write CSV, 100MB over 10000 files",1.907,0.47,14.5410000000002,NA
+netapp-standard,2,"Read CSV, 100MB over 10000 files",3.579,1.072,23.5889999999999,NA
+netapp-standard,2,"DD write, 10MB over 1000 files",0.00100000000000122,0.00499999999999989,3.23999999999978,2
+netapp-standard,2,"DD write, 10MB over 1000 files",1.879,2.294,3.67300000000023,4
+netapp-standard,2,"DD write, 10MB over 1000 files",6.572,9.061,5.68499999999995,8
+netapp-standard,2,"DD write, 10MB over 1000 files",14.313,19.944,11.1700000000001,16
+netapp-standard,2,"DD read, 10MB over 1000 files",0.00100000000000122,0.00400000000000045,3.01400000000012,2
+netapp-standard,2,"DD read, 10MB over 1000 files",2.601,3.63700000000001,3.375,4
+netapp-standard,2,"DD read, 10MB over 1000 files",6.81799999999999,9.71100000000001,4.3090000000002,8
+netapp-standard,2,"DD read, 10MB over 1000 files",15.455,22.032,7.0619999999999,16
+netapp-standard,2,"FST random reads, 100MB over 10*10MB reads",1.652,0.0430000000000001,1.4989999999998,NA
+netapp-standard,2,"FST random reads, 100MB over 100*1MB reads",9.628,0.0729999999999995,2.16200000000026,NA
+netapp-standard,2,"FST random reads, 100MB over 1000*100KB reads",2.34699999999999,0.0869999999999997,3.13100000000031,NA
+netapp-standard,2,"FST random reads, 100MB over 10000*10KB reads",0.566000000000003,0.365,8.34400000000005,NA
+netapp-standard,2,Read 14 days of CRAN logs with fread,60.16,2.462,32.877,NA
+netapp-standard,2,Sample 5000 rows from each of 14 CRAN logs with vroom,23.899,4.31399999999999,18.0949999999998,NA
+netapp-standard,3,task,user,system,elapsed,parallelism
+netapp-standard,3,Install MASS,6.828,3.264,9.386,NA
+netapp-standard,3,Install lattice,8.358,3.253,9.849,NA
+netapp-standard,3,Install BH,9.512,5.155,48.712,NA
+netapp-standard,3,"Write CSV, 10KB",0.00099999999999989,0.00100000000000011,0.00400000000000489,NA
+netapp-standard,3,"Write CSV, 1MB",0.00599999999999978,0,0.0100000000000051,NA
+netapp-standard,3,"Write CSV, 100MB",0.558,0.0580000000000001,2.938,NA
+netapp-standard,3,"Write CSV, 1GB",5.322,0.509,34.483,NA
+netapp-standard,3,"Read CSV, 10KB",0.000999999999999446,0.00099999999999989,0.00600000000000023,NA
+netapp-standard,3,"Read CSV, 1MB",0.00199999999999889,0.00099999999999989,0.0110000000000099,NA
+netapp-standard,3,"Read CSV, 100MB",0.334,0.0550000000000002,3.039,NA
+netapp-standard,3,"Read CSV, 1GB",3.342,0.503,33.488,NA
+netapp-standard,3,"DD write, 1GB",0.000999999999999446,0.00600000000000023,63.84,2
+netapp-standard,3,"DD write, 1GB",0.0129999999999999,1.911,127.771,4
+netapp-standard,3,"DD write, 1GB",0.0220000000000002,4.748,255.682,8
+netapp-standard,3,"DD write, 1GB",0.132000000000001,6.763,511.48,16
+netapp-standard,3,"DD read, 1GB",0.00299999999999834,0.509000000000003,63.51,2
+netapp-standard,3,"DD read, 1GB",0.0259999999999998,1.56,127.893,4
+netapp-standard,3,"DD read, 1GB",0.0449999999999999,3.707,255.879,8
+netapp-standard,3,"DD read, 1GB",0.126000000000001,8.172,511.884,16
+netapp-standard,3,"Write CSV, 100MB over 10 files",0.897,0.0940000000000003,3.15700000000015,NA
+netapp-standard,3,"Read CSV, 100MB over 10 files",0.513999999999999,0.0489999999999999,3.20200000000023,NA
+netapp-standard,3,"Write CSV, 100MB over 100 files",0.683000000000002,0.077,3.18900000000031,NA
+netapp-standard,3,"Read CSV, 100MB over 100 files",0.276,0.0459999999999998,3.20199999999977,NA
+netapp-standard,3,"Write CSV, 100MB over 1000 files",0.717000000000002,0.105,3.11099999999988,NA
+netapp-standard,3,"Read CSV, 100MB over 1000 files",0.525000000000002,0.144,3.32900000000018,NA
+netapp-standard,3,"Write CSV, 100MB over 10000 files",1.956,0.47,14.422,NA
+netapp-standard,3,"Read CSV, 100MB over 10000 files",3.634,1.063,23.614,NA
+netapp-standard,3,"DD write, 10MB over 1000 files",0.00199999999999889,0.00499999999999989,3.27299999999968,2
+netapp-standard,3,"DD write, 10MB over 1000 files",1.811,2.347,3.63899999999967,4
+netapp-standard,3,"DD write, 10MB over 1000 files",5.654,7.725,5.75400000000036,8
+netapp-standard,3,"DD write, 10MB over 1000 files",14.283,20.037,11.2179999999998,16
+netapp-standard,3,"DD read, 10MB over 1000 files",0.899999999999999,1.02399999999999,3.01099999999997,2
+netapp-standard,3,"DD read, 10MB over 1000 files",2.638,3.61000000000001,3.33199999999988,4
+netapp-standard,3,"DD read, 10MB over 1000 files",6.894,9.65800000000001,4.36599999999999,8
+netapp-standard,3,"DD read, 10MB over 1000 files",15.333,22.254,7.12300000000005,16
+netapp-standard,3,"FST random reads, 100MB over 10*10MB reads",2.19,0.109,1.83400000000029,NA
+netapp-standard,3,"FST random reads, 100MB over 100*1MB reads",10.583,0.085,2.33399999999983,NA
+netapp-standard,3,"FST random reads, 100MB over 1000*100KB reads",2.356,0.117,3.11599999999999,NA
+netapp-standard,3,"FST random reads, 100MB over 10000*10KB reads",0.576000000000001,0.404999999999999,8.48199999999997,NA
+netapp-standard,3,Read 14 days of CRAN logs with fread,60.149,2.46,32.8870000000002,NA
+netapp-standard,3,Sample 5000 rows from each of 14 CRAN logs with vroom,24.05,4.82800000000001,18.0970000000002,NA
+netapp-ultra,1,task,user,system,elapsed,parallelism
+netapp-ultra,1,Install MASS,6.734,3.274,9.135,NA
+netapp-ultra,1,Install lattice,8.558,3.194,9.909,NA
+netapp-ultra,1,Install BH,9.513,5.284,48.069,NA
+netapp-ultra,1,"Write CSV, 10KB",0.00100000000000033,0,0.00399999999999068,NA
+netapp-ultra,1,"Write CSV, 1MB",0.00600000000000023,0.00099999999999989,0.0100000000000051,NA
+netapp-ultra,1,"Write CSV, 100MB",0.583,0.0580000000000001,0.227999999999994,NA
+netapp-ultra,1,"Write CSV, 1GB",5.296,0.498,5.12100000000001,NA
+netapp-ultra,1,"Read CSV, 10KB",0.00200000000000067,0,0.007000000000005,NA
+netapp-ultra,1,"Read CSV, 1MB",0.00300000000000011,0.00100000000000011,0.0110000000000099,NA
+netapp-ultra,1,"Read CSV, 100MB",0.214,0.0349999999999997,0.200999999999993,NA
+netapp-ultra,1,"Read CSV, 1GB",2.269,0.39,4.059,NA
+netapp-ultra,1,"DD write, 1GB",0.00100000000000122,0.642,7.845,2
+netapp-ultra,1,"DD write, 1GB",0.00199999999999889,0.00499999999999989,15.791,4
+netapp-ultra,1,"DD write, 1GB",0.0150000000000006,4.112,31.688,8
+netapp-ultra,1,"DD write, 1GB",0.0890000000000004,9.211,63.513,16
+netapp-ultra,1,"DD read, 1GB",0.00599999999999845,0.387999999999998,7.51300000000001,2
+netapp-ultra,1,"DD read, 1GB",0.00900000000000034,1.383,15.916,4
+netapp-ultra,1,"DD read, 1GB",0.0310000000000024,3.619,31.92,8
+netapp-ultra,1,"DD read, 1GB",0.0739999999999998,7.868,63.9,16
+netapp-ultra,1,"Write CSV, 100MB over 10 files",0.895999999999999,0.116,0.492000000000019,NA
+netapp-ultra,1,"Read CSV, 100MB over 10 files",0.353999999999999,0.0350000000000001,0.851999999999975,NA
+netapp-ultra,1,"Write CSV, 100MB over 100 files",0.665000000000001,0.0629999999999997,1.036,NA
+netapp-ultra,1,"Read CSV, 100MB over 100 files",0.218999999999999,0.0429999999999997,0.752999999999986,NA
+netapp-ultra,1,"Write CSV, 100MB over 1000 files",0.703000000000001,0.112,2.18600000000004,NA
+netapp-ultra,1,"Read CSV, 100MB over 1000 files",0.564,0.134,3.15900000000005,NA
+netapp-ultra,1,"Write CSV, 100MB over 10000 files",1.953,0.454,13.976,NA
+netapp-ultra,1,"Read CSV, 100MB over 10000 files",3.635,1.059,22.609,NA
+netapp-ultra,1,"DD write, 10MB over 1000 files",0,0.00600000000000023,3.233,2
+netapp-ultra,1,"DD write, 10MB over 1000 files",2.77,3.536,3.63300000000004,4
+netapp-ultra,1,"DD write, 10MB over 1000 files",5.649,7.941,5.75,8
+netapp-ultra,1,"DD write, 10MB over 1000 files",14.211,20.844,11.323,16
+netapp-ultra,1,"DD read, 10MB over 1000 files",0.000999999999997669,0.00399999999999956,3.00100000000003,2
+netapp-ultra,1,"DD read, 10MB over 1000 files",1.8,2.40499999999999,3.36399999999998,4
+netapp-ultra,1,"DD read, 10MB over 1000 files",6.691,9.97599999999999,4.29999999999995,8
+netapp-ultra,1,"DD read, 10MB over 1000 files",15.389,22.468,7.11100000000005,16
+netapp-ultra,1,"FST random reads, 100MB over 10*10MB reads",1.922,0.0519999999999996,0.329000000000008,NA
+netapp-ultra,1,"FST random reads, 100MB over 100*1MB reads",6.202,0.0570000000000004,0.925999999999988,NA
+netapp-ultra,1,"FST random reads, 100MB over 1000*100KB reads",1.587,0.115,1.37699999999995,NA
+netapp-ultra,1,"FST random reads, 100MB over 10000*10KB reads",0.527000000000001,0.36,7.99599999999998,NA
+netapp-ultra,1,Read 14 days of CRAN logs with fread,60.539,2.487,32.984,NA
+netapp-ultra,1,Sample 5000 rows from each of 14 CRAN logs with vroom,23.841,4.98000000000001,16.343,NA
+netapp-ultra,2,task,user,system,elapsed,parallelism
+netapp-ultra,2,Install MASS,6.92,3.224,9.28,NA
+netapp-ultra,2,Install lattice,8.477,3.241,9.84,NA
+netapp-ultra,2,Install BH,9.725,5.164,46.996,NA
+netapp-ultra,2,"Write CSV, 10KB",0.00100000000000033,0,0.0109999999999957,NA
+netapp-ultra,2,"Write CSV, 1MB",0.00600000000000023,0,0.00999999999999091,NA
+netapp-ultra,2,"Write CSV, 100MB",0.582,0.0490000000000002,0.227000000000004,NA
+netapp-ultra,2,"Write CSV, 1GB",5.3,0.508,5.124,NA
+netapp-ultra,2,"Read CSV, 10KB",0.000999999999999446,0,0.00600000000000023,NA
+netapp-ultra,2,"Read CSV, 1MB",0.00300000000000011,0,0.00900000000000034,NA
+netapp-ultra,2,"Read CSV, 100MB",0.186,0.056,0.158999999999992,NA
+netapp-ultra,2,"Read CSV, 1GB",2.187,0.49,4.098,NA
+netapp-ultra,2,"DD write, 1GB",0.00200000000000067,0.004,7.84699999999999,2
+netapp-ultra,2,"DD write, 1GB",0.00700000000000145,1.285,15.795,4
+netapp-ultra,2,"DD write, 1GB",0.0230000000000015,4.041,31.696,8
+netapp-ultra,2,"DD write, 1GB",0.0749999999999975,9.036,63.512,16
+netapp-ultra,2,"DD read, 1GB",0.00599999999999845,0.391000000000001,7.51299999999998,2
+netapp-ultra,2,"DD read, 1GB",0.0109999999999992,1.371,15.924,4
+netapp-ultra,2,"DD read, 1GB",0.0350000000000019,3.614,31.908,8
+netapp-ultra,2,"DD read, 1GB",0.0710000000000015,7.851,63.901,16
+netapp-ultra,2,"Write CSV, 100MB over 10 files",0.983000000000001,0.104,0.647000000000048,NA
+netapp-ultra,2,"Read CSV, 100MB over 10 files",0.373999999999999,0.0350000000000001,0.754999999999995,NA
+netapp-ultra,2,"Write CSV, 100MB over 100 files",0.649999999999999,0.0649999999999999,1.04000000000002,NA
+netapp-ultra,2,"Read CSV, 100MB over 100 files",0.232000000000001,0.032,0.757999999999981,NA
+netapp-ultra,2,"Write CSV, 100MB over 1000 files",0.696,0.111,2.28100000000001,NA
+netapp-ultra,2,"Read CSV, 100MB over 1000 files",0.517999999999999,0.164,3.30199999999996,NA
+netapp-ultra,2,"Write CSV, 100MB over 10000 files",1.914,0.46,13.66,NA
+netapp-ultra,2,"Read CSV, 100MB over 10000 files",3.703,1.018,23.907,NA
+netapp-ultra,2,"DD write, 10MB over 1000 files",0.00100000000000122,0.00499999999999989,3.48099999999999,2
+netapp-ultra,2,"DD write, 10MB over 1000 files",2.74,3.532,3.82799999999997,4
+netapp-ultra,2,"DD write, 10MB over 1000 files",6.721,9.03200000000001,5.97700000000003,8
+netapp-ultra,2,"DD write, 10MB over 1000 files",14.578,20.055,11.926,16
+netapp-ultra,2,"DD read, 10MB over 1000 files",0,0.00499999999999989,3.01999999999998,2
+netapp-ultra,2,"DD read, 10MB over 1000 files",2.692,3.659,3.363,4
+netapp-ultra,2,"DD read, 10MB over 1000 files",5.89399999999999,8.515,4.36599999999999,8
+netapp-ultra,2,"DD read, 10MB over 1000 files",15.562,22.806,7.20400000000001,16
+netapp-ultra,2,"FST random reads, 100MB over 10*10MB reads",1.553,0.0590000000000002,0.265999999999963,NA
+netapp-ultra,2,"FST random reads, 100MB over 100*1MB reads",6.135,0.0419999999999998,0.908999999999992,NA
+netapp-ultra,2,"FST random reads, 100MB over 1000*100KB reads",1.661,0.133,1.37899999999996,NA
+netapp-ultra,2,"FST random reads, 100MB over 10000*10KB reads",0.561,0.39,8.06200000000001,NA
+netapp-ultra,2,Read 14 days of CRAN logs with fread,60.312,2.405,33.081,NA
+netapp-ultra,2,Sample 5000 rows from each of 14 CRAN logs with vroom,23.81,4.37,15.687,NA
+netapp-ultra,3,task,user,system,elapsed,parallelism
+netapp-ultra,3,Install MASS,6.8,3.279,9.206,NA
+netapp-ultra,3,Install lattice,8.465,3.208,9.811,NA
+netapp-ultra,3,Install BH,9.565,5.266,46.488,NA
+netapp-ultra,3,"Write CSV, 10KB",0.00099999999999989,0,0.00300000000000011,NA
+netapp-ultra,3,"Write CSV, 1MB",0.00600000000000023,0.00099999999999989,0.0109999999999957,NA
+netapp-ultra,3,"Write CSV, 100MB",0.588,0.0580000000000001,0.231999999999999,NA
+netapp-ultra,3,"Write CSV, 1GB",5.304,0.49,5.127,NA
+netapp-ultra,3,"Read CSV, 10KB",0.00199999999999889,0.00099999999999989,0.00600000000000023,NA
+netapp-ultra,3,"Read CSV, 1MB",0.00300000000000011,0,0.0100000000000051,NA
+netapp-ultra,3,"Read CSV, 100MB",0.192,0.04,0.158000000000001,NA
+netapp-ultra,3,"Read CSV, 1GB",2.235,0.496,4.114,NA
+netapp-ultra,3,"DD write, 1GB",0,0.00499999999999989,7.84700000000001,2
+netapp-ultra,3,"DD write, 1GB",0.00100000000000122,0.645999999999999,15.794,4
+netapp-ultra,3,"DD write, 1GB",0.0179999999999989,4.019,31.692,8
+netapp-ultra,3,"DD write, 1GB",0.0669999999999984,9.062,63.504,16
+netapp-ultra,3,"DD read, 1GB",0.000999999999997669,0.393000000000003,7.51599999999999,2
+netapp-ultra,3,"DD read, 1GB",0.012000000000004,1.351,15.921,4
+netapp-ultra,3,"DD read, 1GB",0.0340000000000007,3.498,31.905,8
+netapp-ultra,3,"DD read, 1GB",0.0579999999999998,7.364,63.91,16
+netapp-ultra,3,"Write CSV, 100MB over 10 files",0.917,0.107,0.590000000000032,NA
+netapp-ultra,3,"Read CSV, 100MB over 10 files",0.422000000000001,0.0499999999999998,0.83299999999997,NA
+netapp-ultra,3,"Write CSV, 100MB over 100 files",0.661,0.0590000000000002,1.05599999999998,NA
+netapp-ultra,3,"Read CSV, 100MB over 100 files",0.229000000000001,0.0329999999999999,0.764999999999986,NA
+netapp-ultra,3,"Write CSV, 100MB over 1000 files",0.721,0.0879999999999996,2.30900000000003,NA
+netapp-ultra,3,"Read CSV, 100MB over 1000 files",0.532000000000002,0.128,3.24100000000004,NA
+netapp-ultra,3,"Write CSV, 100MB over 10000 files",1.961,0.464,14.108,NA
+netapp-ultra,3,"Read CSV, 100MB over 10000 files",3.632,1.067,23.204,NA
+netapp-ultra,3,"DD write, 10MB over 1000 files",0,0.00600000000000023,3.56900000000002,2
+netapp-ultra,3,"DD write, 10MB over 1000 files",1.885,2.286,3.91300000000001,4
+netapp-ultra,3,"DD write, 10MB over 1000 files",6.529,9.169,6.10899999999998,8
+netapp-ultra,3,"DD write, 10MB over 1000 files",14.064,20.291,11.204,16
+netapp-ultra,3,"DD read, 10MB over 1000 files",0.831,1.09199999999999,2.95100000000002,2
+netapp-ultra,3,"DD read, 10MB over 1000 files",2.64100000000001,3.646,3.30900000000003,4
+netapp-ultra,3,"DD read, 10MB over 1000 files",6.805,9.82900000000001,4.31900000000002,8
+netapp-ultra,3,"DD read, 10MB over 1000 files",15.167,22.432,7.065,16
+netapp-ultra,3,"FST random reads, 100MB over 10*10MB reads",1.819,0.0649999999999995,0.305000000000007,NA
+netapp-ultra,3,"FST random reads, 100MB over 100*1MB reads",5.968,0.0509999999999993,0.891999999999996,NA
+netapp-ultra,3,"FST random reads, 100MB over 1000*100KB reads",1.713,0.103,1.42700000000002,NA
+netapp-ultra,3,"FST random reads, 100MB over 10000*10KB reads",0.549999999999997,0.407,8.601,NA
+netapp-ultra,3,Read 14 days of CRAN logs with fread,60.538,2.409,32.563,NA
+netapp-ultra,3,Sample 5000 rows from each of 14 CRAN logs with vroom,23.614,4.483,15.633,NA
+storage-acct-azure-files,1,task,user,system,elapsed,parallelism
+storage-acct-azure-files,1,Install MASS,7.196,3.352,30.006,NA
+storage-acct-azure-files,1,Install lattice,8.731,3.266,21.622,NA
+storage-acct-azure-files,1,Install BH,9.579,12.006,384.409,NA
+storage-acct-azure-files,1,"Write CSV, 10KB",0,0.00100000000000033,0.0330000000000155,NA
+storage-acct-azure-files,1,"Write CSV, 1MB",0.00600000000000023,0,0.0520000000000209,NA
+storage-acct-azure-files,1,"Write CSV, 100MB",0.549,0.0569999999999999,0.333999999999946,NA
+storage-acct-azure-files,1,"Write CSV, 1GB",5.312,0.477,2.48000000000002,NA
+storage-acct-azure-files,1,"Read CSV, 10KB",0.00199999999999889,0,0.02800000000002,NA
+storage-acct-azure-files,1,"Read CSV, 1MB",0.000999999999999446,0.00300000000000011,0.0660000000000309,NA
+storage-acct-azure-files,1,"Read CSV, 100MB",0.186,0.0439999999999996,0.971000000000004,NA
+storage-acct-azure-files,1,"Read CSV, 1GB",1.725,0.464,6.08100000000002,NA
+storage-acct-azure-files,1,"DD write, 1GB",0.00100000000000122,0.00299999999999967,1.47900000000004,2
+storage-acct-azure-files,1,"DD write, 1GB",0.00900000000000034,1.285,2.93299999999999,4
+storage-acct-azure-files,1,"DD write, 1GB",0.0169999999999995,4.51,6.39599999999996,8
+storage-acct-azure-files,1,"DD write, 1GB",0.0570000000000004,8.872,56.495,16
+storage-acct-azure-files,1,"DD read, 1GB",0.00300000000000011,0.355999999999997,26.292,2
+storage-acct-azure-files,1,"DD read, 1GB",0.0139999999999993,1.077,6.85000000000002,4
+storage-acct-azure-files,1,"DD read, 1GB",0.0269999999999992,2.88199999999999,11.076,8
+storage-acct-azure-files,1,"DD read, 1GB",0.0650000000000013,5.94899999999999,87.239,16
+storage-acct-azure-files,1,"Write CSV, 100MB over 10 files",0.901,0.108,1.072,NA
+storage-acct-azure-files,1,"Read CSV, 100MB over 10 files",0.420999999999999,0.0369999999999999,6.57600000000002,NA
+storage-acct-azure-files,1,"Write CSV, 100MB over 100 files",0.727,0.0680000000000001,4.84500000000003,NA
+storage-acct-azure-files,1,"Read CSV, 100MB over 100 files",0.273999999999999,0.0640000000000001,5.04999999999995,NA
+storage-acct-azure-files,1,"Write CSV, 100MB over 1000 files",0.978000000000002,0.152,16.148,NA
+storage-acct-azure-files,1,"Read CSV, 100MB over 1000 files",0.802,0.22,24.309,NA
+storage-acct-azure-files,1,"Write CSV, 100MB over 10000 files",2.942,3.773,128.596,NA
+storage-acct-azure-files,1,"Read CSV, 100MB over 10000 files",5.241,5.274,197.934,NA
+storage-acct-azure-files,1,"DD write, 10MB over 1000 files",0.974999999999998,1.411,15.5889999999999,2
+storage-acct-azure-files,1,"DD write, 10MB over 1000 files",2.874,4.078,18.1629999999998,4
+storage-acct-azure-files,1,"DD write, 10MB over 1000 files",6.697,10.813,45.896,8
+storage-acct-azure-files,1,"DD write, 10MB over 1000 files",14.445,24.089,82.865,16
+storage-acct-azure-files,1,"DD read, 10MB over 1000 files",1.003,1.319,11.9099999999999,2
+storage-acct-azure-files,1,"DD read, 10MB over 1000 files",2.817,3.84199999999999,11.4480000000001,4
+storage-acct-azure-files,1,"DD read, 10MB over 1000 files",6.22800000000001,10.051,11.518,8
+storage-acct-azure-files,1,"DD read, 10MB over 1000 files",14.034,24.777,12.7850000000001,16
+storage-acct-azure-files,1,"FST random reads, 100MB over 10*10MB reads",2.491,0.0520000000000014,1.25400000000013,NA
+storage-acct-azure-files,1,"FST random reads, 100MB over 100*1MB reads",15,0.116,2.87300000000005,NA
+storage-acct-azure-files,1,"FST random reads, 100MB over 1000*100KB reads",7.554,0.149999999999999,9.5440000000001,NA
+storage-acct-azure-files,1,"FST random reads, 100MB over 10000*10KB reads",0.892000000000003,0.579000000000001,63.2240000000002,NA
+storage-acct-azure-files,1,Read 14 days of CRAN logs with fread,59.855,2.492,35.7179999999998,NA
+storage-acct-azure-files,1,Sample 5000 rows from each of 14 CRAN logs with vroom,23.725,4.50400000000001,18.3329999999999,NA
+storage-acct-azure-files,2,task,user,system,elapsed,parallelism
+storage-acct-azure-files,2,Install MASS,7.149,3.384,29.662,NA
+storage-acct-azure-files,2,Install lattice,8.731,3.29,21.193,NA
+storage-acct-azure-files,2,Install BH,9.668,9.228,372.801,NA
+storage-acct-azure-files,2,"Write CSV, 10KB",0.00099999999999989,0,0.0310000000000059,NA
+storage-acct-azure-files,2,"Write CSV, 1MB",0.00600000000000023,0,0.0520000000000209,NA
+storage-acct-azure-files,2,"Write CSV, 100MB",0.567,0.0509999999999999,0.335000000000036,NA
+storage-acct-azure-files,2,"Write CSV, 1GB",5.293,0.486,2.60599999999999,NA
+storage-acct-azure-files,2,"Read CSV, 10KB",0.00200000000000067,0,0.0409999999999968,NA
+storage-acct-azure-files,2,"Read CSV, 1MB",0.00300000000000011,0,0.0569999999999595,NA
+storage-acct-azure-files,2,"Read CSV, 100MB",0.199,0.0409999999999999,0.942000000000007,NA
+storage-acct-azure-files,2,"Read CSV, 1GB",1.754,0.452,6.06399999999996,NA
+storage-acct-azure-files,2,"DD write, 1GB",0.00600000000000023,0.633,1.54199999999992,2
+storage-acct-azure-files,2,"DD write, 1GB",0.0080000000000009,1.305,2.971,4
+storage-acct-azure-files,2,"DD write, 1GB",0.0229999999999997,4.54,6.375,8
+storage-acct-azure-files,2,"DD write, 1GB",0.0599999999999969,9.154,58.933,16
+storage-acct-azure-files,2,"DD read, 1GB",0.00699999999999967,0.341999999999997,29.1419999999999,2
+storage-acct-azure-files,2,"DD read, 1GB",0.016,1.079,6.64099999999996,4
+storage-acct-azure-files,2,"DD read, 1GB",0.0300000000000011,2.975,10.4820000000001,8
+storage-acct-azure-files,2,"DD read, 1GB",0.0670000000000002,6.174,82.902,16
+storage-acct-azure-files,2,"Write CSV, 100MB over 10 files",0.886000000000001,0.097,1.06200000000001,NA
+storage-acct-azure-files,2,"Read CSV, 100MB over 10 files",0.432,0.048,3.94099999999992,NA
+storage-acct-azure-files,2,"Write CSV, 100MB over 100 files",0.725999999999999,0.0660000000000003,4.375,NA
+storage-acct-azure-files,2,"Read CSV, 100MB over 100 files",0.287000000000001,0.0459999999999998,4.87400000000002,NA
+storage-acct-azure-files,2,"Write CSV, 100MB over 1000 files",0.979000000000001,0.135,15.551,NA
+storage-acct-azure-files,2,"Read CSV, 100MB over 1000 files",0.776000000000002,0.241,23.212,NA
+storage-acct-azure-files,2,"Write CSV, 100MB over 10000 files",2.951,3.86,126.145,NA
+storage-acct-azure-files,2,"Read CSV, 100MB over 10000 files",5.113,5.054,174.071,NA
+storage-acct-azure-files,2,"DD write, 10MB over 1000 files",0.978999999999999,1.377,13.807,2
+storage-acct-azure-files,2,"DD write, 10MB over 1000 files",2.864,3.953,16.0989999999999,4
+storage-acct-azure-files,2,"DD write, 10MB over 1000 files",6.811,10.592,43.2700000000002,8
+storage-acct-azure-files,2,"DD write, 10MB over 1000 files",14.431,23.943,84.3420000000001,16
+storage-acct-azure-files,2,"DD read, 10MB over 1000 files",0.940999999999995,1.361,11.7559999999999,2
+storage-acct-azure-files,2,"DD read, 10MB over 1000 files",2.775,3.83799999999999,11.336,4
+storage-acct-azure-files,2,"DD read, 10MB over 1000 files",6.192,10.028,11.1949999999999,8
+storage-acct-azure-files,2,"DD read, 10MB over 1000 files",13.917,23.963,17.2650000000001,16
+storage-acct-azure-files,2,"FST random reads, 100MB over 10*10MB reads",2.453,0.0630000000000006,1.18200000000002,NA
+storage-acct-azure-files,2,"FST random reads, 100MB over 100*1MB reads",15.913,0.131,3.05200000000013,NA
+storage-acct-azure-files,2,"FST random reads, 100MB over 1000*100KB reads",7.62,0.138,9.9369999999999,NA
+storage-acct-azure-files,2,"FST random reads, 100MB over 10000*10KB reads",0.836999999999996,0.579000000000001,73.386,NA
+storage-acct-azure-files,2,Read 14 days of CRAN logs with fread,59.822,2.394,36.72,NA
+storage-acct-azure-files,2,Sample 5000 rows from each of 14 CRAN logs with vroom,23.674,4.561,18.953,NA
+storage-acct-azure-files,3,task,user,system,elapsed,parallelism
+storage-acct-azure-files,3,Install MASS,7.54,3.356,36.282,NA
+storage-acct-azure-files,3,Install lattice,8.809,3.247,24.703,NA
+storage-acct-azure-files,3,Install BH,9.704,10.101,505.648,NA
+storage-acct-azure-files,3,"Write CSV, 10KB",0.00100000000000033,0.00100000000000011,0.0330000000000155,NA
+storage-acct-azure-files,3,"Write CSV, 1MB",0.00600000000000023,0.00099999999999989,0.0499999999999545,NA
+storage-acct-azure-files,3,"Write CSV, 100MB",0.568,0.0579999999999998,0.339999999999918,NA
+storage-acct-azure-files,3,"Write CSV, 1GB",5.314,0.471,2.57100000000003,NA
+storage-acct-azure-files,3,"Read CSV, 10KB",0.00199999999999889,0,0.0349999999999682,NA
+storage-acct-azure-files,3,"Read CSV, 1MB",0.00199999999999889,0.00199999999999978,0.0620000000000118,NA
+storage-acct-azure-files,3,"Read CSV, 100MB",0.193999999999999,0.0449999999999999,1.005,NA
+storage-acct-azure-files,3,"Read CSV, 1GB",1.728,0.46,6.28899999999999,NA
+storage-acct-azure-files,3,"DD write, 1GB",0.00399999999999601,0.634999999999999,1.58699999999999,2
+storage-acct-azure-files,3,"DD write, 1GB",0.00800000000000267,1.95,3.0379999999999,4
+storage-acct-azure-files,3,"DD write, 1GB",0.0149999999999988,4.508,6.70600000000002,8
+storage-acct-azure-files,3,"DD write, 1GB",0.0590000000000011,8.967,71.948,16
+storage-acct-azure-files,3,"DD read, 1GB",0.00199999999999889,0.325000000000003,14.491,2
+storage-acct-azure-files,3,"DD read, 1GB",0.0130000000000035,1.064,6.67499999999995,4
+storage-acct-azure-files,3,"DD read, 1GB",0.0290000000000017,2.903,9.45699999999999,8
+storage-acct-azure-files,3,"DD read, 1GB",0.0720000000000027,6.30499999999999,80.803,16
+storage-acct-azure-files,3,"Write CSV, 100MB over 10 files",0.888999999999999,0.109,1.10000000000002,NA
+storage-acct-azure-files,3,"Read CSV, 100MB over 10 files",0.494,0.04,4.10899999999992,NA
+storage-acct-azure-files,3,"Write CSV, 100MB over 100 files",0.725000000000001,0.0649999999999999,4.702,NA
+storage-acct-azure-files,3,"Read CSV, 100MB over 100 files",0.296999999999999,0.0460000000000003,5.28300000000002,NA
+storage-acct-azure-files,3,"Write CSV, 100MB over 1000 files",0.968999999999999,0.147,18.793,NA
+storage-acct-azure-files,3,"Read CSV, 100MB over 1000 files",0.82,0.231,25.102,NA
+storage-acct-azure-files,3,"Write CSV, 100MB over 10000 files",2.94,2.396,156.608,NA
+storage-acct-azure-files,3,"Read CSV, 100MB over 10000 files",5.356,3.355,188.732,NA
+storage-acct-azure-files,3,"DD write, 10MB over 1000 files",1.025,1.372,16.931,2
+storage-acct-azure-files,3,"DD write, 10MB over 1000 files",2.957,4.161,21.0730000000001,4
+storage-acct-azure-files,3,"DD write, 10MB over 1000 files",6.984,10.289,46.6740000000002,8
+storage-acct-azure-files,3,"DD write, 10MB over 1000 files",14.709,25.069,93.1700000000001,16
+storage-acct-azure-files,3,"DD read, 10MB over 1000 files",1.038,1.311,13.922,2
+storage-acct-azure-files,3,"DD read, 10MB over 1000 files",2.9,3.91400000000001,13.5459999999998,4
+storage-acct-azure-files,3,"DD read, 10MB over 1000 files",6.44200000000001,9.095,13.769,8
+storage-acct-azure-files,3,"DD read, 10MB over 1000 files",14.175,24.042,14.8710000000001,16
+storage-acct-azure-files,3,"FST random reads, 100MB over 10*10MB reads",2.423,0.0540000000000003,1.15200000000004,NA
+storage-acct-azure-files,3,"FST random reads, 100MB over 100*1MB reads",16.531,0.127000000000001,3.27400000000011,NA
+storage-acct-azure-files,3,"FST random reads, 100MB over 1000*100KB reads",7.876,0.186,11.7670000000001,NA
+storage-acct-azure-files,3,"FST random reads, 100MB over 10000*10KB reads",0.930999999999997,0.606,80.502,NA
+storage-acct-azure-files,3,Read 14 days of CRAN logs with fread,59.866,2.5,36.385,NA
+storage-acct-azure-files,3,Sample 5000 rows from each of 14 CRAN logs with vroom,23.692,4.48000000000001,18.617,NA

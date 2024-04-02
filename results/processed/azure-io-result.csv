@@ -1,0 +1,25 @@
+filesystem,io-test-name,requests-count,requests-time,requests-ops-volume,requests-iops,requests-throughput,generated-count,generated-time,generated-ops-volume,generated-iops,generated-throughput,min,avg,max,mdev
+elastic-san-same-zone,ioping-large-ping,49,372.3 ms,49 MiB,131,131.6 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,4.97 ms,7.60 ms,24.7 ms,3.26 ms
+elastic-san-same-zone,ioping-linear-async-read,7.10 k,29.9 s,1.73 GiB,237,59.5 MiB/s,7.10 k,30.0 s,1.73 GiB,236,59.2 MiB/s,2.59 ms,4.20 ms,25.6 ms,1.01 ms
+elastic-san-same-zone,ioping-linear-async-write,5.98 k,29.4 s,1.46 GiB,203,50.8 MiB/s,5.98 k,30.0 s,1.46 GiB,199,49.8 MiB/s,3.90 ms,4.92 ms,52.7 ms,1.08 ms
+elastic-san-same-zone,ioping-ping,49,170.6 ms,196 KiB,287,1.12 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,2.42 ms,3.48 ms,23.9 ms,2.97 ms
+managed-disk-local-storage-premium-ssd-lrs,ioping-large-ping,49,38.1 ms,49 MiB,1.28 k,1.26 GiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,661.5 us,777.9 us,986.9 us,74.6 us
+managed-disk-local-storage-premium-ssd-lrs,ioping-linear-async-read,94.8 k,28.6 s,23.1 GiB,3.32 k,829.7 MiB/s,94.8 k,30.0 s,23.1 GiB,3.16 k,790.0 MiB/s,119.6 us,301.3 us,46.7 ms,1.85 ms
+managed-disk-local-storage-premium-ssd-lrs,ioping-linear-async-write,9.26 k,29.3 s,2.26 GiB,315,79.0 MiB/s,9.26 k,30.0 s,2.26 GiB,308,77.1 MiB/s,2.17 ms,3.17 ms,192.8 ms,2.60 ms
+managed-disk-local-storage-premium-ssd-lrs,ioping-ping,49,12.6 ms,196 KiB,3.89 k,15.2 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,148.0 us,257.3 us,493.4 us,80.7 us
+netapp-premium,ioping-large-ping,49,436.8 ms,49 MiB,112,112.2 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,7.03 ms,8.91 ms,17.7 ms,1.68 ms
+netapp-premium,ioping-linear-async-read,15.4 k,29.7 s,3.75 GiB,517,129.4 MiB/s,15.4 k,30.0 s,3.76 GiB,512,128.2 MiB/s,714.9 us,1.93 ms,12.6 ms,2.85 ms
+netapp-premium,ioping-linear-async-write,15.4 k,29.0 s,3.75 GiB,529,132.3 MiB/s,15.4 k,30.0 s,3.75 GiB,512,128.1 MiB/s,1.09 ms,1.89 ms,14.5 ms,2.26 ms
+netapp-premium,ioping-ping,49,46.0 ms,196 KiB,1.06 k,4.16 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,454.3 us,938.4 us,9.29 ms,1.26 ms
+netapp-standard,ioping-large-ping,49,311.0 ms,49 MiB,157,157.6 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,5.50 ms,6.35 ms,7.42 ms,444.4 us
+netapp-standard,ioping-linear-async-read,3.84 k,29.9 s,960.2 MiB,128,32.1 MiB/s,3.84 k,30.0 s,960.5 MiB,128,32.0 MiB/s,517.5 us,7.79 ms,11.1 ms,4.07 ms
+netapp-standard,ioping-linear-async-write,3.84 k,29.7 s,960 MiB,129,32.3 MiB/s,3.84 k,30.0 s,960.2 MiB,127,32.0 MiB/s,907.9 us,7.74 ms,12.8 ms,4.56 ms
+netapp-standard,ioping-ping,49,27.3 ms,196 KiB,1.79 k,7.01 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,426.7 us,556.9 us,1.30 ms,155.5 us
+netapp-ultra,ioping-large-ping,49,317.8 ms,49 MiB,154,154.2 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,5.42 ms,6.48 ms,10.3 ms,738.4 us
+netapp-ultra,ioping-linear-async-read,31.0 k,29.5 s,7.58 GiB,1.05 k,263.2 MiB/s,31.0 k,30.0 s,7.58 GiB,1.03 k,258.6 MiB/s,428.5 us,949.9 us,13.4 ms,1.68 ms
+netapp-ultra,ioping-linear-async-write,30.0 k,28.2 s,7.33 GiB,1.06 k,266.2 MiB/s,30.0 k,30.0 s,7.33 GiB,1 k,250.1 MiB/s,791.2 us,939.1 us,5.13 ms,105.2 us
+netapp-ultra,ioping-ping,49,27.3 ms,196 KiB,1.79 k,7.01 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,400.2 us,557.3 us,1.05 ms,133.4 us
+storage-acct-azure-files,ioping-large-ping,49,505.6 ms,49 MiB,96,96.9 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,6.03 ms,10.3 ms,14.6 ms,2.06 ms
+storage-acct-azure-files,ioping-linear-async-read,6.84 k,29.9 s,1.67 GiB,229,57.3 MiB/s,6.84 k,30.0 s,1.67 GiB,228,57.0 MiB/s,3.09 ms,4.36 ms,57.3 ms,897.2 us
+storage-acct-azure-files,ioping-linear-async-write,3.96 k,29.7 s,988.8 MiB,133,33.3 MiB/s,3.96 k,30.0 s,989 MiB,131,33.0 MiB/s,5.88 ms,7.50 ms,39.3 ms,1.14 ms
+storage-acct-azure-files,ioping-ping,49,163.9 ms,196 KiB,299,1.17 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,2.28 ms,3.34 ms,6.68 ms,936.2 us

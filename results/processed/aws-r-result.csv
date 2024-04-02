@@ -1,0 +1,882 @@
+cross-az-lustre,1,task,user,system,elapsed,parallelism
+cross-az-lustre,1,Install MASS,17.069,12.64,18.084,NA
+cross-az-lustre,1,Install lattice,18.622,12.364,15.679,NA
+cross-az-lustre,1,Install BH,20.821,31.349,287.457,NA
+cross-az-lustre,1,"Write CSV, 10KB",0.000999999999999446,0.00199999999999978,0.0610000000000355,NA
+cross-az-lustre,1,"Write CSV, 1MB",0.00600000000000023,0.00300000000000011,0.0330000000000155,NA
+cross-az-lustre,1,"Write CSV, 100MB",0.835,0.119,0.230999999999995,NA
+cross-az-lustre,1,"Write CSV, 1GB",7.267,0.869,0.978000000000009,NA
+cross-az-lustre,1,"Read CSV, 10KB",0.00199999999999889,0.00400000000000045,0.0370000000000346,NA
+cross-az-lustre,1,"Read CSV, 1MB",0.00399999999999956,0.00399999999999956,0.0450000000000159,NA
+cross-az-lustre,1,"Read CSV, 100MB",0.83,0.898,1.94400000000002,NA
+cross-az-lustre,1,"Read CSV, 1GB",5.504,8.585,17.669,NA
+cross-az-lustre,1,"DD write, 1GB",0.00499999999999545,0.950999999999997,1.726,2
+cross-az-lustre,1,"DD write, 1GB",0.0189999999999948,3.25000000000001,5.125,4
+cross-az-lustre,1,"DD write, 1GB",0.024999999999995,9.23,12.068,8
+cross-az-lustre,1,"DD write, 1GB",0.0889999999999951,21.009,25.991,16
+cross-az-lustre,1,"DD read, 1GB",0.00499999999999901,0.658999999999997,3.529,2
+cross-az-lustre,1,"DD read, 1GB",0.0130000000000017,2.056,6.97499999999997,4
+cross-az-lustre,1,"DD read, 1GB",0.0359999999999978,5.01099999999999,13.879,8
+cross-az-lustre,1,"DD read, 1GB",0.0650000000000048,12.151,27.722,16
+cross-az-lustre,1,"Write CSV, 100MB over 10 files",1.03,0.166,0.378000000000043,NA
+cross-az-lustre,1,"Read CSV, 100MB over 10 files",1.141,0.825999999999997,4.67500000000001,NA
+cross-az-lustre,1,"Write CSV, 100MB over 100 files",0.783999999999999,0.155999999999999,1.24000000000001,NA
+cross-az-lustre,1,"Read CSV, 100MB over 100 files",0.373999999999999,0.234000000000002,1.91600000000005,NA
+cross-az-lustre,1,"Write CSV, 100MB over 1000 files",1.26,0.416999999999998,4.32900000000001,NA
+cross-az-lustre,1,"Read CSV, 100MB over 1000 files",1.52,1.071,15.1439999999999,NA
+cross-az-lustre,1,"Write CSV, 100MB over 10000 files",4.943,2.725,34.341,NA
+cross-az-lustre,1,"Read CSV, 100MB over 10000 files",9.828,6.075,84.354,NA
+cross-az-lustre,1,"DD write, 10MB over 1000 files",0,0.00900000000000034,5.18299999999999,2
+cross-az-lustre,1,"DD write, 10MB over 1000 files",3.061,4.488,7.03399999999999,4
+cross-az-lustre,1,"DD write, 10MB over 1000 files",7.425,10.179,7.971,8
+cross-az-lustre,1,"DD write, 10MB over 1000 files",16.123,22.218,14.91,16
+cross-az-lustre,1,"DD read, 10MB over 1000 files",0.00200000000000244,0.00700000000000145,7.40200000000004,2
+cross-az-lustre,1,"DD read, 10MB over 1000 files",1.315,1.499,6.88,4
+cross-az-lustre,1,"DD read, 10MB over 1000 files",6.37100000000001,8.73300000000001,6.39300000000003,8
+cross-az-lustre,1,"DD read, 10MB over 1000 files",15.461,22.083,6.44399999999996,16
+cross-az-lustre,1,"FST random reads, 100MB over 10*10MB reads",11.309,0.254000000000001,0.450000000000045,NA
+cross-az-lustre,1,"FST random reads, 100MB over 100*1MB reads",20.504,0.385999999999996,0.83400000000006,NA
+cross-az-lustre,1,"FST random reads, 100MB over 1000*100KB reads",3.235,0.254000000000005,2.87,NA
+cross-az-lustre,1,"FST random reads, 100MB over 10000*10KB reads",2.431,2.118,26.732,NA
+cross-az-lustre,1,Read 14 days of CRAN logs with fread,92.374,27.374,62.1719999999999,NA
+cross-az-lustre,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.896,31.04,43.526,NA
+cross-az-lustre,2,task,user,system,elapsed,parallelism
+cross-az-lustre,2,Install MASS,17.123,12.647,18.037,NA
+cross-az-lustre,2,Install lattice,18.95,12.154,15.648,NA
+cross-az-lustre,2,Install BH,21.176,31.37,288.253,NA
+cross-az-lustre,2,"Write CSV, 10KB",0.00200000000000067,0,0.0249999999999773,NA
+cross-az-lustre,2,"Write CSV, 1MB",0.00400000000000045,0.00399999999999956,0.0289999999999964,NA
+cross-az-lustre,2,"Write CSV, 100MB",0.852,0.118,0.228999999999985,NA
+cross-az-lustre,2,"Write CSV, 1GB",7.41,0.874,1.01299999999998,NA
+cross-az-lustre,2,"Read CSV, 10KB",0.00199999999999889,0.00199999999999978,0.0370000000000346,NA
+cross-az-lustre,2,"Read CSV, 1MB",0.00399999999999956,0.00399999999999956,0.0419999999999732,NA
+cross-az-lustre,2,"Read CSV, 100MB",0.725999999999999,0.93,1.94600000000003,NA
+cross-az-lustre,2,"Read CSV, 1GB",5.889,8.496,17.797,NA
+cross-az-lustre,2,"DD write, 1GB",0.0110000000000028,0.964,1.77000000000004,2
+cross-az-lustre,2,"DD write, 1GB",0.0150000000000006,3.33899999999999,5.11399999999998,4
+cross-az-lustre,2,"DD write, 1GB",0.0399999999999991,8.82099999999999,12.058,8
+cross-az-lustre,2,"DD write, 1GB",0.0969999999999942,22.286,26.005,16
+cross-az-lustre,2,"DD read, 1GB",0.00299999999999301,0.678000000000003,3.52100000000002,2
+cross-az-lustre,2,"DD read, 1GB",0.0140000000000029,2.01600000000001,6.971,4
+cross-az-lustre,2,"DD read, 1GB",0.0300000000000011,5.10499999999999,13.873,8
+cross-az-lustre,2,"DD read, 1GB",0.0850000000000044,12.161,27.731,16
+cross-az-lustre,2,"Write CSV, 100MB over 10 files",1.005,0.151999999999999,0.363,NA
+cross-az-lustre,2,"Read CSV, 100MB over 10 files",1.088,0.921000000000001,4.702,NA
+cross-az-lustre,2,"Write CSV, 100MB over 100 files",0.782,0.149000000000001,1.23400000000004,NA
+cross-az-lustre,2,"Read CSV, 100MB over 100 files",0.359999999999999,0.248999999999999,1.904,NA
+cross-az-lustre,2,"Write CSV, 100MB over 1000 files",1.209,0.443999999999999,4.31999999999999,NA
+cross-az-lustre,2,"Read CSV, 100MB over 1000 files",1.536,1.029,14.932,NA
+cross-az-lustre,2,"Write CSV, 100MB over 10000 files",4.86,2.685,34.455,NA
+cross-az-lustre,2,"Read CSV, 100MB over 10000 files",9.881,6.164,86.0189999999999,NA
+cross-az-lustre,2,"DD write, 10MB over 1000 files",0,0.00900000000000034,5.197,2
+cross-az-lustre,2,"DD write, 10MB over 1000 files",3.088,4.43899999999999,7.03599999999994,4
+cross-az-lustre,2,"DD write, 10MB over 1000 files",7.41399999999999,10.163,7.95299999999997,8
+cross-az-lustre,2,"DD write, 10MB over 1000 files",15.091,20.583,14.862,16
+cross-az-lustre,2,"DD read, 10MB over 1000 files",0.00200000000000244,0.0069999999999979,7.46600000000001,2
+cross-az-lustre,2,"DD read, 10MB over 1000 files",0.00300000000000011,0.00999999999999801,6.83699999999999,4
+cross-az-lustre,2,"DD read, 10MB over 1000 files",7.58600000000001,10.175,6.41999999999996,8
+cross-az-lustre,2,"DD read, 10MB over 1000 files",15.281,22.261,6.452,16
+cross-az-lustre,2,"FST random reads, 100MB over 10*10MB reads",12.631,0.149000000000001,0.521999999999935,NA
+cross-az-lustre,2,"FST random reads, 100MB over 100*1MB reads",16.655,0.220999999999997,0.649000000000001,NA
+cross-az-lustre,2,"FST random reads, 100MB over 1000*100KB reads",2.971,0.25,2.58000000000004,NA
+cross-az-lustre,2,"FST random reads, 100MB over 10000*10KB reads",2.18300000000001,2.141,26.2329999999999,NA
+cross-az-lustre,2,Read 14 days of CRAN logs with fread,93.044,27.426,61.879,NA
+cross-az-lustre,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.727,31.19,43.551,NA
+cross-az-lustre,3,task,user,system,elapsed,parallelism
+cross-az-lustre,3,Install MASS,17.172,12.562,18.278,NA
+cross-az-lustre,3,Install lattice,18.91,12.098,15.608,NA
+cross-az-lustre,3,Install BH,21.579,30.356,287.135,NA
+cross-az-lustre,3,"Write CSV, 10KB",0.00200000000000067,0.00100000000000033,0.0540000000000305,NA
+cross-az-lustre,3,"Write CSV, 1MB",0.00600000000000023,0.00199999999999978,0.0300000000000296,NA
+cross-az-lustre,3,"Write CSV, 100MB",0.83,0.131,0.226999999999975,NA
+cross-az-lustre,3,"Write CSV, 1GB",7.378,0.901999999999999,0.992999999999995,NA
+cross-az-lustre,3,"Read CSV, 10KB",0.00200000000000067,0.00399999999999956,0.0399999999999636,NA
+cross-az-lustre,3,"Read CSV, 1MB",0.00499999999999901,0.00299999999999923,0.0430000000000064,NA
+cross-az-lustre,3,"Read CSV, 100MB",0.758000000000001,0.888,1.92400000000004,NA
+cross-az-lustre,3,"Read CSV, 1GB",5.807,8.489,17.819,NA
+cross-az-lustre,3,"DD write, 1GB",0.0120000000000005,0.950000000000001,1.73400000000004,2
+cross-az-lustre,3,"DD write, 1GB",0.0120000000000005,3.3,5.12400000000002,4
+cross-az-lustre,3,"DD write, 1GB",0.0339999999999989,9.415,12.049,8
+cross-az-lustre,3,"DD write, 1GB",0.0819999999999972,20.69,25.998,16
+cross-az-lustre,3,"DD read, 1GB",0.00600000000000023,0.643000000000001,3.52699999999999,2
+cross-az-lustre,3,"DD read, 1GB",0.0189999999999984,2.046,6.98500000000001,4
+cross-az-lustre,3,"DD read, 1GB",0.0300000000000011,4.947,13.881,8
+cross-az-lustre,3,"DD read, 1GB",0.0719999999999992,11.929,27.716,16
+cross-az-lustre,3,"Write CSV, 100MB over 10 files",0.991,0.156000000000001,0.364999999999952,NA
+cross-az-lustre,3,"Read CSV, 100MB over 10 files",1.134,0.959,4.73599999999999,NA
+cross-az-lustre,3,"Write CSV, 100MB over 100 files",0.818999999999999,0.122,1.25299999999999,NA
+cross-az-lustre,3,"Read CSV, 100MB over 100 files",0.353000000000002,0.251999999999999,1.892,NA
+cross-az-lustre,3,"Write CSV, 100MB over 1000 files",1.151,0.466000000000001,4.27299999999997,NA
+cross-az-lustre,3,"Read CSV, 100MB over 1000 files",1.49,0.995999999999999,14.818,NA
+cross-az-lustre,3,"Write CSV, 100MB over 10000 files",4.81,2.727,34.611,NA
+cross-az-lustre,3,"Read CSV, 100MB over 10000 files",9.906,6.462,85.679,NA
+cross-az-lustre,3,"DD write, 10MB over 1000 files",0,0.00999999999999801,5.16999999999996,2
+cross-az-lustre,3,"DD write, 10MB over 1000 files",3.199,4.302,7,4
+cross-az-lustre,3,"DD write, 10MB over 1000 files",5.23099999999999,7.20699999999998,7.92499999999995,8
+cross-az-lustre,3,"DD write, 10MB over 1000 files",16.094,22.343,14.866,16
+cross-az-lustre,3,"DD read, 10MB over 1000 files",0.00300000000000011,0.00499999999999901,7.47000000000003,2
+cross-az-lustre,3,"DD read, 10MB over 1000 files",0.00200000000000244,0.00999999999999801,6.92200000000003,4
+cross-az-lustre,3,"DD read, 10MB over 1000 files",7.532,10.109,6.40800000000002,8
+cross-az-lustre,3,"DD read, 10MB over 1000 files",15.405,22.022,6.46499999999992,16
+cross-az-lustre,3,"FST random reads, 100MB over 10*10MB reads",13.34,0.112000000000002,0.557999999999993,NA
+cross-az-lustre,3,"FST random reads, 100MB over 100*1MB reads",14.144,0.131999999999998,0.567000000000007,NA
+cross-az-lustre,3,"FST random reads, 100MB over 1000*100KB reads",2.92700000000001,0.238,2.61500000000001,NA
+cross-az-lustre,3,"FST random reads, 100MB over 10000*10KB reads",2.03400000000001,2.244,26.716,NA
+cross-az-lustre,3,Read 14 days of CRAN logs with fread,92.568,27.666,62.7570000000001,NA
+cross-az-lustre,3,Sample 5000 rows from each of 14 CRAN logs with vroom,27.686,30.939,43.322,NA
+ebs-local-storage,1,task,user,system,elapsed,parallelism
+ebs-local-storage,1,Install MASS,16.165,12.043,7.669,NA
+ebs-local-storage,1,Install lattice,18.24,11.858,9.478,NA
+ebs-local-storage,1,Install BH,17.655,11.425,13.227,NA
+ebs-local-storage,1,"Write CSV, 10KB",0.00100000000000033,0,0.00399999999999778,NA
+ebs-local-storage,1,"Write CSV, 1MB",0.00499999999999989,0,0.00600000000000023,NA
+ebs-local-storage,1,"Write CSV, 100MB",0.803000000000001,0.0609999999999999,0.0589999999999975,NA
+ebs-local-storage,1,"Write CSV, 1GB",7.241,0.431,0.432000000000002,NA
+ebs-local-storage,1,"Read CSV, 10KB",0.00300000000000011,0,0.00799999999999557,NA
+ebs-local-storage,1,"Read CSV, 1MB",0.00300000000000011,0.00100000000000033,0.00999999999999801,NA
+ebs-local-storage,1,"Read CSV, 100MB",0.294,0.085,0.120000000000005,NA
+ebs-local-storage,1,"Read CSV, 1GB",4.42,0.68,4.11799999999999,NA
+ebs-local-storage,1,"DD write, 1GB",0.0150000000000041,0.935000000000001,8.001,2
+ebs-local-storage,1,"DD write, 1GB",0.0259999999999962,3.032,16.105,4
+ebs-local-storage,1,"DD write, 1GB",0.0660000000000061,6.812,33.632,8
+ebs-local-storage,1,"DD write, 1GB",0.102000000000004,16.074,65.24,16
+ebs-local-storage,1,"DD read, 1GB",0.00399999999999778,0.51000000000001,7.221,2
+ebs-local-storage,1,"DD read, 1GB",0,0.0130000000000008,16.258,4
+ebs-local-storage,1,"DD read, 1GB",0.0389999999999944,3.68000000000001,32.616,8
+ebs-local-storage,1,"DD read, 1GB",0.0660000000000025,7.955,65.347,16
+ebs-local-storage,1,"Write CSV, 100MB over 10 files",0.893000000000001,0.0990000000000002,0.270999999999958,NA
+ebs-local-storage,1,"Read CSV, 100MB over 10 files",0.525000000000002,0.0250000000000004,0.170000000000016,NA
+ebs-local-storage,1,"Write CSV, 100MB over 100 files",0.742000000000001,0.0529999999999999,0.802000000000021,NA
+ebs-local-storage,1,"Read CSV, 100MB over 100 files",0.295999999999999,0.0449999999999999,0.463999999999999,NA
+ebs-local-storage,1,"Write CSV, 100MB over 1000 files",0.742999999999999,0.0860000000000003,0.840000000000032,NA
+ebs-local-storage,1,"Read CSV, 100MB over 1000 files",1.036,0.128,1.887,NA
+ebs-local-storage,1,"Write CSV, 100MB over 10000 files",2.151,0.377000000000001,2.55600000000004,NA
+ebs-local-storage,1,"Read CSV, 100MB over 10000 files",7.757,0.952999999999999,14.904,NA
+ebs-local-storage,1,"DD write, 10MB over 1000 files",0.00300000000000011,0.00699999999999967,2.28999999999996,2
+ebs-local-storage,1,"DD write, 10MB over 1000 files",0,0.0139999999999993,3.02300000000002,4
+ebs-local-storage,1,"DD write, 10MB over 1000 files",5.302,5.908,5.68299999999999,8
+ebs-local-storage,1,"DD write, 10MB over 1000 files",6.182,7.43,11.447,16
+ebs-local-storage,1,"DD read, 10MB over 1000 files",0,0.00900000000000034,3.09000000000003,2
+ebs-local-storage,1,"DD read, 10MB over 1000 files",1.01,1.28800000000001,2.88999999999999,4
+ebs-local-storage,1,"DD read, 10MB over 1000 files",5.21,5.99099999999998,2.86799999999999,8
+ebs-local-storage,1,"DD read, 10MB over 1000 files",11.128,14.014,4.61500000000001,16
+ebs-local-storage,1,"FST random reads, 100MB over 10*10MB reads",2.798,0.0569999999999995,0.0680000000000405,NA
+ebs-local-storage,1,"FST random reads, 100MB over 100*1MB reads",5.805,0.0360000000000005,0.199000000000012,NA
+ebs-local-storage,1,"FST random reads, 100MB over 1000*100KB reads",0.608000000000004,0.0600000000000005,0.451000000000022,NA
+ebs-local-storage,1,"FST random reads, 100MB over 10000*10KB reads",0.536000000000001,0.306,1.803,NA
+ebs-local-storage,1,Read 14 days of CRAN logs with fread,91.703,3.135,37.239,NA
+ebs-local-storage,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.253,5.47000000000001,17.986,NA
+ebs-local-storage,2,task,user,system,elapsed,parallelism
+ebs-local-storage,2,Install MASS,16.281,12.017,7.794,NA
+ebs-local-storage,2,Install lattice,18.016,12.149,9.605,NA
+ebs-local-storage,2,Install BH,17.748,11.489,13.22,NA
+ebs-local-storage,2,"Write CSV, 10KB",0.000999999999999446,0,0.00400000000000489,NA
+ebs-local-storage,2,"Write CSV, 1MB",0.00600000000000023,0,0.00600000000000023,NA
+ebs-local-storage,2,"Write CSV, 100MB",0.783,0.0820000000000003,0.0590000000000046,NA
+ebs-local-storage,2,"Write CSV, 1GB",7.271,0.413,0.43,NA
+ebs-local-storage,2,"Read CSV, 10KB",0.00300000000000011,0,0.00500000000000256,NA
+ebs-local-storage,2,"Read CSV, 1MB",0.00300000000000011,0.00099999999999989,0.0069999999999979,NA
+ebs-local-storage,2,"Read CSV, 100MB",0.324000000000002,0.109,0.122,NA
+ebs-local-storage,2,"Read CSV, 1GB",4.515,0.601,4.16,NA
+ebs-local-storage,2,"DD write, 1GB",0.0179999999999971,0.923999999999999,7.999,2
+ebs-local-storage,2,"DD write, 1GB",0.027000000000001,3.002,16.129,4
+ebs-local-storage,2,"DD write, 1GB",0.0610000000000035,7.255,32.372,8
+ebs-local-storage,2,"DD write, 1GB",0.126999999999999,16.246,64.845,16
+ebs-local-storage,2,"DD read, 1GB",0.00199999999999889,0.00600000000000023,7.21299999999999,2
+ebs-local-storage,2,"DD read, 1GB",0.014999999999997,1.52200000000001,16.267,4
+ebs-local-storage,2,"DD read, 1GB",0.0400000000000027,3.55199999999999,32.678,8
+ebs-local-storage,2,"DD read, 1GB",0.0789999999999971,7.719,65.343,16
+ebs-local-storage,2,"Write CSV, 100MB over 10 files",0.893999999999998,0.0949999999999998,0.269000000000005,NA
+ebs-local-storage,2,"Read CSV, 100MB over 10 files",0.509999999999998,0.0350000000000001,0.185000000000002,NA
+ebs-local-storage,2,"Write CSV, 100MB over 100 files",0.739999999999998,0.0540000000000003,0.800999999999988,NA
+ebs-local-storage,2,"Read CSV, 100MB over 100 files",0.300000000000001,0.0309999999999997,0.454999999999984,NA
+ebs-local-storage,2,"Write CSV, 100MB over 1000 files",0.759,0.069,0.837999999999965,NA
+ebs-local-storage,2,"Read CSV, 100MB over 1000 files",1.01,0.115,1.84199999999998,NA
+ebs-local-storage,2,"Write CSV, 100MB over 10000 files",2.133,0.384,2.54499999999996,NA
+ebs-local-storage,2,"Read CSV, 100MB over 10000 files",7.576,0.812,14.454,NA
+ebs-local-storage,2,"DD write, 10MB over 1000 files",0.00300000000000011,0.00600000000000023,2.25700000000001,2
+ebs-local-storage,2,"DD write, 10MB over 1000 files",0.00100000000000477,0.0129999999999999,3.00799999999998,4
+ebs-local-storage,2,"DD write, 10MB over 1000 files",2.065,2.402,5.65800000000002,8
+ebs-local-storage,2,"DD write, 10MB over 1000 files",5.092,6.221,11.468,16
+ebs-local-storage,2,"DD read, 10MB over 1000 files",0,0.00699999999999967,3.07600000000002,2
+ebs-local-storage,2,"DD read, 10MB over 1000 files",0,0.0119999999999996,2.88200000000001,4
+ebs-local-storage,2,"DD read, 10MB over 1000 files",5.184,5.94299999999999,2.846,8
+ebs-local-storage,2,"DD read, 10MB over 1000 files",12.369,14.924,4.61099999999999,16
+ebs-local-storage,2,"FST random reads, 100MB over 10*10MB reads",4.08499999999999,0.0200000000000005,0.0939999999999941,NA
+ebs-local-storage,2,"FST random reads, 100MB over 100*1MB reads",6.68,0.00399999999999956,0.228000000000009,NA
+ebs-local-storage,2,"FST random reads, 100MB over 1000*100KB reads",0.640000000000001,0.0670000000000002,0.490000000000009,NA
+ebs-local-storage,2,"FST random reads, 100MB over 10000*10KB reads",0.564,0.287,1.83499999999998,NA
+ebs-local-storage,2,Read 14 days of CRAN logs with fread,92.056,2.912,37.275,NA
+ebs-local-storage,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.262,5.328,17.905,NA
+ebs-local-storage,3,task,user,system,elapsed,parallelism
+ebs-local-storage,3,Install MASS,16.082,12.071,7.622,NA
+ebs-local-storage,3,Install lattice,18.146,11.961,9.547,NA
+ebs-local-storage,3,Install BH,17.821,11.446,13.293,NA
+ebs-local-storage,3,"Write CSV, 10KB",0,0.00200000000000022,0.00300000000000011,NA
+ebs-local-storage,3,"Write CSV, 1MB",0.00499999999999989,0.00099999999999989,0.00600000000000023,NA
+ebs-local-storage,3,"Write CSV, 100MB",0.792,0.0699999999999998,0.0570000000000022,NA
+ebs-local-storage,3,"Write CSV, 1GB",7.266,0.441,0.428000000000004,NA
+ebs-local-storage,3,"Read CSV, 10KB",0.00300000000000011,0,0.00600000000000023,NA
+ebs-local-storage,3,"Read CSV, 1MB",0.00199999999999889,0.00199999999999978,0.007000000000005,NA
+ebs-local-storage,3,"Read CSV, 100MB",0.254999999999999,0.069,0.110999999999997,NA
+ebs-local-storage,3,"Read CSV, 1GB",4.451,0.579,4.182,NA
+ebs-local-storage,3,"DD write, 1GB",0.0200000000000031,0.936999999999997,8.01,2
+ebs-local-storage,3,"DD write, 1GB",0.0250000000000021,2.98,16.128,4
+ebs-local-storage,3,"DD write, 1GB",0.0719999999999992,7.212,32.352,8
+ebs-local-storage,3,"DD write, 1GB",0.142000000000003,16.152,64.9,16
+ebs-local-storage,3,"DD read, 1GB",0.00100000000000122,0.00600000000000023,7.21300000000002,2
+ebs-local-storage,3,"DD read, 1GB",0.0249999999999986,1.56199999999999,16.266,4
+ebs-local-storage,3,"DD read, 1GB",0.0359999999999978,3.531,32.62,8
+ebs-local-storage,3,"DD read, 1GB",0.0679999999999943,7.75200000000001,65.346,16
+ebs-local-storage,3,"Write CSV, 100MB over 10 files",0.891999999999999,0.0890000000000004,0.265999999999963,NA
+ebs-local-storage,3,"Read CSV, 100MB over 10 files",0.509,0.0549999999999997,0.213999999999999,NA
+ebs-local-storage,3,"Write CSV, 100MB over 100 files",0.738,0.0520000000000005,0.795000000000016,NA
+ebs-local-storage,3,"Read CSV, 100MB over 100 files",0.306999999999999,0.0270000000000001,0.456999999999994,NA
+ebs-local-storage,3,"Write CSV, 100MB over 1000 files",0.741,0.072000000000001,0.822000000000003,NA
+ebs-local-storage,3,"Read CSV, 100MB over 1000 files",0.978000000000002,0.112,1.76900000000001,NA
+ebs-local-storage,3,"Write CSV, 100MB over 10000 files",2.043,0.387,2.45499999999998,NA
+ebs-local-storage,3,"Read CSV, 100MB over 10000 files",7.478,0.815,14.482,NA
+ebs-local-storage,3,"DD write, 10MB over 1000 files",0.00200000000000244,0.00700000000000056,2.25600000000003,2
+ebs-local-storage,3,"DD write, 10MB over 1000 files",0.00199999999999534,0.0110000000000001,3.00400000000002,4
+ebs-local-storage,3,"DD write, 10MB over 1000 files",5.131,6.00300000000001,5.63999999999999,8
+ebs-local-storage,3,"DD write, 10MB over 1000 files",9.35,10.978,11.443,16
+ebs-local-storage,3,"DD read, 10MB over 1000 files",0,0.00800000000000001,3.08199999999999,2
+ebs-local-storage,3,"DD read, 10MB over 1000 files",2.994,3.70799999999999,2.84399999999999,4
+ebs-local-storage,3,"DD read, 10MB over 1000 files",4.16999999999999,4.711,2.83800000000002,8
+ebs-local-storage,3,"DD read, 10MB over 1000 files",13.365,16.256,4.61800000000005,16
+ebs-local-storage,3,"FST random reads, 100MB over 10*10MB reads",3.252,0.0419999999999998,0.0760000000000218,NA
+ebs-local-storage,3,"FST random reads, 100MB over 100*1MB reads",5.55800000000001,0.0340000000000007,0.189999999999998,NA
+ebs-local-storage,3,"FST random reads, 100MB over 1000*100KB reads",0.612000000000002,0.0779999999999994,0.471000000000004,NA
+ebs-local-storage,3,"FST random reads, 100MB over 10000*10KB reads",0.591999999999999,0.267,1.86700000000002,NA
+ebs-local-storage,3,Read 14 days of CRAN logs with fread,92.123,3.085,37.239,NA
+ebs-local-storage,3,Sample 5000 rows from each of 14 CRAN logs with vroom,27.233,5.467,17.989,NA
+efs-regional,1,task,user,system,elapsed,parallelism
+efs-regional,1,Install MASS,16.917,12.205,24.401,NA
+efs-regional,1,Install lattice,18.709,11.977,20.726,NA
+efs-regional,1,Install BH,18.357,18.723,292.865,NA
+efs-regional,1,"Write CSV, 10KB",0.00199999999999978,0,0.02800000000002,NA
+efs-regional,1,"Write CSV, 1MB",0.00600000000000023,0,0.0500000000000114,NA
+efs-regional,1,"Write CSV, 100MB",0.876,0.101,0.553999999999974,NA
+efs-regional,1,"Write CSV, 1GB",7.333,0.63,4.82499999999999,NA
+efs-regional,1,"Read CSV, 10KB",0.00300000000000011,0.00100000000000033,0.0169999999999959,NA
+efs-regional,1,"Read CSV, 1MB",0.00399999999999956,0.00100000000000033,0.0500000000000114,NA
+efs-regional,1,"Read CSV, 100MB",0.679,0.102,0.836999999999989,NA
+efs-regional,1,"Read CSV, 1GB",4.362,0.67,4.34399999999999,NA
+efs-regional,1,"DD write, 1GB",0.00800000000000267,0.00499999999999989,8.18299999999999,2
+efs-regional,1,"DD write, 1GB",0.0100000000000051,2.18800000000001,16.177,4
+efs-regional,1,"DD write, 1GB",0.0269999999999975,5.225,32.413,8
+efs-regional,1,"DD write, 1GB",0.0749999999999993,11.383,65.3390000000001,16
+efs-regional,1,"DD read, 1GB",0.00999999999999801,0.471000000000004,10.745,2
+efs-regional,1,"DD read, 1GB",0.0179999999999936,1.322,14.414,4
+efs-regional,1,"DD read, 1GB",0.0429999999999957,3.092,25.198,8
+efs-regional,1,"DD read, 1GB",0.0779999999999959,7.361,52.082,16
+efs-regional,1,"Write CSV, 100MB over 10 files",0.963000000000001,0.138999999999999,1.41199999999992,NA
+efs-regional,1,"Read CSV, 100MB over 10 files",0.756,0.107,4.45299999999997,NA
+efs-regional,1,"Write CSV, 100MB over 100 files",0.808,0.0990000000000002,4.71299999999997,NA
+efs-regional,1,"Read CSV, 100MB over 100 files",0.426000000000002,0.0910000000000002,4.16999999999996,NA
+efs-regional,1,"Write CSV, 100MB over 1000 files",1.402,0.149,20.871,NA
+efs-regional,1,"Read CSV, 100MB over 1000 files",1.475,0.309,12.174,NA
+efs-regional,1,"Write CSV, 100MB over 10000 files",6.376,1.175,105.36,NA
+efs-regional,1,"Read CSV, 100MB over 10000 files",10.773,2.017,63.775,NA
+efs-regional,1,"DD write, 10MB over 1000 files",0,0.00900000000000034,12.299,2
+efs-regional,1,"DD write, 10MB over 1000 files",3.46100000000001,4.88300000000001,31.768,4
+efs-regional,1,"DD write, 10MB over 1000 files",7.98,11.62,63.342,8
+efs-regional,1,"DD write, 10MB over 1000 files",18.93,23.86,126.775,16
+efs-regional,1,"DD read, 10MB over 1000 files",1.20100000000001,1.26100000000002,6.40699999999993,2
+efs-regional,1,"DD read, 10MB over 1000 files",3.232,3.524,6.15499999999997,4
+efs-regional,1,"DD read, 10MB over 1000 files",7.124,8.459,7.13499999999999,8
+efs-regional,1,"DD read, 10MB over 1000 files",15.508,18.675,7.96900000000005,16
+efs-regional,1,"FST random reads, 100MB over 10*10MB reads",12.842,0.157,1.54300000000012,NA
+efs-regional,1,"FST random reads, 100MB over 100*1MB reads",54.603,0.208,2.24000000000001,NA
+efs-regional,1,"FST random reads, 100MB over 1000*100KB reads",4.133,0.105,4.09399999999982,NA
+efs-regional,1,"FST random reads, 100MB over 10000*10KB reads",1.61199999999999,0.905000000000001,15.9170000000001,NA
+efs-regional,1,Read 14 days of CRAN logs with fread,92.587,3.329,43.816,NA
+efs-regional,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.672,5.67099999999999,20.6110000000001,NA
+efs-regional,2,task,user,system,elapsed,parallelism
+efs-regional,2,Install MASS,17.194,11.95,24.978,NA
+efs-regional,2,Install lattice,18.816,11.997,20.986,NA
+efs-regional,2,Install BH,18.635,18.631,299.968,NA
+efs-regional,2,"Write CSV, 10KB",0,0.000999999999999446,0.0199999999999818,NA
+efs-regional,2,"Write CSV, 1MB",0.00600000000000023,0,0.0609999999999786,NA
+efs-regional,2,"Write CSV, 100MB",0.883,0.0979999999999999,0.561000000000035,NA
+efs-regional,2,"Write CSV, 1GB",7.362,0.599,4.762,NA
+efs-regional,2,"Read CSV, 10KB",0.000999999999999446,0.00100000000000033,0.0149999999999864,NA
+efs-regional,2,"Read CSV, 1MB",0.00499999999999901,0.000999999999999446,0.0509999999999877,NA
+efs-regional,2,"Read CSV, 100MB",0.698,0.0970000000000004,0.846000000000004,NA
+efs-regional,2,"Read CSV, 1GB",4.11,0.639,4.21999999999997,NA
+efs-regional,2,"DD write, 1GB",0.00900000000000389,0.724999999999999,8.08299999999997,2
+efs-regional,2,"DD write, 1GB",0.0110000000000028,2.205,16.473,4
+efs-regional,2,"DD write, 1GB",0.0359999999999978,5.3,34.046,8
+efs-regional,2,"DD write, 1GB",0.049000000000003,11.235,64.764,16
+efs-regional,2,"DD read, 1GB",0.00899999999999679,0.479000000000004,11.028,2
+efs-regional,2,"DD read, 1GB",0.012000000000004,1.252,14.0870000000001,4
+efs-regional,2,"DD read, 1GB",0.0389999999999979,3.054,26.0129999999999,8
+efs-regional,2,"DD read, 1GB",0.0949999999999918,7.295,51.927,16
+efs-regional,2,"Write CSV, 100MB over 10 files",1.014,0.138,1.67000000000007,NA
+efs-regional,2,"Read CSV, 100MB over 10 files",0.75,0.105,4.64800000000002,NA
+efs-regional,2,"Write CSV, 100MB over 100 files",0.812000000000001,0.0940000000000003,4.73899999999992,NA
+efs-regional,2,"Read CSV, 100MB over 100 files",0.428000000000001,0.0960000000000001,4.31000000000006,NA
+efs-regional,2,"Write CSV, 100MB over 1000 files",1.314,0.213,20.659,NA
+efs-regional,2,"Read CSV, 100MB over 1000 files",1.611,0.188,11.648,NA
+efs-regional,2,"Write CSV, 100MB over 10000 files",6.465,1.315,103.643,NA
+efs-regional,2,"Read CSV, 100MB over 10000 files",10.495,2.134,61.88,NA
+efs-regional,2,"DD write, 10MB over 1000 files",1.04,1.567,12.0550000000001,2
+efs-regional,2,"DD write, 10MB over 1000 files",3.69199999999999,4.816,31.3629999999999,4
+efs-regional,2,"DD write, 10MB over 1000 files",9.128,10.335,62.0619999999999,8
+efs-regional,2,"DD write, 10MB over 1000 files",17.674,25.008,126.792,16
+efs-regional,2,"DD read, 10MB over 1000 files",1.06400000000001,1.43700000000001,6.29500000000007,2
+efs-regional,2,"DD read, 10MB over 1000 files",2.94500000000001,3.85999999999999,6.048,4
+efs-regional,2,"DD read, 10MB over 1000 files",7.1,8.579,7.11000000000013,8
+efs-regional,2,"DD read, 10MB over 1000 files",15.618,18.705,8.43200000000002,16
+efs-regional,2,"FST random reads, 100MB over 10*10MB reads",12.499,0.139999999999999,1.36900000000014,NA
+efs-regional,2,"FST random reads, 100MB over 100*1MB reads",56.962,0.222,2.33699999999999,NA
+efs-regional,2,"FST random reads, 100MB over 1000*100KB reads",3.98400000000001,0.111000000000001,4.0619999999999,NA
+efs-regional,2,"FST random reads, 100MB over 10000*10KB reads",1.649,0.775000000000002,16.241,NA
+efs-regional,2,Read 14 days of CRAN logs with fread,94.688,3.268,43.9090000000001,NA
+efs-regional,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.813,5.62100000000001,20.838,NA
+efs-regional,3,task,user,system,elapsed,parallelism
+efs-regional,3,Install MASS,17.167,12.064,25.02,NA
+efs-regional,3,Install lattice,18.894,11.898,20.804,NA
+efs-regional,3,Install BH,19.036,18.426,284.963,NA
+efs-regional,3,"Write CSV, 10KB",0,0.000999999999999446,0.0220000000000482,NA
+efs-regional,3,"Write CSV, 1MB",0.00499999999999989,0,0.0480000000000018,NA
+efs-regional,3,"Write CSV, 100MB",0.879,0.0999999999999996,0.562999999999988,NA
+efs-regional,3,"Write CSV, 1GB",7.401,0.646000000000001,4.97300000000001,NA
+efs-regional,3,"Read CSV, 10KB",0.00300000000000011,0.000999999999999446,0.0179999999999723,NA
+efs-regional,3,"Read CSV, 1MB",0.00300000000000011,0.00199999999999978,0.0500000000000114,NA
+efs-regional,3,"Read CSV, 100MB",0.677000000000001,0.0709999999999997,0.860000000000014,NA
+efs-regional,3,"Read CSV, 1GB",4.172,0.633,4.45200000000006,NA
+efs-regional,3,"DD write, 1GB",0.00499999999999901,0.722,8.39299999999997,2
+efs-regional,3,"DD write, 1GB",0.00999999999999801,2.28,17.458,4
+efs-regional,3,"DD write, 1GB",0.0430000000000028,5.287,33.484,8
+efs-regional,3,"DD write, 1GB",0.0579999999999998,11.199,66.605,16
+efs-regional,3,"DD read, 1GB",0.00899999999999324,0.457999999999998,10.979,2
+efs-regional,3,"DD read, 1GB",0.0139999999999993,1.227,14.134,4
+efs-regional,3,"DD read, 1GB",0.0409999999999968,3.044,26.0360000000001,8
+efs-regional,3,"DD read, 1GB",0.0820000000000007,7.314,51.7089999999999,16
+efs-regional,3,"Write CSV, 100MB over 10 files",0.929000000000002,0.159000000000001,1.68200000000002,NA
+efs-regional,3,"Read CSV, 100MB over 10 files",0.681999999999999,0.093,4.61099999999999,NA
+efs-regional,3,"Write CSV, 100MB over 100 files",0.815999999999999,0.0910000000000002,4.85899999999992,NA
+efs-regional,3,"Read CSV, 100MB over 100 files",0.446999999999999,0.093,4.44399999999996,NA
+efs-regional,3,"Write CSV, 100MB over 1000 files",1.245,0.351,21.606,NA
+efs-regional,3,"Read CSV, 100MB over 1000 files",1.492,0.369999999999999,12.6759999999999,NA
+efs-regional,3,"Write CSV, 100MB over 10000 files",6.273,1.367,108.152,NA
+efs-regional,3,"Read CSV, 100MB over 10000 files",11.189,1.65,65.852,NA
+efs-regional,3,"DD write, 10MB over 1000 files",1.11,1.498,12.329,2
+efs-regional,3,"DD write, 10MB over 1000 files",4.022,4.406,31.043,4
+efs-regional,3,"DD write, 10MB over 1000 files",8.958,10.149,62.21,8
+efs-regional,3,"DD write, 10MB over 1000 files",17.809,25.674,132.444,16
+efs-regional,3,"DD read, 10MB over 1000 files",1.13699999999999,1.34400000000002,6.59999999999991,2
+efs-regional,3,"DD read, 10MB over 1000 files",3.19899999999999,3.61499999999999,6.30899999999997,4
+efs-regional,3,"DD read, 10MB over 1000 files",7.37,8.21999999999999,7.01999999999998,8
+efs-regional,3,"DD read, 10MB over 1000 files",15.685,18.613,7.96199999999999,16
+efs-regional,3,"FST random reads, 100MB over 10*10MB reads",13.093,0.169,1.36500000000001,NA
+efs-regional,3,"FST random reads, 100MB over 100*1MB reads",56.155,0.295,2.27700000000004,NA
+efs-regional,3,"FST random reads, 100MB over 1000*100KB reads",4.08800000000001,0.125,4.0619999999999,NA
+efs-regional,3,"FST random reads, 100MB over 10000*10KB reads",1.601,0.846999999999998,16.2939999999999,NA
+efs-regional,3,Read 14 days of CRAN logs with fread,97.134,3.273,43.7149999999999,NA
+efs-regional,3,Sample 5000 rows from each of 14 CRAN logs with vroom,28,5.26499999999999,20.9929999999999,NA
+efs-single-zone,1,task,user,system,elapsed,parallelism
+efs-single-zone,1,Install MASS,17.1,11.987,20.002,NA
+efs-single-zone,1,Install lattice,18.85,11.815,17.46,NA
+efs-single-zone,1,Install BH,18.714,17.499,217.124,NA
+efs-single-zone,1,"Write CSV, 10KB",0.000999999999999446,0.00199999999999978,0.021000000000015,NA
+efs-single-zone,1,"Write CSV, 1MB",0.00499999999999989,0.00199999999999978,0.0450000000000159,NA
+efs-single-zone,1,"Write CSV, 100MB",0.914000000000001,0.0709999999999997,0.36099999999999,NA
+efs-single-zone,1,"Write CSV, 1GB",7.399,0.642,2.80400000000003,NA
+efs-single-zone,1,"Read CSV, 10KB",0.000999999999999446,0.00100000000000033,0.0149999999999864,NA
+efs-single-zone,1,"Read CSV, 1MB",0.00599999999999845,0.00100000000000033,0.0360000000000014,NA
+efs-single-zone,1,"Read CSV, 100MB",0.543999999999999,0.0899999999999999,0.58299999999997,NA
+efs-single-zone,1,"Read CSV, 1GB",4.065,0.66,2.70699999999999,NA
+efs-single-zone,1,"DD write, 1GB",0.0069999999999979,0.702999999999998,4.36599999999999,2
+efs-single-zone,1,"DD write, 1GB",0.0149999999999935,2.144,9.03299999999996,4
+efs-single-zone,1,"DD write, 1GB",0.0309999999999988,5.167,16.971,8
+efs-single-zone,1,"DD write, 1GB",0.0669999999999966,11.424,35.379,16
+efs-single-zone,1,"DD read, 1GB",0.007000000000005,0.422000000000002,8.43700000000001,2
+efs-single-zone,1,"DD read, 1GB",0.00899999999999679,1.05299999999999,9.30599999999998,4
+efs-single-zone,1,"DD read, 1GB",0.0279999999999987,2.48299999999999,15.493,8
+efs-single-zone,1,"DD read, 1GB",0.0649999999999977,6.373,32.625,16
+efs-single-zone,1,"Write CSV, 100MB over 10 files",0.978999999999999,0.146,1.20699999999999,NA
+efs-single-zone,1,"Read CSV, 100MB over 10 files",0.737000000000002,0.0949999999999998,3.351,NA
+efs-single-zone,1,"Write CSV, 100MB over 100 files",0.806999999999999,0.0889999999999995,3.60599999999999,NA
+efs-single-zone,1,"Read CSV, 100MB over 100 files",0.414999999999999,0.0840000000000005,3.28899999999999,NA
+efs-single-zone,1,"Write CSV, 100MB over 1000 files",1.407,0.133,15.352,NA
+efs-single-zone,1,"Read CSV, 100MB over 1000 files",1.395,0.326,9.99400000000003,NA
+efs-single-zone,1,"Write CSV, 100MB over 10000 files",6.567,0.822,74.9180000000001,NA
+efs-single-zone,1,"Read CSV, 100MB over 10000 files",11.191,1.613,55.615,NA
+efs-single-zone,1,"DD write, 10MB over 1000 files",1.203,1.31000000000001,9.59499999999991,2
+efs-single-zone,1,"DD write, 10MB over 1000 files",3.88,3.97,22.857,4
+efs-single-zone,1,"DD write, 10MB over 1000 files",8.76700000000001,9.28199999999999,43.582,8
+efs-single-zone,1,"DD write, 10MB over 1000 files",16.049,24.037,86.212,16
+efs-single-zone,1,"DD read, 10MB over 1000 files",0.00100000000000477,0.00600000000000023,5.88099999999997,2
+efs-single-zone,1,"DD read, 10MB over 1000 files",2.045,2.601,5.447,4
+efs-single-zone,1,"DD read, 10MB over 1000 files",7.097,8.42600000000001,5.48199999999997,8
+efs-single-zone,1,"DD read, 10MB over 1000 files",14.656,17.381,5.99099999999999,16
+efs-single-zone,1,"FST random reads, 100MB over 10*10MB reads",17.944,0.234,1.21900000000005,NA
+efs-single-zone,1,"FST random reads, 100MB over 100*1MB reads",42.582,0.283000000000001,1.577,NA
+efs-single-zone,1,"FST random reads, 100MB over 1000*100KB reads",3.10799999999999,0.0999999999999996,2.73000000000002,NA
+efs-single-zone,1,"FST random reads, 100MB over 10000*10KB reads",1.624,0.683,12.456,NA
+efs-single-zone,1,Read 14 days of CRAN logs with fread,93.576,3.326,40.939,NA
+efs-single-zone,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.348,6.01400000000002,18.814,NA
+efs-single-zone,2,task,user,system,elapsed,parallelism
+efs-single-zone,2,Install MASS,17.143,12.13,20.073,NA
+efs-single-zone,2,Install lattice,18.812,11.944,17.629,NA
+efs-single-zone,2,Install BH,18.637,17.614,214.575,NA
+efs-single-zone,2,"Write CSV, 10KB",0.00100000000000033,0,0.0179999999999723,NA
+efs-single-zone,2,"Write CSV, 1MB",0.00499999999999989,0.00199999999999978,0.0380000000000109,NA
+efs-single-zone,2,"Write CSV, 100MB",0.9,0.0809999999999995,0.32099999999997,NA
+efs-single-zone,2,"Write CSV, 1GB",7.395,0.622,2.68700000000001,NA
+efs-single-zone,2,"Read CSV, 10KB",0.000999999999999446,0.00200000000000067,0.0150000000000432,NA
+efs-single-zone,2,"Read CSV, 1MB",0.00499999999999901,0,0.0370000000000346,NA
+efs-single-zone,2,"Read CSV, 100MB",0.584,0.0839999999999996,0.586999999999989,NA
+efs-single-zone,2,"Read CSV, 1GB",4.067,0.67,2.63499999999999,NA
+efs-single-zone,2,"DD write, 1GB",0.00600000000000023,0.688,4.197,2
+efs-single-zone,2,"DD write, 1GB",0.0130000000000017,2.086,8.53299999999996,4
+efs-single-zone,2,"DD write, 1GB",0.0269999999999975,5.132,17.018,8
+efs-single-zone,2,"DD write, 1GB",0.0649999999999977,11.446,34.585,16
+efs-single-zone,2,"DD read, 1GB",0,0.00499999999999989,8.166,2
+efs-single-zone,2,"DD read, 1GB",0.0159999999999947,1.02999999999999,9.08600000000001,4
+efs-single-zone,2,"DD read, 1GB",0.0290000000000035,2.45100000000001,15.48,8
+efs-single-zone,2,"DD read, 1GB",0.0589999999999975,6.451,32.649,16
+efs-single-zone,2,"Write CSV, 100MB over 10 files",0.933,0.132,1.07800000000003,NA
+efs-single-zone,2,"Read CSV, 100MB over 10 files",0.637,0.113,3.298,NA
+efs-single-zone,2,"Write CSV, 100MB over 100 files",0.795999999999999,0.0910000000000002,3.517,NA
+efs-single-zone,2,"Read CSV, 100MB over 100 files",0.436,0.0830000000000002,3.29200000000003,NA
+efs-single-zone,2,"Write CSV, 100MB over 1000 files",1.284,0.309,15.34,NA
+efs-single-zone,2,"Read CSV, 100MB over 1000 files",1.651,0.180999999999999,10.076,NA
+efs-single-zone,2,"Write CSV, 100MB over 10000 files",6.441,0.993,76.871,NA
+efs-single-zone,2,"Read CSV, 100MB over 10000 files",10.24,2.04,55.106,NA
+efs-single-zone,2,"DD write, 10MB over 1000 files",0.944999999999993,1.258,11.013,2
+efs-single-zone,2,"DD write, 10MB over 1000 files",3.297,3.435,21.078,4
+efs-single-zone,2,"DD write, 10MB over 1000 files",7.399,8.384,42.671,8
+efs-single-zone,2,"DD write, 10MB over 1000 files",18.92,20.472,86.205,16
+efs-single-zone,2,"DD read, 10MB over 1000 files",1.313,1.19200000000001,5.61400000000003,2
+efs-single-zone,2,"DD read, 10MB over 1000 files",2.296,2.35699999999999,5.245,4
+efs-single-zone,2,"DD read, 10MB over 1000 files",7.251,8.30699999999999,5.42700000000002,8
+efs-single-zone,2,"DD read, 10MB over 1000 files",15.522,18.865,6.11900000000003,16
+efs-single-zone,2,"FST random reads, 100MB over 10*10MB reads",14.586,0.0739999999999998,0.941000000000031,NA
+efs-single-zone,2,"FST random reads, 100MB over 100*1MB reads",42.856,0.157,1.56399999999996,NA
+efs-single-zone,2,"FST random reads, 100MB over 1000*100KB reads",3.215,0.0969999999999995,2.98000000000002,NA
+efs-single-zone,2,"FST random reads, 100MB over 10000*10KB reads",1.64,0.769,13.091,NA
+efs-single-zone,2,Read 14 days of CRAN logs with fread,94.484,3.332,40.6999999999999,NA
+efs-single-zone,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.353,5.16999999999999,18.211,NA
+efs-single-zone,3,task,user,system,elapsed,parallelism
+efs-single-zone,3,Install MASS,17.188,11.905,20.192,NA
+efs-single-zone,3,Install lattice,18.816,11.868,17.529,NA
+efs-single-zone,3,Install BH,18.62,17.769,217.773,NA
+efs-single-zone,3,"Write CSV, 10KB",0.00199999999999978,0,0.0179999999999723,NA
+efs-single-zone,3,"Write CSV, 1MB",0.00600000000000023,0,0.0380000000000109,NA
+efs-single-zone,3,"Write CSV, 100MB",0.856,0.118,0.364000000000033,NA
+efs-single-zone,3,"Write CSV, 1GB",7.373,0.661,2.71899999999999,NA
+efs-single-zone,3,"Read CSV, 10KB",0.00300000000000011,0,0.0130000000000337,NA
+efs-single-zone,3,"Read CSV, 1MB",0.00399999999999956,0,0.0360000000000014,NA
+efs-single-zone,3,"Read CSV, 100MB",0.563000000000001,0.0949999999999998,0.591000000000008,NA
+efs-single-zone,3,"Read CSV, 1GB",4.225,0.66,2.78100000000001,NA
+efs-single-zone,3,"DD write, 1GB",0.00500000000000256,0.694999999999997,4.02699999999999,2
+efs-single-zone,3,"DD write, 1GB",0.0159999999999982,2.19,9.113,4
+efs-single-zone,3,"DD write, 1GB",0.0249999999999986,5.141,16.146,8
+efs-single-zone,3,"DD write, 1GB",0.0750000000000028,11.532,33.107,16
+efs-single-zone,3,"DD read, 1GB",0.00999999999999801,0.411000000000006,8.26999999999998,2
+efs-single-zone,3,"DD read, 1GB",0.0109999999999992,1.06099999999999,8.95500000000004,4
+efs-single-zone,3,"DD read, 1GB",0.027000000000001,2.501,15.464,8
+efs-single-zone,3,"DD read, 1GB",0.0549999999999997,6.693,32.69,16
+efs-single-zone,3,"Write CSV, 100MB over 10 files",1.04,0.137,1.173,NA
+efs-single-zone,3,"Read CSV, 100MB over 10 files",0.678000000000001,0.077,3.26800000000003,NA
+efs-single-zone,3,"Write CSV, 100MB over 100 files",0.806000000000001,0.0839999999999996,3.55099999999999,NA
+efs-single-zone,3,"Read CSV, 100MB over 100 files",0.426000000000002,0.0850000000000009,3.29900000000004,NA
+efs-single-zone,3,"Write CSV, 100MB over 1000 files",1.436,0.129,15.636,NA
+efs-single-zone,3,"Read CSV, 100MB over 1000 files",1.422,0.338,9.97500000000002,NA
+efs-single-zone,3,"Write CSV, 100MB over 10000 files",6.523,0.848999999999999,75.176,NA
+efs-single-zone,3,"Read CSV, 100MB over 10000 files",11.115,1.587,56.1899999999999,NA
+efs-single-zone,3,"DD write, 10MB over 1000 files",0.00200000000000244,0.00700000000000145,9.279,2
+efs-single-zone,3,"DD write, 10MB over 1000 files",2.60000000000001,2.585,21.572,4
+efs-single-zone,3,"DD write, 10MB over 1000 files",8.539,9.54,43.759,8
+efs-single-zone,3,"DD write, 10MB over 1000 files",14.976,22.539,86.581,16
+efs-single-zone,3,"DD read, 10MB over 1000 files",0.00100000000000477,0.00699999999999967,5.49299999999994,2
+efs-single-zone,3,"DD read, 10MB over 1000 files",3.02399999999999,3.87799999999999,5.31700000000001,4
+efs-single-zone,3,"DD read, 10MB over 1000 files",7.152,8.37200000000001,5.43100000000004,8
+efs-single-zone,3,"DD read, 10MB over 1000 files",13.466,16.287,5.98800000000006,16
+efs-single-zone,3,"FST random reads, 100MB over 10*10MB reads",16.063,0.236000000000001,1.255,NA
+efs-single-zone,3,"FST random reads, 100MB over 100*1MB reads",44.108,0.324,1.64200000000005,NA
+efs-single-zone,3,"FST random reads, 100MB over 1000*100KB reads",3.194,0.119999999999999,2.82600000000002,NA
+efs-single-zone,3,"FST random reads, 100MB over 10000*10KB reads",1.59699999999999,0.757000000000001,12.7809999999999,NA
+efs-single-zone,3,Read 14 days of CRAN logs with fread,92.792,3.327,40.9150000000001,NA
+efs-single-zone,3,Sample 5000 rows from each of 14 CRAN logs with vroom,27.452,5.498,18.5970000000001,NA
+rhel8-nfs-same-subnet,1,task,user,system,elapsed,parallelism
+rhel8-nfs-same-subnet,1,Install MASS,16.715,12.12,12.654,NA
+rhel8-nfs-same-subnet,1,Install lattice,18.578,12.06,13.446,NA
+rhel8-nfs-same-subnet,1,Install BH,18.914,15.811,113.298,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 10KB",0.00199999999999978,0,0.00600000000000023,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 1MB",0.00699999999999967,0,0.0139999999999816,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 100MB",0.884,0.0950000000000006,0.39500000000001,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 1GB",7.416,0.633,5.786,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 10KB",0.00200000000000067,0,0.00800000000000978,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 1MB",0.00300000000000011,0.000999999999999446,0.0120000000000005,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 100MB",0.542,0.0940000000000003,0.197999999999979,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 1GB",2.542,0.51,1.90800000000002,NA
+rhel8-nfs-same-subnet,1,"DD write, 1GB",0.00600000000000378,0.731999999999999,8.47399999999999,2
+rhel8-nfs-same-subnet,1,"DD write, 1GB",0.0130000000000052,2.249,20.552,4
+rhel8-nfs-same-subnet,1,"DD write, 1GB",0.0279999999999951,5.32000000000001,37.202,8
+rhel8-nfs-same-subnet,1,"DD write, 1GB",0.0769999999999946,10.803,73.437,16
+rhel8-nfs-same-subnet,1,"DD read, 1GB",0.00100000000000122,0.00499999999999989,3.50200000000001,2
+rhel8-nfs-same-subnet,1,"DD read, 1GB",0.0100000000000016,0.629000000000004,6.94100000000003,4
+rhel8-nfs-same-subnet,1,"DD read, 1GB",0.0299999999999976,2.423,13.859,8
+rhel8-nfs-same-subnet,1,"DD read, 1GB",0.0580000000000034,5.817,27.695,16
+rhel8-nfs-same-subnet,1,"Write CSV, 100MB over 10 files",0.922999999999998,0.124000000000001,0.640000000000043,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 100MB over 10 files",0.494,0.0529999999999999,0.305999999999983,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 100MB over 100 files",0.809000000000001,0.085,1.65999999999997,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 100MB over 100 files",0.312999999999999,0.0489999999999995,0.617999999999995,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 100MB over 1000 files",1.196,0.13,5.464,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 100MB over 1000 files",0.931000000000001,0.17,2.27299999999997,NA
+rhel8-nfs-same-subnet,1,"Write CSV, 100MB over 10000 files",5.074,0.991,45.87,NA
+rhel8-nfs-same-subnet,1,"Read CSV, 100MB over 10000 files",6.798,1.204,16.218,NA
+rhel8-nfs-same-subnet,1,"DD write, 10MB over 1000 files",1.13100000000001,1.26600000000001,6.52100000000002,2
+rhel8-nfs-same-subnet,1,"DD write, 10MB over 1000 files",1.02200000000001,1.123,6.952,4
+rhel8-nfs-same-subnet,1,"DD write, 10MB over 1000 files",6.014,6.79700000000001,13.993,8
+rhel8-nfs-same-subnet,1,"DD write, 10MB over 1000 files",13.163,15.035,27.889,16
+rhel8-nfs-same-subnet,1,"DD read, 10MB over 1000 files",0,0.00699999999999967,2.95000000000005,2
+rhel8-nfs-same-subnet,1,"DD read, 10MB over 1000 files",2.04200000000001,2.29500000000001,2.66700000000003,4
+rhel8-nfs-same-subnet,1,"DD read, 10MB over 1000 files",7.418,8.332,2.79700000000003,8
+rhel8-nfs-same-subnet,1,"DD read, 10MB over 1000 files",15.768,19.879,3.04899999999998,16
+rhel8-nfs-same-subnet,1,"FST random reads, 100MB over 10*10MB reads",12.856,0.0190000000000001,0.318000000000097,NA
+rhel8-nfs-same-subnet,1,"FST random reads, 100MB over 100*1MB reads",6.157,0.0630000000000006,0.214999999999918,NA
+rhel8-nfs-same-subnet,1,"FST random reads, 100MB over 1000*100KB reads",0.643000000000001,0.0990000000000002,0.487999999999943,NA
+rhel8-nfs-same-subnet,1,"FST random reads, 100MB over 10000*10KB reads",0.613,0.388999999999999,1.81600000000003,NA
+rhel8-nfs-same-subnet,1,Read 14 days of CRAN logs with fread,94.157,3.098,37.845,NA
+rhel8-nfs-same-subnet,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.108,5.39300000000001,17.937,NA
+rhel8-nfs-same-subnet,2,task,user,system,elapsed,parallelism
+rhel8-nfs-same-subnet,2,Install MASS,16.802,12.021,12.896,NA
+rhel8-nfs-same-subnet,2,Install lattice,18.527,12.007,12.939,NA
+rhel8-nfs-same-subnet,2,Install BH,18.889,15.794,112.537,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 10KB",0.00100000000000033,0,0.007000000000005,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 1MB",0.00600000000000023,0.00099999999999989,0.0150000000000148,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 100MB",0.907999999999999,0.0859999999999999,0.418000000000006,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 1GB",7.378,0.663,5.78799999999998,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 10KB",0.00200000000000067,0,0.00800000000000978,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 1MB",0.00300000000000011,0.00100000000000033,0.0109999999999957,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 100MB",0.57,0.0680000000000005,0.199999999999989,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 1GB",2.456,0.506,1.90799999999999,NA
+rhel8-nfs-same-subnet,2,"DD write, 1GB",0.0150000000000006,0.723999999999998,8.554,2
+rhel8-nfs-same-subnet,2,"DD write, 1GB",0.0150000000000041,2.195,20.019,4
+rhel8-nfs-same-subnet,2,"DD write, 1GB",0.0289999999999999,5.34299999999999,37.281,8
+rhel8-nfs-same-subnet,2,"DD write, 1GB",0.075999999999997,10.509,69.977,16
+rhel8-nfs-same-subnet,2,"DD read, 1GB",0,0.00699999999999967,3.49099999999999,2
+rhel8-nfs-same-subnet,2,"DD read, 1GB",0.00800000000000267,0.931000000000002,6.93900000000002,4
+rhel8-nfs-same-subnet,2,"DD read, 1GB",0.0259999999999962,2.05300000000001,13.862,8
+rhel8-nfs-same-subnet,2,"DD read, 1GB",0.0400000000000063,5.348,27.697,16
+rhel8-nfs-same-subnet,2,"Write CSV, 100MB over 10 files",0.959000000000003,0.105,0.641999999999996,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 100MB over 10 files",0.506,0.0430000000000001,0.326999999999998,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 100MB over 100 files",0.807000000000002,0.0960000000000001,1.64800000000002,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 100MB over 100 files",0.303000000000001,0.0549999999999997,0.623999999999967,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 100MB over 1000 files",1.217,0.108,5.34700000000004,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 100MB over 1000 files",0.971,0.195,2.42699999999996,NA
+rhel8-nfs-same-subnet,2,"Write CSV, 100MB over 10000 files",5.012,0.984,45.69,NA
+rhel8-nfs-same-subnet,2,"Read CSV, 100MB over 10000 files",6.784,1.291,16.551,NA
+rhel8-nfs-same-subnet,2,"DD write, 10MB over 1000 files",0.00300000000000011,0.00499999999999901,6.44799999999998,2
+rhel8-nfs-same-subnet,2,"DD write, 10MB over 1000 files",2.96200000000001,3.40800000000001,6.90499999999997,4
+rhel8-nfs-same-subnet,2,"DD write, 10MB over 1000 files",6.904,7.96799999999999,13.842,8
+rhel8-nfs-same-subnet,2,"DD write, 10MB over 1000 files",12.952,15.127,28.14,16
+rhel8-nfs-same-subnet,2,"DD read, 10MB over 1000 files",0,0.00600000000000023,2.8180000000001,2
+rhel8-nfs-same-subnet,2,"DD read, 10MB over 1000 files",1.00300000000001,1.16099999999999,2.62399999999991,4
+rhel8-nfs-same-subnet,2,"DD read, 10MB over 1000 files",7.218,8.508,2.74099999999999,8
+rhel8-nfs-same-subnet,2,"DD read, 10MB over 1000 files",16.159,19.434,3.02200000000005,16
+rhel8-nfs-same-subnet,2,"FST random reads, 100MB over 10*10MB reads",11.825,0.00699999999999967,0.294000000000096,NA
+rhel8-nfs-same-subnet,2,"FST random reads, 100MB over 100*1MB reads",5.83499999999999,0.0559999999999992,0.201999999999998,NA
+rhel8-nfs-same-subnet,2,"FST random reads, 100MB over 1000*100KB reads",0.643000000000001,0.109,0.497000000000071,NA
+rhel8-nfs-same-subnet,2,"FST random reads, 100MB over 10000*10KB reads",0.672999999999995,0.360999999999999,1.9079999999999,NA
+rhel8-nfs-same-subnet,2,Read 14 days of CRAN logs with fread,93.744,3.172,37.731,NA
+rhel8-nfs-same-subnet,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.094,5.50000000000001,17.971,NA
+rhel8-nfs-same-subnet,3,task,user,system,elapsed,parallelism
+rhel8-nfs-same-subnet,3,Install MASS,16.793,12.021,13.095,NA
+rhel8-nfs-same-subnet,3,Install lattice,18.501,12.015,12.982,NA
+rhel8-nfs-same-subnet,3,Install BH,18.741,15.802,113.947,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 10KB",0.00100000000000033,0,0.00600000000000023,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 1MB",0.00499999999999989,0.00099999999999989,0.0149999999999864,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 100MB",0.888,0.0920000000000005,0.432999999999993,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 1GB",7.451,0.654999999999999,5.78,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 10KB",0.00199999999999889,0.00100000000000033,0.00899999999998613,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 1MB",0.00399999999999956,0.00100000000000033,0.0120000000000005,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 100MB",0.571,0.0580000000000007,0.204000000000008,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 1GB",2.44,0.492999999999999,1.91299999999998,NA
+rhel8-nfs-same-subnet,3,"DD write, 1GB",0.012000000000004,0.738999999999995,8.524,2
+rhel8-nfs-same-subnet,3,"DD write, 1GB",0.00700000000000145,1.46200000000001,20.138,4
+rhel8-nfs-same-subnet,3,"DD write, 1GB",0.036999999999999,5.398,40.555,8
+rhel8-nfs-same-subnet,3,"DD write, 1GB",0.0950000000000024,10.487,73.455,16
+rhel8-nfs-same-subnet,3,"DD read, 1GB",0.00100000000000122,0.00399999999999956,3.49399999999997,2
+rhel8-nfs-same-subnet,3,"DD read, 1GB",0.00600000000000023,0.956000000000002,6.93399999999997,4
+rhel8-nfs-same-subnet,3,"DD read, 1GB",0.0309999999999988,2.40300000000001,13.852,8
+rhel8-nfs-same-subnet,3,"DD read, 1GB",0.0640000000000001,6.122,27.687,16
+rhel8-nfs-same-subnet,3,"Write CSV, 100MB over 10 files",0.919,0.13,0.654000000000053,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 100MB over 10 files",0.506,0.032,0.322000000000003,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 100MB over 100 files",0.811,0.093,1.71600000000001,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 100MB over 100 files",0.317,0.0419999999999998,0.611000000000047,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 100MB over 1000 files",1.164,0.136,5.21100000000001,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 100MB over 1000 files",0.905000000000001,0.201000000000001,2.28899999999999,NA
+rhel8-nfs-same-subnet,3,"Write CSV, 100MB over 10000 files",5.074,0.877000000000001,45.189,NA
+rhel8-nfs-same-subnet,3,"Read CSV, 100MB over 10000 files",6.599,1.28,16.311,NA
+rhel8-nfs-same-subnet,3,"DD write, 10MB over 1000 files",0,0.0080000000000009,6.40699999999998,2
+rhel8-nfs-same-subnet,3,"DD write, 10MB over 1000 files",1.973,2.27399999999999,7.16199999999998,4
+rhel8-nfs-same-subnet,3,"DD write, 10MB over 1000 files",5.982,6.78899999999999,13.859,8
+rhel8-nfs-same-subnet,3,"DD write, 10MB over 1000 files",14.102,16.196,27.436,16
+rhel8-nfs-same-subnet,3,"DD read, 10MB over 1000 files",0,0.00699999999999967,2.94600000000003,2
+rhel8-nfs-same-subnet,3,"DD read, 10MB over 1000 files",2.066,2.29099999999999,2.71100000000001,4
+rhel8-nfs-same-subnet,3,"DD read, 10MB over 1000 files",3.232,3.52,2.75100000000009,8
+rhel8-nfs-same-subnet,3,"DD read, 10MB over 1000 files",14.794,18.38,3.02200000000005,16
+rhel8-nfs-same-subnet,3,"FST random reads, 100MB over 10*10MB reads",11.932,0.0190000000000001,0.294000000000096,NA
+rhel8-nfs-same-subnet,3,"FST random reads, 100MB over 100*1MB reads",5.696,0.0700000000000003,0.198999999999955,NA
+rhel8-nfs-same-subnet,3,"FST random reads, 100MB over 1000*100KB reads",0.679000000000002,0.0999999999999996,0.520999999999958,NA
+rhel8-nfs-same-subnet,3,"FST random reads, 100MB over 10000*10KB reads",0.646000000000001,0.378,1.87699999999995,NA
+rhel8-nfs-same-subnet,3,Read 14 days of CRAN logs with fread,93.55,3.167,37.8869999999999,NA
+rhel8-nfs-same-subnet,3,Sample 5000 rows from each of 14 CRAN logs with vroom,27.116,5.541,18.0079999999999,NA
+same-az-lustre,1,task,user,system,elapsed,parallelism
+same-az-lustre,1,Install MASS,16.503,12.577,10.695,NA
+same-az-lustre,1,Install lattice,18.506,12.182,11.456,NA
+same-az-lustre,1,Install BH,18.185,24.994,88.562,NA
+same-az-lustre,1,"Write CSV, 10KB",0.00299999999999923,0.0119999999999996,0.0220000000000056,NA
+same-az-lustre,1,"Write CSV, 1MB",0.00600000000000023,0.00100000000000033,0.0139999999999958,NA
+same-az-lustre,1,"Write CSV, 100MB",0.816999999999999,0.118,0.210999999999999,NA
+same-az-lustre,1,"Write CSV, 1GB",7.297,0.863,0.961999999999989,NA
+same-az-lustre,1,"Read CSV, 10KB",0.00199999999999889,0.00499999999999989,0.019999999999996,NA
+same-az-lustre,1,"Read CSV, 1MB",0.00600000000000023,0.00100000000000033,0.0210000000000008,NA
+same-az-lustre,1,"Read CSV, 100MB",0.578999999999999,0.558,0.611999999999995,NA
+same-az-lustre,1,"Read CSV, 1GB",3.626,5.417,5.74099999999999,NA
+same-az-lustre,1,"DD write, 1GB",0.0120000000000005,0.968999999999998,1.756,2
+same-az-lustre,1,"DD write, 1GB",0.0199999999999996,3.214,5.126,4
+same-az-lustre,1,"DD write, 1GB",0.032,9.06,12.088,8
+same-az-lustre,1,"DD write, 1GB",0.105000000000004,22.155,25.989,16
+same-az-lustre,1,"DD read, 1GB",0.00600000000000378,0.662000000000001,3.52200000000002,2
+same-az-lustre,1,"DD read, 1GB",0.0169999999999995,2.071,6.97999999999999,4
+same-az-lustre,1,"DD read, 1GB",0.0360000000000014,4.764,13.876,8
+same-az-lustre,1,"DD read, 1GB",0.0609999999999999,11.792,27.727,16
+same-az-lustre,1,"Write CSV, 100MB over 10 files",0.989999999999998,0.147,0.331999999999994,NA
+same-az-lustre,1,"Read CSV, 100MB over 10 files",0.843999999999998,0.483000000000001,1.42200000000003,NA
+same-az-lustre,1,"Write CSV, 100MB over 100 files",0.776,0.116,1.01500000000001,NA
+same-az-lustre,1,"Read CSV, 100MB over 100 files",0.317999999999998,0.205,0.944999999999993,NA
+same-az-lustre,1,"Write CSV, 100MB over 1000 files",1.111,0.247999999999999,2.148,NA
+same-az-lustre,1,"Read CSV, 100MB over 1000 files",1.02,0.706,4.77899999999997,NA
+same-az-lustre,1,"Write CSV, 100MB over 10000 files",3.87,2.322,13.541,NA
+same-az-lustre,1,"Read CSV, 100MB over 10000 files",6.649,3.984,26.519,NA
+same-az-lustre,1,"DD write, 10MB over 1000 files",0.000999999999997669,0.0100000000000016,3.20999999999998,2
+same-az-lustre,1,"DD write, 10MB over 1000 files",2.143,2.60199999999999,3.82799999999997,4
+same-az-lustre,1,"DD write, 10MB over 1000 files",7.624,9.81100000000001,6.666,8
+same-az-lustre,1,"DD write, 10MB over 1000 files",16.165,22.606,12.924,16
+same-az-lustre,1,"DD read, 10MB over 1000 files",0.00100000000000477,0.00900000000000034,3.798,2
+same-az-lustre,1,"DD read, 10MB over 1000 files",2.924,4.158,3.43800000000005,4
+same-az-lustre,1,"DD read, 10MB over 1000 files",7.04499999999999,9.96199999999999,3.65300000000002,8
+same-az-lustre,1,"DD read, 10MB over 1000 files",16.14,22.232,4.00299999999999,16
+same-az-lustre,1,"FST random reads, 100MB over 10*10MB reads",9.721,0.190000000000001,0.322000000000003,NA
+same-az-lustre,1,"FST random reads, 100MB over 100*1MB reads",8.537,0.157,0.328999999999951,NA
+same-az-lustre,1,"FST random reads, 100MB over 1000*100KB reads",1.149,0.221999999999998,0.949000000000012,NA
+same-az-lustre,1,"FST random reads, 100MB over 10000*10KB reads",1.243,1.633,7.87299999999999,NA
+same-az-lustre,1,Read 14 days of CRAN logs with fread,92.108,27.623,62.545,NA
+same-az-lustre,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.735,30.997,43.071,NA
+same-az-lustre,2,task,user,system,elapsed,parallelism
+same-az-lustre,2,Install MASS,16.668,12.462,10.683,NA
+same-az-lustre,2,Install lattice,18.546,12.157,11.5,NA
+same-az-lustre,2,Install BH,18.397,24.614,88.319,NA
+same-az-lustre,2,"Write CSV, 10KB",0.000999999999999446,0.00100000000000033,0.0169999999999959,NA
+same-az-lustre,2,"Write CSV, 1MB",0.00499999999999989,0.00199999999999978,0.0130000000000052,NA
+same-az-lustre,2,"Write CSV, 100MB",0.811,0.139,0.209999999999994,NA
+same-az-lustre,2,"Write CSV, 1GB",7.265,0.906,0.968000000000004,NA
+same-az-lustre,2,"Read CSV, 10KB",0.00200000000000067,0.00600000000000023,0.0210000000000008,NA
+same-az-lustre,2,"Read CSV, 1MB",0.00400000000000134,0.00199999999999978,0.019999999999996,NA
+same-az-lustre,2,"Read CSV, 100MB",0.649000000000001,0.555000000000001,0.62299999999999,NA
+same-az-lustre,2,"Read CSV, 1GB",3.632,5.446,5.70599999999999,NA
+same-az-lustre,2,"DD write, 1GB",0.00200000000000244,0.973000000000001,1.715,2
+same-az-lustre,2,"DD write, 1GB",0.0120000000000005,3.212,5.14499999999998,4
+same-az-lustre,2,"DD write, 1GB",0.0459999999999994,9.176,12.081,8
+same-az-lustre,2,"DD write, 1GB",0.0939999999999941,22.263,25.93,16
+same-az-lustre,2,"DD read, 1GB",0.00300000000000367,0.64299999999999,3.51300000000001,2
+same-az-lustre,2,"DD read, 1GB",0.00900000000000034,1.979,6.958,4
+same-az-lustre,2,"DD read, 1GB",0.0310000000000059,4.77299999999999,13.889,8
+same-az-lustre,2,"DD read, 1GB",0.078000000000003,11.809,27.716,16
+same-az-lustre,2,"Write CSV, 100MB over 10 files",0.986999999999998,0.147,0.325999999999993,NA
+same-az-lustre,2,"Read CSV, 100MB over 10 files",0.852999999999998,0.528,1.47799999999998,NA
+same-az-lustre,2,"Write CSV, 100MB over 100 files",0.776,0.124000000000001,1.03400000000002,NA
+same-az-lustre,2,"Read CSV, 100MB over 100 files",0.303000000000001,0.237,0.984000000000009,NA
+same-az-lustre,2,"Write CSV, 100MB over 1000 files",1.042,0.334,2.21899999999999,NA
+same-az-lustre,2,"Read CSV, 100MB over 1000 files",1.024,0.728000000000002,5.12300000000002,NA
+same-az-lustre,2,"Write CSV, 100MB over 10000 files",4.191,2.123,13.673,NA
+same-az-lustre,2,"Read CSV, 100MB over 10000 files",6.714,3.858,26.303,NA
+same-az-lustre,2,"DD write, 10MB over 1000 files",0.000999999999997669,0.00799999999999912,3.226,2
+same-az-lustre,2,"DD write, 10MB over 1000 files",3.11300000000001,4.07499999999999,3.93900000000002,4
+same-az-lustre,2,"DD write, 10MB over 1000 files",6.48,8.44100000000002,6.44500000000005,8
+same-az-lustre,2,"DD write, 10MB over 1000 files",13.106,17.307,13.03,16
+same-az-lustre,2,"DD read, 10MB over 1000 files",0.00100000000000477,0.0739999999999981,3.96600000000001,2
+same-az-lustre,2,"DD read, 10MB over 1000 files",2.973,4.058,3.38900000000001,4
+same-az-lustre,2,"DD read, 10MB over 1000 files",7.08499999999999,9.87900000000001,3.60599999999999,8
+same-az-lustre,2,"DD read, 10MB over 1000 files",16.082,22.319,4.07100000000003,16
+same-az-lustre,2,"FST random reads, 100MB over 10*10MB reads",12.23,0.186,0.416999999999973,NA
+same-az-lustre,2,"FST random reads, 100MB over 100*1MB reads",9.389,0.110999999999997,0.366000000000042,NA
+same-az-lustre,2,"FST random reads, 100MB over 1000*100KB reads",0.986000000000004,0.188000000000002,0.819999999999993,NA
+same-az-lustre,2,"FST random reads, 100MB over 10000*10KB reads",1.295,1.543,7.685,NA
+same-az-lustre,2,Read 14 days of CRAN logs with fread,91.748,27.366,62.09,NA
+same-az-lustre,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.775,31.114,43.271,NA
+same-az-lustre,3,task,user,system,elapsed,parallelism
+same-az-lustre,3,Install MASS,16.512,12.632,10.724,NA
+same-az-lustre,3,Install lattice,18.319,12.297,11.331,NA
+same-az-lustre,3,Install BH,18.576,24.026,88.442,NA
+same-az-lustre,3,"Write CSV, 10KB",0.00100000000000033,0.016,0.0229999999999961,NA
+same-az-lustre,3,"Write CSV, 1MB",0.00599999999999934,0.00199999999999978,0.0159999999999911,NA
+same-az-lustre,3,"Write CSV, 100MB",0.804,0.131,0.209000000000003,NA
+same-az-lustre,3,"Write CSV, 1GB",7.278,0.903,0.965000000000003,NA
+same-az-lustre,3,"Read CSV, 10KB",0,0.00499999999999989,0.0190000000000055,NA
+same-az-lustre,3,"Read CSV, 1MB",0.00300000000000011,0.00300000000000011,0.0189999999999912,NA
+same-az-lustre,3,"Read CSV, 100MB",0.526,0.606000000000001,0.613000000000014,NA
+same-az-lustre,3,"Read CSV, 1GB",3.703,5.512,5.702,NA
+same-az-lustre,3,"DD write, 1GB",0.00799999999999557,0.947999999999999,1.732,2
+same-az-lustre,3,"DD write, 1GB",0.0140000000000029,3.203,5.12800000000001,4
+same-az-lustre,3,"DD write, 1GB",0.0310000000000059,6.429,12.063,8
+same-az-lustre,3,"DD write, 1GB",0.080999999999996,22.052,25.966,16
+same-az-lustre,3,"DD read, 1GB",0.000999999999997669,0.644000000000005,3.52000000000001,2
+same-az-lustre,3,"DD read, 1GB",0.0109999999999957,1.97799999999999,6.976,4
+same-az-lustre,3,"DD read, 1GB",0.0269999999999939,4.83300000000001,13.887,8
+same-az-lustre,3,"DD read, 1GB",0.0569999999999915,11.87,27.719,16
+same-az-lustre,3,"Write CSV, 100MB over 10 files",0.991,0.145999999999999,0.329000000000008,NA
+same-az-lustre,3,"Read CSV, 100MB over 10 files",0.837000000000003,0.495000000000001,1.43800000000002,NA
+same-az-lustre,3,"Write CSV, 100MB over 100 files",0.783999999999999,0.112,1.00700000000001,NA
+same-az-lustre,3,"Read CSV, 100MB over 100 files",0.327999999999999,0.215999999999999,0.980999999999995,NA
+same-az-lustre,3,"Write CSV, 100MB over 1000 files",0.942999999999998,0.388,2.077,NA
+same-az-lustre,3,"Read CSV, 100MB over 1000 files",1.109,0.641,4.828,NA
+same-az-lustre,3,"Write CSV, 100MB over 10000 files",4.444,1.879,13.77,NA
+same-az-lustre,3,"Read CSV, 100MB over 10000 files",6.422,3.834,25.067,NA
+same-az-lustre,3,"DD write, 10MB over 1000 files",0.000999999999997669,0.00900000000000034,3.26999999999998,2
+same-az-lustre,3,"DD write, 10MB over 1000 files",2.078,2.669,3.89600000000002,4
+same-az-lustre,3,"DD write, 10MB over 1000 files",7.559,10.073,6.61000000000001,8
+same-az-lustre,3,"DD write, 10MB over 1000 files",14.083,18.945,13.234,16
+same-az-lustre,3,"DD read, 10MB over 1000 files",0.00199999999999534,0.00799999999999912,4.02500000000003,2
+same-az-lustre,3,"DD read, 10MB over 1000 files",2.96299999999999,4.115,3.476,4
+same-az-lustre,3,"DD read, 10MB over 1000 files",6.92999999999999,10.044,3.63799999999998,8
+same-az-lustre,3,"DD read, 10MB over 1000 files",16.098,22.308,4.13200000000001,16
+same-az-lustre,3,"FST random reads, 100MB over 10*10MB reads",12.071,0.105999999999998,0.407000000000039,NA
+same-az-lustre,3,"FST random reads, 100MB over 100*1MB reads",7.897,0.143000000000001,0.379999999999995,NA
+same-az-lustre,3,"FST random reads, 100MB over 1000*100KB reads",1.071,0.189,0.890999999999963,NA
+same-az-lustre,3,"FST random reads, 100MB over 10000*10KB reads",1.191,1.702,7.66300000000001,NA
+same-az-lustre,3,Read 14 days of CRAN logs with fread,92.754,27.367,62.39,NA
+same-az-lustre,3,Sample 5000 rows from each of 14 CRAN logs with vroom,27.793,31.318,43.565,NA
+same-az-zfs,1,task,user,system,elapsed,parallelism
+same-az-zfs,1,Install MASS,16.681,12.061,10.189,NA
+same-az-zfs,1,Install lattice,18.485,12.069,11.378,NA
+same-az-zfs,1,Install BH,18.313,14.258,53.479,NA
+same-az-zfs,1,"Write CSV, 10KB",0.00100000000000033,0,0.00400000000000489,NA
+same-az-zfs,1,"Write CSV, 1MB",0.00499999999999989,0.00099999999999989,0.0109999999999957,NA
+same-az-zfs,1,"Write CSV, 100MB",0.813,0.111,0.203000000000003,NA
+same-az-zfs,1,"Write CSV, 1GB",7.212,0.704000000000001,1.879,NA
+same-az-zfs,1,"Read CSV, 10KB",0.00200000000000067,0,0.00800000000000978,NA
+same-az-zfs,1,"Read CSV, 1MB",0.00300000000000011,0,0.0109999999999957,NA
+same-az-zfs,1,"Read CSV, 100MB",0.459,0.0990000000000002,0.109000000000009,NA
+same-az-zfs,1,"Read CSV, 1GB",3.671,0.757,0.862000000000009,NA
+same-az-zfs,1,"DD write, 1GB",0,0.0170000000000003,3.447,2
+same-az-zfs,1,"DD write, 1GB",0.0139999999999993,1.924,3.568,4
+same-az-zfs,1,"DD write, 1GB",0.0399999999999991,4.814,8.678,8
+same-az-zfs,1,"DD write, 1GB",0.0919999999999987,12.858,20.704,16
+same-az-zfs,1,"DD read, 1GB",0.000999999999997669,0.00499999999999989,1.49099999999999,2
+same-az-zfs,1,"DD read, 1GB",0.0129999999999981,0.959000000000001,2.92000000000002,4
+same-az-zfs,1,"DD read, 1GB",0.0339999999999989,2.40699999999999,5.79599999999999,8
+same-az-zfs,1,"DD read, 1GB",0.0640000000000001,6.027,11.565,16
+same-az-zfs,1,"Write CSV, 100MB over 10 files",1.065,0.104,0.437000000000012,NA
+same-az-zfs,1,"Read CSV, 100MB over 10 files",0.506999999999998,0.0499999999999998,0.302999999999997,NA
+same-az-zfs,1,"Write CSV, 100MB over 100 files",0.792999999999999,0.0939999999999994,1.18700000000001,NA
+same-az-zfs,1,"Read CSV, 100MB over 100 files",0.310000000000002,0.04,0.593999999999994,NA
+same-az-zfs,1,"Write CSV, 100MB over 1000 files",1.157,0.0949999999999998,2.75900000000001,NA
+same-az-zfs,1,"Read CSV, 100MB over 1000 files",0.861999999999998,0.216,2.24199999999999,NA
+same-az-zfs,1,"Write CSV, 100MB over 10000 files",4.68,0.821,17.045,NA
+same-az-zfs,1,"Read CSV, 100MB over 10000 files",6.389,1.28,14.74,NA
+same-az-zfs,1,"DD write, 10MB over 1000 files",0.00199999999999534,0.00600000000000023,7.102,2
+same-az-zfs,1,"DD write, 10MB over 1000 files",2.04500000000001,2.391,6.73099999999999,4
+same-az-zfs,1,"DD write, 10MB over 1000 files",3.26,3.679,11.601,8
+same-az-zfs,1,"DD write, 10MB over 1000 files",15.787,20.061,17.47,16
+same-az-zfs,1,"DD read, 10MB over 1000 files",1.01199999999999,1.12499999999999,2.51399999999998,2
+same-az-zfs,1,"DD read, 10MB over 1000 files",2.022,2.261,2.50799999999998,4
+same-az-zfs,1,"DD read, 10MB over 1000 files",4.214,4.798,2.68100000000001,8
+same-az-zfs,1,"DD read, 10MB over 1000 files",16.074,19.614,2.98299999999998,16
+same-az-zfs,1,"FST random reads, 100MB over 10*10MB reads",10.452,0.0139999999999993,0.255999999999972,NA
+same-az-zfs,1,"FST random reads, 100MB over 100*1MB reads",5.622,0.0630000000000006,0.19399999999996,NA
+same-az-zfs,1,"FST random reads, 100MB over 1000*100KB reads",0.765000000000001,0.117000000000001,0.613,NA
+same-az-zfs,1,"FST random reads, 100MB over 10000*10KB reads",0.698,0.435,2.37099999999998,NA
+same-az-zfs,1,Read 14 days of CRAN logs with fread,92.075,3.164,37.982,NA
+same-az-zfs,1,Sample 5000 rows from each of 14 CRAN logs with vroom,27.227,5.36900000000001,17.953,NA
+same-az-zfs,2,task,user,system,elapsed,parallelism
+same-az-zfs,2,Install MASS,16.554,12.204,10.192,NA
+same-az-zfs,2,Install lattice,18.599,11.925,11.266,NA
+same-az-zfs,2,Install BH,18.139,14.358,53.441,NA
+same-az-zfs,2,"Write CSV, 10KB",0.000999999999999446,0.00100000000000033,0.00400000000000489,NA
+same-az-zfs,2,"Write CSV, 1MB",0.00300000000000011,0.00300000000000011,0.0110000000000099,NA
+same-az-zfs,2,"Write CSV, 100MB",0.787,0.11,0.203000000000003,NA
+same-az-zfs,2,"Write CSV, 1GB",7.179,0.688,1.866,NA
+same-az-zfs,2,"Read CSV, 10KB",0.00300000000000011,0.00100000000000033,0.00800000000000978,NA
+same-az-zfs,2,"Read CSV, 1MB",0.00300000000000011,0,0.0119999999999862,NA
+same-az-zfs,2,"Read CSV, 100MB",0.465,0.0960000000000001,0.11099999999999,NA
+same-az-zfs,2,"Read CSV, 1GB",3.577,0.643999999999999,0.863,NA
+same-az-zfs,2,"DD write, 1GB",0.00400000000000134,0.0110000000000001,3.539,2
+same-az-zfs,2,"DD write, 1GB",0.00700000000000145,1.901,3.611,4
+same-az-zfs,2,"DD write, 1GB",0.022000000000002,5.06299999999999,8.804,8
+same-az-zfs,2,"DD write, 1GB",0.0670000000000002,11.787,20.915,16
+same-az-zfs,2,"DD read, 1GB",0.000999999999997669,0.00700000000000056,1.48999999999998,2
+same-az-zfs,2,"DD read, 1GB",0.0150000000000041,0.963999999999996,2.91499999999999,4
+same-az-zfs,2,"DD read, 1GB",0.0189999999999984,2.42,5.80000000000001,8
+same-az-zfs,2,"DD read, 1GB",0.0679999999999978,5.90499999999999,11.567,16
+same-az-zfs,2,"Write CSV, 100MB over 10 files",1.053,0.144,0.431999999999988,NA
+same-az-zfs,2,"Read CSV, 100MB over 10 files",0.507999999999999,0.0460000000000003,0.303000000000026,NA
+same-az-zfs,2,"Write CSV, 100MB over 100 files",0.809000000000001,0.0860000000000003,1.19200000000001,NA
+same-az-zfs,2,"Read CSV, 100MB over 100 files",0.302,0.0519999999999996,0.597000000000008,NA
+same-az-zfs,2,"Write CSV, 100MB over 1000 files",1.098,0.207,2.81700000000001,NA
+same-az-zfs,2,"Read CSV, 100MB over 1000 files",0.914999999999999,0.164,2.17600000000002,NA
+same-az-zfs,2,"Write CSV, 100MB over 10000 files",5.038,0.787,17.433,NA
+same-az-zfs,2,"Read CSV, 100MB over 10000 files",6.639,1.149,14.985,NA
+same-az-zfs,2,"DD write, 10MB over 1000 files",0.000999999999997669,0.00900000000000034,6.97999999999999,2
+same-az-zfs,2,"DD write, 10MB over 1000 files",1.04,1.195,6.71100000000001,4
+same-az-zfs,2,"DD write, 10MB over 1000 files",7.496,8.68800000000001,11.63,8
+same-az-zfs,2,"DD write, 10MB over 1000 files",14.736,18.772,17.875,16
+same-az-zfs,2,"DD read, 10MB over 1000 files",0.000999999999997669,0.0080000000000009,2.51599999999999,2
+same-az-zfs,2,"DD read, 10MB over 1000 files",0.000999999999997669,0.0129999999999999,2.51000000000002,4
+same-az-zfs,2,"DD read, 10MB over 1000 files",5.264,6.03,2.69,8
+same-az-zfs,2,"DD read, 10MB over 1000 files",16.037,19.731,3.00700000000001,16
+same-az-zfs,2,"FST random reads, 100MB over 10*10MB reads",12.038,0.077,0.295999999999992,NA
+same-az-zfs,2,"FST random reads, 100MB over 100*1MB reads",5.537,0.0659999999999989,0.192000000000007,NA
+same-az-zfs,2,"FST random reads, 100MB over 1000*100KB reads",0.759,0.0890000000000004,0.605999999999995,NA
+same-az-zfs,2,"FST random reads, 100MB over 10000*10KB reads",0.628,0.354000000000001,1.74599999999998,NA
+same-az-zfs,2,Read 14 days of CRAN logs with fread,93.169,3.225,37.879,NA
+same-az-zfs,2,Sample 5000 rows from each of 14 CRAN logs with vroom,27.184,5.33,17.929,NA
+same-az-zfs,3,task,user,system,elapsed,parallelism
+same-az-zfs,3,Install MASS,16.682,12.12,10.232,NA
+same-az-zfs,3,Install lattice,18.595,12.04,11.377,NA
+same-az-zfs,3,Install BH,18.191,14.47,53.561,NA
+same-az-zfs,3,"Write CSV, 10KB",0,0.00099999999999989,0.00499999999999545,NA
+same-az-zfs,3,"Write CSV, 1MB",0.00700000000000056,0,0.0110000000000099,NA
+same-az-zfs,3,"Write CSV, 100MB",0.816,0.0869999999999997,0.205000000000013,NA
+same-az-zfs,3,"Write CSV, 1GB",7.204,0.657,1.85499999999999,NA
+same-az-zfs,3,"Read CSV, 10KB",0.00299999999999834,0,0.00799999999999557,NA
+same-az-zfs,3,"Read CSV, 1MB",0.00300000000000011,0.00100000000000033,0.0120000000000005,NA
+same-az-zfs,3,"Read CSV, 100MB",0.468999999999999,0.0979999999999999,0.106999999999999,NA
+same-az-zfs,3,"Read CSV, 1GB",3.649,0.675,0.859999999999999,NA
+same-az-zfs,3,"DD write, 1GB",0.00300000000000011,0.00800000000000001,3.45999999999999,2
+same-az-zfs,3,"DD write, 1GB",0.0140000000000029,1.914,3.49600000000001,4
+same-az-zfs,3,"DD write, 1GB",0.0300000000000011,4.208,8.65000000000001,8
+same-az-zfs,3,"DD write, 1GB",0.0769999999999946,12.865,22.324,16
+same-az-zfs,3,"DD read, 1GB",0,0.00499999999999989,1.48000000000002,2
+same-az-zfs,3,"DD read, 1GB",0.007000000000005,0.937999999999997,2.905,4
+same-az-zfs,3,"DD read, 1GB",0.0239999999999974,2.4,5.791,8
+same-az-zfs,3,"DD read, 1GB",0.0619999999999976,5.92400000000001,11.558,16
+same-az-zfs,3,"Write CSV, 100MB over 10 files",1.093,0.142,0.425000000000011,NA
+same-az-zfs,3,"Read CSV, 100MB over 10 files",0.635999999999999,0.0579999999999998,0.317999999999984,NA
+same-az-zfs,3,"Write CSV, 100MB over 100 files",0.822000000000003,0.077,1.19399999999999,NA
+same-az-zfs,3,"Read CSV, 100MB over 100 files",0.304000000000002,0.0590000000000002,0.612000000000023,NA
+same-az-zfs,3,"Write CSV, 100MB over 1000 files",1.15,0.157999999999999,2.81999999999999,NA
+same-az-zfs,3,"Read CSV, 100MB over 1000 files",0.815000000000001,0.155,2.048,NA
+same-az-zfs,3,"Write CSV, 100MB over 10000 files",5.395,0.616,17.864,NA
+same-az-zfs,3,"Read CSV, 100MB over 10000 files",6.807,1.279,15.421,NA
+same-az-zfs,3,"DD write, 10MB over 1000 files",0.00200000000000244,0.00699999999999967,7.03899999999999,2
+same-az-zfs,3,"DD write, 10MB over 1000 files",2.07299999999999,2.335,6.73399999999998,4
+same-az-zfs,3,"DD write, 10MB over 1000 files",5.314,6.231,11.749,8
+same-az-zfs,3,"DD write, 10MB over 1000 files",16.272,19.572,18.42,16
+same-az-zfs,3,"DD read, 10MB over 1000 files",0.000999999999997669,0.00600000000000023,2.48600000000002,2
+same-az-zfs,3,"DD read, 10MB over 1000 files",3.12499999999999,3.29000000000001,2.517,4
+same-az-zfs,3,"DD read, 10MB over 1000 files",5.236,6.013,2.68199999999999,8
+same-az-zfs,3,"DD read, 10MB over 1000 files",15.074,18.216,2.995,16
+same-az-zfs,3,"FST random reads, 100MB over 10*10MB reads",10.809,0.152999999999999,0.269000000000005,NA
+same-az-zfs,3,"FST random reads, 100MB over 100*1MB reads",5.344,0.125,0.187000000000012,NA
+same-az-zfs,3,"FST random reads, 100MB over 1000*100KB reads",0.769999999999996,0.0939999999999994,0.608000000000004,NA
+same-az-zfs,3,"FST random reads, 100MB over 10000*10KB reads",0.717000000000006,0.413,2.43600000000004,NA
+same-az-zfs,3,Read 14 days of CRAN logs with fread,91.761,3.481,37.809,NA
+same-az-zfs,3,Sample 5000 rows from each of 14 CRAN logs with vroom,27.233,5.409,17.967,NA
