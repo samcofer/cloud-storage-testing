@@ -1,8 +1,16 @@
-import os
-import csv
-import sys
+import os       # Import the OS module
+import csv      # Import the CSV module
+import sys      # Import the SYS module
 
 def parse_directory(directory):
+    """
+    Function to parse files in a directory and extract relevant information.
+    Args:
+        directory (str): Directory path to parse.
+    Returns:
+        dict_values: Values of the file pairs with their attributes.
+    """
+
     # Dictionary to store file pairs with their attributes
     file_pairs = {}
 
@@ -43,6 +51,13 @@ def parse_directory(directory):
     return file_pairs.values()
 
 def write_to_csv(data, output_file):
+    """
+    Function to write data to a CSV file.
+    Args:
+        data (dict_values): Values of the file pairs with their attributes.
+        output_file (str): Path to the output CSV file.
+    """
+
     # Define the header of the CSV file
     header = ['filesystem', 'extended-acl-support', 'linkbased-file-locks']
 
@@ -54,18 +69,20 @@ def write_to_csv(data, output_file):
             writer.writerow(row)
 
 if __name__ == "__main__":
+    # Check command-line arguments
     if len(sys.argv) != 3:
         print("Usage: python script_name.py directory_path output_csv_file")
         sys.exit(1)
 
-    directory_path = sys.argv[1]
-    output_file = sys.argv[2]
+    directory_path = sys.argv[1]  # Get directory path from command line argument
+    output_file = sys.argv[2]     # Get output file path from command line argument
 
+    # Check if directory exists
     if not os.path.isdir(directory_path):
         print("Error: The provided directory path is invalid.")
         sys.exit(1)
 
-
+    # Parse directory and write data to CSV
     file_pairs = parse_directory(directory_path)
     write_to_csv(file_pairs, output_file)
     print("CSV file generated successfully.")
