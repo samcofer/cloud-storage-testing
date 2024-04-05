@@ -5,7 +5,7 @@ set -x
 AZURE_DIRECTORIES="managed-disk-local-storage-premium-ssd-lrs-run netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-azure-files-run elastic-san-same-zone-run"
 AWS_DIRECTORIES="ebs-local-storage-run efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run rhel8-nfs-same-subnet-run"
 #AWS_DIRECTORIES="efs-single-zone-run efs-regional-run same-az-lustre-run"
-GCP_DIRECTORIES="gfs-run"
+GCP_DIRECTORIES="gfs-basic-ssd-run gfs-ent-ssd-run gfs-zonal-ssd-run local-storage-ssd-persistent-disk"
 
 PYTHON_VERSION=3.11.8
 R_VERSION=4.3.2
