@@ -72,7 +72,7 @@ elif [ "$(curl -s --connect-timeout 2 -o /dev/null -H Metadata:true -w "%{http_c
     echo "Running in Azure environment."
     DIRECTORIES=$AZURE_DIRECTORIES
 
-elif [ "$(curl -s --connect-timeout 2 http://metadata.google.internal/computeMetadata/v1/instance/ -H "Metadata-Flavor: Google")" == "200" ]; then
+elif [ "$(curl -s --connect-timeout 2 -o /dev/null -w "%{http_code}" http://metadata.google.internal/computeMetadata/v1/instance/ -H "Metadata-Flavor: Google")" == "200" ]; then
     # GCP metadata service is reachable, assume running in GCP
     echo "Running in GCP environment."
     DIRECTORIES=$GCP_DIRECTORIES
