@@ -1,1 +1,25 @@
-{ "createTime": "2024-04-05T20:13:45.511568186Z", "fileShares": [ { "capacityGb": "2560", "name": "gfs_basic_ssd_fs" } ], "name": "projects/rstudio-soleng/locations/us-central1-a/instances/gfs-basic-ssd-run", "networks": [ { "connectMode": "DIRECT_PEERING", "ipAddresses": [ "10.104.66.154" ], "modes": [ "MODE_IPV4" ], "network": "default", "reservedIpRange": "10.104.66.152/29" } ], "state": "READY", "tier": "BASIC_SSD" }
+{
+  "createTime": "2024-04-05T20:13:45.511568186Z",
+  "fileShares": [
+    {
+      "capacityGb": "2560",
+      "name": "gfs_basic_ssd_fs"
+    }
+  ],
+  "name": "projects/rstudio-soleng/locations/us-central1-a/instances/gfs-basic-ssd-run",
+  "networks": [
+    {
+      "connectMode": "DIRECT_PEERING",
+      "ipAddresses": [
+        "10.104.66.154"
+      ],
+      "modes": [
+        "MODE_IPV4"
+      ],
+      "network": "default",
+      "reservedIpRange": "10.104.66.152/29"
+    }
+  ],
+  "state": "READY",
+  "tier": "BASIC_SSD"
+}
