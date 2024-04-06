@@ -1,0 +1,55 @@
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=1 time=1.81 ms (warmup)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=2 time=2.05 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=3 time=1.94 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=4 time=2.07 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=5 time=1.77 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=6 time=1.83 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=7 time=2.08 ms (slow)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=8 time=2.06 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=9 time=2.04 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=10 time=2.56 ms (slow)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=11 time=1.87 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=12 time=2.12 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=13 time=2.01 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=14 time=7.96 ms (slow)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=15 time=6.28 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=16 time=1.85 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=17 time=2.50 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=18 time=2.57 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=19 time=2.47 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=20 time=1.96 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=21 time=1.87 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=22 time=4.04 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=23 time=1.95 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=24 time=2.08 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=25 time=2.21 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=26 time=1.94 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=27 time=2.87 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=28 time=2.09 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=29 time=2.51 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=30 time=2.12 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=31 time=2.03 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=32 time=3.06 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=33 time=3.31 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=34 time=4.43 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=35 time=2.22 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=36 time=2.46 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=37 time=2.06 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=38 time=2.27 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=39 time=2.46 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=40 time=2.60 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=41 time=2.31 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=42 time=2.46 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=43 time=2.42 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=44 time=3.62 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=45 time=6.98 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=46 time=1.79 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=47 time=2.07 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=48 time=2.39 ms
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=49 time=2.04 ms (fast)
+4 KiB <<< /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs): request=50 time=2.62 ms
+
+--- /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs) ioping statistics ---
+49 requests completed in 129.3 ms, 196 KiB read, 378 iops, 1.48 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 1.77 ms / 2.64 ms / 7.96 ms / 1.27 ms

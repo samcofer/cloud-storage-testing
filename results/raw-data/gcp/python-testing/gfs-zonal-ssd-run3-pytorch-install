@@ -1,0 +1,6 @@
+BEGIN - Running in /gfs-zonal-ssd-run/testuser
+VENV CREATE: Run duration = 16743 milliseconds
+PIP UPDATE: Run duration = 8965 milliseconds
+PYTORCH INSTALL: Run duration = 245447 milliseconds
+CLEANUP: Run duration = 51073 milliseconds
+END

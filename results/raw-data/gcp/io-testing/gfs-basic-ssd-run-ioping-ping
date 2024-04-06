@@ -1,0 +1,55 @@
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=1 time=374.4 us (warmup)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=2 time=469.4 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=3 time=414.7 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=4 time=394.7 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=5 time=486.7 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=6 time=403.4 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=7 time=481.4 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=8 time=477.9 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=9 time=419.3 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=10 time=434.6 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=11 time=455.8 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=12 time=390.2 us (fast)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=13 time=500.5 us (slow)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=14 time=463.2 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=15 time=521.6 us (slow)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=16 time=486.0 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=17 time=537.0 us (slow)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=18 time=1.18 ms (slow)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=19 time=536.2 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=20 time=488.0 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=21 time=438.6 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=22 time=520.1 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=23 time=561.8 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=24 time=504.0 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=25 time=522.2 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=26 time=521.8 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=27 time=459.1 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=28 time=512.6 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=29 time=488.1 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=30 time=436.7 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=31 time=434.5 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=32 time=419.7 us (fast)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=33 time=426.0 us (fast)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=34 time=486.9 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=35 time=521.0 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=36 time=501.4 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=37 time=439.8 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=38 time=464.1 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=39 time=388.2 us (fast)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=40 time=463.8 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=41 time=471.9 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=42 time=398.8 us (fast)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=43 time=501.6 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=44 time=455.2 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=45 time=661.0 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=46 time=528.5 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=47 time=568.9 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=48 time=414.8 us (fast)
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=49 time=514.7 us
+4 KiB <<< /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs): request=50 time=473.8 us
+
+--- /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs) ioping statistics ---
+49 requests completed in 24.0 ms, 196 KiB read, 2.04 k iops, 7.96 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 388.2 us / 490.7 us / 1.18 ms / 112.7 us

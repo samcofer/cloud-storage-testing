@@ -1,0 +1,5 @@
+
+--- /local-storage-ssd-persistent-disk (xfs /dev/sda2) ioping statistics ---
+23.8 k requests completed in 28.7 s, 5.81 GiB written, 828 iops, 207.1 MiB/s
+generated 23.8 k requests in 30.0 s, 5.81 GiB, 792 iops, 198.2 MiB/s
+min/avg/max/mdev = 1.02 ms / 1.21 ms / 7.15 ms / 116.5 us

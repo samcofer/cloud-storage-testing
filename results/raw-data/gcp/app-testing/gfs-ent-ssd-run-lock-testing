@@ -1,0 +1,12 @@
+Posit Workbench Lock Test
+---------------------------
+Host: rhel8-sjc20240405-195324
+Lock type: Link-based
+User: root
+File: /gfs-ent-ssd-run/testfile
+
+* Acquired advisory lock
+* Unable to acquire link-based lock 
+
+
+Your filesystem appears to support link-based locks.
