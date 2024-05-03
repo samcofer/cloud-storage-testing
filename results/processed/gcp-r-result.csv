@@ -1,0 +1,165 @@
+filesystem,cloud,test-name,elapsed
+gfs-ent-ssd,GCP,Install MASS,16.902
+gfs-ent-ssd,GCP,Install lattice,15.843
+gfs-ent-ssd,GCP,Install BH,166.503
+gfs-ent-ssd,GCP,"Write CSV, 10KB",0.021
+gfs-ent-ssd,GCP,"Write CSV, 1MB",0.027
+gfs-ent-ssd,GCP,"Write CSV, 100MB",0.818
+gfs-ent-ssd,GCP,"Write CSV, 1GB",9.072
+gfs-ent-ssd,GCP,"Read CSV, 10KB",0.012
+gfs-ent-ssd,GCP,"Read CSV, 1MB",0.049
+gfs-ent-ssd,GCP,"Read CSV, 100MB",0.688
+gfs-ent-ssd,GCP,"Read CSV, 1GB",4.303
+gfs-ent-ssd,GCP,"DD write, 1GB, 2 Parallel Ops",6.247
+gfs-ent-ssd,GCP,"DD write, 1GB, 4 Parallel Ops",11.48
+gfs-ent-ssd,GCP,"DD write, 1GB, 8 Parallel Ops",18.849
+gfs-ent-ssd,GCP,"DD write, 1GB, 16 Parallel Ops",38.795
+gfs-ent-ssd,GCP,"DD read, 1GB, 2 Parallel Ops",2.635
+gfs-ent-ssd,GCP,"DD read, 1GB, 4 Parallel Ops",3.965
+gfs-ent-ssd,GCP,"DD read, 1GB, 8 Parallel Ops",7.356
+gfs-ent-ssd,GCP,"DD read, 1GB, 16 Parallel Ops",14.564
+gfs-ent-ssd,GCP,"Write CSV, 100MB over 10 files",1.263
+gfs-ent-ssd,GCP,"Read CSV, 100MB over 10 files",2.545
+gfs-ent-ssd,GCP,"Write CSV, 100MB over 100 files",2.904
+gfs-ent-ssd,GCP,"Read CSV, 100MB over 100 files",2.597
+gfs-ent-ssd,GCP,"Write CSV, 100MB over 1000 files",9.832
+gfs-ent-ssd,GCP,"Read CSV, 100MB over 1000 files",9.236
+gfs-ent-ssd,GCP,"Write CSV, 100MB over 10000 files",68.782
+gfs-ent-ssd,GCP,"Read CSV, 100MB over 10000 files",44.793
+gfs-ent-ssd,GCP,"DD write, 10MB over 1000 files, 2 Parallel Ops",8.379
+gfs-ent-ssd,GCP,"DD write, 10MB over 1000 files, 4 Parallel Ops",10.716
+gfs-ent-ssd,GCP,"DD write, 10MB over 1000 files, 8 Parallel Ops",15.831
+gfs-ent-ssd,GCP,"DD write, 10MB over 1000 files, 16 Parallel Ops",31.661
+gfs-ent-ssd,GCP,"DD read, 10MB over 1000 files, 2 Parallel Ops",4.288
+gfs-ent-ssd,GCP,"DD read, 10MB over 1000 files, 4 Parallel Ops",4.785
+gfs-ent-ssd,GCP,"DD read, 10MB over 1000 files, 8 Parallel Ops",4.604
+gfs-ent-ssd,GCP,"DD read, 10MB over 1000 files, 16 Parallel Ops",5.549
+gfs-ent-ssd,GCP,"FST random reads, 100MB over 10*10MB reads",0.772
+gfs-ent-ssd,GCP,"FST random reads, 100MB over 100*1MB reads",2.092
+gfs-ent-ssd,GCP,"FST random reads, 100MB over 1000*100KB reads",3.352
+gfs-ent-ssd,GCP,"FST random reads, 100MB over 10000*10KB reads",11.048
+gfs-ent-ssd,GCP,Read 14 days of CRAN logs with fread,39.293
+gfs-ent-ssd,GCP,Sample 5000 rows from each of 14 CRAN logs with vroom,18.469
+local-storage-ssd-persistent-disk,GCP,Install MASS,8.367
+local-storage-ssd-persistent-disk,GCP,Install lattice,10.473
+local-storage-ssd-persistent-disk,GCP,Install BH,13.923
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 10KB",0.003
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 1MB",0.009
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 100MB",0.088
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 1GB",0.69
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 10KB",0.011
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 1MB",0.01
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 100MB",0.33
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 1GB",3.686
+local-storage-ssd-persistent-disk,GCP,"DD write, 1GB, 2 Parallel Ops",7.044
+local-storage-ssd-persistent-disk,GCP,"DD write, 1GB, 4 Parallel Ops",14.15
+local-storage-ssd-persistent-disk,GCP,"DD write, 1GB, 8 Parallel Ops",28.391
+local-storage-ssd-persistent-disk,GCP,"DD write, 1GB, 16 Parallel Ops",56.853
+local-storage-ssd-persistent-disk,GCP,"DD read, 1GB, 2 Parallel Ops",7.076
+local-storage-ssd-persistent-disk,GCP,"DD read, 1GB, 4 Parallel Ops",14.182
+local-storage-ssd-persistent-disk,GCP,"DD read, 1GB, 8 Parallel Ops",28.408
+local-storage-ssd-persistent-disk,GCP,"DD read, 1GB, 16 Parallel Ops",56.854
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 100MB over 10 files",0.267
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 100MB over 10 files",0.301
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 100MB over 100 files",0.796
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 100MB over 100 files",0.457
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 100MB over 1000 files",0.846
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 100MB over 1000 files",1.391
+local-storage-ssd-persistent-disk,GCP,"Write CSV, 100MB over 10000 files",2.705
+local-storage-ssd-persistent-disk,GCP,"Read CSV, 100MB over 10000 files",8.543
+local-storage-ssd-persistent-disk,GCP,"DD write, 10MB over 1000 files, 2 Parallel Ops",2.634
+local-storage-ssd-persistent-disk,GCP,"DD write, 10MB over 1000 files, 4 Parallel Ops",3.355
+local-storage-ssd-persistent-disk,GCP,"DD write, 10MB over 1000 files, 8 Parallel Ops",6.285
+local-storage-ssd-persistent-disk,GCP,"DD write, 10MB over 1000 files, 16 Parallel Ops",12.899
+local-storage-ssd-persistent-disk,GCP,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.618
+local-storage-ssd-persistent-disk,GCP,"DD read, 10MB over 1000 files, 4 Parallel Ops",2.717
+local-storage-ssd-persistent-disk,GCP,"DD read, 10MB over 1000 files, 8 Parallel Ops",3.014
+local-storage-ssd-persistent-disk,GCP,"DD read, 10MB over 1000 files, 16 Parallel Ops",4.212
+local-storage-ssd-persistent-disk,GCP,"FST random reads, 100MB over 10*10MB reads",0.242
+local-storage-ssd-persistent-disk,GCP,"FST random reads, 100MB over 100*1MB reads",0.283
+local-storage-ssd-persistent-disk,GCP,"FST random reads, 100MB over 1000*100KB reads",0.361
+local-storage-ssd-persistent-disk,GCP,"FST random reads, 100MB over 10000*10KB reads",1.117
+local-storage-ssd-persistent-disk,GCP,Read 14 days of CRAN logs with fread,37.531
+local-storage-ssd-persistent-disk,GCP,Sample 5000 rows from each of 14 CRAN logs with vroom,17.417
+gfs-zonal-ssd,GCP,Install MASS,16.39
+gfs-zonal-ssd,GCP,Install lattice,16.032
+gfs-zonal-ssd,GCP,Install BH,148.96
+gfs-zonal-ssd,GCP,"Write CSV, 10KB",0.016
+gfs-zonal-ssd,GCP,"Write CSV, 1MB",0.028
+gfs-zonal-ssd,GCP,"Write CSV, 100MB",0.987
+gfs-zonal-ssd,GCP,"Write CSV, 1GB",8.978
+gfs-zonal-ssd,GCP,"Read CSV, 10KB",0.012
+gfs-zonal-ssd,GCP,"Read CSV, 1MB",0.051
+gfs-zonal-ssd,GCP,"Read CSV, 100MB",0.824
+gfs-zonal-ssd,GCP,"Read CSV, 1GB",4.015
+gfs-zonal-ssd,GCP,"DD write, 1GB, 2 Parallel Ops",16.313
+gfs-zonal-ssd,GCP,"DD write, 1GB, 4 Parallel Ops",31.219
+gfs-zonal-ssd,GCP,"DD write, 1GB, 8 Parallel Ops",60.51
+gfs-zonal-ssd,GCP,"DD write, 1GB, 16 Parallel Ops",124.482
+gfs-zonal-ssd,GCP,"DD read, 1GB, 2 Parallel Ops",2.327
+gfs-zonal-ssd,GCP,"DD read, 1GB, 4 Parallel Ops",3.638
+gfs-zonal-ssd,GCP,"DD read, 1GB, 8 Parallel Ops",7.289
+gfs-zonal-ssd,GCP,"DD read, 1GB, 16 Parallel Ops",14.539
+gfs-zonal-ssd,GCP,"Write CSV, 100MB over 10 files",1.782
+gfs-zonal-ssd,GCP,"Read CSV, 100MB over 10 files",3.193
+gfs-zonal-ssd,GCP,"Write CSV, 100MB over 100 files",3.085
+gfs-zonal-ssd,GCP,"Read CSV, 100MB over 100 files",2.826
+gfs-zonal-ssd,GCP,"Write CSV, 100MB over 1000 files",8.071
+gfs-zonal-ssd,GCP,"Read CSV, 100MB over 1000 files",7.548
+gfs-zonal-ssd,GCP,"Write CSV, 100MB over 10000 files",62.244
+gfs-zonal-ssd,GCP,"Read CSV, 100MB over 10000 files",39.404
+gfs-zonal-ssd,GCP,"DD write, 10MB over 1000 files, 2 Parallel Ops",8.175
+gfs-zonal-ssd,GCP,"DD write, 10MB over 1000 files, 4 Parallel Ops",8.135
+gfs-zonal-ssd,GCP,"DD write, 10MB over 1000 files, 8 Parallel Ops",14.004
+gfs-zonal-ssd,GCP,"DD write, 10MB over 1000 files, 16 Parallel Ops",26.308
+gfs-zonal-ssd,GCP,"DD read, 10MB over 1000 files, 2 Parallel Ops",3.66
+gfs-zonal-ssd,GCP,"DD read, 10MB over 1000 files, 4 Parallel Ops",3.986
+gfs-zonal-ssd,GCP,"DD read, 10MB over 1000 files, 8 Parallel Ops",4.339
+gfs-zonal-ssd,GCP,"DD read, 10MB over 1000 files, 16 Parallel Ops",5.145
+gfs-zonal-ssd,GCP,"FST random reads, 100MB over 10*10MB reads",0.724
+gfs-zonal-ssd,GCP,"FST random reads, 100MB over 100*1MB reads",2.267
+gfs-zonal-ssd,GCP,"FST random reads, 100MB over 1000*100KB reads",3.048
+gfs-zonal-ssd,GCP,"FST random reads, 100MB over 10000*10KB reads",10.094
+gfs-zonal-ssd,GCP,Read 14 days of CRAN logs with fread,39.197
+gfs-zonal-ssd,GCP,Sample 5000 rows from each of 14 CRAN logs with vroom,19.307
+gfs-basic-ssd,GCP,Install MASS,14.141
+gfs-basic-ssd,GCP,Install lattice,14.164
+gfs-basic-ssd,GCP,Install BH,107.739
+gfs-basic-ssd,GCP,"Write CSV, 10KB",0.009
+gfs-basic-ssd,GCP,"Write CSV, 1MB",0.022
+gfs-basic-ssd,GCP,"Write CSV, 100MB",0.29
+gfs-basic-ssd,GCP,"Write CSV, 1GB",2.58
+gfs-basic-ssd,GCP,"Read CSV, 10KB",0.008
+gfs-basic-ssd,GCP,"Read CSV, 1MB",0.011
+gfs-basic-ssd,GCP,"Read CSV, 100MB",0.13
+gfs-basic-ssd,GCP,"Read CSV, 1GB",0.971
+gfs-basic-ssd,GCP,"DD write, 1GB, 2 Parallel Ops",10.94
+gfs-basic-ssd,GCP,"DD write, 1GB, 4 Parallel Ops",13.467
+gfs-basic-ssd,GCP,"DD write, 1GB, 8 Parallel Ops",13.343
+gfs-basic-ssd,GCP,"DD write, 1GB, 16 Parallel Ops",27.481
+gfs-basic-ssd,GCP,"DD read, 1GB, 2 Parallel Ops",1.578
+gfs-basic-ssd,GCP,"DD read, 1GB, 4 Parallel Ops",2.946
+gfs-basic-ssd,GCP,"DD read, 1GB, 8 Parallel Ops",6.067
+gfs-basic-ssd,GCP,"DD read, 1GB, 16 Parallel Ops",12.204
+gfs-basic-ssd,GCP,"Write CSV, 100MB over 10 files",0.643
+gfs-basic-ssd,GCP,"Read CSV, 100MB over 10 files",0.419
+gfs-basic-ssd,GCP,"Write CSV, 100MB over 100 files",2.241
+gfs-basic-ssd,GCP,"Read CSV, 100MB over 100 files",0.656
+gfs-basic-ssd,GCP,"Write CSV, 100MB over 1000 files",6.294
+gfs-basic-ssd,GCP,"Read CSV, 100MB over 1000 files",2.192
+gfs-basic-ssd,GCP,"Write CSV, 100MB over 10000 files",41.853
+gfs-basic-ssd,GCP,"Read CSV, 100MB over 10000 files",14.179
+gfs-basic-ssd,GCP,"DD write, 10MB over 1000 files, 2 Parallel Ops",6.123
+gfs-basic-ssd,GCP,"DD write, 10MB over 1000 files, 4 Parallel Ops",7.833
+gfs-basic-ssd,GCP,"DD write, 10MB over 1000 files, 8 Parallel Ops",11.776
+gfs-basic-ssd,GCP,"DD write, 10MB over 1000 files, 16 Parallel Ops",23.831
+gfs-basic-ssd,GCP,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.975
+gfs-basic-ssd,GCP,"DD read, 10MB over 1000 files, 4 Parallel Ops",3.175
+gfs-basic-ssd,GCP,"DD read, 10MB over 1000 files, 8 Parallel Ops",3.54
+gfs-basic-ssd,GCP,"DD read, 10MB over 1000 files, 16 Parallel Ops",4.923
+gfs-basic-ssd,GCP,"FST random reads, 100MB over 10*10MB reads",0.294
+gfs-basic-ssd,GCP,"FST random reads, 100MB over 100*1MB reads",1.241
+gfs-basic-ssd,GCP,"FST random reads, 100MB over 1000*100KB reads",0.787
+gfs-basic-ssd,GCP,"FST random reads, 100MB over 10000*10KB reads",3.378
+gfs-basic-ssd,GCP,Read 14 days of CRAN logs with fread,37.436
+gfs-basic-ssd,GCP,Sample 5000 rows from each of 14 CRAN logs with vroom,17.504

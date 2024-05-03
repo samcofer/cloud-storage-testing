@@ -1,0 +1,13 @@
+filesystem,cloud,test-name,requests-count,requests-time,requests-ops-volume,requests-iops,requests-throughput,generated-count,generated-time,generated-ops-volume,generated-iops,generated-throughput,min,avg,max,mdev
+gfs-ent-ssd,GCP,ioping-ping,49,129.3 ms,196 KiB,378,1.48 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,1.77 ms,2.64 ms,7.96 ms,1.27 ms
+gfs-zonal-ssd,GCP,ioping-linear-async-read,11.0 k,29.8 s,2.69 GiB,369,92.3 MiB/s,11.0 k,30.0 s,2.69 GiB,366,91.7 MiB/s,1.45 ms,2.71 ms,23.0 ms,1.15 ms
+gfs-basic-ssd,GCP,ioping-ping,49,24.0 ms,196 KiB,2.04 k,7.96 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,388.2 us,490.7 us,1.18 ms,112.7 us
+gfs-zonal-ssd,GCP,ioping-ping,49,131.0 ms,196 KiB,373,1.46 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,1.66 ms,2.67 ms,10.9 ms,1.77 ms
+gfs-ent-ssd,GCP,ioping-linear-async-read,11.3 k,29.8 s,2.75 GiB,378,94.6 MiB/s,11.3 k,30.0 s,2.75 GiB,375,93.9 MiB/s,1.56 ms,2.64 ms,34.8 ms,1.14 ms
+gfs-zonal-ssd,GCP,ioping-linear-async-write,6.14 k,29.7 s,1.50 GiB,206,51.7 MiB/s,6.14 k,30.0 s,1.50 GiB,204,51.1 MiB/s,2.86 ms,4.83 ms,39.4 ms,2.07 ms
+gfs-basic-ssd,GCP,ioping-large-ping,49,157.8 ms,49 MiB,310,310.5 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,2.45 ms,3.22 ms,5.82 ms,578.4 us
+gfs-ent-ssd,GCP,ioping-large-ping,49,671.9 ms,49 MiB,72,72.9 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,10.8 ms,13.7 ms,33.6 ms,3.87 ms
+gfs-zonal-ssd,GCP,ioping-large-ping,49,779.2 ms,49 MiB,62,62.9 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,13.4 ms,15.9 ms,28.3 ms,2.99 ms
+gfs-basic-ssd,GCP,ioping-linear-async-write,5.47 k,29.7 s,1.34 GiB,184,46.0 MiB/s,5.47 k,30.0 s,1.34 GiB,182,45.6 MiB/s,3.57 ms,5.43 ms,16.9 ms,870.0 us
+gfs-ent-ssd,GCP,ioping-linear-async-write,5.90 k,29.7 s,1.44 GiB,198,49.7 MiB/s,5.90 k,30.0 s,1.44 GiB,196,49.1 MiB/s,3.23 ms,5.03 ms,25.0 ms,1.91 ms
+gfs-basic-ssd,GCP,ioping-linear-async-read,42.9 k,29.3 s,10.5 GiB,1.47 k,366.5 MiB/s,42.9 k,30.0 s,10.5 GiB,1.43 k,357.7 MiB/s,419.8 us,682.1 us,8.86 ms,168.9 us

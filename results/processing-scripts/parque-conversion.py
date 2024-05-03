@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import sys
 
-def manipulate(field):
+def manipulate_ms(field):
 
 
     if 'ms' in str(field):
@@ -12,6 +12,51 @@ def manipulate(field):
     elif 'us' in str(field):
         # Manipulate the value for microseconds
         value = round(float(field.replace('us', '')) / 1000,3)
+        return value
+    else:
+        return field
+
+def manipulate_s(field):
+
+
+    if 'ms' in str(field):
+        # Manipulate the value for milliseconds
+        value = round(float(field.replace(' ms', '')) / 1000,3)
+        return value
+    elif ' s' in str(field):
+        # Manipulate the value for microseconds
+        value = round(float(field.replace(' s', '')),0)
+        return value
+    else:
+        return field
+
+def manipulate_k(field):
+
+
+    if ' k' in str(field):
+        # Manipulate the value for thousands count
+        value = round(float(field.replace(' k', '')) * 1000,3)
+        print(value)
+        return value
+    else:
+        value = float(field)
+        print(value)
+        return value
+
+def manipulate_vol(field):
+
+
+    if 'MiB' in str(field):
+        # Manipulate the value for milliseconds
+        value = round(float(field.replace(' MiB', '')) / 1024,3)
+        return value
+    elif 'GiB' in str(field):
+        # Manipulate the value for microseconds
+        value = float(field.replace(' GiB', ''))
+        return value
+    elif 'KiB' in str(field):
+        # Manipulate the value for microseconds
+        value = float(field.replace(' KiB', ''))
         return value
     else:
         return field
@@ -30,11 +75,35 @@ def merge_csv_to_parquet(csv_dir, output_parquet):
     # Merge dataframes on the "filesystem" column
     merged_df = pd.concat(dfs, ignore_index=True)
     
+    
+
+    # Standardize on ms
     columns = ['min','max','avg','mdev']
-
     for col in columns:
-        merged_df[col] = merged_df[col].apply(manipulate)
+        merged_df[col] = merged_df[col].apply(manipulate_ms)
+        merged_df.astype({col: 'float'}).dtypes
+    
+    # Standardize on seconds
+    columns = ['requests-time', 'generated-time']
+    for col in columns:
+        merged_df[col] = merged_df[col].apply(manipulate_s)
+        merged_df.astype({col: 'float'}).dtypes
 
+   
+    # Standardize count on single digits, not k
+    columns = ['requests-count', 'generated-count']
+    for col in columns:
+        merged_df[col] = merged_df[col].apply(manipulate_k)
+        # testdf['testcol'] = testdf['testcol'].astype(str)
+
+
+    # Standardize on GiB
+    columns = ['requests-ops-volume', 'generated-ops-volume']
+    for col in columns:
+        merged_df[col] = merged_df[col].apply(manipulate_vol)
+        merged_df.astype({col: 'float'}).dtypes
+
+    
     # Aggregate python columns
 
     # Filter out rows where 'test-name' is not "PIP venv Pytorch Install"

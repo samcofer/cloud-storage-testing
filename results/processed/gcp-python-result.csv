@@ -1,0 +1,10 @@
+filesystem,cloud,test-name,run-number,venv-creation(ms),pip-update(ms),pytorch-install(ms),cleanup(ms)
+gfs-zonal-ssd,GCP,PIP venv Pytorch Install,2,16781,9664,268129,50382
+gfs-zonal-ssd,GCP,PIP venv Pytorch Install,3,16743,8965,245447,51073
+gfs-zonal-ssd,GCP,PIP venv Pytorch Install,1,16931,9042,480634,52399
+gfs-basic-ssd,GCP,PIP venv Pytorch Install,1,10562,5955,1428082,48005
+gfs-ent-ssd,GCP,PIP venv Pytorch Install,2,19683,11218,263525,56676
+gfs-ent-ssd,GCP,PIP venv Pytorch Install,3,19453,9913,247279,56499
+gfs-basic-ssd,GCP,PIP venv Pytorch Install,3,12949,6904,158514,52862
+gfs-ent-ssd,GCP,PIP venv Pytorch Install,1,19945,11275,353344,51398
+gfs-basic-ssd,GCP,PIP venv Pytorch Install,2,12852,6524,157739,48602
