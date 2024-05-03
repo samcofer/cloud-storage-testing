@@ -13,16 +13,28 @@ def parse_directory(directory):
 
     # Dictionary to store file pairs with their attributes
     file_pairs = {}
-
+    cloud = ""
     # Traverse the directory
     for root, dirs, files in os.walk(directory):
         for filename in files:
             filepath = os.path.join(root, filename)
             basename = os.path.basename(filepath)
 
+            path_list = os.path.abspath(filepath).split("/")
+
+            if "azure" in path_list:
+                cloud="AZURE"
+            elif "aws" in path_list:
+                cloud="AWS"
+            elif "gcp" in path_list:
+                cloud="GCP"
+            else:
+                cloud=""
+
             # Read the content of the file
             with open(filepath, 'r') as file:
                 content = file.read()
+
 
             # Find the index of "-run"
             index = basename.find("-run")
@@ -34,16 +46,22 @@ def parse_directory(directory):
 
             # Check if prefix already exists
             if prefix in file_pairs:
+                file_pairs[prefix]['cloud'] = cloud
+                file_pairs[prefix]['test-name'] = 'acl-and-lock-testing'
                 # Check if file contains extended ACL support
                 extended_acl_support = int("Extended ACLs are supported" in content)
                 file_pairs[prefix]['extended-acl-support'] = max(file_pairs[prefix]['extended-acl-support'], extended_acl_support)
                 # Check if file contains link-based file locks
                 link_based_locks = int("Your filesystem appears to support link-based locks" in content)
                 file_pairs[prefix]['linkbased-file-locks'] = max(file_pairs[prefix]['linkbased-file-locks'], link_based_locks)
+
+
             else:
                 # Create a new entry
                 file_pairs[prefix] = {
+                    'cloud': cloud,
                     'filesystem': prefix,
+                    'test-name': 'acl-and-lock-testing',
                     'extended-acl-support': int("Extended ACLs are supported" in content),
                     'linkbased-file-locks': int("Your filesystem appears to support link-based locks" in content)
                 }
@@ -59,7 +77,7 @@ def write_to_csv(data, output_file):
     """
 
     # Define the header of the CSV file
-    header = ['filesystem', 'extended-acl-support', 'linkbased-file-locks']
+    header = ['filesystem','cloud','test-name', 'extended-acl-support', 'linkbased-file-locks']
 
     # Write data to CSV
     with open(output_file, 'w', newline='') as csvfile:
@@ -85,4 +103,4 @@ if __name__ == "__main__":
     # Parse directory and write data to CSV
     file_pairs = parse_directory(directory_path)
     write_to_csv(file_pairs, output_file)
-    print("CSV file generated successfully.")
+    print("App Testing CSV file generated successfully.")

@@ -2,11 +2,15 @@ import re
 import csv
 import os
 import sys
+from collections import defaultdict
+
 
 # Initialize lists and set for storing modified and unique rows
 modified_rows = []
 unique_rows = []
 seen = set()
+elapsed_times = defaultdict(float)
+counts = defaultdict(int)
 
 def parse_files_in_directory(directory,output_file):
     """
@@ -20,6 +24,16 @@ def parse_files_in_directory(directory,output_file):
         # Check if filename contains "results"
         if "results" in filename:
             filepath = os.path.join(directory, filename)
+            path_list = os.path.abspath(filepath).split("/")
+
+            if "azure" in path_list:
+                cloud="AZURE"
+            elif "aws" in path_list:
+                cloud="AWS"
+            elif "gcp" in path_list:
+                cloud="GCP"
+            else:
+                cloud=""
             # Check if filepath is a file
             if os.path.isfile(filepath):
                 # Extract filesystem and run number using regex
@@ -33,21 +47,17 @@ def parse_files_in_directory(directory,output_file):
                         if row == rows[0]:  # Skip header row
                             continue
                         else:
+                            test_name = row[0]
+                            elapsed = float(row[3])
+                            parallelism = row[4]
+                            if parallelism == "NA":
+                                parallelism = ""
+                            else:
+                                parallelism = ", " + parallelism + " Parallel Ops"
                             # Append filesystem and run number to each row
-                            new_row = [filesystem_regex, run_number_regex] + row
-                            modified_rows.append(new_row)
-
-    # Define header row
-    header_row = ['filesystem', 'run_number', 'task', 'user', 'system', 'elapsed', 'parallelism']
-    unique_rows.insert(0, header_row)
-
-    # Remove duplicate rows while preserving order
-    for row in modified_rows:
-        row_tuple = tuple(row)
-        if row_tuple is not None:
-            if tuple(row) not in seen:
-                unique_rows.append(row)
-                seen.add(row_tuple)
+                            key = (filesystem_regex, cloud, f"{test_name}{parallelism}")
+                            elapsed_times[key] += elapsed
+                            counts[key] += 1
 
 if __name__ == "__main__":
     # Check command-line arguments
@@ -69,4 +79,14 @@ if __name__ == "__main__":
     # Write unique rows to the output file
     with open(output_file, 'w', newline='') as outfile:
         writer = csv.writer(outfile)
-        writer.writerows(unique_rows)
+
+        header_row = ['filesystem','cloud', 'test-name', 'elapsed']
+
+        writer.writerow(header_row)
+        for key, elapsed_sum in elapsed_times.items():
+            # Calculate average elapsed time
+            avg_elapsed = elapsed_sum / counts[key]
+            avg_elapsed = round(avg_elapsed,3)
+            # Write row to the output file
+            writer.writerow([key[0], key[1], key[2], avg_elapsed])
+    print("R Testing CSV file generated successfully.")

@@ -1,7 +1,7 @@
-filesystem,extended-acl-support,linkbased-file-locks
-elastic-san-same-zone,1,1
-managed-disk-local-storage-premium-ssd-lrs,1,1
-netapp-premium,1,1
-netapp-standard,1,1
-netapp-ultra,1,1
-storage-acct-azure-files,0,1
+filesystem,cloud,test-name,extended-acl-support,linkbased-file-locks
+netapp-standard,AZURE,acl-and-lock-testing,1,1
+managed-disk-local-storage-premium-ssd-lrs,AZURE,acl-and-lock-testing,1,1
+netapp-ultra,AZURE,acl-and-lock-testing,1,1
+netapp-premium,AZURE,acl-and-lock-testing,1,1
+elastic-san-same-zone,AZURE,acl-and-lock-testing,1,1
+storage-acct-azure-files,AZURE,acl-and-lock-testing,0,1

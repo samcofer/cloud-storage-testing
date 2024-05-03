@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scatterplot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Live Scatterplot</h1>
+    <br>
+    <meta id="x_feature" content="{{ x_feature }}">
+    <label for="cloud_filter">Public Cloud Filter:</label>
+    <select name="cloud_filter" id="cloud_filter">
+        {% for cloud in cloud_filter %}
+            <option value="{{ cloud }}">{{ cloud }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label for="test_name">Storage Test Name:</label>
+    <select name="test_name" id="test_name" onchange="populateMetrics()">
+        {% for test in test_name %}
+            <option value="{{ test }}">{{ test }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label for="y_feature">Y-Axis Metrics:</label>
+    <select name="y_feature" id="y_feature">
+        <option value="avg">avg</option>
+    </select>
+    <br>
+    <!-- <label for="y_feature">Y-Axis Metrics:</label>
+    <select name="y_feature" id="y_feature">
+        {% for feature in y_features %}
+            <option value="{{ feature }}">{{ feature }}</option>
+        {% endfor %}
+    </select>
+    <br> -->
+    <div id="plot-container">
+        <img id="scatterplot" src="" alt="Scatterplot">
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            // Function to update scatterplot
+            function updateScatterplot() {
+                var x_feature = $('#x_feature').attr('content');
+                var y_feature = $('#y_feature').val();
+                var cloud_filter = $('#cloud_filter').val();
+                var test_name = $('#test_name').val();
+                
+                $.ajax({
+                    type: 'POST',
+                    contentType: 'application/json',
+                    url: 'scatterplot',
+                    data: JSON.stringify({ x_feature: x_feature, y_feature: y_feature, cloud_filter: cloud_filter, test_name: test_name }),
+                    success: function(response) {
+                        $('#scatterplot').attr('src', 'data:image/png;base64,' + response.plot_data);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            }
+
+            // Initial update
+            updateScatterplot();
+
+            // Update scatterplot when features are changed
+            $('#x_feature, #y_feature, #cloud_filter').change(function() {
+                updateScatterplot();
+            });
+        });
+    </script>
+
+    <script>
+        var metric_options = {{ y_features|tojson }};
+        
+        function populateMetrics() {
+            var testnameValue = document.getElementById("test_name").value;
+            var y_feature = document.getElementById("y_feature");
+            y_feature.innerHTML = "";  // Clear existing options
+
+            var options = metric_options[testnameValue];
+            if (options) {
+                options.forEach(function(option) {
+                    var optionElement = document.createElement("option");
+                    optionElement.value = option;
+                    optionElement.textContent = option;
+                    y_feature.appendChild(optionElement);
+                });
+            }
+            var event = new Event('change');
+            y_feature.dispatchEvent(event);
+        }
+    </script>
+</body>
+</html>

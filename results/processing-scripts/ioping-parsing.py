@@ -23,7 +23,7 @@ def parse_files_in_directory(directory, output_file):
     values = []
 
     # Define headers for the CSV file
-    headers = ['filesystem', 'io-test-name', 'requests-count', 'requests-time', 'requests-ops-volume', 'requests-iops', 'requests-throughput',
+    headers = ['filesystem', 'cloud', 'test-name', 'requests-count', 'requests-time', 'requests-ops-volume', 'requests-iops', 'requests-throughput',
                'generated-count', 'generated-time', 'generated-ops-volume', 'generated-iops', 'generated-throughput',
                'min', 'avg', 'max', 'mdev']
 
@@ -31,6 +31,16 @@ def parse_files_in_directory(directory, output_file):
     for filename in os.listdir(directory):
         if "run" in filename:  # Check if filename contains "run"
             filepath = os.path.join(directory, filename)  # Construct full filepath
+            path_list = os.path.abspath(filepath).split("/")
+
+            if "azure" in path_list:
+                cloud="AZURE"
+            elif "aws" in path_list:
+                cloud="AWS"
+            elif "gcp" in path_list:
+                cloud="GCP"
+            else:
+                cloud=""
             if os.path.isfile(filepath):  # Check if filepath is a file
                 # Extract filesystem and io-test-name using regex
                 filesystem_regex = re.match(r'^(.+?)-run-(ioping.*)$', filename).group(1)
@@ -45,7 +55,7 @@ def parse_files_in_directory(directory, output_file):
                             if match:  # If pattern matches
                                 values.extend(match.groups())  # Extend values with matched groups
                 # Append extracted data to the data list
-                data.append([filesystem_regex] + [iotest_regex] + [f'{values[i]}' for i in range(0, len(values))])
+                data.append([filesystem_regex] + [cloud] + [iotest_regex] + [f'{values[i]}' for i in range(0, len(values))])
                 values = []  # Reset values list for the next iteration
 
     # Write the extracted data to the output CSV file
@@ -71,3 +81,4 @@ if __name__ == "__main__":
 
     # Call the function to parse files in the directory and write to the output file
     parse_files_in_directory(directory_path, output_file)
+    print("ioping Testing CSV file generated successfully.")

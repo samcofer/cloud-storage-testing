@@ -18,12 +18,22 @@ def parse_files_in_directory(directory, output_file):
     data = []
 
     # Define headers for the CSV file
-    headers = ['filesystem', 'run-number', 'venv-creation(ms)', 'pip-update(ms)', 'pytorch-install(ms)', 'cleanup(ms)']
+    headers = ['filesystem', "cloud", "test-name", 'run-number', 'venv-creation(ms)', 'pip-update(ms)', 'pytorch-install(ms)', 'cleanup(ms)']
 
     # Iterate through files in the directory
     for filename in os.listdir(directory):
         if "run" in filename:  # Check if filename contains "run"
             filepath = os.path.join(directory, filename)  # Construct full filepath
+            path_list = os.path.abspath(filepath).split("/")
+
+            if "azure" in path_list:
+                cloud="AZURE"
+            elif "aws" in path_list:
+                cloud="AWS"
+            elif "gcp" in path_list:
+                cloud="GCP"
+            else:
+                cloud=""
             if os.path.isfile(filepath):  # Check if filepath is a file
                 # Extract filesystem and run number using regex
                 filesystem_regex = re.match(r'^(.+?)-run(\d).*$', filename).group(1)
@@ -33,7 +43,7 @@ def parse_files_in_directory(directory, output_file):
                     # Iterate through matches of the regex pattern in the file
                     for match in re.finditer(pattern, lines):
                         # Append extracted data to the list
-                        data.append([filesystem_regex] + [run_number_regex] + [match.group(1)] + [match.group(2)] + [match.group(3)] + [match.group(4)])
+                        data.append([filesystem_regex] + [cloud] + ["PIP venv Pytorch Install"] + [run_number_regex] + [match.group(1)] + [match.group(2)] + [match.group(3)] + [match.group(4)])
 
     # Write the extracted data to the output CSV file
     with open(f'{output_file}', 'w', newline='') as csvfile:
@@ -58,3 +68,4 @@ if __name__ == "__main__":
 
     # Call the function to parse files in the directory and write to the output file
     parse_files_in_directory(directory_path, output_file)
+    print("Python Testing CSV file generated successfully.")
