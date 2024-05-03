@@ -5,7 +5,7 @@ set -x
 AZURE_DIRECTORIES="managed-disk-local-storage-premium-ssd-lrs-run netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-azure-files-run elastic-san-same-zone-run"
 AWS_DIRECTORIES="ebs-local-storage-run efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run rhel8-nfs-same-subnet-run"
 #AWS_DIRECTORIES="efs-single-zone-run efs-regional-run same-az-lustre-run"
-GCP_DIRECTORIES="gfs-run"
+GCP_DIRECTORIES="gfs-basic-ssd-run gfs-ent-ssd-run gfs-zonal-ssd-run local-storage-ssd-persistent-disk"
 
 PYTHON_VERSION=3.11.8
 R_VERSION=4.3.2
@@ -72,7 +72,7 @@ elif [ "$(curl -s --connect-timeout 2 -o /dev/null -H Metadata:true -w "%{http_c
     echo "Running in Azure environment."
     DIRECTORIES=$AZURE_DIRECTORIES
 
-elif [ "$(curl -s --connect-timeout 2 http://metadata.google.internal/computeMetadata/v1/instance/ -H "Metadata-Flavor: Google")" == "200" ]; then
+elif [ "$(curl -s --connect-timeout 2 -o /dev/null -w "%{http_code}" http://metadata.google.internal/computeMetadata/v1/instance/ -H "Metadata-Flavor: Google")" == "200" ]; then
     # GCP metadata service is reachable, assume running in GCP
     echo "Running in GCP environment."
     DIRECTORIES=$GCP_DIRECTORIES

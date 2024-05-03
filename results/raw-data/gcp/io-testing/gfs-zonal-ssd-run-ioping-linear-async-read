@@ -1,0 +1,5 @@
+
+--- /gfs-zonal-ssd-run (nfs 10.234.156.194:/gfs_zonal_ssd_fs) ioping statistics ---
+11.0 k requests completed in 29.8 s, 2.69 GiB read, 369 iops, 92.3 MiB/s
+generated 11.0 k requests in 30.0 s, 2.69 GiB, 366 iops, 91.7 MiB/s
+min/avg/max/mdev = 1.45 ms / 2.71 ms / 23.0 ms / 1.15 ms

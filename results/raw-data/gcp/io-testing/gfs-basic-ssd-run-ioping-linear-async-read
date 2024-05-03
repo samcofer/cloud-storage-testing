@@ -1,0 +1,5 @@
+
+--- /gfs-basic-ssd-run (nfs 10.104.66.154:/gfs_basic_ssd_fs) ioping statistics ---
+42.9 k requests completed in 29.3 s, 10.5 GiB read, 1.47 k iops, 366.5 MiB/s
+generated 42.9 k requests in 30.0 s, 10.5 GiB, 1.43 k iops, 357.7 MiB/s
+min/avg/max/mdev = 419.8 us / 682.1 us / 8.86 ms / 168.9 us

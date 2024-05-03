@@ -1,0 +1,6 @@
+BEGIN - Running in /local-storage-ssd-persistent-disk/testuser
+VENV CREATE: Run duration = 3135 milliseconds
+PIP UPDATE: Run duration = 1812 milliseconds
+PYTORCH INSTALL: Run duration = 145807 milliseconds
+CLEANUP: Run duration = 1279 milliseconds
+END

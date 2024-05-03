@@ -1,0 +1,6 @@
+BEGIN - Running in /gfs-basic-ssd-run/testuser
+VENV CREATE: Run duration = 12852 milliseconds
+PIP UPDATE: Run duration = 6524 milliseconds
+PYTORCH INSTALL: Run duration = 157739 milliseconds
+CLEANUP: Run duration = 48602 milliseconds
+END

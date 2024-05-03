@@ -1,0 +1,5 @@
+
+--- /gfs-ent-ssd-run (nfs 10.28.197.130:/gfs_ent_ssd_fs) ioping statistics ---
+11.3 k requests completed in 29.8 s, 2.75 GiB read, 378 iops, 94.6 MiB/s
+generated 11.3 k requests in 30.0 s, 2.75 GiB, 375 iops, 93.9 MiB/s
+min/avg/max/mdev = 1.56 ms / 2.64 ms / 34.8 ms / 1.14 ms

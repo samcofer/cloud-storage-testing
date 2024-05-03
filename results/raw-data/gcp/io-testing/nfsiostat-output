@@ -1,0 +1,30 @@
+
+10.28.197.130:/gfs_ent_ssd_fs mounted on /gfs-ent-ssd-run:
+
+           ops/s       rpc bklog
+          96.460           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  44.838        8084.210         180.299        0 (0.0%)           3.591           3.620           0.014        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  26.577        9039.079         340.115        0 (0.0%)          23.957        2514.117        2490.153        0 (0.0%)
+
+10.234.156.194:/gfs_zonal_ssd_fs mounted on /gfs-zonal-ssd-run:
+
+           ops/s       rpc bklog
+          27.633           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  44.816        8083.527         180.373        0 (0.0%)           3.453           3.481           0.015        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  26.577        9039.079         340.115        0 (0.0%)         167.558       10363.788       10196.224        0 (0.0%)
+
+10.104.66.154:/gfs_basic_ssd_fs mounted on /gfs-basic-ssd-run:
+
+           ops/s       rpc bklog
+         203.042           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  44.813        8080.614         180.319        0 (0.0%)           2.628           2.660           0.016        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                  26.577        9037.835         340.068        0 (0.0%)           5.356        1626.254        1620.892        0 (0.0%)
