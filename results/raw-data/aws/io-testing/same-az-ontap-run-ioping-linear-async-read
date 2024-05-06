@@ -1,0 +1,5 @@
+
+--- /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol) ioping statistics ---
+53.7 k requests completed in 29.1 s, 13.1 GiB read, 1.84 k iops, 461.2 MiB/s
+generated 53.7 k requests in 30.0 s, 13.1 GiB, 1.79 k iops, 447.1 MiB/s
+min/avg/max/mdev = 416.0 us / 542.1 us / 5.07 ms / 120.0 us

@@ -1,0 +1,9 @@
+filesystem,cloud,test-name,extended-acl-support,linkbased-file-locks
+ebs-local-storage,AWS,acl-and-lock-testing,1,1
+efs-regional,AWS,acl-and-lock-testing,0,1
+same-az-lustre,AWS,acl-and-lock-testing,1,1
+efs-single-zone,AWS,acl-and-lock-testing,0,1
+cross-az-lustre,AWS,acl-and-lock-testing,1,1
+rhel8-nfs-same-subnet,AWS,acl-and-lock-testing,0,1
+same-az-zfs,AWS,acl-and-lock-testing,0,1
+s3-bucket-mountpoint,AWS,acl-and-lock-testing,0,1

@@ -1,0 +1,6 @@
+BEGIN - Running in /same-az-ontap-run/testuser
+VENV CREATE: Run duration = 6565 milliseconds
+PIP UPDATE: Run duration = 3349 milliseconds
+PYTORCH INSTALL: Run duration = 97166 milliseconds
+CLEANUP: Run duration = 10142 milliseconds
+END

@@ -1,0 +1,288 @@
+filesystem,cloud,test-name,elapsed
+same-az-lustre,AWS,Install MASS,10.701
+same-az-lustre,AWS,Install lattice,11.429
+same-az-lustre,AWS,Install BH,88.441
+same-az-lustre,AWS,"Write CSV, 10KB",0.021
+same-az-lustre,AWS,"Write CSV, 1MB",0.014
+same-az-lustre,AWS,"Write CSV, 100MB",0.21
+same-az-lustre,AWS,"Write CSV, 1GB",0.965
+same-az-lustre,AWS,"Read CSV, 10KB",0.02
+same-az-lustre,AWS,"Read CSV, 1MB",0.02
+same-az-lustre,AWS,"Read CSV, 100MB",0.616
+same-az-lustre,AWS,"Read CSV, 1GB",5.716
+same-az-lustre,AWS,"DD write, 1GB, 2 Parallel Ops",1.734
+same-az-lustre,AWS,"DD write, 1GB, 4 Parallel Ops",5.133
+same-az-lustre,AWS,"DD write, 1GB, 8 Parallel Ops",12.077
+same-az-lustre,AWS,"DD write, 1GB, 16 Parallel Ops",25.962
+same-az-lustre,AWS,"DD read, 1GB, 2 Parallel Ops",3.518
+same-az-lustre,AWS,"DD read, 1GB, 4 Parallel Ops",6.971
+same-az-lustre,AWS,"DD read, 1GB, 8 Parallel Ops",13.884
+same-az-lustre,AWS,"DD read, 1GB, 16 Parallel Ops",27.721
+same-az-lustre,AWS,"Write CSV, 100MB over 10 files",0.329
+same-az-lustre,AWS,"Read CSV, 100MB over 10 files",1.446
+same-az-lustre,AWS,"Write CSV, 100MB over 100 files",1.019
+same-az-lustre,AWS,"Read CSV, 100MB over 100 files",0.97
+same-az-lustre,AWS,"Write CSV, 100MB over 1000 files",2.148
+same-az-lustre,AWS,"Read CSV, 100MB over 1000 files",4.91
+same-az-lustre,AWS,"Write CSV, 100MB over 10000 files",13.661
+same-az-lustre,AWS,"Read CSV, 100MB over 10000 files",25.963
+same-az-lustre,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",3.235
+same-az-lustre,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",3.888
+same-az-lustre,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",6.574
+same-az-lustre,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",13.063
+same-az-lustre,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",3.93
+same-az-lustre,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",3.434
+same-az-lustre,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",3.632
+same-az-lustre,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",4.069
+same-az-lustre,AWS,"FST random reads, 100MB over 10*10MB reads",0.382
+same-az-lustre,AWS,"FST random reads, 100MB over 100*1MB reads",0.358
+same-az-lustre,AWS,"FST random reads, 100MB over 1000*100KB reads",0.887
+same-az-lustre,AWS,"FST random reads, 100MB over 10000*10KB reads",7.74
+same-az-lustre,AWS,Read 14 days of CRAN logs with fread,62.342
+same-az-lustre,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,43.302
+efs-regional,AWS,Install MASS,24.8
+efs-regional,AWS,Install lattice,20.839
+efs-regional,AWS,Install BH,292.599
+efs-regional,AWS,"Write CSV, 10KB",0.023
+efs-regional,AWS,"Write CSV, 1MB",0.053
+efs-regional,AWS,"Write CSV, 100MB",0.559
+efs-regional,AWS,"Write CSV, 1GB",4.853
+efs-regional,AWS,"Read CSV, 10KB",0.017
+efs-regional,AWS,"Read CSV, 1MB",0.05
+efs-regional,AWS,"Read CSV, 100MB",0.848
+efs-regional,AWS,"Read CSV, 1GB",4.339
+efs-regional,AWS,"DD write, 1GB, 2 Parallel Ops",8.22
+efs-regional,AWS,"DD write, 1GB, 4 Parallel Ops",16.703
+efs-regional,AWS,"DD write, 1GB, 8 Parallel Ops",33.314
+efs-regional,AWS,"DD write, 1GB, 16 Parallel Ops",65.569
+efs-regional,AWS,"DD read, 1GB, 2 Parallel Ops",10.917
+efs-regional,AWS,"DD read, 1GB, 4 Parallel Ops",14.212
+efs-regional,AWS,"DD read, 1GB, 8 Parallel Ops",25.749
+efs-regional,AWS,"DD read, 1GB, 16 Parallel Ops",51.906
+efs-regional,AWS,"Write CSV, 100MB over 10 files",1.588
+efs-regional,AWS,"Read CSV, 100MB over 10 files",4.571
+efs-regional,AWS,"Write CSV, 100MB over 100 files",4.77
+efs-regional,AWS,"Read CSV, 100MB over 100 files",4.308
+efs-regional,AWS,"Write CSV, 100MB over 1000 files",21.045
+efs-regional,AWS,"Read CSV, 100MB over 1000 files",12.166
+efs-regional,AWS,"Write CSV, 100MB over 10000 files",105.718
+efs-regional,AWS,"Read CSV, 100MB over 10000 files",63.836
+efs-regional,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",12.228
+efs-regional,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",31.391
+efs-regional,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",62.538
+efs-regional,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",128.67
+efs-regional,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",6.434
+efs-regional,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",6.171
+efs-regional,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",7.088
+efs-regional,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",8.121
+efs-regional,AWS,"FST random reads, 100MB over 10*10MB reads",1.426
+efs-regional,AWS,"FST random reads, 100MB over 100*1MB reads",2.285
+efs-regional,AWS,"FST random reads, 100MB over 1000*100KB reads",4.073
+efs-regional,AWS,"FST random reads, 100MB over 10000*10KB reads",16.151
+efs-regional,AWS,Read 14 days of CRAN logs with fread,43.813
+efs-regional,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,20.814
+efs-single-zone,AWS,Install MASS,20.089
+efs-single-zone,AWS,Install lattice,17.539
+efs-single-zone,AWS,Install BH,216.491
+efs-single-zone,AWS,"Write CSV, 10KB",0.019
+efs-single-zone,AWS,"Write CSV, 1MB",0.04
+efs-single-zone,AWS,"Write CSV, 100MB",0.349
+efs-single-zone,AWS,"Write CSV, 1GB",2.737
+efs-single-zone,AWS,"Read CSV, 10KB",0.014
+efs-single-zone,AWS,"Read CSV, 1MB",0.036
+efs-single-zone,AWS,"Read CSV, 100MB",0.587
+efs-single-zone,AWS,"Read CSV, 1GB",2.708
+efs-single-zone,AWS,"DD write, 1GB, 2 Parallel Ops",4.197
+efs-single-zone,AWS,"DD write, 1GB, 4 Parallel Ops",8.893
+efs-single-zone,AWS,"DD write, 1GB, 8 Parallel Ops",16.712
+efs-single-zone,AWS,"DD write, 1GB, 16 Parallel Ops",34.357
+efs-single-zone,AWS,"DD read, 1GB, 2 Parallel Ops",8.291
+efs-single-zone,AWS,"DD read, 1GB, 4 Parallel Ops",9.116
+efs-single-zone,AWS,"DD read, 1GB, 8 Parallel Ops",15.479
+efs-single-zone,AWS,"DD read, 1GB, 16 Parallel Ops",32.655
+efs-single-zone,AWS,"Write CSV, 100MB over 10 files",1.153
+efs-single-zone,AWS,"Read CSV, 100MB over 10 files",3.306
+efs-single-zone,AWS,"Write CSV, 100MB over 100 files",3.558
+efs-single-zone,AWS,"Read CSV, 100MB over 100 files",3.293
+efs-single-zone,AWS,"Write CSV, 100MB over 1000 files",15.443
+efs-single-zone,AWS,"Read CSV, 100MB over 1000 files",10.015
+efs-single-zone,AWS,"Write CSV, 100MB over 10000 files",75.655
+efs-single-zone,AWS,"Read CSV, 100MB over 10000 files",55.637
+efs-single-zone,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",9.962
+efs-single-zone,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",21.836
+efs-single-zone,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",43.337
+efs-single-zone,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",86.333
+efs-single-zone,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",5.663
+efs-single-zone,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",5.336
+efs-single-zone,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",5.447
+efs-single-zone,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",6.033
+efs-single-zone,AWS,"FST random reads, 100MB over 10*10MB reads",1.138
+efs-single-zone,AWS,"FST random reads, 100MB over 100*1MB reads",1.594
+efs-single-zone,AWS,"FST random reads, 100MB over 1000*100KB reads",2.845
+efs-single-zone,AWS,"FST random reads, 100MB over 10000*10KB reads",12.776
+efs-single-zone,AWS,Read 14 days of CRAN logs with fread,40.851
+efs-single-zone,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,18.541
+same-az-zfs,AWS,Install MASS,10.204
+same-az-zfs,AWS,Install lattice,11.34
+same-az-zfs,AWS,Install BH,53.494
+same-az-zfs,AWS,"Write CSV, 10KB",0.004
+same-az-zfs,AWS,"Write CSV, 1MB",0.011
+same-az-zfs,AWS,"Write CSV, 100MB",0.204
+same-az-zfs,AWS,"Write CSV, 1GB",1.867
+same-az-zfs,AWS,"Read CSV, 10KB",0.008
+same-az-zfs,AWS,"Read CSV, 1MB",0.012
+same-az-zfs,AWS,"Read CSV, 100MB",0.109
+same-az-zfs,AWS,"Read CSV, 1GB",0.862
+same-az-zfs,AWS,"DD write, 1GB, 2 Parallel Ops",3.482
+same-az-zfs,AWS,"DD write, 1GB, 4 Parallel Ops",3.558
+same-az-zfs,AWS,"DD write, 1GB, 8 Parallel Ops",8.711
+same-az-zfs,AWS,"DD write, 1GB, 16 Parallel Ops",21.314
+same-az-zfs,AWS,"DD read, 1GB, 2 Parallel Ops",1.487
+same-az-zfs,AWS,"DD read, 1GB, 4 Parallel Ops",2.913
+same-az-zfs,AWS,"DD read, 1GB, 8 Parallel Ops",5.796
+same-az-zfs,AWS,"DD read, 1GB, 16 Parallel Ops",11.563
+same-az-zfs,AWS,"Write CSV, 100MB over 10 files",0.431
+same-az-zfs,AWS,"Read CSV, 100MB over 10 files",0.308
+same-az-zfs,AWS,"Write CSV, 100MB over 100 files",1.191
+same-az-zfs,AWS,"Read CSV, 100MB over 100 files",0.601
+same-az-zfs,AWS,"Write CSV, 100MB over 1000 files",2.799
+same-az-zfs,AWS,"Read CSV, 100MB over 1000 files",2.155
+same-az-zfs,AWS,"Write CSV, 100MB over 10000 files",17.447
+same-az-zfs,AWS,"Read CSV, 100MB over 10000 files",15.049
+same-az-zfs,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",7.04
+same-az-zfs,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",6.725
+same-az-zfs,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",11.66
+same-az-zfs,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",17.922
+same-az-zfs,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.505
+same-az-zfs,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",2.512
+same-az-zfs,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",2.684
+same-az-zfs,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",2.995
+same-az-zfs,AWS,"FST random reads, 100MB over 10*10MB reads",0.274
+same-az-zfs,AWS,"FST random reads, 100MB over 100*1MB reads",0.191
+same-az-zfs,AWS,"FST random reads, 100MB over 1000*100KB reads",0.609
+same-az-zfs,AWS,"FST random reads, 100MB over 10000*10KB reads",2.184
+same-az-zfs,AWS,Read 14 days of CRAN logs with fread,37.89
+same-az-zfs,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,17.95
+cross-az-lustre,AWS,Install MASS,18.133
+cross-az-lustre,AWS,Install lattice,15.645
+cross-az-lustre,AWS,Install BH,287.615
+cross-az-lustre,AWS,"Write CSV, 10KB",0.047
+cross-az-lustre,AWS,"Write CSV, 1MB",0.031
+cross-az-lustre,AWS,"Write CSV, 100MB",0.229
+cross-az-lustre,AWS,"Write CSV, 1GB",0.995
+cross-az-lustre,AWS,"Read CSV, 10KB",0.038
+cross-az-lustre,AWS,"Read CSV, 1MB",0.043
+cross-az-lustre,AWS,"Read CSV, 100MB",1.938
+cross-az-lustre,AWS,"Read CSV, 1GB",17.762
+cross-az-lustre,AWS,"DD write, 1GB, 2 Parallel Ops",1.743
+cross-az-lustre,AWS,"DD write, 1GB, 4 Parallel Ops",5.121
+cross-az-lustre,AWS,"DD write, 1GB, 8 Parallel Ops",12.058
+cross-az-lustre,AWS,"DD write, 1GB, 16 Parallel Ops",25.998
+cross-az-lustre,AWS,"DD read, 1GB, 2 Parallel Ops",3.526
+cross-az-lustre,AWS,"DD read, 1GB, 4 Parallel Ops",6.977
+cross-az-lustre,AWS,"DD read, 1GB, 8 Parallel Ops",13.878
+cross-az-lustre,AWS,"DD read, 1GB, 16 Parallel Ops",27.723
+cross-az-lustre,AWS,"Write CSV, 100MB over 10 files",0.369
+cross-az-lustre,AWS,"Read CSV, 100MB over 10 files",4.704
+cross-az-lustre,AWS,"Write CSV, 100MB over 100 files",1.242
+cross-az-lustre,AWS,"Read CSV, 100MB over 100 files",1.904
+cross-az-lustre,AWS,"Write CSV, 100MB over 1000 files",4.307
+cross-az-lustre,AWS,"Read CSV, 100MB over 1000 files",14.965
+cross-az-lustre,AWS,"Write CSV, 100MB over 10000 files",34.469
+cross-az-lustre,AWS,"Read CSV, 100MB over 10000 files",85.351
+cross-az-lustre,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",5.183
+cross-az-lustre,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",7.023
+cross-az-lustre,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",7.95
+cross-az-lustre,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",14.879
+cross-az-lustre,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",7.446
+cross-az-lustre,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",6.88
+cross-az-lustre,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",6.407
+cross-az-lustre,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",6.454
+cross-az-lustre,AWS,"FST random reads, 100MB over 10*10MB reads",0.51
+cross-az-lustre,AWS,"FST random reads, 100MB over 100*1MB reads",0.683
+cross-az-lustre,AWS,"FST random reads, 100MB over 1000*100KB reads",2.688
+cross-az-lustre,AWS,"FST random reads, 100MB over 10000*10KB reads",26.56
+cross-az-lustre,AWS,Read 14 days of CRAN logs with fread,62.269
+cross-az-lustre,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,43.466
+rhel8-nfs-same-subnet,AWS,Install MASS,12.882
+rhel8-nfs-same-subnet,AWS,Install lattice,13.122
+rhel8-nfs-same-subnet,AWS,Install BH,113.261
+rhel8-nfs-same-subnet,AWS,"Write CSV, 10KB",0.006
+rhel8-nfs-same-subnet,AWS,"Write CSV, 1MB",0.015
+rhel8-nfs-same-subnet,AWS,"Write CSV, 100MB",0.415
+rhel8-nfs-same-subnet,AWS,"Write CSV, 1GB",5.785
+rhel8-nfs-same-subnet,AWS,"Read CSV, 10KB",0.008
+rhel8-nfs-same-subnet,AWS,"Read CSV, 1MB",0.012
+rhel8-nfs-same-subnet,AWS,"Read CSV, 100MB",0.201
+rhel8-nfs-same-subnet,AWS,"Read CSV, 1GB",1.91
+rhel8-nfs-same-subnet,AWS,"DD write, 1GB, 2 Parallel Ops",8.517
+rhel8-nfs-same-subnet,AWS,"DD write, 1GB, 4 Parallel Ops",20.236
+rhel8-nfs-same-subnet,AWS,"DD write, 1GB, 8 Parallel Ops",38.346
+rhel8-nfs-same-subnet,AWS,"DD write, 1GB, 16 Parallel Ops",72.29
+rhel8-nfs-same-subnet,AWS,"DD read, 1GB, 2 Parallel Ops",3.496
+rhel8-nfs-same-subnet,AWS,"DD read, 1GB, 4 Parallel Ops",6.938
+rhel8-nfs-same-subnet,AWS,"DD read, 1GB, 8 Parallel Ops",13.858
+rhel8-nfs-same-subnet,AWS,"DD read, 1GB, 16 Parallel Ops",27.693
+rhel8-nfs-same-subnet,AWS,"Write CSV, 100MB over 10 files",0.645
+rhel8-nfs-same-subnet,AWS,"Read CSV, 100MB over 10 files",0.318
+rhel8-nfs-same-subnet,AWS,"Write CSV, 100MB over 100 files",1.675
+rhel8-nfs-same-subnet,AWS,"Read CSV, 100MB over 100 files",0.618
+rhel8-nfs-same-subnet,AWS,"Write CSV, 100MB over 1000 files",5.341
+rhel8-nfs-same-subnet,AWS,"Read CSV, 100MB over 1000 files",2.33
+rhel8-nfs-same-subnet,AWS,"Write CSV, 100MB over 10000 files",45.583
+rhel8-nfs-same-subnet,AWS,"Read CSV, 100MB over 10000 files",16.36
+rhel8-nfs-same-subnet,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",6.459
+rhel8-nfs-same-subnet,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",7.006
+rhel8-nfs-same-subnet,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",13.898
+rhel8-nfs-same-subnet,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",27.822
+rhel8-nfs-same-subnet,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.905
+rhel8-nfs-same-subnet,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",2.667
+rhel8-nfs-same-subnet,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",2.763
+rhel8-nfs-same-subnet,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",3.031
+rhel8-nfs-same-subnet,AWS,"FST random reads, 100MB over 10*10MB reads",0.302
+rhel8-nfs-same-subnet,AWS,"FST random reads, 100MB over 100*1MB reads",0.205
+rhel8-nfs-same-subnet,AWS,"FST random reads, 100MB over 1000*100KB reads",0.502
+rhel8-nfs-same-subnet,AWS,"FST random reads, 100MB over 10000*10KB reads",1.867
+rhel8-nfs-same-subnet,AWS,Read 14 days of CRAN logs with fread,37.821
+rhel8-nfs-same-subnet,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,17.972
+ebs-local-storage,AWS,Install MASS,7.695
+ebs-local-storage,AWS,Install lattice,9.543
+ebs-local-storage,AWS,Install BH,13.247
+ebs-local-storage,AWS,"Write CSV, 10KB",0.004
+ebs-local-storage,AWS,"Write CSV, 1MB",0.006
+ebs-local-storage,AWS,"Write CSV, 100MB",0.058
+ebs-local-storage,AWS,"Write CSV, 1GB",0.43
+ebs-local-storage,AWS,"Read CSV, 10KB",0.006
+ebs-local-storage,AWS,"Read CSV, 1MB",0.008
+ebs-local-storage,AWS,"Read CSV, 100MB",0.118
+ebs-local-storage,AWS,"Read CSV, 1GB",4.153
+ebs-local-storage,AWS,"DD write, 1GB, 2 Parallel Ops",8.003
+ebs-local-storage,AWS,"DD write, 1GB, 4 Parallel Ops",16.121
+ebs-local-storage,AWS,"DD write, 1GB, 8 Parallel Ops",32.785
+ebs-local-storage,AWS,"DD write, 1GB, 16 Parallel Ops",64.995
+ebs-local-storage,AWS,"DD read, 1GB, 2 Parallel Ops",7.216
+ebs-local-storage,AWS,"DD read, 1GB, 4 Parallel Ops",16.264
+ebs-local-storage,AWS,"DD read, 1GB, 8 Parallel Ops",32.638
+ebs-local-storage,AWS,"DD read, 1GB, 16 Parallel Ops",65.345
+ebs-local-storage,AWS,"Write CSV, 100MB over 10 files",0.269
+ebs-local-storage,AWS,"Read CSV, 100MB over 10 files",0.19
+ebs-local-storage,AWS,"Write CSV, 100MB over 100 files",0.799
+ebs-local-storage,AWS,"Read CSV, 100MB over 100 files",0.459
+ebs-local-storage,AWS,"Write CSV, 100MB over 1000 files",0.833
+ebs-local-storage,AWS,"Read CSV, 100MB over 1000 files",1.833
+ebs-local-storage,AWS,"Write CSV, 100MB over 10000 files",2.519
+ebs-local-storage,AWS,"Read CSV, 100MB over 10000 files",14.613
+ebs-local-storage,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",2.268
+ebs-local-storage,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",3.012
+ebs-local-storage,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",5.66
+ebs-local-storage,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",11.453
+ebs-local-storage,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",3.083
+ebs-local-storage,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",2.872
+ebs-local-storage,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",2.851
+ebs-local-storage,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",4.615
+ebs-local-storage,AWS,"FST random reads, 100MB over 10*10MB reads",0.079
+ebs-local-storage,AWS,"FST random reads, 100MB over 100*1MB reads",0.206
+ebs-local-storage,AWS,"FST random reads, 100MB over 1000*100KB reads",0.471
+ebs-local-storage,AWS,"FST random reads, 100MB over 10000*10KB reads",1.835
+ebs-local-storage,AWS,Read 14 days of CRAN logs with fread,37.251
+ebs-local-storage,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,17.96

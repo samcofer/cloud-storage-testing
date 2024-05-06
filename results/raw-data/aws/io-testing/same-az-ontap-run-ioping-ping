@@ -1,0 +1,55 @@
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=1 time=173.8 us (warmup)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=2 time=380.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=3 time=438.8 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=4 time=640.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=5 time=456.0 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=6 time=451.0 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=7 time=496.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=8 time=482.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=9 time=609.0 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=10 time=1.45 ms (slow)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=11 time=383.7 us (fast)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=12 time=453.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=13 time=507.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=14 time=442.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=15 time=520.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=16 time=487.1 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=17 time=808.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=18 time=451.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=19 time=521.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=20 time=616.8 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=21 time=387.4 us (fast)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=22 time=635.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=23 time=369.6 us (fast)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=24 time=475.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=25 time=451.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=26 time=467.9 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=27 time=687.9 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=28 time=475.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=29 time=609.0 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=30 time=459.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=31 time=447.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=32 time=508.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=33 time=450.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=34 time=474.5 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=35 time=473.1 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=36 time=643.0 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=37 time=431.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=38 time=459.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=39 time=474.9 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=40 time=452.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=41 time=472.3 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=42 time=442.7 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=43 time=404.1 us (fast)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=44 time=361.1 us (fast)
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=45 time=440.5 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=46 time=691.8 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=47 time=465.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=48 time=474.5 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=49 time=484.6 us
+4 KiB <<< /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol): request=50 time=489.7 us
+
+--- /same-az-ontap-run (nfs4 svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol) ioping statistics ---
+49 requests completed in 25.2 ms, 196 KiB read, 1.95 k iops, 7.61 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 361.1 us / 513.5 us / 1.45 ms / 162.3 us

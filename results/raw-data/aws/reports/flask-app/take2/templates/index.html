@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scatterplot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Live Scatterplot</h1>
+    <label for="x_feature">X-axis feature:</label>
+    <select name="x_feature" id="x_feature">
+        {% for feature in x_features %}
+            <option value="{{ feature }}">{{ feature }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label for="y_feature">Y-axis feature:</label>
+    <select name="y_feature" id="y_feature">
+        {% for feature in y_features %}
+            <option value="{{ feature }}">{{ feature }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label for="filter_type">Filter by:</label>
+    <select name="filter_type" id="filter_type">
+        <option value="all">All Features</option>
+        <option value="sepal">Sepal Features</option>
+        <option value="petal">Petal Features</option>
+    </select>
+    <br>
+    <div id="plot-container">
+        <img id="scatterplot" src="" alt="Scatterplot">
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            // Function to update scatterplot
+            function updateScatterplot() {
+                var x_feature = $('#x_feature').val();
+                var y_feature = $('#y_feature').val();
+                var filter_type = $('#filter_type').val();
+                
+                $.ajax({
+                    type: 'POST',
+                    contentType: 'application/json',
+                    url: 'scatterplot',
+                    data: JSON.stringify({ x_feature: x_feature, y_feature: y_feature, filter_type: filter_type }),
+                    success: function(response) {
+                        $('#scatterplot').attr('src', 'data:image/png;base64,' + response.plot_data);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            }
+
+            // Initial update
+            updateScatterplot();
+
+            // Update scatterplot when features are changed
+            $('#x_feature, #y_feature, #filter_type').change(function() {
+                updateScatterplot();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@ AWS_DIRECTORIES="same-az-ontap-run"
 GCP_DIRECTORIES="gfs-basic-ssd-run gfs-ent-ssd-run gfs-zonal-ssd-run local-storage-ssd-persistent-disk"
 
 PYTHON_VERSION=3.11.8
-R_VERSION=4.3.2
+R_VERSION=4.4.0
 
 yum update -y -q
 
