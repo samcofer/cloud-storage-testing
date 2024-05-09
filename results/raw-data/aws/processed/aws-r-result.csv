@@ -1,45 +1,4 @@
 filesystem,cloud,test-name,elapsed
-same-az-ontap,AWS,Install MASS,9.881
-same-az-ontap,AWS,Install lattice,11.15
-same-az-ontap,AWS,Install BH,43.734
-same-az-ontap,AWS,"Write CSV, 10KB",0.006
-same-az-ontap,AWS,"Write CSV, 1MB",0.011
-same-az-ontap,AWS,"Write CSV, 100MB",0.244
-same-az-ontap,AWS,"Write CSV, 1GB",3.32
-same-az-ontap,AWS,"Read CSV, 10KB",0.009
-same-az-ontap,AWS,"Read CSV, 1MB",0.01
-same-az-ontap,AWS,"Read CSV, 100MB",0.195
-same-az-ontap,AWS,"Read CSV, 1GB",1.907
-same-az-ontap,AWS,"DD write, 1GB, 2 Parallel Ops",6.176
-same-az-ontap,AWS,"DD write, 1GB, 4 Parallel Ops",14.229
-same-az-ontap,AWS,"DD write, 1GB, 8 Parallel Ops",28.556
-same-az-ontap,AWS,"DD write, 1GB, 16 Parallel Ops",57.21
-same-az-ontap,AWS,"DD read, 1GB, 2 Parallel Ops",4.074
-same-az-ontap,AWS,"DD read, 1GB, 4 Parallel Ops",6.984
-same-az-ontap,AWS,"DD read, 1GB, 8 Parallel Ops",13.982
-same-az-ontap,AWS,"DD read, 1GB, 16 Parallel Ops",27.824
-same-az-ontap,AWS,"Write CSV, 100MB over 10 files",0.551
-same-az-ontap,AWS,"Read CSV, 100MB over 10 files",0.489
-same-az-ontap,AWS,"Write CSV, 100MB over 100 files",1.661
-same-az-ontap,AWS,"Read CSV, 100MB over 100 files",0.907
-same-az-ontap,AWS,"Write CSV, 100MB over 1000 files",2.777
-same-az-ontap,AWS,"Read CSV, 100MB over 1000 files",2.497
-same-az-ontap,AWS,"Write CSV, 100MB over 10000 files",15.085
-same-az-ontap,AWS,"Read CSV, 100MB over 10000 files",17.475
-same-az-ontap,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",3.45
-same-az-ontap,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",3.45
-same-az-ontap,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",6.291
-same-az-ontap,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",12.272
-same-az-ontap,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.66
-same-az-ontap,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",2.648
-same-az-ontap,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",2.798
-same-az-ontap,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",3.09
-same-az-ontap,AWS,"FST random reads, 100MB over 10*10MB reads",0.329
-same-az-ontap,AWS,"FST random reads, 100MB over 100*1MB reads",0.2
-same-az-ontap,AWS,"FST random reads, 100MB over 1000*100KB reads",0.707
-same-az-ontap,AWS,"FST random reads, 100MB over 10000*10KB reads",5.428
-same-az-ontap,AWS,Read 14 days of CRAN logs with fread,36.977
-same-az-ontap,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,17.807
 same-az-lustre,AWS,Install MASS,10.701
 same-az-lustre,AWS,Install lattice,11.429
 same-az-lustre,AWS,Install BH,88.441

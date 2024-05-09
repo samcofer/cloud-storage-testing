@@ -1,0 +1,247 @@
+filesystem,cloud,test-name,elapsed
+managed-disk-local-storage-premium-ssd-lrs,AZURE,Install MASS,7.02
+managed-disk-local-storage-premium-ssd-lrs,AZURE,Install lattice,8.628
+managed-disk-local-storage-premium-ssd-lrs,AZURE,Install BH,12.679
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 10KB",0.078
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 1MB",0.006
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 100MB",0.151
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 1GB",1.411
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 10KB",0.003
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 1MB",0.004
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 100MB",0.081
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 1GB",1.107
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 1GB, 2 Parallel Ops",12.062
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 1GB, 4 Parallel Ops",27.25
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 1GB, 8 Parallel Ops",53.0
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 1GB, 16 Parallel Ops",103.44
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 1GB, 2 Parallel Ops",2.334
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 1GB, 4 Parallel Ops",5.166
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 1GB, 8 Parallel Ops",10.361
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 1GB, 16 Parallel Ops",20.836
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 100MB over 10 files",0.275
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 100MB over 10 files",0.091
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 100MB over 100 files",0.697
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 100MB over 100 files",0.279
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 100MB over 1000 files",0.758
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 100MB over 1000 files",0.717
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Write CSV, 100MB over 10000 files",1.989
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"Read CSV, 100MB over 10000 files",4.531
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 10MB over 1000 files, 2 Parallel Ops",2.29
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 10MB over 1000 files, 4 Parallel Ops",2.892
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 10MB over 1000 files, 8 Parallel Ops",5.362
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD write, 10MB over 1000 files, 16 Parallel Ops",10.993
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.039
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 10MB over 1000 files, 4 Parallel Ops",2.296
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 10MB over 1000 files, 8 Parallel Ops",3.308
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"DD read, 10MB over 1000 files, 16 Parallel Ops",6.13
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"FST random reads, 100MB over 10*10MB reads",0.056
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"FST random reads, 100MB over 100*1MB reads",0.067
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"FST random reads, 100MB over 1000*100KB reads",0.162
+managed-disk-local-storage-premium-ssd-lrs,AZURE,"FST random reads, 100MB over 10000*10KB reads",0.63
+managed-disk-local-storage-premium-ssd-lrs,AZURE,Read 14 days of CRAN logs with fread,33.115
+managed-disk-local-storage-premium-ssd-lrs,AZURE,Sample 5000 rows from each of 14 CRAN logs with vroom,15.491
+elastic-san-same-zone,AZURE,Install MASS,6.681
+elastic-san-same-zone,AZURE,Install lattice,8.332
+elastic-san-same-zone,AZURE,Install BH,11.417
+elastic-san-same-zone,AZURE,"Write CSV, 10KB",0.013
+elastic-san-same-zone,AZURE,"Write CSV, 1MB",0.01
+elastic-san-same-zone,AZURE,"Write CSV, 100MB",0.152
+elastic-san-same-zone,AZURE,"Write CSV, 1GB",1.453
+elastic-san-same-zone,AZURE,"Read CSV, 10KB",0.007
+elastic-san-same-zone,AZURE,"Read CSV, 1MB",0.018
+elastic-san-same-zone,AZURE,"Read CSV, 100MB",0.727
+elastic-san-same-zone,AZURE,"Read CSV, 1GB",3.943
+elastic-san-same-zone,AZURE,"DD write, 1GB, 2 Parallel Ops",7.5
+elastic-san-same-zone,AZURE,"DD write, 1GB, 4 Parallel Ops",14.063
+elastic-san-same-zone,AZURE,"DD write, 1GB, 8 Parallel Ops",29.591
+elastic-san-same-zone,AZURE,"DD write, 1GB, 16 Parallel Ops",60.66
+elastic-san-same-zone,AZURE,"DD read, 1GB, 2 Parallel Ops",2.407
+elastic-san-same-zone,AZURE,"DD read, 1GB, 4 Parallel Ops",5.784
+elastic-san-same-zone,AZURE,"DD read, 1GB, 8 Parallel Ops",25.176
+elastic-san-same-zone,AZURE,"DD read, 1GB, 16 Parallel Ops",30.043
+elastic-san-same-zone,AZURE,"Write CSV, 100MB over 10 files",0.282
+elastic-san-same-zone,AZURE,"Read CSV, 100MB over 10 files",0.537
+elastic-san-same-zone,AZURE,"Write CSV, 100MB over 100 files",0.711
+elastic-san-same-zone,AZURE,"Read CSV, 100MB over 100 files",1.559
+elastic-san-same-zone,AZURE,"Write CSV, 100MB over 1000 files",0.768
+elastic-san-same-zone,AZURE,"Read CSV, 100MB over 1000 files",8.784
+elastic-san-same-zone,AZURE,"Write CSV, 100MB over 10000 files",1.886
+elastic-san-same-zone,AZURE,"Read CSV, 100MB over 10000 files",33.022
+elastic-san-same-zone,AZURE,"DD write, 10MB over 1000 files, 2 Parallel Ops",2.217
+elastic-san-same-zone,AZURE,"DD write, 10MB over 1000 files, 4 Parallel Ops",2.948
+elastic-san-same-zone,AZURE,"DD write, 10MB over 1000 files, 8 Parallel Ops",5.402
+elastic-san-same-zone,AZURE,"DD write, 10MB over 1000 files, 16 Parallel Ops",11.913
+elastic-san-same-zone,AZURE,"DD read, 10MB over 1000 files, 2 Parallel Ops",5.052
+elastic-san-same-zone,AZURE,"DD read, 10MB over 1000 files, 4 Parallel Ops",4.695
+elastic-san-same-zone,AZURE,"DD read, 10MB over 1000 files, 8 Parallel Ops",6.66
+elastic-san-same-zone,AZURE,"DD read, 10MB over 1000 files, 16 Parallel Ops",6.781
+elastic-san-same-zone,AZURE,"FST random reads, 100MB over 10*10MB reads",0.351
+elastic-san-same-zone,AZURE,"FST random reads, 100MB over 100*1MB reads",1.099
+elastic-san-same-zone,AZURE,"FST random reads, 100MB over 1000*100KB reads",1.887
+elastic-san-same-zone,AZURE,"FST random reads, 100MB over 10000*10KB reads",5.709
+elastic-san-same-zone,AZURE,Read 14 days of CRAN logs with fread,33.102
+elastic-san-same-zone,AZURE,Sample 5000 rows from each of 14 CRAN logs with vroom,16.281
+netapp-standard,AZURE,Install MASS,9.457
+netapp-standard,AZURE,Install lattice,9.974
+netapp-standard,AZURE,Install BH,48.9
+netapp-standard,AZURE,"Write CSV, 10KB",0.005
+netapp-standard,AZURE,"Write CSV, 1MB",0.01
+netapp-standard,AZURE,"Write CSV, 100MB",2.939
+netapp-standard,AZURE,"Write CSV, 1GB",34.477
+netapp-standard,AZURE,"Read CSV, 10KB",0.006
+netapp-standard,AZURE,"Read CSV, 1MB",0.011
+netapp-standard,AZURE,"Read CSV, 100MB",3.024
+netapp-standard,AZURE,"Read CSV, 1GB",33.478
+netapp-standard,AZURE,"DD write, 1GB, 2 Parallel Ops",63.836
+netapp-standard,AZURE,"DD write, 1GB, 4 Parallel Ops",127.779
+netapp-standard,AZURE,"DD write, 1GB, 8 Parallel Ops",255.682
+netapp-standard,AZURE,"DD write, 1GB, 16 Parallel Ops",511.472
+netapp-standard,AZURE,"DD read, 1GB, 2 Parallel Ops",63.511
+netapp-standard,AZURE,"DD read, 1GB, 4 Parallel Ops",127.896
+netapp-standard,AZURE,"DD read, 1GB, 8 Parallel Ops",255.872
+netapp-standard,AZURE,"DD read, 1GB, 16 Parallel Ops",511.878
+netapp-standard,AZURE,"Write CSV, 100MB over 10 files",3.154
+netapp-standard,AZURE,"Read CSV, 100MB over 10 files",3.205
+netapp-standard,AZURE,"Write CSV, 100MB over 100 files",3.186
+netapp-standard,AZURE,"Read CSV, 100MB over 100 files",3.199
+netapp-standard,AZURE,"Write CSV, 100MB over 1000 files",3.122
+netapp-standard,AZURE,"Read CSV, 100MB over 1000 files",3.299
+netapp-standard,AZURE,"Write CSV, 100MB over 10000 files",14.473
+netapp-standard,AZURE,"Read CSV, 100MB over 10000 files",23.611
+netapp-standard,AZURE,"DD write, 10MB over 1000 files, 2 Parallel Ops",3.266
+netapp-standard,AZURE,"DD write, 10MB over 1000 files, 4 Parallel Ops",3.668
+netapp-standard,AZURE,"DD write, 10MB over 1000 files, 8 Parallel Ops",5.71
+netapp-standard,AZURE,"DD write, 10MB over 1000 files, 16 Parallel Ops",11.237
+netapp-standard,AZURE,"DD read, 10MB over 1000 files, 2 Parallel Ops",3.018
+netapp-standard,AZURE,"DD read, 10MB over 1000 files, 4 Parallel Ops",3.375
+netapp-standard,AZURE,"DD read, 10MB over 1000 files, 8 Parallel Ops",4.333
+netapp-standard,AZURE,"DD read, 10MB over 1000 files, 16 Parallel Ops",7.091
+netapp-standard,AZURE,"FST random reads, 100MB over 10*10MB reads",1.922
+netapp-standard,AZURE,"FST random reads, 100MB over 100*1MB reads",2.263
+netapp-standard,AZURE,"FST random reads, 100MB over 1000*100KB reads",3.107
+netapp-standard,AZURE,"FST random reads, 100MB over 10000*10KB reads",8.398
+netapp-standard,AZURE,Read 14 days of CRAN logs with fread,32.697
+netapp-standard,AZURE,Sample 5000 rows from each of 14 CRAN logs with vroom,18.099
+netapp-premium,AZURE,Install MASS,10.438
+netapp-premium,AZURE,Install lattice,10.66
+netapp-premium,AZURE,Install BH,60.617
+netapp-premium,AZURE,"Write CSV, 10KB",0.007
+netapp-premium,AZURE,"Write CSV, 1MB",0.012
+netapp-premium,AZURE,"Write CSV, 100MB",0.482
+netapp-premium,AZURE,"Write CSV, 1GB",9.318
+netapp-premium,AZURE,"Read CSV, 10KB",0.008
+netapp-premium,AZURE,"Read CSV, 1MB",0.019
+netapp-premium,AZURE,"Read CSV, 100MB",0.587
+netapp-premium,AZURE,"Read CSV, 1GB",8.27
+netapp-premium,AZURE,"DD write, 1GB, 2 Parallel Ops",15.842
+netapp-premium,AZURE,"DD write, 1GB, 4 Parallel Ops",31.799
+netapp-premium,AZURE,"DD write, 1GB, 8 Parallel Ops",63.681
+netapp-premium,AZURE,"DD write, 1GB, 16 Parallel Ops",127.495
+netapp-premium,AZURE,"DD read, 1GB, 2 Parallel Ops",15.513
+netapp-premium,AZURE,"DD read, 1GB, 4 Parallel Ops",31.911
+netapp-premium,AZURE,"DD read, 1GB, 8 Parallel Ops",63.894
+netapp-premium,AZURE,"DD read, 1GB, 16 Parallel Ops",127.887
+netapp-premium,AZURE,"Write CSV, 100MB over 10 files",0.703
+netapp-premium,AZURE,"Read CSV, 100MB over 10 files",0.885
+netapp-premium,AZURE,"Write CSV, 100MB over 100 files",1.154
+netapp-premium,AZURE,"Read CSV, 100MB over 100 files",1.047
+netapp-premium,AZURE,"Write CSV, 100MB over 1000 files",2.73
+netapp-premium,AZURE,"Read CSV, 100MB over 1000 files",4.441
+netapp-premium,AZURE,"Write CSV, 100MB over 10000 files",19.141
+netapp-premium,AZURE,"Read CSV, 100MB over 10000 files",29.957
+netapp-premium,AZURE,"DD write, 10MB over 1000 files, 2 Parallel Ops",3.655
+netapp-premium,AZURE,"DD write, 10MB over 1000 files, 4 Parallel Ops",4.075
+netapp-premium,AZURE,"DD write, 10MB over 1000 files, 8 Parallel Ops",5.646
+netapp-premium,AZURE,"DD write, 10MB over 1000 files, 16 Parallel Ops",12.183
+netapp-premium,AZURE,"DD read, 10MB over 1000 files, 2 Parallel Ops",3.525
+netapp-premium,AZURE,"DD read, 10MB over 1000 files, 4 Parallel Ops",3.727
+netapp-premium,AZURE,"DD read, 10MB over 1000 files, 8 Parallel Ops",4.705
+netapp-premium,AZURE,"DD read, 10MB over 1000 files, 16 Parallel Ops",7.677
+netapp-premium,AZURE,"FST random reads, 100MB over 10*10MB reads",0.457
+netapp-premium,AZURE,"FST random reads, 100MB over 100*1MB reads",1.014
+netapp-premium,AZURE,"FST random reads, 100MB over 1000*100KB reads",1.902
+netapp-premium,AZURE,"FST random reads, 100MB over 10000*10KB reads",11.277
+netapp-premium,AZURE,Read 14 days of CRAN logs with fread,32.584
+netapp-premium,AZURE,Sample 5000 rows from each of 14 CRAN logs with vroom,16.137
+storage-acct-azure-files,AZURE,Install MASS,31.983
+storage-acct-azure-files,AZURE,Install lattice,22.506
+storage-acct-azure-files,AZURE,Install BH,420.953
+storage-acct-azure-files,AZURE,"Write CSV, 10KB",0.032
+storage-acct-azure-files,AZURE,"Write CSV, 1MB",0.051
+storage-acct-azure-files,AZURE,"Write CSV, 100MB",0.336
+storage-acct-azure-files,AZURE,"Write CSV, 1GB",2.552
+storage-acct-azure-files,AZURE,"Read CSV, 10KB",0.035
+storage-acct-azure-files,AZURE,"Read CSV, 1MB",0.062
+storage-acct-azure-files,AZURE,"Read CSV, 100MB",0.973
+storage-acct-azure-files,AZURE,"Read CSV, 1GB",6.145
+storage-acct-azure-files,AZURE,"DD write, 1GB, 2 Parallel Ops",1.536
+storage-acct-azure-files,AZURE,"DD write, 1GB, 4 Parallel Ops",2.981
+storage-acct-azure-files,AZURE,"DD write, 1GB, 8 Parallel Ops",6.492
+storage-acct-azure-files,AZURE,"DD write, 1GB, 16 Parallel Ops",62.459
+storage-acct-azure-files,AZURE,"DD read, 1GB, 2 Parallel Ops",23.308
+storage-acct-azure-files,AZURE,"DD read, 1GB, 4 Parallel Ops",6.722
+storage-acct-azure-files,AZURE,"DD read, 1GB, 8 Parallel Ops",10.338
+storage-acct-azure-files,AZURE,"DD read, 1GB, 16 Parallel Ops",83.648
+storage-acct-azure-files,AZURE,"Write CSV, 100MB over 10 files",1.078
+storage-acct-azure-files,AZURE,"Read CSV, 100MB over 10 files",4.875
+storage-acct-azure-files,AZURE,"Write CSV, 100MB over 100 files",4.641
+storage-acct-azure-files,AZURE,"Read CSV, 100MB over 100 files",5.069
+storage-acct-azure-files,AZURE,"Write CSV, 100MB over 1000 files",16.831
+storage-acct-azure-files,AZURE,"Read CSV, 100MB over 1000 files",24.208
+storage-acct-azure-files,AZURE,"Write CSV, 100MB over 10000 files",137.116
+storage-acct-azure-files,AZURE,"Read CSV, 100MB over 10000 files",186.912
+storage-acct-azure-files,AZURE,"DD write, 10MB over 1000 files, 2 Parallel Ops",15.442
+storage-acct-azure-files,AZURE,"DD write, 10MB over 1000 files, 4 Parallel Ops",18.445
+storage-acct-azure-files,AZURE,"DD write, 10MB over 1000 files, 8 Parallel Ops",45.28
+storage-acct-azure-files,AZURE,"DD write, 10MB over 1000 files, 16 Parallel Ops",86.792
+storage-acct-azure-files,AZURE,"DD read, 10MB over 1000 files, 2 Parallel Ops",12.529
+storage-acct-azure-files,AZURE,"DD read, 10MB over 1000 files, 4 Parallel Ops",12.11
+storage-acct-azure-files,AZURE,"DD read, 10MB over 1000 files, 8 Parallel Ops",12.161
+storage-acct-azure-files,AZURE,"DD read, 10MB over 1000 files, 16 Parallel Ops",14.974
+storage-acct-azure-files,AZURE,"FST random reads, 100MB over 10*10MB reads",1.196
+storage-acct-azure-files,AZURE,"FST random reads, 100MB over 100*1MB reads",3.066
+storage-acct-azure-files,AZURE,"FST random reads, 100MB over 1000*100KB reads",10.416
+storage-acct-azure-files,AZURE,"FST random reads, 100MB over 10000*10KB reads",72.371
+storage-acct-azure-files,AZURE,Read 14 days of CRAN logs with fread,36.274
+storage-acct-azure-files,AZURE,Sample 5000 rows from each of 14 CRAN logs with vroom,18.634
+netapp-ultra,AZURE,Install MASS,9.207
+netapp-ultra,AZURE,Install lattice,9.853
+netapp-ultra,AZURE,Install BH,47.184
+netapp-ultra,AZURE,"Write CSV, 10KB",0.006
+netapp-ultra,AZURE,"Write CSV, 1MB",0.01
+netapp-ultra,AZURE,"Write CSV, 100MB",0.229
+netapp-ultra,AZURE,"Write CSV, 1GB",5.124
+netapp-ultra,AZURE,"Read CSV, 10KB",0.006
+netapp-ultra,AZURE,"Read CSV, 1MB",0.01
+netapp-ultra,AZURE,"Read CSV, 100MB",0.173
+netapp-ultra,AZURE,"Read CSV, 1GB",4.09
+netapp-ultra,AZURE,"DD write, 1GB, 2 Parallel Ops",7.846
+netapp-ultra,AZURE,"DD write, 1GB, 4 Parallel Ops",15.793
+netapp-ultra,AZURE,"DD write, 1GB, 8 Parallel Ops",31.692
+netapp-ultra,AZURE,"DD write, 1GB, 16 Parallel Ops",63.51
+netapp-ultra,AZURE,"DD read, 1GB, 2 Parallel Ops",7.514
+netapp-ultra,AZURE,"DD read, 1GB, 4 Parallel Ops",15.92
+netapp-ultra,AZURE,"DD read, 1GB, 8 Parallel Ops",31.911
+netapp-ultra,AZURE,"DD read, 1GB, 16 Parallel Ops",63.904
+netapp-ultra,AZURE,"Write CSV, 100MB over 10 files",0.576
+netapp-ultra,AZURE,"Read CSV, 100MB over 10 files",0.813
+netapp-ultra,AZURE,"Write CSV, 100MB over 100 files",1.044
+netapp-ultra,AZURE,"Read CSV, 100MB over 100 files",0.759
+netapp-ultra,AZURE,"Write CSV, 100MB over 1000 files",2.259
+netapp-ultra,AZURE,"Read CSV, 100MB over 1000 files",3.234
+netapp-ultra,AZURE,"Write CSV, 100MB over 10000 files",13.915
+netapp-ultra,AZURE,"Read CSV, 100MB over 10000 files",23.24
+netapp-ultra,AZURE,"DD write, 10MB over 1000 files, 2 Parallel Ops",3.428
+netapp-ultra,AZURE,"DD write, 10MB over 1000 files, 4 Parallel Ops",3.791
+netapp-ultra,AZURE,"DD write, 10MB over 1000 files, 8 Parallel Ops",5.945
+netapp-ultra,AZURE,"DD write, 10MB over 1000 files, 16 Parallel Ops",11.484
+netapp-ultra,AZURE,"DD read, 10MB over 1000 files, 2 Parallel Ops",2.991
+netapp-ultra,AZURE,"DD read, 10MB over 1000 files, 4 Parallel Ops",3.345
+netapp-ultra,AZURE,"DD read, 10MB over 1000 files, 8 Parallel Ops",4.328
+netapp-ultra,AZURE,"DD read, 10MB over 1000 files, 16 Parallel Ops",7.127
+netapp-ultra,AZURE,"FST random reads, 100MB over 10*10MB reads",0.3
+netapp-ultra,AZURE,"FST random reads, 100MB over 100*1MB reads",0.909
+netapp-ultra,AZURE,"FST random reads, 100MB over 1000*100KB reads",1.394
+netapp-ultra,AZURE,"FST random reads, 100MB over 10000*10KB reads",8.22
+netapp-ultra,AZURE,Read 14 days of CRAN logs with fread,32.876
+netapp-ultra,AZURE,Sample 5000 rows from each of 14 CRAN logs with vroom,15.888

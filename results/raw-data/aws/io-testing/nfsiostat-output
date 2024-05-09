@@ -1,84 +1,10 @@
 
-fs-0464a88d835ac9b33.efs.us-east-2.amazonaws.com:/ mounted on /efs-single-zone-run:
+svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol mounted on /same-az-ontap-run:
 
            ops/s       rpc bklog
-          89.717           0.000
+        2541.944           0.000
 
 read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  12.890        3853.548         298.953        0 (0.0%)          12.787          12.810           0.009        0 (0.0%)
+                 800.890       47959.619          59.883        0 (0.0%)           3.977           4.014           0.031        0 (0.0%)
 write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  12.675        4313.458         340.301        0 (0.0%)          15.138        2051.962        2036.813        0 (0.0%)
-
-fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/ mounted on /efs-regional-run:
-
-           ops/s       rpc bklog
-          89.948           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  12.861        3832.548         298.007        0 (0.0%)          20.422          20.449           0.010        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  12.676        4313.449         340.292        0 (0.0%)          15.674        5068.263        5052.576        0 (0.0%)
-
-10.0.162.70:/nfs-dir mounted on /rhel8-nfs-same-subnet-run:
-
-           ops/s       rpc bklog
-          96.909           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  12.950        3855.364         297.707        0 (0.0%)           9.726          10.214           0.480        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  12.675        4312.000         340.193        0 (0.0%)           5.384        3296.606        3291.214        0 (0.0%)
-
-fs-0ce5beec032a8d3f5.fsx.us-east-2.amazonaws.com:/fsx mounted on /same-az-zfs-run:
-
-           ops/s       rpc bklog
-          12.295           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  19.286        5763.150         298.832        0 (0.0%)           3.430           3.459           0.018        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                  75.651        6538.919          86.435        0 (0.0%)           1.495           1.768           0.267        0 (0.0%)
-No NFS mount points were found
-No NFS mount points were found
-No NFS mount points were found
-No NFS mount points were found
-
-fs-0ce5beec032a8d3f5.fsx.us-east-2.amazonaws.com:/fsx mounted on /same-az-zfs-run:
-
-           ops/s       rpc bklog
-           0.000           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-
-fs-0464a88d835ac9b33.efs.us-east-2.amazonaws.com:/ mounted on /efs-single-zone-run:
-
-           ops/s       rpc bklog
-           0.239           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-
-fs-0520054dd6a022e3d.efs.us-east-2.amazonaws.com:/ mounted on /efs-regional-run:
-
-           ops/s       rpc bklog
-           0.239           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-
-10.0.162.70:/nfs-dir mounted on /rhel8-nfs-same-subnet-run:
-
-           ops/s       rpc bklog
-           0.358           0.000
-
-read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
-write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+                 931.109       53857.031          57.842        0 (0.0%)          10.844       10514.490       10503.621        0 (0.0%)
