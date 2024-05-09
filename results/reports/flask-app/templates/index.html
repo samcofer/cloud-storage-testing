@@ -25,8 +25,7 @@
     </select>
     <br>
     <label for="y_feature">Y-Axis Metrics:</label>
-    <select name="y_feature" id="y_feature">
-        <option value="avg">avg</option>
+    <select name="y_feature" id="y_feature" onload="populateMetrics()">
     </select>
     <br>
     <!-- <label for="y_feature">Y-Axis Metrics:</label>
@@ -36,8 +35,12 @@
         {% endfor %}
     </select>
     <br> -->
-    <div id="plot-container">
+    <!-- <div id="plot-container">
         <img id="scatterplot" src="" alt="Scatterplot">
+    </div> -->
+
+    <div id="plot-container1">
+        <img id="plotnine" src="" alt="plotnine">
     </div>
     
     <script>
@@ -49,13 +52,26 @@
                 var cloud_filter = $('#cloud_filter').val();
                 var test_name = $('#test_name').val();
                 
+                // $.ajax({
+                //     type: 'POST',
+                //     contentType: 'application/json',
+                //     url: 'scatterplot',
+                //     data: JSON.stringify({ x_feature: x_feature, y_feature: y_feature, cloud_filter: cloud_filter, test_name: test_name }),
+                //     success: function(response) {
+                //         $('#scatterplot').attr('src', 'data:image/png;base64,' + response.plot_data);
+                //     },
+                //     error: function(error) {
+                //         console.log(error);
+                //     }
+                // });
+
                 $.ajax({
                     type: 'POST',
                     contentType: 'application/json',
-                    url: 'scatterplot',
+                    url: 'plotnine',
                     data: JSON.stringify({ x_feature: x_feature, y_feature: y_feature, cloud_filter: cloud_filter, test_name: test_name }),
-                    success: function(response) {
-                        $('#scatterplot').attr('src', 'data:image/png;base64,' + response.plot_data);
+                    success: function(response1) {
+                        $('#plotnine').attr('src', 'data:image/png;base64,' + response1.plot_data);
                     },
                     error: function(error) {
                         console.log(error);
@@ -70,6 +86,8 @@
             $('#x_feature, #y_feature, #cloud_filter').change(function() {
                 updateScatterplot();
             });
+
+            populateMetrics();
         });
     </script>
 

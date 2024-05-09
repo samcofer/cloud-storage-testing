@@ -116,6 +116,10 @@ def merge_csv_to_parquet(csv_dir, output_parquet):
 
     merged_df = merged_df.drop(columns='run-number')
 
+    merged_df['filesystem']=merged_df['filesystem'].replace('managed-disk-local-storage-premium-ssd-lrs','mdisk-premium-ssd-lrs')
+
+    merged_df['filesystem']=merged_df['filesystem'].replace('local-storage-ssd-persistent-disk', 'ssd-persistent-disk')
+
     # Write merged data to a Parquet file
     merged_df.to_parquet(output_parquet, index=False)
 

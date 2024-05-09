@@ -58,6 +58,12 @@ plt.show()
 
 # %%
 import pandas as pd
+import plotnine as p9
+
+def filesystem_sorter(column):
+    """Sort function"""
+    correspondence = {team: order for order, team in enumerate(all_order)}
+    return column.map(correspondence)
 
 df = pd.read_parquet('~/projects/cloud-storage-testing/results/reports/storage-results.parquet')
 
@@ -75,7 +81,7 @@ y_field = 'avg'
 
 
 import pandas as pd
-
+import plotnine as p9
 # Example DataFrame
 data = {
     'group': ['A', 'A', 'B', 'B', 'B'],
@@ -89,4 +95,55 @@ df = pd.DataFrame(data)
 result = df[df['test-name'] == 'PIP venv Pytorch Install'].groupby(['group', 'test-name']).mean().reset_index()
 
 print(result)
+# %%
+import pandas as pd
+import plotnine as p9
+
+all_order = ['ebs-local-storage',
+'rhel8-nfs-same-subnet', 
+'same-az-lustre', 
+'cross-az-lustre', 
+'same-az-zfs', 
+'same-az-ontap', 
+'efs-single-zone', 
+'efs-regional', 
+'s3-bucket-mountpoint', 
+'mdisk-premium-ssd-lrs', 
+'netapp-ultra', 
+'netapp-premium', 
+'netapp-standard', 
+'storage-acct-azure-files', 
+'elastic-san-same-zone', 
+'ssd-persistent-disk',
+'gfs-basic-ssd',
+'gfs-zonal-ssd', 
+'gfs-ent-ssd']
+
+def filesystem_sorter(column):
+    """Sort function"""
+    correspondence = {team: order for order, team in enumerate(all_order)}
+    return column.map(correspondence)
+
+data = pd.read_parquet('~/projects/cloud-storage-testing/results/reports/storage-results.parquet')
+
+data = data[data['test-name'] == 'ioping-ping']
+
+data = data[data['cloud'] == 'AWS']
+
+data = data.sort_values(by='filesystem', key=filesystem_sorter).reset_index(drop = True)
+
+data['filesystem'] = pd.Categorical(data.filesystem, categories=pd.unique(data.filesystem))
+
+x_feature = 'filesystem'
+y_feature = 'avg'
+
+# data = data.sort_values(by='filesystem', key=all_order)
+p9.ggplot(data=data,
+        mapping=p9.aes(x=y_feature,
+                        y=x_feature)) +\
+                            p9.geom_point() +\
+                            p9.theme(figure_size=(10, 6)) +\
+                            p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
+                            p9.geom_text(mapping=p9.aes(label=data[y_feature]), nudge_x=0.4)
+
 # %%
