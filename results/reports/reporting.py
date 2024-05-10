@@ -98,6 +98,8 @@ print(result)
 # %%
 import pandas as pd
 import plotnine as p9
+import adjustText as adjust_text
+
 
 all_order = ['ebs-local-storage',
 'rhel8-nfs-same-subnet', 
@@ -138,12 +140,22 @@ x_feature = 'filesystem'
 y_feature = 'avg'
 
 # data = data.sort_values(by='filesystem', key=all_order)
-p9.ggplot(data=data,
-        mapping=p9.aes(x=y_feature,
-                        y=x_feature)) +\
-                            p9.geom_point() +\
-                            p9.theme(figure_size=(10, 6)) +\
-                            p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
-                            p9.geom_text(mapping=p9.aes(label=data[y_feature]), nudge_x=0.4)
+graph = p9.ggplot(data=data,mapping=p9.aes(x=x_feature)) +\
+                    p9.geom_point(p9.aes(y="min (ms)", color="min (ms)")) +\
+                    p9.geom_point(p9.aes(y="avg (ms)", color="avg (ms)")) +\
+                    p9.geom_point(p9.aes(y="max (ms)", color="max (ms)")) +\
+                    p9.theme(figure_size=(10, 6), axis_text_x=p9.element_text(angle = 90)) +\
+                    p9.ggtitle(f"Scatterplot of {x_feature} vs latency") +\
+                    p9.geom_text(mapping=p9.aes(y="min (ms)",label=data["min (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
+                    p9.geom_text(mapping=p9.aes(y="avg (ms)",label=data["avg (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
+                    p9.geom_text(mapping=p9.aes(y="max (ms)",label=data["max (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
+                    p9.scale_colour_gradient(low = "green", high = "red") +\
+                    p9.scale_y_log10() +\
+                    p9.ylab("latency (ms)")
+
+graph.save("temp.png", format='png')
+
+
+                
 
 # %%

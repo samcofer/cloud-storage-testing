@@ -67,28 +67,28 @@ gcp_order = [
 ]
 
 io_perf_data = {
-    'ioping-linear-async-read': ["requests-count","requests-time","requests-ops-volume","requests-iops","requests-throughput","generated-count","generated-time","generated-ops-volume","generated-iops","generated-throughput","min","avg","max","mdev"],
-    "ioping-linear-async-write": ["requests-count","requests-time","requests-ops-volume","requests-iops","requests-throughput","generated-count","generated-time","generated-ops-volume","generated-iops","generated-throughput","min","avg","max","mdev"],
-    "ioping-ping": ["requests-time","requests-ops-volume","requests-iops","requests-throughput","generated-time","generated-ops-volume","generated-iops","generated-throughput","min","avg","max","mdev"],
-    "ioping-large-ping": ["requests-time","requests-ops-volume","requests-iops","requests-throughput","generated-time","generated-ops-volume","generated-iops","generated-throughput","min","avg","max","mdev"],
+    'ioping-linear-async-read': ["latency (ms)","time (s)","count","volume (GiB)","iops","throughput (MiB/s)"],
+    "ioping-linear-async-write": ["latency (ms)","time (s)","count","volume (GiB)","iops","throughput (MiB/s)"],
+    "ioping-ping": ["latency (ms)","iops","throughput (MiB/s)"],
+    "ioping-large-ping": ["latency (ms)","iops","throughput (MiB/s)"],
 }
 
 r_perf_data = {'R - fsbench': [
-    'Install MASS', 'Install lattice', 'Install BH', 'Write CSV, 10KB', 'Write CSV, 1MB', 
-    'Write CSV, 100MB', 'Write CSV, 1GB', 'Read CSV, 10KB', 'Read CSV, 1MB', 'Read CSV, 100MB', 
-    'Read CSV, 1GB', 'DD write, 1GB, 2 Parallel Ops', 'DD write, 1GB, 4 Parallel Ops', 
-    'DD write, 1GB, 8 Parallel Ops', 'DD write, 1GB, 16 Parallel Ops', 'DD read, 1GB, 2 Parallel Ops', 
-    'DD read, 1GB, 4 Parallel Ops', 'DD read, 1GB, 8 Parallel Ops', 'DD read, 1GB, 16 Parallel Ops', 
-    'Write CSV, 100MB over 10 files', 'Read CSV, 100MB over 10 files', 'Write CSV, 100MB over 100 files', 
-    'Read CSV, 100MB over 100 files', 'Write CSV, 100MB over 1000 files', 'Read CSV, 100MB over 1000 files', 
-    'Write CSV, 100MB over 10000 files', 'Read CSV, 100MB over 10000 files', 
-    'DD write, 10MB over 1000 files, 2 Parallel Ops', 'DD write, 10MB over 1000 files, 4 Parallel Ops', 
-    'DD write, 10MB over 1000 files, 8 Parallel Ops', 'DD write, 10MB over 1000 files, 16 Parallel Ops', 
-    'DD read, 10MB over 1000 files, 2 Parallel Ops', 'DD read, 10MB over 1000 files, 4 Parallel Ops', 
-    'DD read, 10MB over 1000 files, 8 Parallel Ops', 'DD read, 10MB over 1000 files, 16 Parallel Ops', 
-    'FST random reads, 100MB over 10*10MB reads', 'FST random reads, 100MB over 100*1MB reads', 
-    'FST random reads, 100MB over 1000*100KB reads', 'FST random reads, 100MB over 10000*10KB reads', 
-    'Read 14 days of CRAN logs with fread', 'Sample 5000 rows from each of 14 CRAN logs with vroom'
+    'Install MASS (s)', 'Install lattice (s)', 'Install BH (s)', 'Write CSV, 10KB (s)', 'Write CSV, 1MB (s)', 
+    'Write CSV, 100MB (s)', 'Write CSV, 1GB (s)', 'Read CSV, 10KB (s)', 'Read CSV, 1MB (s)', 'Read CSV, 100MB (s)', 
+    'Read CSV, 1GB (s)', 'DD write, 1GB, 2 Parallel Ops (s)', 'DD write, 1GB, 4 Parallel Ops (s)', 
+    'DD write, 1GB, 8 Parallel Ops (s)', 'DD write, 1GB, 16 Parallel Ops (s)', 'DD read, 1GB, 2 Parallel Ops (s)', 
+    'DD read, 1GB, 4 Parallel Ops (s)', 'DD read, 1GB, 8 Parallel Ops (s)', 'DD read, 1GB, 16 Parallel Ops (s)', 
+    'Write CSV, 100MB over 10 files (s)', 'Read CSV, 100MB over 10 files (s)', 'Write CSV, 100MB over 100 files (s)', 
+    'Read CSV, 100MB over 100 files (s)', 'Write CSV, 100MB over 1000 files (s)', 'Read CSV, 100MB over 1000 files (s)', 
+    'Write CSV, 100MB over 10000 files (s)', 'Read CSV, 100MB over 10000 files (s)', 
+    'DD write, 10MB over 1000 files, 2 Parallel Ops (s)', 'DD write, 10MB over 1000 files, 4 Parallel Ops (s)', 
+    'DD write, 10MB over 1000 files, 8 Parallel Ops (s)', 'DD write, 10MB over 1000 files, 16 Parallel Ops (s)', 
+    'DD read, 10MB over 1000 files, 2 Parallel Ops (s)', 'DD read, 10MB over 1000 files, 4 Parallel Ops (s)', 
+    'DD read, 10MB over 1000 files, 8 Parallel Ops (s)', 'DD read, 10MB over 1000 files, 16 Parallel Ops (s)', 
+    'FST random reads, 100MB over 10*10MB reads (s)', 'FST random reads, 100MB over 100*1MB reads (s)', 
+    'FST random reads, 100MB over 1000*100KB reads (s)', 'FST random reads, 100MB over 10000*10KB reads (s)', 
+    'Read 14 days of CRAN logs with fread (s)', 'Sample 5000 rows from each of 14 CRAN logs with vroom (s)'
 ]}
 
 python_perf_data = {
@@ -110,6 +110,41 @@ def filesystem_sorter(column):
     correspondence = {team: order for order, team in enumerate(all_order)}
     return column.map(correspondence)
 
+def ioplot(data,x_feature,y_feature,columns,sort_col, label_factor=0.1,descending="asc"):
+
+    if not label_factor:
+        label_factor = .2
+    if descending=="desc":
+        sort_order = "False"
+    else:
+        sort_order = "True"
+
+    print(f'reorder(x={x_feature}, y={sort_col}, ascending={sort_order})')
+
+    if len(columns) == 2:
+        graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder(x={x_feature}, y={sort_col}, ascending={sort_order})', shape="cloud")) +\
+                                p9.geom_point(p9.aes(y=columns[0], color="cloud")) +\
+                                p9.geom_point(p9.aes(y=columns[1], color="cloud")) +\
+                                p9.theme(figure_size=(10, 8), axis_text_x=p9.element_text(angle = 90)) +\
+                                p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
+                                p9.geom_text(mapping=p9.aes(y=data[columns[0]] +-1*label_factor*data[columns[0]],label=data[columns[0]])) +\
+                                p9.geom_text(mapping=p9.aes(y=data[columns[1]] +label_factor*data[columns[1]],label=data[columns[1]])) +\
+                                p9.ylab(y_feature)
+    else:
+        adjust_text_props = {'expand':(1.05, 1.2), "max_move":30, "min_arrow_len":.1, 'arrowprops':{'arrowstyle':'-','color':'red'}}
+
+        graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder(x={x_feature}, y={sort_col}, ascending={sort_order})', shape="cloud")) +\
+                                p9.geom_point(p9.aes(y=columns[0], color="cloud", size=1.2)) +\
+                                p9.theme(figure_size=(10, 8), axis_text_x=p9.element_text(angle = 90)) +\
+                                p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
+                                p9.geom_text(mapping=p9.aes(y=data[columns[0]],label=data[columns[0]]), adjust_text=adjust_text_props) +\
+                                p9.ylab(y_feature) 
+
+             # p9.geom_text(mapping=p9.aes(y=data[columns[0]] +-1*label_factor*data[columns[0]].median(),label=data[columns[0]]), adjust_text=adjust_text_props) +\
+
+
+    return graph
+
 
 def generate_scatterplot(data, x_feature, y_feature, order):
     sns.set(style="whitegrid")
@@ -122,7 +157,7 @@ def generate_scatterplot(data, x_feature, y_feature, order):
     plt.ylabel(y_feature + '(ms)')
 
 
-    plt.ylim(0, max(data[y_feature])+(.1*max(data[y_feature]))) 
+    plt.ylim(0, max (ms)(data[y_feature])+(.1*max (ms)(data[y_feature]))) 
     # plt.legend(title='Filesystem Performance', loc='upper right')
     plt.xticks(rotation=270)
 
@@ -147,13 +182,62 @@ def generate_plotnine(data, x_feature, y_feature, order):
     data = data.sort_values(by='filesystem', key=filesystem_sorter)
     data['filesystem'] = pd.Categorical(data.filesystem, categories=pd.unique(data.filesystem))
 
-    graph = p9.ggplot(data=data,
-            mapping=p9.aes(x=y_feature,
-                            y=x_feature)) +\
+    if not y_feature:
+        y_feature = "latency (ms)" 
+
+    if "latency (ms)" in y_feature:
+        data["avg"] = data["avg (ms)"]
+        #data=data.rename(columns={"avg (ms)": "avg"})
+        # data = data[data['avg (ms)'].notna()]
+        #data.sort_values(by='avg (ms)').reset_index(drop = True)
+        #data['filesystem'] = pd.Categorical(data['filesystem'], categories=pd.unique(data['avg (ms)']))
+        # arrow_properties = {'y':'avg','expand':(1, 1),'min_arrow_len':.1, 'arrowprops':{'arrowstyle':'-','color':'red'} }
+        graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder({x_feature}, avg)', shape="cloud")) +\
+                            p9.geom_line(p9.aes(y="avg (ms)", group=1)) +\
+                            p9.geom_point(p9.aes(y="min (ms)", color="min (ms)", size=1)) +\
+                            p9.geom_point(p9.aes(y="avg (ms)", color="avg (ms)", size=2)) +\
+                            p9.geom_point(p9.aes(y="max (ms)", color="max (ms)", size=1)) +\
+                            p9.theme(figure_size=(10, 8), axis_text_x=p9.element_text(angle = 90)) +\
+                            p9.ggtitle(f"Scatterplot of {x_feature} vs latency(ms)") +\
+                            p9.geom_text(mapping=p9.aes(y=data["min (ms)"] +-1*.3*data["min (ms)"],label=data["min (ms)"])) +\
+                            p9.geom_text(mapping=p9.aes(y=data["avg (ms)"] +.5*data["avg (ms)"],label=data["avg (ms)"])) +\
+                            p9.geom_text(mapping=p9.aes(y=data["max (ms)"] +.3*data["max (ms)"],label=data["max (ms)"])) +\
+                            p9.scale_colour_gradient(low = "#447099", high = "#EE6331", trans="log10") +\
+                            p9.scale_y_log10() +\
+                            p9.ylab("latency (ms)")
+    elif "time (s)" in y_feature:
+        data["time"] = data["requests-time (s)"]
+        label_factor = .2
+        sort_order = "desc"
+        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-time (s)","generated-time (s)"], sort_col="time",label_factor=label_factor, descending=sort_order)   
+    elif "volume (GiB)" in y_feature:
+        data["volume"] = data["requests-ops-volume (GiB)"]
+        label_factor = .2
+        sort_order = "desc"
+        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-ops-volume (GiB)","generated-ops-volume (GiB)"], sort_col="volume",label_factor=label_factor, descending=sort_order)   
+    elif "count" in y_feature:
+        data["count"] = data["requests-count (count)"]
+        label_factor = .2
+        sort_order = "desc"
+        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-count (count)"], sort_col="count",label_factor=label_factor, descending=sort_order)   
+    elif "throughput (MiB/s)" in y_feature:
+        data["throughput"] = data["requests-throughput (MiB/s)"]
+        label_factor = .2
+        sort_order = "desc"
+        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-throughput (MiB/s)","generated-throughput (MiB/s)"], sort_col="throughput",label_factor=label_factor, descending=sort_order)   
+    elif "iops" in y_feature:
+        data["iops"] = data["requests-iops (iops)"]
+        label_factor = .2
+        sort_order = "desc"
+        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-iops (iops)"], sort_col="iops", label_factor=label_factor, descending=sort_order)   
+    else:
+        graph = p9.ggplot(data=data,
+            mapping=p9.aes(x=x_feature,
+                            y=y_feature)) +\
                                 p9.geom_point() +\
-                                p9.theme(figure_size=(10, 6)) +\
+                                p9.theme(figure_size=(10, 6), axis_text_x=p9.element_text(angle = 90)) +\
                                 p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
-                                p9.geom_text(mapping=p9.aes(label=data[y_feature]), nudge_x=0, adjust_text={'expand':(2, 2),'arrowprops':{'arrowstyle':'-','color':'red'} })
+                                p9.geom_text(mapping=p9.aes(label=data[y_feature]), nudge_x=0, adjust_text={'expand':(1.1, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} })
 
 
     # Save plot to a BytesIO object
@@ -171,7 +255,7 @@ def index():
     df = pd.read_parquet('~/projects/cloud-storage-testing/results/reports/storage-results.parquet')
     # df = df.sort_values(by=['cloud','filesystem'])
     x_feature = 'filesystem'
-    test_name = df['test-name'].unique().tolist()
+    test_name = list(concatenated_data.keys()) #df['test-name'].unique().tolist()
     y_features = concatenated_data
     cloud_list = df['cloud'].unique().tolist()
     cloud_list.insert(0, "All")
@@ -222,6 +306,10 @@ def plotnine():
             sort_order = azure_order
         elif cloud_filter == 'GCP':
             sort_order = gcp_order
+
+    if y_feature in r_perf_data["R - fsbench"]:
+        test_name = y_feature
+        y_feature = "elapsed"
         
 
     filtered_df = df[df['test-name'] == test_name]
