@@ -59,8 +59,6 @@ fi
 ln -sf /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
 ln -sf /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
-azure-code =
-
 # Check if the instance metadata service is reachable
 if [ "$(curl -s --connect-timeout 2 -o /dev/null -w "%{http_code}" http://169.254.169.254/latest/meta-data/)" == "200" ]; then
     # Instance metadata service is reachable, assume running in AWS
