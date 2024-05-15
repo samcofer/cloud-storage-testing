@@ -36,27 +36,37 @@ def manipulate_k(field):
     if ' k' in str(field):
         # Manipulate the value for thousands count
         value = round(float(field.replace(' k', '')) * 1000,3)
-        print(value)
         return value
     else:
         value = float(field)
-        print(value)
         return value
 
 def manipulate_vol(field):
 
 
     if 'MiB' in str(field):
-        # Manipulate the value for milliseconds
         value = round(float(field.replace(' MiB', '')) / 1024,3)
         return value
     elif 'GiB' in str(field):
-        # Manipulate the value for microseconds
         value = float(field.replace(' GiB', ''))
         return value
     elif 'KiB' in str(field):
-        # Manipulate the value for microseconds
         value = float(field.replace(' KiB', ''))
+        return value
+    else:
+        return field
+
+def manipulate_throughput(field):
+
+
+    if 'MiB' in str(field):
+        value = round(float(field.replace(' MiB/s', '')),3)
+        return value
+    elif 'GiB' in str(field):
+        value = float(field.replace(' GiB/s', '')) * 1024
+        return value
+    elif 'KiB' in str(field):
+        value = round(float(field.replace(' KiB/s', ''))/1000,3)
         return value
     else:
         return field
@@ -82,19 +92,26 @@ def merge_csv_to_parquet(csv_dir, output_parquet):
     for col in columns:
         merged_df[col] = merged_df[col].apply(manipulate_ms)
         merged_df.astype({col: 'float'}).dtypes
+        merged_df=merged_df.rename(columns={col: col + " (ms)"})
     
     # Standardize on seconds
     columns = ['requests-time', 'generated-time']
     for col in columns:
         merged_df[col] = merged_df[col].apply(manipulate_s)
         merged_df.astype({col: 'float'}).dtypes
+        merged_df=merged_df.rename(columns={col: col + " (s)"})
 
    
     # Standardize count on single digits, not k
-    columns = ['requests-count', 'generated-count']
+    columns = ['requests-count', 'generated-count', 'requests-iops', 'generated-iops']
     for col in columns:
         merged_df[col] = merged_df[col].apply(manipulate_k)
         # testdf['testcol'] = testdf['testcol'].astype(str)
+        if 'count' in str(col):
+            merged_df=merged_df.rename(columns={col: col + " (count)"})
+        elif 'iops' in str(col):
+            merged_df=merged_df.rename(columns={col: col + " (iops)"})
+
 
 
     # Standardize on GiB
@@ -102,6 +119,15 @@ def merge_csv_to_parquet(csv_dir, output_parquet):
     for col in columns:
         merged_df[col] = merged_df[col].apply(manipulate_vol)
         merged_df.astype({col: 'float'}).dtypes
+        merged_df=merged_df.rename(columns={col: col + " (GiB)"})
+
+    
+    # Convert throughput to a number
+    columns = ['requests-throughput', 'generated-throughput']
+    for col in columns:
+        merged_df[col] = merged_df[col].apply(manipulate_throughput)
+        merged_df.astype({col: 'float'}).dtypes
+        merged_df=merged_df.rename(columns={col:col + " (MiB/s)"})
 
     
     # Aggregate python columns

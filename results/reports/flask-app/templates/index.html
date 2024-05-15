@@ -25,7 +25,7 @@
     </select>
     <br>
     <label for="y_feature">Y-Axis Metrics:</label>
-    <select name="y_feature" id="y_feature" onload="populateMetrics()">
+    <select name="y_feature" id="y_feature">
     </select>
     <br>
     <!-- <label for="y_feature">Y-Axis Metrics:</label>
@@ -42,6 +42,28 @@
     <div id="plot-container1">
         <img id="plotnine" src="" alt="plotnine">
     </div>
+    
+    <script>
+        var metric_options = {{ y_features|tojson }};
+        
+        function populateMetrics() {
+            var testnameValue = document.getElementById("test_name").value;
+            var y_feature = document.getElementById("y_feature");
+            y_feature.innerHTML = "";  // Clear existing options
+
+            var options = metric_options[testnameValue];
+            if (options) {
+                options.forEach(function(option) {
+                    var optionElement = document.createElement("option");
+                    optionElement.value = option;
+                    optionElement.textContent = option;
+                    y_feature.appendChild(optionElement);
+                });
+            }
+            var event = new Event('change');
+            y_feature.dispatchEvent(event);
+        }
+    </script>
     
     <script>
         $(document).ready(function() {
@@ -79,6 +101,7 @@
                 });
             }
 
+            populateMetrics();
             // Initial update
             updateScatterplot();
 
@@ -87,30 +110,7 @@
                 updateScatterplot();
             });
 
-            populateMetrics();
         });
-    </script>
-
-    <script>
-        var metric_options = {{ y_features|tojson }};
-        
-        function populateMetrics() {
-            var testnameValue = document.getElementById("test_name").value;
-            var y_feature = document.getElementById("y_feature");
-            y_feature.innerHTML = "";  // Clear existing options
-
-            var options = metric_options[testnameValue];
-            if (options) {
-                options.forEach(function(option) {
-                    var optionElement = document.createElement("option");
-                    optionElement.value = option;
-                    optionElement.textContent = option;
-                    y_feature.appendChild(optionElement);
-                });
-            }
-            var event = new Event('change');
-            y_feature.dispatchEvent(event);
-        }
     </script>
 </body>
 </html>
