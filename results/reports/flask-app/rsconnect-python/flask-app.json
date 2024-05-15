@@ -1,0 +1,12 @@
+{
+    "https://colorado.posit.co/rsc": {
+        "server_url": "https://colorado.posit.co/rsc",
+        "filename": "/usr/home/sam.cofer/projects/cloud-storage-testing/results/reports/flask-app",
+        "app_url": "https://colorado.posit.co/rsc/content/82f05bed-f888-47b9-a70f-8cf8cd18a407/",
+        "app_id": "82f05bed-f888-47b9-a70f-8cf8cd18a407",
+        "app_guid": "82f05bed-f888-47b9-a70f-8cf8cd18a407",
+        "title": "CloudStorageResults",
+        "app_mode": "python-api",
+        "app_store_version": 1
+    }
+}

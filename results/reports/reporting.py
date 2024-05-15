@@ -137,23 +137,26 @@ data = data.sort_values(by='filesystem', key=filesystem_sorter).reset_index(drop
 data['filesystem'] = pd.Categorical(data.filesystem, categories=pd.unique(data.filesystem))
 
 x_feature = 'filesystem'
-y_feature = 'avg'
+y_feature = 'avg (ms)'
 
-# data = data.sort_values(by='filesystem', key=all_order)
-graph = p9.ggplot(data=data,mapping=p9.aes(x=x_feature)) +\
-                    p9.geom_point(p9.aes(y="min (ms)", color="min (ms)")) +\
-                    p9.geom_point(p9.aes(y="avg (ms)", color="avg (ms)")) +\
-                    p9.geom_point(p9.aes(y="max (ms)", color="max (ms)")) +\
-                    p9.theme(figure_size=(10, 6), axis_text_x=p9.element_text(angle = 90)) +\
-                    p9.ggtitle(f"Scatterplot of {x_feature} vs latency") +\
-                    p9.geom_text(mapping=p9.aes(y="min (ms)",label=data["min (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
-                    p9.geom_text(mapping=p9.aes(y="avg (ms)",label=data["avg (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
-                    p9.geom_text(mapping=p9.aes(y="max (ms)",label=data["max (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
-                    p9.scale_colour_gradient(low = "green", high = "red") +\
-                    p9.scale_y_log10() +\
-                    p9.ylab("latency (ms)")
+print(data['avg (ms)'].index.tolist())
 
-graph.save("temp.png", format='png')
+
+# # data = data.sort_values(by='filesystem', key=all_order)
+# graph = p9.ggplot(data=data,mapping=p9.aes(x=x_feature)) +\
+#                     p9.geom_point(p9.aes(y="min (ms)", color="min (ms)")) +\
+#                     p9.geom_point(p9.aes(y="avg (ms)", color="avg (ms)")) +\
+#                     p9.geom_point(p9.aes(y="max (ms)", color="max (ms)")) +\
+#                     p9.theme(figure_size=(10, 6), axis_text_x=p9.element_text(angle = 90)) +\
+#                     p9.ggtitle(f"Scatterplot of {x_feature} vs latency") +\
+#                     p9.geom_text(mapping=p9.aes(y="min (ms)",label=data["min (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
+#                     p9.geom_text(mapping=p9.aes(y="avg (ms)",label=data["avg (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
+#                     p9.geom_text(mapping=p9.aes(y="max (ms)",label=data["max (ms)"]), nudge_x=0.2, adjust_text={'expand':(1.5, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} }) +\
+#                     p9.scale_colour_gradient(low = "green", high = "red") +\
+#                     p9.scale_y_log10() +\
+#                     p9.ylab("latency (ms)")
+
+# graph.save("temp.png", format='png')
 
 
                 

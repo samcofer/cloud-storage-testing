@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import adjustText as adjust_text
-from sklearn.datasets import load_iris
 import plotnine as p9
 import io
 import base64
 import json
+import os
 
 app = Flask(__name__)
 
@@ -67,10 +67,10 @@ gcp_order = [
 ]
 
 io_perf_data = {
-    'ioping-linear-async-read': ["latency (ms)","time (s)","count","volume (GiB)","iops","throughput (MiB/s)"],
-    "ioping-linear-async-write": ["latency (ms)","time (s)","count","volume (GiB)","iops","throughput (MiB/s)"],
-    "ioping-ping": ["latency (ms)","iops","throughput (MiB/s)"],
-    "ioping-large-ping": ["latency (ms)","iops","throughput (MiB/s)"],
+    "ioping-ping": ["latency (ms)","iops"],
+    "ioping-large-ping": ["latency (ms)","iops"],
+    'ioping-linear-async-read': ["latency (ms)","count","volume (GiB)","iops","throughput (MiB/s)"],
+    "ioping-linear-async-write": ["latency (ms)","count","volume (GiB)","iops","throughput (MiB/s)"],
 }
 
 r_perf_data = {'R - fsbench': [
@@ -92,18 +92,18 @@ r_perf_data = {'R - fsbench': [
 ]}
 
 python_perf_data = {
-    "PIP venv Pytorch Install": ["venv-creation(ms)","pip-update(ms)","pytorch-install(ms)","cleanup(ms)"]
+    "PIP venv Pytorch Install": ["pytorch-install(ms)"]
 }
 
-app_perf_data = {
-    "acl-and-lock-testing": ["extended-acl-support","linkbased-file-locks"]
-}
+# app_perf_data = {
+#     "acl-and-lock-testing": ["extended-acl-support","linkbased-file-locks"]
+# }
 
 concatenated_data = {}
 concatenated_data.update(io_perf_data)
 concatenated_data.update(r_perf_data)
 concatenated_data.update(python_perf_data)
-concatenated_data.update(app_perf_data)
+# concatenated_data.update(app_perf_data)
 
 def filesystem_sorter(column):
     """Sort function"""
@@ -129,16 +129,20 @@ def ioplot(data,x_feature,y_feature,columns,sort_col, label_factor=0.1,descendin
                                 p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
                                 p9.geom_text(mapping=p9.aes(y=data[columns[0]] +-1*label_factor*data[columns[0]],label=data[columns[0]])) +\
                                 p9.geom_text(mapping=p9.aes(y=data[columns[1]] +label_factor*data[columns[1]],label=data[columns[1]])) +\
-                                p9.ylab(y_feature)
+                                p9.ylab(y_feature) +\
+                                p9.labs(color = f"{y_feature}\n") +\
+                                p9.xlab(x_feature)
     else:
-        adjust_text_props = {'expand':(1.05, 1.2), "max_move":30, "min_arrow_len":.1, 'arrowprops':{'arrowstyle':'-','color':'red'}}
+        adjust_text_props = {'force_text':(1, 1),'expand':(1.5, 2), "min_arrow_len":.1, 'arrowprops':{'arrowstyle':'-','color':'red'}}
 
         graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder(x={x_feature}, y={sort_col}, ascending={sort_order})', shape="cloud")) +\
-                                p9.geom_point(p9.aes(y=columns[0], color="cloud", size=1.2)) +\
+                                p9.geom_point(p9.aes(y=columns[0], color="cloud"),size=4) +\
                                 p9.theme(figure_size=(10, 8), axis_text_x=p9.element_text(angle = 90)) +\
                                 p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
                                 p9.geom_text(mapping=p9.aes(y=data[columns[0]],label=data[columns[0]]), adjust_text=adjust_text_props) +\
-                                p9.ylab(y_feature) 
+                                p9.ylab(y_feature) +\
+                                p9.labs(color = f"{y_feature}\n") +\
+                                p9.xlab(x_feature) 
 
              # p9.geom_text(mapping=p9.aes(y=data[columns[0]] +-1*label_factor*data[columns[0]].median(),label=data[columns[0]]), adjust_text=adjust_text_props) +\
 
@@ -177,7 +181,7 @@ def generate_scatterplot(data, x_feature, y_feature, order):
 
     return plot_data
 
-def generate_plotnine(data, x_feature, y_feature, order):
+def generate_plotnine(data, x_feature, y_feature,test_name, order):
     
     data = data.sort_values(by='filesystem', key=filesystem_sorter)
     data['filesystem'] = pd.Categorical(data.filesystem, categories=pd.unique(data.filesystem))
@@ -185,26 +189,26 @@ def generate_plotnine(data, x_feature, y_feature, order):
     if not y_feature:
         y_feature = "latency (ms)" 
 
+    data['label_pos'] = [1 if i % 2 == 0 else -1 for i in range(len(data))]
+
     if "latency (ms)" in y_feature:
         data["avg"] = data["avg (ms)"]
-        #data=data.rename(columns={"avg (ms)": "avg"})
-        # data = data[data['avg (ms)'].notna()]
-        #data.sort_values(by='avg (ms)').reset_index(drop = True)
-        #data['filesystem'] = pd.Categorical(data['filesystem'], categories=pd.unique(data['avg (ms)']))
-        # arrow_properties = {'y':'avg','expand':(1, 1),'min_arrow_len':.1, 'arrowprops':{'arrowstyle':'-','color':'red'} }
+        adjust_text_props = {'expand':(1.5, 2), "min_arrow_len":.1, 'arrowprops':{'arrowstyle':'-','color':'red'}}
         graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder({x_feature}, avg)', shape="cloud")) +\
                             p9.geom_line(p9.aes(y="avg (ms)", group=1)) +\
-                            p9.geom_point(p9.aes(y="min (ms)", color="min (ms)", size=1)) +\
-                            p9.geom_point(p9.aes(y="avg (ms)", color="avg (ms)", size=2)) +\
-                            p9.geom_point(p9.aes(y="max (ms)", color="max (ms)", size=1)) +\
+                            p9.geom_point(p9.aes(y="min (ms)", color="min (ms)"), size=1.5) +\
+                            p9.geom_point(p9.aes(y="avg (ms)", color="avg (ms)"), size=4) +\
+                            p9.geom_point(p9.aes(y="max (ms)", color="max (ms)"), size=1.5) +\
+                            p9.labs(color = f"{y_feature}\n") +\
                             p9.theme(figure_size=(10, 8), axis_text_x=p9.element_text(angle = 90)) +\
                             p9.ggtitle(f"Scatterplot of {x_feature} vs latency(ms)") +\
-                            p9.geom_text(mapping=p9.aes(y=data["min (ms)"] +-1*.3*data["min (ms)"],label=data["min (ms)"])) +\
-                            p9.geom_text(mapping=p9.aes(y=data["avg (ms)"] +.5*data["avg (ms)"],label=data["avg (ms)"])) +\
-                            p9.geom_text(mapping=p9.aes(y=data["max (ms)"] +.3*data["max (ms)"],label=data["max (ms)"])) +\
+                            p9.geom_text(mapping=p9.aes(y=data["avg (ms)"],label=data["avg (ms)"]), adjust_text=adjust_text_props) +\
                             p9.scale_colour_gradient(low = "#447099", high = "#EE6331", trans="log10") +\
                             p9.scale_y_log10() +\
                             p9.ylab("latency (ms)")
+
+                            #p9.geom_text(mapping=p9.aes(y=data["min (ms)"] +-1*.3*data["min (ms)"],label=data["min (ms)"])) +\
+                            #p9.geom_text(mapping=p9.aes(y=data["max (ms)"] +.3*data["max (ms)"],label=data["max (ms)"])) +\
     elif "time (s)" in y_feature:
         data["time"] = data["requests-time (s)"]
         label_factor = .2
@@ -224,20 +228,66 @@ def generate_plotnine(data, x_feature, y_feature, order):
         data["throughput"] = data["requests-throughput (MiB/s)"]
         label_factor = .2
         sort_order = "desc"
-        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-throughput (MiB/s)","generated-throughput (MiB/s)"], sort_col="throughput",label_factor=label_factor, descending=sort_order)   
+        graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-throughput (MiB/s)"], sort_col="throughput",label_factor=label_factor, descending=sort_order)   
     elif "iops" in y_feature:
         data["iops"] = data["requests-iops (iops)"]
         label_factor = .2
         sort_order = "desc"
         graph = ioplot(data=data, x_feature=x_feature, y_feature=y_feature, columns=["requests-iops (iops)"], sort_col="iops", label_factor=label_factor, descending=sort_order)   
+    elif "PIP" in test_name:
+        y_feature_short=y_feature.replace('(ms)','').replace('-','')
+        data[y_feature_short] = data[y_feature]
+        data = data[data['filesystem']!='elastic-san-same-zone']
+
+        data_long = data.melt(id_vars=['filesystem','test-name'], value_vars=["venv-creation(ms)","pip-update(ms)","pytorch-install(ms)","cleanup(ms)"], var_name='python_test', value_name='timing')
+        category_sum = data_long.groupby('filesystem')['timing'].sum().reset_index()
+        category_sum = category_sum.sort_values(by='timing', ascending=True)
+        category_order = category_sum['filesystem'].tolist()
+
+        data_long['filesystem'] = pd.Categorical(data_long['filesystem'], categories=category_order, ordered=True)
+
+
+        graph = p9.ggplot(data=data_long,mapping=p9.aes(x='filesystem', y='timing', fill='python_test')) +\
+                        p9.theme(figure_size=(12, 8), axis_text_x=p9.element_text(angle = 90)) +\
+                        p9.ggtitle(f"Stacked Bar Plot of {x_feature} vs Python Pytorch Install") +\
+                        p9.scale_color_discrete(limits=["cleanup(ms)","pytorch-install(ms)","pip-update(ms)","venv-creation(ms)"]) +\
+                        p9.scale_fill_manual(values=[ '#EE6331', '#419599','#447099','#404041']) +\
+                        p9.labs(color = f"Process") +\
+                        p9.ylab("Timing") +\
+                        p9.xlab('Filesystem') +\
+                        p9.geom_bar(stat='identity')
+        # graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder({x_feature}, {y_feature_short})', y=y_feature, shape="cloud")) +\
+        #                         p9.geom_point(p9.aes(color=y_feature), size=4) +\
+        #                         p9.theme(figure_size=(12, 8), axis_text_x=p9.element_text(angle = 90)) +\
+        #                         p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
+        #                         p9.labs(color = f"{y_feature}\n") +\
+        #                         p9.geom_text(mapping=p9.aes(y=data[y_feature]+0.1*data['label_pos']*data[y_feature],label=data[y_feature]) ) +\
+        #                         p9.scale_colour_gradient(low = "#447099", high = "#EE6331", trans="log10") +\
+        #                         p9.scale_y_log10() +\
+        #                         p9.ylab(y_feature) +\
+        #                         p9.xlab(x_feature.capitalize())
     else:
-        graph = p9.ggplot(data=data,
-            mapping=p9.aes(x=x_feature,
-                            y=y_feature)) +\
-                                p9.geom_point() +\
-                                p9.theme(figure_size=(10, 6), axis_text_x=p9.element_text(angle = 90)) +\
-                                p9.ggtitle(f"Scatterplot of {x_feature} vs {y_feature}") +\
-                                p9.geom_text(mapping=p9.aes(label=data[y_feature]), nudge_x=0, adjust_text={'expand':(1.1, 1.1),'arrowprops':{'arrowstyle':'-','color':'red'} })
+        graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder({x_feature}, {y_feature})', y=y_feature, shape="cloud")) +\
+                                p9.geom_point(p9.aes(color=y_feature), size=4) +\
+                                p9.theme(figure_size=(12, 8), axis_text_x=p9.element_text(angle = 90)) +\
+                                p9.ggtitle(f"Scatterplot of {x_feature} vs {test_name}") +\
+                                p9.labs(color = f"{test_name}\n") +\
+                                p9.geom_text(mapping=p9.aes(y=data[y_feature]+0.1*data['label_pos']*data[y_feature],label=data[y_feature]) ) +\
+                                p9.scale_colour_gradient(low = "#447099", high = "#EE6331", trans="log10") +\
+                                p9.scale_y_log10() +\
+                                p9.ylab("seconds") +\
+                                p9.xlab(x_feature.capitalize())
+
+        # graph = p9.ggplot(data=data,mapping=p9.aes(x=f'reorder({x_feature}, {y_feature})', y=y_feature, shape="cloud")) +\
+        #                         p9.geom_point(p9.aes(color=y_feature), size=4) +\
+        #                         p9.theme(figure_size=(12, 8), axis_text_x=p9.element_text(angle = 90)) +\
+        #                         p9.ggtitle(f"Scatterplot of {x_feature} vs {test_name}") +\
+        #                         p9.labs(color = f"{test_name}\n") +\
+        #                         p9.geom_text(mapping=p9.aes(y=data[y_feature]+0.1*data['label_pos']*data[y_feature],label=data[y_feature]) ) +\
+        #                         p9.scale_colour_gradient(low = "#447099", high = "#EE6331", trans="log10") +\
+        #                         p9.scale_y_log10() +\
+        #                         p9.ylab("seconds") +\
+        #                         p9.xlab(x_feature.capitalize())
 
 
     # Save plot to a BytesIO object
@@ -252,19 +302,21 @@ def generate_plotnine(data, x_feature, y_feature, order):
 
 @app.route('/')
 def index():
-    df = pd.read_parquet('~/projects/cloud-storage-testing/results/reports/storage-results.parquet')
+    parquet_path = os.path.join(os.path.dirname(__file__), "storage-results.parquet")
+    df = pd.read_parquet(parquet_path)
     # df = df.sort_values(by=['cloud','filesystem'])
     x_feature = 'filesystem'
     test_name = list(concatenated_data.keys()) #df['test-name'].unique().tolist()
     y_features = concatenated_data
     cloud_list = df['cloud'].unique().tolist()
-    cloud_list.insert(0, "All")
+    cloud_list.insert(len(cloud_list), "All")
 
     return render_template('index.html', x_feature=x_feature, y_features=y_features, cloud_filter=cloud_list, test_name=test_name)
 
 @app.route('/scatterplot', methods=['POST'])
 def scatterplot():
-    df = pd.read_parquet('~/projects/cloud-storage-testing/results/reports/storage-results.parquet')
+    parquet_path = os.path.join(os.path.dirname(__file__), "storage-results.parquet")
+    df = pd.read_parquet(parquet_path)
     # df = df.sort_values(by=['cloud','filesystem'])
     x_feature = request.json['x_feature']
     y_feature = request.json['y_feature']
@@ -290,7 +342,8 @@ def scatterplot():
 
 @app.route('/plotnine', methods=['POST'])
 def plotnine():
-    df = pd.read_parquet('~/projects/cloud-storage-testing/results/reports/storage-results.parquet')
+    parquet_path = os.path.join(os.path.dirname(__file__), "storage-results.parquet")
+    df = pd.read_parquet(parquet_path)
     # df = df.sort_values(by=['cloud','filesystem'])
     x_feature = request.json['x_feature']
     y_feature = request.json['y_feature']
@@ -308,13 +361,16 @@ def plotnine():
             sort_order = gcp_order
 
     if y_feature in r_perf_data["R - fsbench"]:
-        test_name = y_feature
+        test_name = y_feature.replace(" (s)","")
         y_feature = "elapsed"
+    
+    # if y_feature in python_perf_data["PIP venv Pytorch Install"]:
+    #     test_name = y_feature.replace("(ms)","")
         
 
     filtered_df = df[df['test-name'] == test_name]
 
-    plot_data = generate_plotnine(filtered_df, x_feature, y_feature, sort_order)
+    plot_data = generate_plotnine(filtered_df, x_feature, y_feature, test_name, sort_order)
 
     return jsonify({'plot_data': plot_data})   
 
