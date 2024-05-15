@@ -1,0 +1,68 @@
+{
+    "FileSystems": [
+        {
+            "OwnerId": "637485797898",
+            "CreationTime": "2024-05-06T13:47:49.125000-05:00",
+            "FileSystemId": "fs-09cacf8c9d13259ed",
+            "FileSystemType": "ONTAP",
+            "Lifecycle": "AVAILABLE",
+            "StorageCapacity": 1024,
+            "StorageType": "SSD",
+            "VpcId": "vpc-0a451d800cba4446f",
+            "SubnetIds": [
+                "subnet-08dc7bcdf8b1ae500"
+            ],
+            "NetworkInterfaceIds": [
+                "eni-06f708a229dfa4211",
+                "eni-09a0cfef09035b081"
+            ],
+            "KmsKeyId": "arn:aws:kms:us-east-2:637485797898:key/8b32aa29-657f-4a7f-9558-2d167eb43e67",
+            "ResourceARN": "arn:aws:fsx:us-east-2:637485797898:file-system/fs-09cacf8c9d13259ed",
+            "Tags": [
+                {
+                    "Key": "rs:environment",
+                    "Value": "infrastructure"
+                },
+                {
+                    "Key": "rs:owner",
+                    "Value": "sam.cofer@posit.co"
+                },
+                {
+                    "Key": "rs:project",
+                    "Value": "internal"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "perf-test-ontap-same-az"
+                }
+            ],
+            "OntapConfiguration": {
+                "AutomaticBackupRetentionDays": 30,
+                "DailyAutomaticBackupStartTime": "07:00",
+                "DeploymentType": "SINGLE_AZ_1",
+                "Endpoints": {
+                    "Intercluster": {
+                        "DNSName": "intercluster.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com",
+                        "IpAddresses": [
+                            "10.0.18.229",
+                            "10.0.51.124"
+                        ]
+                    },
+                    "Management": {
+                        "DNSName": "management.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com",
+                        "IpAddresses": [
+                            "10.0.28.57"
+                        ]
+                    }
+                },
+                "DiskIopsConfiguration": {
+                    "Mode": "AUTOMATIC",
+                    "Iops": 3072
+                },
+                "PreferredSubnetId": "subnet-08dc7bcdf8b1ae500",
+                "ThroughputCapacity": 256,
+                "WeeklyMaintenanceStartTime": "4:08:00"
+            }
+        }
+    ]
+}
