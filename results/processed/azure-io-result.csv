@@ -15,11 +15,11 @@ managed-disk-local-storage-premium-ssd-lrs,AZURE,ioping-linear-async-read,94.8 k
 elastic-san-same-zone,AZURE,ioping-linear-async-write,5.98 k,29.4 s,1.46 GiB,203,50.8 MiB/s,5.98 k,30.0 s,1.46 GiB,199,49.8 MiB/s,3.90 ms,4.92 ms,52.7 ms,1.08 ms
 managed-disk-local-storage-premium-ssd-lrs,AZURE,ioping-linear-async-write,9.26 k,29.3 s,2.26 GiB,315,79.0 MiB/s,9.26 k,30.0 s,2.26 GiB,308,77.1 MiB/s,2.17 ms,3.17 ms,192.8 ms,2.60 ms
 netapp-ultra,AZURE,ioping-linear-async-read,31.0 k,29.5 s,7.58 GiB,1.05 k,263.2 MiB/s,31.0 k,30.0 s,7.58 GiB,1.03 k,258.6 MiB/s,428.5 us,949.9 us,13.4 ms,1.68 ms
-netapp-premium,AZURE,ioping-ping,49,46.0 ms,196 KiB,1.06 k,4.16 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,454.3 us,938.4 us,9.29 ms,1.26 ms
+netapp-premium,AZURE,ioping-ping,49,27.5 ms,196 KiB,1.78 k,6.96 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,382.8 us,561.6 us,883.1 us,107.6 us
 netapp-standard,AZURE,ioping-large-ping,49,311.0 ms,49 MiB,157,157.6 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,5.50 ms,6.35 ms,7.42 ms,444.4 us
 netapp-standard,AZURE,ioping-linear-async-write,3.84 k,29.7 s,960 MiB,129,32.3 MiB/s,3.84 k,30.0 s,960.2 MiB,127,32.0 MiB/s,907.9 us,7.74 ms,12.8 ms,4.56 ms
 netapp-ultra,AZURE,ioping-large-ping,49,317.8 ms,49 MiB,154,154.2 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,5.42 ms,6.48 ms,10.3 ms,738.4 us
 storage-acct-azure-files,AZURE,ioping-ping,49,163.9 ms,196 KiB,299,1.17 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,2.28 ms,3.34 ms,6.68 ms,936.2 us
 managed-disk-local-storage-premium-ssd-lrs,AZURE,ioping-large-ping,49,38.1 ms,49 MiB,1.28 k,1.26 GiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,661.5 us,777.9 us,986.9 us,74.6 us
 elastic-san-same-zone,AZURE,ioping-large-ping,49,372.3 ms,49 MiB,131,131.6 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,4.97 ms,7.60 ms,24.7 ms,3.26 ms
-netapp-premium,AZURE,ioping-large-ping,49,436.8 ms,49 MiB,112,112.2 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,7.03 ms,8.91 ms,17.7 ms,1.68 ms
+netapp-premium,AZURE,ioping-large-ping,49,375.8 ms,49 MiB,130,130.4 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,6.86 ms,7.67 ms,8.93 ms,390.6 us
