@@ -1,55 +1,55 @@
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=1 time=8.67 ms (warmup)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=2 time=7.96 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=3 time=7.38 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=4 time=8.90 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=5 time=7.91 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=6 time=7.03 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=7 time=8.34 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=8 time=9.07 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=9 time=7.78 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=10 time=9.78 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=11 time=9.76 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=12 time=8.43 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=13 time=9.51 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=14 time=9.89 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=15 time=8.01 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=16 time=8.17 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=17 time=9.99 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=18 time=9.24 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=19 time=10.1 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=20 time=9.58 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=21 time=8.48 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=22 time=8.44 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=23 time=7.70 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=24 time=12.2 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=25 time=8.89 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=26 time=10.2 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=27 time=7.16 ms (fast)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=28 time=7.49 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=29 time=9.70 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=30 time=8.46 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=31 time=7.41 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=32 time=7.65 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=33 time=8.10 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=34 time=7.96 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=35 time=9.38 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=36 time=7.19 ms (fast)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=37 time=10.4 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=38 time=17.7 ms (slow)
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=39 time=9.39 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=40 time=7.87 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=41 time=7.97 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=42 time=7.97 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=43 time=7.64 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=44 time=8.49 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=45 time=10.3 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=46 time=10.1 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=47 time=10.8 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=48 time=8.72 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=49 time=8.42 ms
-1 MiB <<< /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol): request=50 time=7.70 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=1 time=7.15 ms (warmup)
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=2 time=7.46 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=3 time=7.86 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=4 time=7.66 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=5 time=6.86 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=6 time=7.78 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=7 time=7.74 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=8 time=7.78 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=9 time=7.28 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=10 time=8.47 ms (slow)
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=11 time=7.68 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=12 time=7.49 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=13 time=7.64 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=14 time=7.21 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=15 time=7.71 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=16 time=7.82 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=17 time=7.82 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=18 time=7.18 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=19 time=7.75 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=20 time=8.19 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=21 time=7.94 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=22 time=7.30 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=23 time=7.42 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=24 time=8.64 ms (slow)
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=25 time=7.72 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=26 time=7.19 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=27 time=8.93 ms (slow)
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=28 time=7.61 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=29 time=7.37 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=30 time=7.08 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=31 time=7.98 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=32 time=7.96 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=33 time=7.71 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=34 time=7.57 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=35 time=7.43 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=36 time=8.05 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=37 time=7.84 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=38 time=7.16 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=39 time=7.93 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=40 time=7.79 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=41 time=7.64 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=42 time=7.06 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=43 time=7.68 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=44 time=7.77 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=45 time=7.75 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=46 time=7.32 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=47 time=7.43 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=48 time=7.96 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=49 time=7.93 ms
+1 MiB <<< /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol): request=50 time=7.27 ms
 
---- /netapp-premium-run (nfs4 10.11.11.5:/sjc-netapp-premium-vol) ioping statistics ---
-49 requests completed in 436.8 ms, 49 MiB read, 112 iops, 112.2 MiB/s
+--- /netapp-premium-run (nfs4 10.11.11.4:/sjc-netapp-premium-vol) ioping statistics ---
+49 requests completed in 375.8 ms, 49 MiB read, 130 iops, 130.4 MiB/s
 generated 50 requests in 49.0 s, 50 MiB, 1 iops, 1.02 MiB/s
-min/avg/max/mdev = 7.03 ms / 8.91 ms / 17.7 ms / 1.68 ms
+min/avg/max/mdev = 6.86 ms / 7.67 ms / 8.93 ms / 390.6 us
