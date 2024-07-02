@@ -1,0 +1,55 @@
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=1 time=217.0 us (warmup)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=2 time=484.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=3 time=541.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=4 time=744.7 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=5 time=542.3 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=6 time=600.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=7 time=481.0 us (fast)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=8 time=393.2 us (fast)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=9 time=440.1 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=10 time=744.3 us (slow)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=11 time=403.3 us (fast)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=12 time=421.2 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=13 time=607.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=14 time=429.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=15 time=369.4 us (fast)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=16 time=436.5 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=17 time=566.7 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=18 time=440.0 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=19 time=461.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=20 time=529.0 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=21 time=476.2 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=22 time=718.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=23 time=529.2 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=24 time=804.5 us (slow)
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=25 time=512.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=26 time=463.2 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=27 time=528.7 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=28 time=561.9 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=29 time=410.5 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=30 time=510.1 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=31 time=529.9 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=32 time=648.9 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=33 time=474.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=34 time=536.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=35 time=535.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=36 time=543.9 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=37 time=510.7 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=38 time=570.4 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=39 time=511.9 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=40 time=434.8 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=41 time=559.1 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=42 time=557.3 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=43 time=504.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=44 time=552.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=45 time=465.6 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=46 time=759.4 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=47 time=413.5 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=48 time=660.3 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=49 time=464.4 us
+4 KiB <<< /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx): request=50 time=550.6 us
+
+--- /multi-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx) ioping statistics ---
+49 requests completed in 25.9 ms, 196 KiB read, 1.89 k iops, 7.38 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 369.4 us / 529.4 us / 804.5 us / 98.9 us

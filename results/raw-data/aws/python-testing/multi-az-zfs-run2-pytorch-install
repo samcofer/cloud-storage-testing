@@ -1,0 +1,6 @@
+BEGIN - Running in /multi-az-zfs-run/testuser
+VENV CREATE: Run duration = 13980 milliseconds
+PIP UPDATE: Run duration = 16711 milliseconds
+PYTORCH INSTALL: Run duration = 178994 milliseconds
+CLEANUP: Run duration = 39575 milliseconds
+END

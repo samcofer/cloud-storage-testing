@@ -1,10 +1,10 @@
 
-svm-0b720f87cf5c7c61e.fs-09cacf8c9d13259ed.fsx.us-east-2.amazonaws.com:/same_az_ontap_vol mounted on /same-az-ontap-run:
+fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx mounted on /multi-az-zfs-run:
 
            ops/s       rpc bklog
-        2541.944           0.000
+          60.641           0.000
 
 read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                 800.890       47959.619          59.883        0 (0.0%)           3.977           4.014           0.031        0 (0.0%)
+                  97.320       28991.311         297.898        0 (0.0%)           3.408           3.435           0.019        0 (0.0%)
 write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
-                 931.109       53857.031          57.842        0 (0.0%)          10.844       10514.490       10503.621        0 (0.0%)
+                 383.313       32951.082          85.964        0 (0.0%)           2.239           2.523           0.278        0 (0.0%)
