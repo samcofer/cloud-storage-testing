@@ -205,7 +205,8 @@ def generate_plotnine(data, x_feature, y_feature,test_name, order):
                             p9.geom_text(mapping=p9.aes(y=data["avg (ms)"],label=data["avg (ms)"]), adjust_text=adjust_text_props) +\
                             p9.scale_colour_gradient(low = "#447099", high = "#EE6331", trans="log10") +\
                             p9.scale_y_log10() +\
-                            p9.ylab("latency (ms)")
+                            p9.ylab("latency (ms)") +\
+                            p9.xlab(x_feature)
 
                             #p9.geom_text(mapping=p9.aes(y=data["min (ms)"] +-1*.3*data["min (ms)"],label=data["min (ms)"])) +\
                             #p9.geom_text(mapping=p9.aes(y=data["max (ms)"] +.3*data["max (ms)"],label=data["max (ms)"])) +\
