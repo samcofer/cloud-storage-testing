@@ -1,0 +1,10 @@
+
+fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx mounted on /same-az-zfs-run:
+
+           ops/s       rpc bklog
+         104.777           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 150.200       45455.760         302.636        0 (0.0%)           3.484           3.536           0.042        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 608.268       55646.448          91.483        0 (0.0%)           1.633           2.277           0.639        0 (0.0%)

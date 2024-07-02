@@ -1,0 +1,55 @@
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=1 time=314.3 us (warmup)
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=2 time=438.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=3 time=631.6 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=4 time=735.2 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=5 time=491.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=6 time=642.5 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=7 time=556.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=8 time=557.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=9 time=485.2 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=10 time=728.7 us (slow)
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=11 time=486.0 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=12 time=550.5 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=13 time=550.1 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=14 time=458.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=15 time=581.8 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=16 time=610.6 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=17 time=388.3 us (fast)
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=18 time=563.8 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=19 time=467.2 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=20 time=560.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=21 time=496.8 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=22 time=563.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=23 time=618.1 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=24 time=482.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=25 time=517.4 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=26 time=563.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=27 time=522.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=28 time=594.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=29 time=477.6 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=30 time=632.0 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=31 time=384.6 us (fast)
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=32 time=475.5 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=33 time=483.5 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=34 time=456.6 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=35 time=601.8 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=36 time=489.4 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=37 time=568.0 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=38 time=528.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=39 time=553.6 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=40 time=431.7 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=41 time=539.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=42 time=593.9 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=43 time=559.0 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=44 time=543.3 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=45 time=461.9 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=46 time=357.5 us (fast)
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=47 time=553.6 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=48 time=548.9 us
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=49 time=372.1 us (fast)
+4 KiB <<< /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx): request=50 time=482.4 us
+
+--- /same-az-zfs-run (nfs4 fs-08ce91f6fc78bd619.fsx.us-east-2.amazonaws.com:/fsx) ioping statistics ---
+49 requests completed in 25.9 ms, 196 KiB read, 1.89 k iops, 7.38 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 357.5 us / 529.4 us / 735.2 us / 79.5 us

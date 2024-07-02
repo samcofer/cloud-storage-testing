@@ -1,0 +1,19 @@
+BEGIN - Running in /same-az-zfs-run/testuser
+VENV CREATE: Run duration = 36 milliseconds
+PIP UPDATE: Run duration = 585 milliseconds
+BEGIN - Running in /same-az-zfs-run/testuser
+VENV CREATE: Run duration = 7309 milliseconds
+PIP UPDATE: Run duration = 8195 milliseconds
+PYTORCH INSTALL: Run duration = 179604 milliseconds
+CLEANUP: Run duration = 12935 milliseconds
+END
+BEGIN - Running in /same-az-zfs-run/testuser
+VENV REMOVE: Run duration = 3207 milliseconds
+VENV CREATE: Run duration = 7357 milliseconds
+PIP UPDATE: Run duration = 8085 milliseconds
+BEGIN - Running in /same-az-zfs-run/testuser
+VENV CREATE: Run duration = 7263 milliseconds
+PIP UPDATE: Run duration = 8609 milliseconds
+PYTORCH INSTALL: Run duration = 144162 milliseconds
+CLEANUP: Run duration = 13641 milliseconds
+END
