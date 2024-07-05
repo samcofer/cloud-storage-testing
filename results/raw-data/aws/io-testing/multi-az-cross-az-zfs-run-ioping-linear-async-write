@@ -1,0 +1,5 @@
+
+--- /multi-az-cross-az-zfs-run (nfs4 fs-038a29c72a6b98623.fsx.us-east-2.amazonaws.com:/fsx) ioping statistics ---
+7.35 k requests completed in 29.0 s, 1.79 GiB written, 253 iops, 63.4 MiB/s
+generated 7.35 k requests in 30.0 s, 1.79 GiB, 245 iops, 61.3 MiB/s
+min/avg/max/mdev = 3.19 ms / 3.94 ms / 19.7 ms / 705.8 us
