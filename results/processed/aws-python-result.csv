@@ -23,6 +23,9 @@ same-az-ontap,AWS,PIP venv Pytorch Install,3,6617,3385,96345,10241
 ebs-local-storage,AWS,PIP venv Pytorch Install,3,3055,1186,51118,575
 rhel8-nfs-same-subnet,AWS,PIP venv Pytorch Install,3,12492,6119,159628,31094
 ebs-local-storage,AWS,PIP venv Pytorch Install,2,3055,1168,50824,569
+multi-az-cross-az-zfs,AWS,PIP venv Pytorch Install,1,23748,32600,316634,59447
 rhel8-nfs-same-subnet,AWS,PIP venv Pytorch Install,2,11737,5927,162704,32631
+multi-az-cross-az-zfs,AWS,PIP venv Pytorch Install,2,23850,32162,289155,59589
 rhel8-nfs-same-subnet,AWS,PIP venv Pytorch Install,1,11986,6291,212904,32262
 ebs-local-storage,AWS,PIP venv Pytorch Install,1,3059,1431,217549,1466
+multi-az-cross-az-zfs,AWS,PIP venv Pytorch Install,3,23990,32171,285702,59887

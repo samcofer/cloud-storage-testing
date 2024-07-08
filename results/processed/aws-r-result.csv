@@ -286,6 +286,47 @@ cross-az-lustre,AWS,"FST random reads, 100MB over 1000*100KB reads",2.688
 cross-az-lustre,AWS,"FST random reads, 100MB over 10000*10KB reads",26.56
 cross-az-lustre,AWS,Read 14 days of CRAN logs with fread,62.269
 cross-az-lustre,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,43.466
+multi-az-cross-az-zfs,AWS,Install MASS,19.787
+multi-az-cross-az-zfs,AWS,Install lattice,17.668
+multi-az-cross-az-zfs,AWS,Install BH,226.123
+multi-az-cross-az-zfs,AWS,"Write CSV, 10KB",0.017
+multi-az-cross-az-zfs,AWS,"Write CSV, 1MB",0.025
+multi-az-cross-az-zfs,AWS,"Write CSV, 100MB",0.474
+multi-az-cross-az-zfs,AWS,"Write CSV, 1GB",4.496
+multi-az-cross-az-zfs,AWS,"Read CSV, 10KB",0.013
+multi-az-cross-az-zfs,AWS,"Read CSV, 1MB",0.029
+multi-az-cross-az-zfs,AWS,"Read CSV, 100MB",0.229
+multi-az-cross-az-zfs,AWS,"Read CSV, 1GB",0.974
+multi-az-cross-az-zfs,AWS,"DD write, 1GB, 2 Parallel Ops",5.249
+multi-az-cross-az-zfs,AWS,"DD write, 1GB, 4 Parallel Ops",5.068
+multi-az-cross-az-zfs,AWS,"DD write, 1GB, 8 Parallel Ops",6.035
+multi-az-cross-az-zfs,AWS,"DD write, 1GB, 16 Parallel Ops",11.716
+multi-az-cross-az-zfs,AWS,"DD read, 1GB, 2 Parallel Ops",1.656
+multi-az-cross-az-zfs,AWS,"DD read, 1GB, 4 Parallel Ops",2.924
+multi-az-cross-az-zfs,AWS,"DD read, 1GB, 8 Parallel Ops",5.82
+multi-az-cross-az-zfs,AWS,"DD read, 1GB, 16 Parallel Ops",11.574
+multi-az-cross-az-zfs,AWS,"Write CSV, 100MB over 10 files",0.746
+multi-az-cross-az-zfs,AWS,"Read CSV, 100MB over 10 files",1.289
+multi-az-cross-az-zfs,AWS,"Write CSV, 100MB over 100 files",2.006
+multi-az-cross-az-zfs,AWS,"Read CSV, 100MB over 100 files",1.94
+multi-az-cross-az-zfs,AWS,"Write CSV, 100MB over 1000 files",8.687
+multi-az-cross-az-zfs,AWS,"Read CSV, 100MB over 1000 files",7.762
+multi-az-cross-az-zfs,AWS,"Write CSV, 100MB over 10000 files",69.714
+multi-az-cross-az-zfs,AWS,"Read CSV, 100MB over 10000 files",54.826
+multi-az-cross-az-zfs,AWS,"DD write, 10MB over 1000 files, 2 Parallel Ops",32.849
+multi-az-cross-az-zfs,AWS,"DD write, 10MB over 1000 files, 4 Parallel Ops",32.998
+multi-az-cross-az-zfs,AWS,"DD write, 10MB over 1000 files, 8 Parallel Ops",32.871
+multi-az-cross-az-zfs,AWS,"DD write, 10MB over 1000 files, 16 Parallel Ops",43.938
+multi-az-cross-az-zfs,AWS,"DD read, 10MB over 1000 files, 2 Parallel Ops",5.325
+multi-az-cross-az-zfs,AWS,"DD read, 10MB over 1000 files, 4 Parallel Ops",5.14
+multi-az-cross-az-zfs,AWS,"DD read, 10MB over 1000 files, 8 Parallel Ops",5.094
+multi-az-cross-az-zfs,AWS,"DD read, 10MB over 1000 files, 16 Parallel Ops",5.187
+multi-az-cross-az-zfs,AWS,"FST random reads, 100MB over 10*10MB reads",0.503
+multi-az-cross-az-zfs,AWS,"FST random reads, 100MB over 100*1MB reads",0.791
+multi-az-cross-az-zfs,AWS,"FST random reads, 100MB over 1000*100KB reads",1.959
+multi-az-cross-az-zfs,AWS,"FST random reads, 100MB over 10000*10KB reads",4.488
+multi-az-cross-az-zfs,AWS,Read 14 days of CRAN logs with fread,36.005
+multi-az-cross-az-zfs,AWS,Sample 5000 rows from each of 14 CRAN logs with vroom,18.198
 rhel8-nfs-same-subnet,AWS,Install MASS,12.882
 rhel8-nfs-same-subnet,AWS,Install lattice,13.122
 rhel8-nfs-same-subnet,AWS,Install BH,113.261
