@@ -8,12 +8,15 @@ same-az-ontap,AWS,PIP venv Pytorch Install,1,6478,3553,201732,10277
 same-az-lustre,AWS,PIP venv Pytorch Install,2,7692,3850,99846,8848
 efs-regional,AWS,PIP venv Pytorch Install,3,28834,15567,350992,92883
 same-az-zfs,AWS,PIP venv Pytorch Install,1,6978,3600,120227,11683
+multi-az-zfs,AWS,PIP venv Pytorch Install,1,13764,17149,235652,39278
 cross-az-lustre,AWS,PIP venv Pytorch Install,3,17936,9798,201878,29426
+multi-az-zfs,AWS,PIP venv Pytorch Install,2,13980,16711,178994,39575
 same-az-ontap,AWS,PIP venv Pytorch Install,2,6565,3349,97166,10142
 same-az-lustre,AWS,PIP venv Pytorch Install,1,7741,4423,205103,8976
 efs-single-zone,AWS,PIP venv Pytorch Install,1,23629,13886,392059,65449
 same-az-zfs,AWS,PIP venv Pytorch Install,2,6865,3333,102679,12625
 cross-az-lustre,AWS,PIP venv Pytorch Install,2,17934,9817,201901,28739
+multi-az-zfs,AWS,PIP venv Pytorch Install,3,13715,16621,179088,39560
 same-az-zfs,AWS,PIP venv Pytorch Install,3,6862,3344,100313,12877
 efs-regional,AWS,PIP venv Pytorch Install,1,30560,16275,432273,87095
 same-az-ontap,AWS,PIP venv Pytorch Install,3,6617,3385,96345,10241

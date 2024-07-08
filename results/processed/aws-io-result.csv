@@ -1,6 +1,8 @@
 filesystem,cloud,test-name,requests-count,requests-time,requests-ops-volume,requests-iops,requests-throughput,generated-count,generated-time,generated-ops-volume,generated-iops,generated-throughput,min,avg,max,mdev
 efs-regional,AWS,ioping-ping,49,132.7 ms,196 KiB,369,1.44 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,940.8 us,2.71 ms,4.20 ms,820.1 us
 cross-az-lustre,AWS,ioping-large-ping,49,289.1 ms,49 MiB,169,169.5 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,5.04 ms,5.90 ms,7.66 ms,639.4 us
+multi-az-zfs,AWS,ioping-linear-async-read,56.4 k,28.9 s,13.8 GiB,1.95 k,487.1 MiB/s,56.4 k,30.0 s,13.8 GiB,1.88 k,469.7 MiB/s,427.4 us,513.2 us,9.29 ms,77.5 us
+multi-az-zfs,AWS,ioping-ping,49,25.9 ms,196 KiB,1.89 k,7.38 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,369.4 us,529.4 us,804.5 us,98.9 us
 rhel8-nfs-same-subnet,AWS,ioping-linear-async-write,6.66 k,29.1 s,1.63 GiB,228,57.2 MiB/s,6.66 k,30.0 s,1.63 GiB,222,55.5 MiB/s,2.60 ms,4.37 ms,25.0 ms,704.5 us
 efs-regional,AWS,ioping-linear-async-write,2.63 k,29.6 s,657.5 MiB,88,22.2 MiB/s,2.63 k,30.0 s,657.8 MiB,87,21.9 MiB/s,8.94 ms,11.3 ms,27.2 ms,1.43 ms
 same-az-ontap,AWS,ioping-ping,49,25.2 ms,196 KiB,1.95 k,7.61 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,361.1 us,513.5 us,1.45 ms,162.3 us
@@ -14,11 +16,13 @@ ebs-local-storage,AWS,ioping-linear-async-read,22.6 k,29.1 s,5.52 GiB,778,194.6 
 efs-regional,AWS,ioping-large-ping,49,528.6 ms,49 MiB,92,92.7 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,9.44 ms,10.8 ms,18.2 ms,1.34 ms
 same-az-zfs,AWS,ioping-large-ping,49,93.6 ms,49 MiB,523,523.5 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,1.65 ms,1.91 ms,2.36 ms,125.2 us
 efs-single-zone,AWS,ioping-ping,49,106.6 ms,196 KiB,459,1.80 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,836.2 us,2.18 ms,3.72 ms,664.6 us
+multi-az-zfs,AWS,ioping-linear-async-write,9.39 k,28.7 s,2.29 GiB,326,81.7 MiB/s,9.39 k,30.0 s,2.29 GiB,313,78.3 MiB/s,2.35 ms,3.06 ms,25.1 ms,793.6 us
 rhel8-nfs-same-subnet,AWS,ioping-large-ping,49,108.6 ms,49 MiB,451,451.0 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,1.66 ms,2.22 ms,2.65 ms,213.4 us
 efs-regional,AWS,ioping-linear-async-read,17.0 k,29.5 s,4.15 GiB,577,144.3 MiB/s,17.0 k,30.0 s,4.15 GiB,566,141.7 MiB/s,1.18 ms,1.73 ms,25.5 ms,785.0 us
 same-az-ontap,AWS,ioping-large-ping,49,159.4 ms,49 MiB,307,307.5 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,2.83 ms,3.25 ms,3.84 ms,240.0 us
 rhel8-nfs-same-subnet,AWS,ioping-ping,49,25.1 ms,196 KiB,1.96 k,7.64 MiB/s,50,49.0 s,200 KiB,1,4.08 KiB/s,434.3 us,511.4 us,834.6 us,81.6 us
 same-az-lustre,AWS,ioping-large-ping,49,141.9 ms,49 MiB,345,345.3 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,2.45 ms,2.90 ms,3.60 ms,285.7 us
+multi-az-zfs,AWS,ioping-large-ping,49,183.8 ms,49 MiB,266,266.6 MiB/s,50,49.0 s,50 MiB,1,1.02 MiB/s,3.24 ms,3.75 ms,4.40 ms,259.4 us
 same-az-ontap,AWS,ioping-linear-async-write,23.9 k,28.2 s,5.84 GiB,847,211.9 MiB/s,23.9 k,30.0 s,5.84 GiB,797,199.4 MiB/s,930.7 us,1.18 ms,7.38 ms,324.8 us
 cross-az-lustre,AWS,ioping-linear-async-read,8.60 k,29.2 s,2.10 GiB,294,73.6 MiB/s,8.60 k,30.0 s,2.10 GiB,286,71.6 MiB/s,1.67 ms,3.40 ms,6.94 ms,788.8 us
 same-az-zfs,AWS,ioping-linear-async-write,22.0 k,27.3 s,5.38 GiB,806,201.7 MiB/s,22.0 k,30.0 s,5.38 GiB,734,183.5 MiB/s,902.9 us,1.24 ms,5.26 ms,130.8 us
