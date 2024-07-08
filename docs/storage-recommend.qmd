@@ -1,0 +1,110 @@
+---
+title: Posit Team Cloud Storage Recommendations
+date-meta: NA
+last-update: 06-10-2024
+categories: Storage, Cloud, AWS, Azure, GCP
+# tags:
+---
+
+The storage solution that supports your deployment of Posit Team is critical to achieving the level of performance and reliability that your data scientists expect and need to support the important research, development and insight generation they are striving for. The correct storage choice can ultimately save your organization time, money and frustration, by enabling a desktop like experience for your users, while providing a secure, server-sized compute environment. Because this choice can be the linchpin of a successful and satisfying deployment of Posit Workbench, Connect and Package Manager, Posit has done extensive testing and troubleshooting  with a variety of cloud storage solutions. This testing was done using a combination of artificial and real-world storage loading scenarios to try and best capture the characteristics of the underlying cloud storage solution.
+
+### Posit Team Relative Storage Requirements
+
+The networked and local storage needs and requirements for Posit products vary between Workbench, Connect and Package Manager. Workbench represents the most storage dependent of the product suite, because it directly hosts interactive user sessions which need to be saved, cached and run as quickly as user's desktop environments. Additionally, Workbench uses the users home directory heavily as a location for storing Workbench session state as well as suspended session data, which can grow quite large, depending the work the user is doing. 
+
+Connects storage requirements are, in general, less demanding. This is because while Connect still needs fast, responsive storage, the majority of the storage intensive operations happen asynchronously, during the publishing process. This means that unless the application/content item is expected to do heavy read/write operations at run time, the startup and loading time for a particular application is only marginally impacted by the speed of the underlying storage.
+
+Package Manager is the least storage intensive application within Posit Team. It's primary use for storage is to locally cache packages downloaded from the Posit Sync Service and then expose those packages for consumption by your internal data science teams. This low threshhold for storage performance is further evidenced by the fact that it's cached package data can be served from S3.
+
+### General Storage Recommendations
+
+There are two components to a storage solution which will generally provide an excellent user-experience with Posit products, in particular Workbench. The two primary requirements are throughput and storage latency. Storage throughput, generally measured in MB/s, is a measure of the maximum rate at which data can be moved from server memory to disk, whether that disk is a local SSD or an NFS server share hosted in another country. Throughput is generally most utilized in data science workloads when reading or writing large data files to disk, as well as when a user session that included large amounts of data stored in memory is suspended or resumed by Workbench. Low throughput or otherwise slow storage can massively impact code run time as well as the time it takes to suspend and resume user sessions. Insufficient throughput on a remote NFS server can cause cascading impacts to other users Workbench sessions, if the network throughput of the remote NFS server where user home directories are stored is exhausted.  
+
+The other important metric for data science workloads is storage latency, measured in milliseconds, which represents the amount of time a single storage transaction takes to complete. Storage latency is particularly important because session state is rapidly cached to disk, to make sure that no data or inputs are lost in the event of a browser disconnect. Slowness in disk latency can cause the RStudio IDE to lag and respond slowly to user input, while the IDE is trying to confirm that user input is cached.
+
+IOPS, while a key metric for many storage providers and solutions is rarely the limiting factor with most cloud storage solutions, because while Posit products do read and write large files, and require the ability to quickly complete small file operations, most cloud storage providers provide sufficient baseline IOPS for SSD/Flash storage arrays.
+
+Now, on to the recommendations, generally we recommend using this formula to calculate your required throughput needs:
+
+`Throughput-of-1-node + (Throughput-of-1-node*Number-of-Remaining-Nodes*.1)`
+
+For example, if you are running HA Workbench with 3 nodes and each node is capable of 1 Gb/s throughput, we recommend that your storage solution is able to handle 1.2 Gb/s. Using the formula:
+
+`1 Gb/s + (1 Gb/s * 2 * .1) = 1.2 Gb/s`
+
+This configuration generally provides sufficient throughput to allow for a heavy workload on a single node, while the remaining nodes still have the necessary throughput to handle general interactive sessions.
+
+On the latency side, generally under 1ms average latency measured by `ioping` provides a good user experience. Anything greater than 2-2.5ms might be perceived as slow performance, but depending on the other characteristics of the storage solution can work. Latency greater than 2.5ms for a simple `ioping` average causes user perceived performance slowness and can make Workbench appear unresponsive. Examples of cloud storage solutions in this last class that administrators should avoid are Azure Files (Storage account), Azure Elastic SAN, and AWS EFS Regional.
+
+### Cloud Specific Recommendations
+
+::: {.panel-tabset}
+
+## AWS
+
+### Filesystems
+
+| Storage Service     | Workbench Home Directory | Connect Application Directory | Package Manager Local Cache | Project Sharing Support | File locks |
+| ------------------- | ------------------------ | ----------------------------- | --------------------------- | ----------------------- | ---------- |
+| EBS Local Storage   | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| AWS Fsx for Lustre  | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| AWS Fsx for NetApp ONTAP   | ✅                        | ✅                             | ✅                           | ❌                       | ✅          |
+| AWS Fsx for OpenZFS | ✅                        | ✅                             | ✅                           | ❌                       | ✅          |
+| EFS One Zone     | ⚠️                       | ✅                             | ✅                           | ❌                       | ✅          |
+| EFS Regional        | ⚠️                       | ✅                             | ✅                           | ❌                       | ✅          |
+| S3 Bucket           | ❌                        | ❌                             | ✅                           | ❌                       | ❌          |
+
+- [EBS Local Storage](https://aws.amazon.com/ebs/)
+  - This standard block storage offering provides, as expected, the fastest storage experience in most Posit workloads, but unfortunately doesn't support High-Availability or Load Balanced configurations for Posit products. Additionally, backups and point in time recovery for EBS storage can result in lost data and/or work due to the generally unreplicated nature of the storage.
+- [AWS Fsx for Lustre](https://aws.amazon.com/fsx/lustre/)
+  - Fsx for Lustre provides a premium experience for data science users and supports the extended POSIX ACLs that Posit Workbench Project Sharing requires. Unfortunately, it does not include a multi-AZ redundancy option that is easy to configure. Fsx for Lustre's replication configuration involves a potentially complicated process involving S3 bucket replication. [Link S3 and Fsx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/create-dra-linked-data-repo.html)
+- [AWS Fsx for NetApp ONTAP](https://aws.amazon.com/fsx/netapp-NetApp ONTAP/) and [AWS Fsx for OpenZFS](https://aws.amazon.com/fsx/openzfs/)
+  - Both filesystems, when correclty configured, provide excellent performance characteristics for most Posit Team use-cases. They do not support Workbench project sharing, because they lack support for extended Posix ACLs. With these filesystems, the key consideration is the synchronous nature of multi-AZ replication which can introduce significant file system latency and result in perceived slowness for data science users doing simple tasks like installing R packages and creation Python virtual environments. This latency only exists for write performance, because read operations can be returned directly from the primary ZFS server.
+- [EFS One Zone](https://docs.aws.amazon.com/efs/latest/ug/availability-durability.html#:~:text=Region%20are%20unavailable.-,One%20Zone,-%E2%80%93%20One%20Zone%20file) and [EFS Regional](https://docs.aws.amazon.com/efs/latest/ug/availability-durability.html#:~:text=file%20system%20types.-,Regional,-%E2%80%93%20Regional%20file%20systems)
+  - EFS storage deployments are a relatively inexpensive storage solution for the Posit Team suite of products. Cost reduction is the primary benefit, because they are generally slower than the other supported options and, in the case of EFS Regional, much slower. EFS Regional should not be considered for home directory storage for Workbench, though EFS One Zone is serviceable. The speed difference between EFS One Zone and EBS/Fsx solutions will directly impact user workloads and general operations in Workbench such as installing packages and creating Python virtual environments. EFS deployments are generally performant enough for both Posit Connect and Package Manager, as long as your Connect applications can be tuned to deal with the potentially extended application startup times. Package Manager is capable of dealing with slower shared filesystems and can run from EFS perfectly, but generally S3 is a better option for Package Manager.
+
+
+## Azure
+
+### Filesystems
+
+| Storage Service               | Workbench Home Directory | Connect Application Directory | Package Manager Local Cache | Project Sharing Support | File locks |
+| ----------------------------- | ------------------------ | ----------------------------- | --------------------------- | ----------------------- | ---------- |
+| Managed Premium SSD LRS       | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| Azure Netapp Files - Standard | ⚠️                       | ⚠️                            | ✅                           | ✅                       | ✅          |
+| Azure Netapp Files - Premium  | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| Azure Netapp Files - Ultra    | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| Azure Files - Storage Acct    | ❌                        | ⚠️                            | ✅                           | ❌                       | ✅          |
+| Azure Elastic SAN             | ❌                        | ❌                             | ❌                           | ❌                       | ✅          |
+
+- Managed Premium Disk LRS
+  - This standard block storage offering provides, as expected, the fastest storage experience in most Posit workloads, but unfortunately doesn't support High-Availability or Load Balanced configurations for Posit products. Additionally, backups and point in time recovery for Managed Disk storage can result in lost data and/or work due to the generally unreplicated nature of the storage. Posit recommends SSD block storage for all Posit workloads where data access speed is the most important factor in your storage selection process.
+- Azure Netapp Files
+  - Azure Netapp files provides an excellent experience when used as Posit storage. Posit recommends locating the Netapp storage volume used with out products in the same availability zone as your Azure VM. Azure Netapp storage throttles throughput with storage capacity and storage tier, Standard, Premium and Ultra. Posit generally recommends against Azure Netapp- Standard for use with our products, unless your organization needs or uses a lot of Azure Netapp storage, because Standard doesn't provide much througput per TB of storage. Details can be found in Microsofts Azure Netapp article, which you can compare with our suggested throughput formula above to determine the best capacity/throughput/cost configuration for your organization.
+- Azure Files NFS - Storage Account
+  - Azure Files initially appears to be a low-cost, scalable NFS file storage option in Azure, but unfortunately it suffers from several **major** drawbacks when used with Posit products and data science workloads. Firstly, it has very high file system latency, which results in a poor experience for the majority of Posit Workbench use-cases. Additionally, this high latency can result in a higher than expected occurence of orphaned .`.nfs12345678` files, which can lock/abort applicaiton workloads. These leftover files are the result of the [NFSv3 Silly Rename](https://linux-nfs.org/wiki/index.php/Server-side_silly_rename) process. Additionally, Azure Files suffers from known filesystem latency issues on [metadata operations](https://learn.microsoft.com/en-us/troubleshoot/azure/azure-storage/files/performance/files-troubleshoot-performance?tabs=linux#cause-2-metadata-or-namespace-heavy-workload) which further compounds it's unsuitability for workloads that include lots of small files, such as R and Python package installation and restoration. 
+- Azure Elastic SAN
+  - Azure Elastic SAN showed inconsistent performance in our testing and while it may be tunable to ultimately be an excellent storage solution, the complexity and effort required added to the availability of more suitable, easier to support options like Managed Disk for local storage and Azure Netapp files for networked storage, mean that it is generally not recommended, unless your organization is already using Elastic SAN and can't use other options.
+
+## GCP
+
+### Filesystems
+
+| Storage Service                    | Workbench Home Directory | Connect Application Directory | Package Manager Local Cache | Project Sharing Support | File locks |
+| ---------------------------------- | ------------------------ | ----------------------------- | --------------------------- | ----------------------- | ---------- |
+| SSD Persistent Disk                | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| Google File Store - Basic SSD      | ✅                        | ✅                             | ✅                           | ✅                       | ✅          |
+| Google File Store - Zonal SSD      | ⚠️                       | ✅                             | ✅                           | ✅                       | ✅          |
+| Google File Store - Enterprise SSD | ⚠️                       | ✅                             | ✅                           | ✅                       | ✅          |
+| Google Cloud Storage               | ❌                        | ❌                             | ❌                           | ❌                       | ❌          |
+
+- SSD Persistent Disk
+  - This standard block storage offering provides, as expected, the fastest storage experience in most Posit workloads, but unfortunately doesn't support High-Availability or Load Balanced configurations for Posit products. Additionally, backups and point in time recovery for local disk storage can result in lost data and/or work due to the generally unreplicated nature of the storage. Posit recommends SSD block storage for all Posit workloads where data access speed is the most important factor in your storage selection process.
+- Google File Store
+  - Google File Store is one of the core NFS file server options available in GCP and thus is the primary recommended filestore for Posit products in GCP. Unfortunately, it is slower compared to other AWS and Azure cloud storage solutions, at least for single VM workloads which was how Posit tested. Zonal and Enterprise SSD, likely due to their HA/replicated configuration they have higher latency, but higher throughput than Basic SSD. This presents as shorter small file write times for Basic SSD, which manifests as shorter R and Python package installation times, but longer large file installations due to lower throughput. Posit recommends sizing your GFS deployment to make sure that you're able to reach a good balance between throughput and latency for your users.
+- Google Cloud Storage
+  - Google Cloud Storage is generally not supported for Posit application specific workloads, but can be used to store data accessed via the IDEs. Since it doesn't present as a traditional NFS filesystem, load testing/application validation was not performed. 
+
+:::
+
+
