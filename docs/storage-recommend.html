@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-99.9.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -57,6 +57,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -84,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="cloud-specific-recommendations" class="level3">
 <h3 class="anchored" data-anchor-id="cloud-specific-recommendations">Cloud Specific Recommendations</h3>
-<div class="panel-tabset">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">AWS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Azure</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">GCP</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
@@ -127,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 <td>✅</td>
 </tr>
 <tr class="odd">
-<td>AWS Fsx for Ontap</td>
+<td>AWS Fsx for NetApp ONTAP</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
@@ -143,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 <td>✅</td>
 </tr>
 <tr class="odd">
-<td>EFS Single Zone</td>
+<td>EFS One Zone</td>
 <td>⚠️</td>
 <td>✅</td>
 <td>✅</td>
@@ -169,21 +170,21 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <ul>
-<li>EBS Local Storage
+<li><a href="https://aws.amazon.com/ebs/">EBS Local Storage</a>
 <ul>
 <li>This standard block storage offering provides, as expected, the fastest storage experience in most Posit workloads, but unfortunately doesn’t support High-Availability or Load Balanced configurations for Posit products. Additionally, backups and point in time recovery for EBS storage can result in lost data and/or work due to the generally unreplicated nature of the storage.</li>
 </ul></li>
-<li>AWS Fsx for Lustre
+<li><a href="https://aws.amazon.com/fsx/lustre/">AWS Fsx for Lustre</a>
 <ul>
 <li>Fsx for Lustre provides a premium experience for data science users and supports the extended POSIX ACLs that Posit Workbench Project Sharing requires. Unfortunately, it does not include a multi-AZ redundancy option that is easy to configure. Fsx for Lustre’s replication configuration involves a potentially complicated process involving S3 bucket replication. <a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/create-dra-linked-data-repo.html">Link S3 and Fsx for Lustre</a></li>
 </ul></li>
-<li>AWS Fsx for Ontap and AWS Fsx for OpenZFS
+<li><a href="https://aws.amazon.com/fsx/netapp-NetApp%20ONTAP/">AWS Fsx for NetApp ONTAP</a> and <a href="https://aws.amazon.com/fsx/openzfs/">AWS Fsx for OpenZFS</a>
 <ul>
 <li>Both filesystems, when correclty configured, provide excellent performance characteristics for most Posit Team use-cases. They do not support Workbench project sharing, because they lack support for extended Posix ACLs. With these filesystems, the key consideration is the synchronous nature of multi-AZ replication which can introduce significant file system latency and result in perceived slowness for data science users doing simple tasks like installing R packages and creation Python virtual environments. This latency only exists for write performance, because read operations can be returned directly from the primary ZFS server.</li>
 </ul></li>
-<li>EFS Single Zone and EFS Regional
+<li><a href="https://docs.aws.amazon.com/efs/latest/ug/availability-durability.html#:~:text=Region%20are%20unavailable.-,One%20Zone,-%E2%80%93%20One%20Zone%20file">EFS One Zone</a> and <a href="https://docs.aws.amazon.com/efs/latest/ug/availability-durability.html#:~:text=file%20system%20types.-,Regional,-%E2%80%93%20Regional%20file%20systems">EFS Regional</a>
 <ul>
-<li>EFS storage deployments are a relatively inexpensive storage solution for the Posit Team suite of products. Cost reduction is the primary benefit, because they are generally slower than the other supported options and, in the case of EFS Regional, much slower. EFS Regional should not be considered for home directory storage for Workbench, though EFS Single Zone is serviceable. The speed difference between EFS Single Zone and EBS/Fsx solutions will directly impact user workloads and general operations in Workbench such as installing packages and creating Python virtual environments. EFS deployments are generally performant enough for both Posit Connect and Package Manager, as long as your Connect applications can be tuned to deal with the potentially extended application startup times. Package Manager is capable of dealing with slower shared filesystems and can run from EFS perfectly, but generally S3 is a better option for Package Manager.</li>
+<li>EFS storage deployments are a relatively inexpensive storage solution for the Posit Team suite of products. Cost reduction is the primary benefit, because they are generally slower than the other supported options and, in the case of EFS Regional, much slower. EFS Regional should not be considered for home directory storage for Workbench, though EFS One Zone is serviceable. The speed difference between EFS One Zone and EBS/Fsx solutions will directly impact user workloads and general operations in Workbench such as installing packages and creating Python virtual environments. EFS deployments are generally performant enough for both Posit Connect and Package Manager, as long as your Connect applications can be tuned to deal with the potentially extended application startup times. Package Manager is capable of dealing with slower shared filesystems and can run from EFS perfectly, but generally S3 is a better option for Package Manager.</li>
 </ul></li>
 </ul>
 </section>
@@ -395,9 +396,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -409,7 +424,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -445,24 +477,152 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, function() {
+      let href = xref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children.length > 2) {
+          for (let i = 0; i < 2; i++) {
+            container.appendChild(note.children[i].cloneNode(true));
+          }
+          return container.innerHTML
+        } else {
+          return note.innerHTML;
+        }
+      } else {
+        return note.innerHTML;
+      }
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
