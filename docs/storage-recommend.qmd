@@ -1,3 +1,4 @@
+<!-- vim: syntax=Markdown -->
 ---
 title: Posit Team Cloud Storage Recommendations
 date-meta: NA
