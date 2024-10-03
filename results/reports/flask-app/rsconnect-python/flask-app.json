@@ -8,5 +8,15 @@
         "title": "CloudStorageResults",
         "app_mode": "python-api",
         "app_store_version": 1
+    },
+    "https://pub.current.posit.team": {
+        "server_url": "https://pub.current.posit.team",
+        "filename": "/home/sam.cofer/projects/cloud-storage-testing/results/reports/flask-app",
+        "app_url": "https://pub.current.posit.team/content/36a0b59a-9036-427d-a2aa-8f46c31a088b/",
+        "app_id": "232",
+        "app_guid": "36a0b59a-9036-427d-a2aa-8f46c31a088b",
+        "title": "flask-app",
+        "app_mode": "python-api",
+        "app_store_version": 1
     }
 }
