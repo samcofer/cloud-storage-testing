@@ -1,0 +1,5 @@
+
+--- /gfs-regional-ssd-run (nfs 10.92.14.2:/sjcregionalshare) ioping statistics ---
+6.79 k requests completed in 29.9 s, 1.66 GiB read, 227 iops, 56.8 MiB/s
+generated 6.79 k requests in 30.0 s, 1.66 GiB, 226 iops, 56.6 MiB/s
+min/avg/max/mdev = 2.98 ms / 4.40 ms / 27.5 ms / 1.86 ms
