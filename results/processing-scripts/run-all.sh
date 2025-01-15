@@ -3,7 +3,7 @@
 ## declare an array variable
 # declare -a arr=("azure" "aws" "gcp")
 
-declare -a arr=("aws")
+declare -a arr=("gcp")
 
 # now loop through the above array
 for i in "${arr[@]}"
