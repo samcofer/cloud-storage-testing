@@ -1,0 +1,6 @@
+BEGIN - Running in /gcp-netapp-premium-run/testuser
+VENV CREATE: Run duration = 13133 milliseconds
+PIP UPDATE: Run duration = 19960 milliseconds
+PYTORCH INSTALL: Run duration = 209708 milliseconds
+CLEANUP: Run duration = 21706 milliseconds
+END

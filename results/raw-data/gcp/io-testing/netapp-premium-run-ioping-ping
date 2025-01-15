@@ -1,0 +1,55 @@
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=1 time=791.1 us (warmup)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=2 time=948.3 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=3 time=953.7 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=4 time=1.77 ms
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=5 time=902.6 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=6 time=954.0 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=7 time=926.8 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=8 time=955.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=9 time=961.2 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=10 time=1.74 ms (slow)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=11 time=977.5 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=12 time=992.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=13 time=973.5 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=14 time=975.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=15 time=993.7 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=16 time=950.9 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=17 time=927.6 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=18 time=969.6 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=19 time=942.0 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=20 time=909.2 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=21 time=969.5 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=22 time=1.77 ms (slow)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=23 time=957.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=24 time=1.04 ms
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=25 time=950.4 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=26 time=922.6 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=27 time=975.2 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=28 time=939.1 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=29 time=942.9 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=30 time=999.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=31 time=1.01 ms
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=32 time=949.6 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=33 time=957.1 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=34 time=951.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=35 time=950.7 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=36 time=1.01 ms
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=37 time=953.3 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=38 time=1.00 ms
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=39 time=973.8 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=40 time=974.0 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=41 time=917.9 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=42 time=953.6 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=43 time=987.3 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=44 time=896.9 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=45 time=939.3 us (fast)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=46 time=1.76 ms (slow)
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=47 time=967.1 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=48 time=962.3 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=49 time=962.9 us
+4 KiB <<< /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share): request=50 time=987.5 us
+
+--- /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share) ioping statistics ---
+49 requests completed in 50.3 ms, 196 KiB read, 974 iops, 3.81 MiB/s
+generated 50 requests in 49.0 s, 200 KiB, 1 iops, 4.08 KiB/s
+min/avg/max/mdev = 896.9 us / 1.03 ms / 1.77 ms / 220.2 us

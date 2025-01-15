@@ -1,0 +1,5 @@
+
+--- /gcp-netapp-premium-run (nfs4 172.17.29.4:/gcp-netapp-premium-share) ioping statistics ---
+8.89 k requests completed in 29.8 s, 2.17 GiB read, 297 iops, 74.5 MiB/s
+generated 8.89 k requests in 30.0 s, 2.17 GiB, 296 iops, 74.1 MiB/s
+min/avg/max/mdev = 1.93 ms / 3.36 ms / 21.6 ms / 298.3 us
