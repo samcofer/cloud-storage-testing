@@ -62,7 +62,8 @@ aws_order = [
 gcp_order = [
 'ssd-persistent-disk',
 'gfs-basic-ssd',
-'gfs-zonal-ssd', 
+'gfs-zonal-ssd',
+'gfs-regional-ssd',
 'gfs-ent-ssd' 
 ]
 
