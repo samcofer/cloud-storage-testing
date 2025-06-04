@@ -4,9 +4,9 @@ uname -a
 cd /opt || exit
 git clone https://github.com/aws/efs-utils
 cd efs-utils/ || exit
-sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 # enable the CodeReady Linux Builder repository from Red Hat Update Infrastructure (RHUI)
-sudo dnf install dnf-plugins-core
+sudo dnf install dnf-plugins-core -y
 sudo dnf config-manager --set-enabled "codeready-builder-for-rhel-8-*-rpms"
 yum install -y make rpm-build wget nfs-utils ioping nfs4-acl-tools
 make rpm
@@ -14,10 +14,13 @@ yum -y install ./build/amazon-efs-utils*rpm
 if [[ "$(python3 -V 2>&1)" =~ ^(Python 3.6.*) ]]; then sudo wget https://bootstrap.pypa.io/pip/3.6/get-pip.py -O /tmp/get-pip.py; elif [[ "$(python3 -V 2>&1)" =~ ^(Python 3.5.*) ]]; then sudo wget https://bootstrap.pypa.io/pip/3.5/get-pip.py -O /tmp/get-pip.py; elif [[ "$(python3 -V 2>&1)" =~ ^(Python 3.4.*) ]]; then sudo wget https://bootstrap.pypa.io/pip/3.4/get-pip.py -O /tmp/get-pip.py; else sudo wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; fi
 python3 /tmp/get-pip.py
 pip3 install botocore
-mkdir /efs-single-zone-run /efs-regional-run /same-az-lustre-run /cross-az-lustre-run /same-az-zfs-run /ebs-local-storage-run /rhel8-nfs-same-subnet-run /same-az-ontap-run /multi-az-zfs-run /multi-az-cross-az-zfs-run
+mkdir /efs-single-zone-run /efs-regional-run /same-az-lustre-run /cross-az-lustre-run /same-az-zfs-run /ebs-local-storage-run /rhel8-nfs-same-subnet-run /same-az-ontap-run /multi-az-zfs-run /multi-az-cross-az-zfs-run /s3-mountpoint-run
 curl https://fsx-lustre-client-repo-public-keys.s3.amazonaws.com/fsx-rpm-public-key.asc -o /tmp/fsx-rpm-public-key.asc
 sudo rpm --import /tmp/fsx-rpm-public-key.asc
 sudo curl https://fsx-lustre-client-repo.s3.amazonaws.com/el/8/fsx-lustre-client.repo -o /etc/yum.repos.d/aws-fsx.repo
+wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.rpm
+sudo yum install -y ./mount-s3.rpm
+mount-s3 --version
 reboot
 #Reconnect here to make sure you're on the latest rhel 8 kernel
 yum install -y kmod-lustre-client lustre-client
