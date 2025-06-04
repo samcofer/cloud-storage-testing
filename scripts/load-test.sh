@@ -3,8 +3,8 @@
 set -x
 
 AZURE_DIRECTORIES="managed-disk-local-storage-premium-ssd-lrs-run netapp-standard-run netapp-premium-run netapp-ultra-run storage-acct-azure-files-run elastic-san-same-zone-run"
-#AWS_DIRECTORIES="ebs-local-storage-run efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run rhel8-nfs-same-subnet-run same-az-ontap-run multi-az-zfs-run multi-az-cross-az-zfs-run"
-AWS_DIRECTORIES="multi-az-cross-az-zfs-run"
+#AWS_DIRECTORIES="ebs-local-storage-run efs-single-zone-run efs-regional-run same-az-lustre-run cross-az-lustre-run same-az-zfs-run rhel8-nfs-same-subnet-run same-az-ontap-run multi-az-zfs-run multi-az-cross-az-zfs-run s3-mountpoint-run"
+AWS_DIRECTORIES="s3-mountpoint-run"
 #GCP_DIRECTORIES="gfs-basic-ssd-run gfs-ent-ssd-run gfs-zonal-ssd-run local-storage-ssd-persistent-disk"
 GCP_DIRECTORIES="gcp-netapp-premium-run"
 
@@ -62,7 +62,7 @@ ln -sf /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"`
 # Check if the instance metadata service is reachable
-if [ "$(curl -s --connect-timeout 2 -o /dev/null -w "%{http_code}" http://169.254.169.254/latest/meta-data/ -H \"X-aws-ec2-metadata-token: $TOKEN\" )" == "200" ]; then
+if [ "$(curl -s --connect-timeout 2 -o /dev/null -w "%{http_code}" http://169.254.169.254/latest/meta-data/ -H "X-aws-ec2-metadata-token: $TOKEN" )" == "200" ]; then
     # Instance metadata service is reachable, assume running in AWS
     echo "Running in AWS environment."
     DIRECTORIES=$AWS_DIRECTORIES
